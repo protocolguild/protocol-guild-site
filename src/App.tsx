@@ -2,9 +2,9 @@ import { FC } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
-import Home from './pages/Home'
-import Pledge from './pages/Pledge'
-import About from './pages/About'
+import Home from './pages/home'
+import Pledge from './pages/pledge'
+import About from './pages/about'
 import ScrollToTop from './components/ScrollToTop'
 
 const App: FC = () => {
