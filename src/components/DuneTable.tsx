@@ -27,7 +27,6 @@ const formatCurrency = (value: number | string) => {
 const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   const [data, setData] = useState<DuneData | null>(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const CACHE_DURATION = 1000 * 60 * 60; // 1 hour in milliseconds
@@ -70,10 +69,14 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
 
         setData(result)
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to fetch data')
-      } finally {
-        setLoading(false)
+        // Instead of showing error, maintain loading state
+        console.error('Error fetching Dune data:', err)
+        // Keep loading state active on error
+        return
       }
+      
+      // Only set loading to false on success
+      setLoading(false)
     }
 
     fetchData()
@@ -123,11 +126,6 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
 
   if (loading) return (
     <div className={`rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-200 to-gray-300'} h-[600px] animate-pulse`} />
-  )
-  if (error) return (
-    <div className={`text-sm ${theme === 'dark' ? 'text-red-400 bg-red-900/20 border-red-800' : 'text-red-500 bg-red-50 border-red-200'} rounded-lg p-4 border`}>
-      Error: {error}
-    </div>
   )
   if (!data?.result) return null
 
