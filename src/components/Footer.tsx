@@ -19,14 +19,11 @@ const Footer: FC = () => {
                   <Link to="/" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     HOME
                   </Link>
-                  <Link to="/pledge" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    PLEDGE
-                  </Link>
                   <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     ABOUT
                   </Link>
                   <a 
-                    href="mailto:trenton.vanepps@ethereum.org" 
+                    href="mailto:protocolguild@gmail.com" 
                     className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity"
                   >
                     CONTACT
