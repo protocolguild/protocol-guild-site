@@ -182,7 +182,7 @@
                 <DuneStat 
                   queryId="4872646" 
                   theme="light" 
-                  title="Total Amount Vesting
+                  title="Total Amount Vesting"
                   variableName="total_vesting"
                   type="currency"
                 />
