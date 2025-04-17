@@ -99,7 +99,7 @@ const Home: FC = () => {
                 theme="light" 
                 title="Total Core Protocol Contributors"
                 variableName="total_count"
-                type="currency"
+                type="number"
               />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
