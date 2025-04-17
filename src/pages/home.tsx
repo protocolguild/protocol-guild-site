@@ -75,17 +75,19 @@ const Home: FC = () => {
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.mission.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.mission.subtitle}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.mission.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.mission.subtitle2}</h2>
             </Grid.Item>
-            {homeContent.mission.features.map((feature, index) => (
-              <Grid.Item key={index} span={3} className="flex flex-col">
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              {homeContent.value.features.map((feature, index) => (
                 <FeatureCard
+                  key={index}
                   title={feature.title}
                   description={feature.description}
-                  color="#fff"
+                  color="var(--white)"
                 />
-              </Grid.Item>
-            ))}
+              ))}
+            </Grid.Item>
           </Grid>
         </Section.Row>
       </Section>
