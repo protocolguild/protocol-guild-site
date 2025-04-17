@@ -125,6 +125,7 @@
                 <DonorSectionDark2 theme="dark" type="Donors" />
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
+                <DuneTable queryId={homeContent.section3.table.duneQueryId} theme="light" />
               </Grid.Item>
             </Grid>
           </Section.Row>
