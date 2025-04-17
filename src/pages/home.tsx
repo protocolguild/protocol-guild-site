@@ -96,14 +96,9 @@ const Home: FC = () => {
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col">
-              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">
-                {homeContent.cta.title}
-              </h2>
-              <div className="w-fit">
-                <a href={homeContent.cta.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors inline-block">
-                  {homeContent.cta.buttonText}
-                </a>
-              </div>
+              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">{homeContent.cta.title}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle2}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col">
               <DonorSection theme="light" type="Partners" featured={true} />
