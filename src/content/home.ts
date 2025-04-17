@@ -10,18 +10,22 @@ export const homeContent = {
     subtitle3: "Protocol Guild Pledge announcement on Mirror >"
   },
   mission: {
-    title: "Our moonshot: Ethereum protocol maintenance, funded forever.",
-    subtitle: "Sustainable funding for Ethereum core contributors drives protocol maintenance and growth.",
+    title: "The most effective way to fund Ethereum's future",
+    subtitle1: "Having a stable contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem.",
+    subtitle2: "We distribute all donations directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
     features: [
       {
-        title: "Directly funding Ethereum's core builders.",
-        description: "Our model ensures that individual core developers are funded on a long-term basis. It's the best way to ensure long-term protocol maintenance.",
-        icon: "/src/assets/images/hammer-blue.svg"
+        title: "Quarterly Curation",
+        description: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated onchain every quarter."
       },
       {
-        title: "Building ecosystem partnerships to make Ethereum last.",
-        description: "We partner with leading and emerging crypto projects to ensure that shared infrastructure stays stable and competitive for years to come.",
-        icon: "/src/assets/images/hammer-blue.svg"
+        title: "Trustless Vesting",
+        description: "All donations are vested linearly over 4 years via immutable contracts, directly to everyone in the registry."
+      },
+      {
+        title: "Neutral Distribution",
+        description: "Vested tokens are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
+        link: "Learn more in our docs >"
       }
     ]
   },
