@@ -164,7 +164,7 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="gray-light" divider="#ffffff">
+      <Section background="gray-light" divider="var(--gray-dark)">
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
