@@ -8,9 +8,17 @@ export const aboutContent = {
     subtitle: "We collect donations from projects building on Ethereum, to distribute directly to Ethereum’s active core protocol contributors, vested over 4 years.",
     statsHeader: "Distribution Stats"
   },
+  section2: {
+    title: "Supporting the stewards of Ethereum’s core protocol",
+    subtitle: "Every quarter, we curate and update an onchain registry of Ethereum’s active core protocol contributors, to distribute funding towards.",
+    link: "View all core devs & researchers >",
+  },
+  section3: {
+    title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
+    statsHeader: "Donation Stats"
+  },
   funding: {
-    title: "Effective and transparent funding.",
-    description: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    title: "Funded by projects building on Ethereum",
     statsHeader: "Distribution Stats"
   },
   organization: {
