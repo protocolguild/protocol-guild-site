@@ -182,15 +182,8 @@
                 <DuneStat 
                   queryId="4872646" 
                   theme="light" 
-                  title="Median Vesting per Member over Next 12 Months"
-                  variableName="median_vesting_365_days"
-                  type="currency"
-                />
-                <DuneStat 
-                  queryId="4876407" 
-                  theme="light" 
-                  title="Total Amount Distributed by Protocol Guild"
-                  variableName="total_vested_hist"
+                  title="Total Amount Vesting
+                  variableName="total_vesting"
                   type="currency"
                 />
                 <DuneChart 
