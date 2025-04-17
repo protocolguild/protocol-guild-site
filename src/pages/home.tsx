@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
 import DonorSectionDark from '../components/DonorSectionDark'
@@ -15,7 +15,7 @@ const Home: FC = () => {
   const [currentQuote, setCurrentQuote] = useState(0);
 
   const nextQuote = () => {
-    setCurrentQuote((prev) => (prev + 1) % homepledgeContent.quotes.length);
+    setCurrentQuote((prev) => (prev + 1) % homeContent.quotes.length);
   };
 
   const previousQuote = () => {
