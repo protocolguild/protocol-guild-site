@@ -121,7 +121,7 @@
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
                 <DonorSectionDark theme="dark" type="Partners" featured={true}/>
-              <DonorSection theme="dark" type="Donors" />
+                <DonorSectionDark theme="dark" type="Donors" />
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
               </Grid.Item>
