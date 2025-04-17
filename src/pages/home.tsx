@@ -64,7 +64,7 @@ const Home: FC = () => {
               </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <DonorSection theme="light" type="Partners" featured={true}/>
+              <DonorSection theme="dark" type="Partners" featured={true}/>
             </Grid.Item>
           </Grid>
         </Section.Row>
