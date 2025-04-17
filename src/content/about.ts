@@ -14,11 +14,11 @@ export const aboutContent = {
     link: "View all core devs & researchers >",
   },
   section3: {
-    title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
+    title: "Funded by projects building on Ethereum",
     statsHeader: "Donation Stats"
   },
   funding: {
-    title: "Funded by projects building on Ethereum",
+    title: "Transparent and effective funding",
     statsHeader: "Distribution Stats"
   },
   organization: {
