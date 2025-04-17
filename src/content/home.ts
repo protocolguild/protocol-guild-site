@@ -31,7 +31,7 @@ export const homeContent = {
   cta: {
     title: "Fund your dependencies",
     subtitle1: "Taking the Protocol Guild Pledge isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
-    subtitle2: "Ethereum core devs and researchers are in high demand: they could probably earn significantly more doing something else. By donating your token, you allow these individuals to share in the value being created in the ecosystem, providing incentives to remain focused on shipping the scalability and security upgrades needed for your project to thrive."
+    subtitle2: "Ethereum core devs and researchers are in high demand: they could earn significantly more doing something else. By donating tokens, you allow them to share in the value being created in the ecosystem, incentivizing them to keep shipping the scalability and security upgrades needed for your project to thrive."
   },
   quotes: [
     {
