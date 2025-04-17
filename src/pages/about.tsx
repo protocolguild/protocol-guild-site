@@ -82,7 +82,7 @@ const About: FC = () => {
                   queryId="4992674" 
                   theme="light" 
                   title="Cumulative Amount Distributed"
-                  xAxisKey="time"
+                  xAxisKey="date"
                   yAxisKey="cumulative_historical_value"
                   formatCurrency
                   formatDate
