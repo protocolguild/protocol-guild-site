@@ -35,4 +35,3 @@ export const homeContent = {
     subtitle2: "Ethereum core devs and researchers are in high demand: they could probably earn significantly more doing something else. By donating your token, you allow these individuals to share in the value being created in the ecosystem, providing incentives to remain focused on shipping the scalability and security upgrades needed for your project to thrive."
   }
 }
-x
