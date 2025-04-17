@@ -5,11 +5,9 @@ export const homeContent = {
   },
   impact: {
     title: "Take the Protocol Guild Pledge",
-    quote: {
-      text1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
-      text2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
-      text3: "Protocol Guild Pledge announcement on Mirror >"
-    }
+    subtitle1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
+    subtitle2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
+    subtitle3: "Protocol Guild Pledge announcement on Mirror >"
   },
   mission: {
     title: "Our moonshot: Ethereum protocol maintenance, funded forever.",
