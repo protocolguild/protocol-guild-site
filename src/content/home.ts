@@ -4,10 +4,11 @@ export const homeContent = {
     subtitle: "Our goal is to create a sustainable and decentralized funding stream for Ethereum’s core protocol development, backed by the projects built on Ethereum."
   },
   impact: {
-    title: "Since 2022, Protocol Guild has distributed $28M directly to Ethereum core developers.",
+    title: "Take the Protocol Guild Pledge",
     quote: {
-      text: "I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.",
-      author: "Michael Sproul, Lighthouse"
+      text1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
+      text2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
+      text3: "Protocol Guild Pledge announcement on Mirror >"
     }
   },
   mission: {
