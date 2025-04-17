@@ -171,11 +171,6 @@ const Home: FC = () => {
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section4.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section4.subtitle1}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section4.subtitle2}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
-                <a href="https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng" target="_blank" rel="noopener noreferrer">
-                  {homeContent.section4.subtitle3}
-                </a>
-              </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <DonorSectionDark theme="dark" type="Partners" featured={true}/>
