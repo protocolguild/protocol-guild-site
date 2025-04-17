@@ -14,6 +14,7 @@
   import HeroLockup from '../components/HeroLockup'
   import DuneStat from '../components/DuneStat'
   import DuneChart from '../components/DuneChart'
+  import DuneTable from '../components/DuneTable'
   import MemberFaces from '../components/MemberFaces'
   import Repos from '../components/Repos'
   import DonorSectionDark2 from '../components/DonorSectionDark2'
