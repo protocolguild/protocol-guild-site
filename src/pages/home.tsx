@@ -115,7 +115,11 @@ const Home: FC = () => {
                   color="var(--white)"
                 />
               ))}
-            </Grid.Item>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">
+                <a href="https://protocol-guild.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer">
+                  {homeContent.mission.link}
+                </a>
+              </h2>            </Grid.Item>
           </Grid>
         </Section.Row>
       </Section>
