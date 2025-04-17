@@ -137,8 +137,8 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
       ) : type === 'Donors' ? (
         <div className="flex flex-col gap-8 w-full overflow-hidden group">
           <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--gray-dark)] via-[var(--gray-dark)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--gray-dark)] via-[var(--gray-dark)] to-transparent" />
+            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
+            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
             <div className="flex whitespace-nowrap min-w-max donor-scroll group-hover:animate-pause">
               {[...logos.slice(0, Math.ceil(logos.length / 2)), ...logos.slice(0, Math.ceil(logos.length / 2))].map((donor, index) => (
                 <a
@@ -158,8 +158,8 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
             </div>
           </div>
           <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--gray-dark)] via-[var(--gray-dark)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--gray-dark)] via-[var(--gray-dark)] to-transparent" />
+            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
+            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
             <div className="flex whitespace-nowrap min-w-max donor-scroll-reverse group-hover:animate-pause">
               {[...logos.slice(Math.ceil(logos.length / 2)), ...logos.slice(Math.ceil(logos.length / 2))].map((donor, index) => (
                 <a
