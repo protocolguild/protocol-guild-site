@@ -98,6 +98,11 @@ const About: FC = () => {
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section2.title}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section2.subtitle}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+                <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer">
+                  {homeContent.section2.link}
+                </a>
+              </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
             </Grid.Item>
