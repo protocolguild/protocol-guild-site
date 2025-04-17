@@ -183,17 +183,17 @@ const Home: FC = () => {
                 </a>
               </div>
               <DuneStat 
-                queryId="4872646" 
+                queryId="4876407" 
                 theme="light" 
-                title="Median Vesting per Member over Next 12 Months"
-                variableName="median_vesting_365_days"
+                title="Median Distributed per Member Last 12 Months"
+                variableName="yr_median_vested_hist"
                 type="currency"
               />
               <DuneStat 
-                queryId="4876407" 
+                queryId="4872646" 
                 theme="light" 
-                title="Total Amount Distributed by Protocol Guild"
-                variableName="total_vested_hist"
+                title="Median Vesting per Member Next 12 Months"
+                variableName="median_vesting_365_days"
                 type="currency"
               />
               <DuneChart 
