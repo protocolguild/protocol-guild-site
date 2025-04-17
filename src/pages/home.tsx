@@ -173,6 +173,13 @@ const Home: FC = () => {
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section4.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section4.subtitle1}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section4.subtitle2}</h2>
+              <DuneStat 
+                queryId="2665887" 
+                theme="light" 
+                title="Total Core Protocol Contributors"
+                variableName="total_count"
+                type="currency"
+              />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
