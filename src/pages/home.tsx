@@ -45,7 +45,6 @@ const Home: FC = () => {
               <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
                 {homeContent.hero.subtitle}
               </p>
-              <MemberFaces />
             </Grid.Item>
           </Grid>
         </Section.Row>
