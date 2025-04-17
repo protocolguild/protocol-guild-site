@@ -131,7 +131,7 @@
 
 .repos::after {
   bottom: 0;
-  background: linear-gradient(to bottom, white 0%, transparent 100%);
+  background: linear-gradient(to top, transparent 0%, white 100%);
 }
 
 .repos.expanded::before,
