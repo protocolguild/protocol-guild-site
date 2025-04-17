@@ -11,6 +11,21 @@ import { homeContent } from '../content/home'
 import chainsImage from '../assets/images/chains.png'
 
 const Home: FC = () => {
+
+  const [currentQuote, setCurrentQuote] = useState(0);
+
+  const nextQuote = () => {
+    setCurrentQuote((prev) => (prev + 1) % homepledgeContent.quotes.length);
+  };
+
+  const previousQuote = () => {
+    setCurrentQuote((prev) => (prev - 1 + homeContent.quotes.length) % homeContent.quotes.length);
+  };
+
+  const goToQuote = (index: number) => {
+    setCurrentQuote(index);
+  };
+
   return (
     <main>
       <Section background="white" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
@@ -100,9 +115,50 @@ const Home: FC = () => {
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle1}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle2}</h2>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col">
-              <DonorSection theme="light" type="Partners" featured={true} />
-              <DonorSection theme="light" type="Donors" />
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <div className="relative h-[280px]">
+                <div className="overflow-hidden absolute inset-0">
+                  <div 
+                    className="flex h-full transition-transform duration-500 ease-in-out" 
+                    style={{ transform: `translateX(-${currentQuote * 100}%)` }}
+                  >
+                    {homeContent.quotes.map((quote, index) => (
+                      <div key={index} className="min-w-full px-12 md:px-16">
+                        <h2 className="!text-[16px] md:!text-lg !font-normal !leading-[20px] md:!leading-[24px] !text-[var(--white)] italic">
+                          {quote.text} <span className="block mt-4">-{quote.author}</span>
+                        </h2>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <button 
+                  onClick={previousQuote} 
+                  className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-1 md:p-2 bg-white/20 rounded-full shadow hover:bg-white/50 transition-colors z-10 focus:outline-none border-none"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 md:w-6 md:h-6"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                
+                <button 
+                  onClick={nextQuote} 
+                  className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-1 md:p-2 bg-white/20 rounded-full shadow hover:bg-white/50 transition-colors z-10 focus:outline-none border-none"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 md:w-6 md:h-6"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+
+                <div className="flex justify-center gap-[8px] absolute -bottom-4 left-0 right-0">
+                  {homeContent.quotes.map((_quote, index: number) => (
+                    <button
+                      key={index}
+                      onClick={() => goToQuote(index)}
+                      className={`w-[16px] h-[16px] rounded-full transition-colors focus:outline-none p-0 ${
+                        currentQuote === index ? 'bg-[var(--brand-primary)]' : 'bg-gray-500'
+                      }`}
+                      aria-label={`Go to quote ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
             </Grid.Item>
           </Grid>
         </Section.Row>
