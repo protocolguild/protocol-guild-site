@@ -151,9 +151,7 @@ const About: FC = () => {
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-4">
-              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">
-                {aboutContent.organization.title}
-              </h2>
+              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.title}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.organization.description}</h2>
               <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Schedule Call</a>
             </Grid.Item>
