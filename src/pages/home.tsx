@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
-import DonorSection from '../components/DonorSection'
+import DonorSectionDark from '../components/DonorSectionDark'
 import Grid from '../components/Grid'
 import Navbar from '../components/Navbar'
 import DonorSection from '../components/DonorSection'
@@ -64,7 +64,7 @@ const Home: FC = () => {
               </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <DonorSection theme="dark" type="Partners" featured={true}/>
+              <DonorSectionDark theme="dark" type="Partners" featured={true}/>
             </Grid.Item>
           </Grid>
         </Section.Row>
