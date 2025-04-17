@@ -33,5 +33,19 @@ export const homeContent = {
     title: "Fund your dependencies",
     subtitle1: "Taking the Protocol Guild Pledge isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
     subtitle2: "Ethereum core devs and researchers are in high demand: they could probably earn significantly more doing something else. By donating your token, you allow these individuals to share in the value being created in the ecosystem, providing incentives to remain focused on shipping the scalability and security upgrades needed for your project to thrive."
-  }
+  },
+  quotes: [
+    {
+      text: "We've proudly committed 1% of our token supply to Protocol Guild, supporting their ongoing efforts in Ethereum's development. ProtocolGuild is a powerhouse of core Ethereum maintainers pushing the boundaries of what's possible on Ethereum. Their invaluable work and support formed the backbone of all existing projects in the Ethereum ecosystem.",
+      author: "John Smith, Imagine Protocol"
+    },
+    {
+      text: "Protocol Guild has been instrumental in ensuring the long-term sustainability of Ethereum core development. Their model of directly supporting individual contributors creates the right incentives for continued protocol maintenance.",
+      author: "Jane Doe, DeFi Project"
+    },
+    {
+      text: "The work that Protocol Guild does is essential for the entire ecosystem. We're proud to support their mission of making Ethereum development sustainable for the long term.",
+      author: "Mike Wilson, Blockchain Foundation"
+    }
+  ],  
 }
