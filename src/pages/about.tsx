@@ -152,13 +152,6 @@
                 <DuneStat 
                   queryId="2478156" 
                   theme="light" 
-                  title="Unique Donors"
-                  variableName="unique_donors"
-                  type="number"
-                />
-                <DuneStat 
-                  queryId="2478156" 
-                  theme="light" 
                   title="Total Donated - Initial value"
                   variableName="total_historical_value"
                   type="currency"
