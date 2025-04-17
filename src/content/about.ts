@@ -22,8 +22,7 @@ export const aboutContent = {
     },
   },
   funding: {
-    title: "Transparent and effective funding",
-    statsHeader: "Distribution Stats"
+    title: "Transparent and effective funding"
   },
   organization: {
     title: "About the organization.",
