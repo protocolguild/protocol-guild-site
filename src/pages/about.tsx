@@ -92,7 +92,7 @@ const About: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="white" divider="var(--gray-dark)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
@@ -128,7 +128,7 @@ const About: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="white" divider="var(--gray-dark)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
@@ -143,22 +143,7 @@ const About: FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
               </div>
-              <DuneStat 
-                queryId="4876407"
-                theme="light" 
-                title="Total Amount Distributed"
-                variableName="total_vested_hist"
-                type="currency"
-              />
-              <DuneChart 
-                  queryId="4992674" 
-                  theme="light" 
-                  title="Cumulative Amount Distributed"
-                  xAxisKey="date"
-                  yAxisKey="cumulative_historical_value"
-                  formatCurrency
-                  formatDate
-                />
+              <DuneTable queryId={pledgeContent.ecosystem.table.duneQueryId} theme="dark" />
             </Grid.Item>
           </Grid>
         </Section.Row>
