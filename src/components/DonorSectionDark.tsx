@@ -1,5 +1,5 @@
 // Component imports
-import pgIcon from '../assets/images/pg-icon.svg'
+import pgIcon from '../assets/images/pg-icon-dark.png'
 // 1% Partners
 import etherfiSvg from '../assets/images/donors/etherfi.svg'
 import etherfiWhiteSvg from '../assets/images/donors/etherfi-white.svg'
