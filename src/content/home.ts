@@ -30,8 +30,9 @@ export const homeContent = {
     ]
   },
   cta: {
-    title: "Funded by builders from all across the Ethereum ecosystem.",
-    buttonText: "Take the Pledge",
-    buttonLink: "/pledge"
+    title: "Fund your dependencies",
+    subtitle1: "Taking the Protocol Guild Pledge isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
+    subtitle1: "Ethereum core devs and researchers are in high demand: they could probably earn significantly more doing something else. By donating your token, you allow these individuals to share in the value being created in the ecosystem, providing incentives to remain focused on shipping the scalability and security upgrades needed for your project to thrive."
   }
 }
+x
