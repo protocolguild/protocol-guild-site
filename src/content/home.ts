@@ -47,5 +47,11 @@ export const homeContent = {
       text: "The work that Protocol Guild does is essential for the entire ecosystem. We're proud to support their mission of making Ethereum development sustainable for the long term.",
       author: "Mike Wilson, Blockchain Foundation"
     }
-  ],  
+  ],
+  section4: {
+    title: "Take the Protocol Guild Pledge",
+    subtitle1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
+    subtitle2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
+    subtitle3: "Protocol Guild Pledge announcement on Mirror >"
+  }
 }
