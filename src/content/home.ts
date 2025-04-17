@@ -13,6 +13,7 @@ export const homeContent = {
     title: "The most effective way to fund Ethereum's future",
     subtitle1: "Having a stable core protocol contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem.",
     subtitle2: "We distribute all tokens directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
+    link: "Learn more in our docs >",
     features: [
       {
         title: "Quarterly Curation",
@@ -24,9 +25,7 @@ export const homeContent = {
       },
       {
         title: "Neutral Distribution",
-        description: "Vested tokens are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
-        link: "Learn more in our docs >"
-      }
+        description: "Vested tokens are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions."      }
     ]
   },
   cta: {
