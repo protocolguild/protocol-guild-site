@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
-import Repos from '../components/Repos'
+import DonorSection from '../components/DonorSection'
 import Grid from '../components/Grid'
 import Navbar from '../components/Navbar'
 import DonorSection from '../components/DonorSection'
@@ -64,7 +64,7 @@ const Home: FC = () => {
               </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <Repos />
+              <DonorSection theme="light" type="Partners" featured={true}/>
             </Grid.Item>
           </Grid>
         </Section.Row>
