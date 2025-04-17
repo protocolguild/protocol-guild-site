@@ -16,7 +16,7 @@
   import DuneChart from '../components/DuneChart'
   import MemberFaces from '../components/MemberFaces'
   import Repos from '../components/Repos'
-  import DonorSection from '../components/DonorSection'
+  import DonorSectionDark from '../components/DonorSectionDark'
   
   const About: FC = () => {
   
@@ -120,6 +120,7 @@
             <Grid columns={12} className="py-16">
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
+                <DonorSectionDark theme="dark" type="Partners" featured={true}/>
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
               </Grid.Item>
