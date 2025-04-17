@@ -101,7 +101,6 @@ const About: FC = () => {
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
-                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section2.statsHeader}</p>
                 <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
                   View on Dune
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -137,7 +136,6 @@ const About: FC = () => {
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
-                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section3.statsHeader}</p>
                 <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
                   View on Dune
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
