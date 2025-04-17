@@ -126,12 +126,12 @@
 
 .repos::before {
   top: 0;
-  background: linear-gradient(to bottom, var(--gray-light) 0%, transparent 100%);
+  background: none;
 }
 
 .repos::after {
   bottom: 0;
-  background: linear-gradient(to top, var(--gray-light) 0%, transparent 100%);
+  background: none;
 }
 
 .repos.expanded::before,
