@@ -72,25 +72,18 @@ const About: FC = () => {
                 </a>
               </div>
               <DuneStat 
-                queryId="4876407" 
+                queryId="4876407"
                 theme="light" 
-                title="Median Distributed per Dev Last 12 Months"
-                variableName="yr_median_vested_hist"
-                type="currency"
-              />
-              <DuneStat 
-                queryId="4872646" 
-                theme="light" 
-                title="Expected Median Distribution per Dev Next 12 Months"
-                variableName="median_vesting_365_days"
+                title="Total Amount Distributed"
+                variableName="total_vested_hist"
                 type="currency"
               />
               <DuneChart 
-                  queryId="3851797" 
+                  queryId="4992674" 
                   theme="light" 
-                  title="Total Vesting History + Forecast"
-                  xAxisKey="date"
-                  yAxisKey="total_vesting"
+                  title="Cumulative Amount Distributed"
+                  xAxisKey="time"
+                  yAxisKey="cumulative_historical_value"
                   formatCurrency
                   formatDate
                 />
