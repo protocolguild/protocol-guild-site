@@ -119,19 +119,19 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 0;
   pointer-events: none;
   z-index: 1;
 }
 
 .repos::before {
   top: 0;
-  background: linear-gradient(to bottom, white 0%, transparent 100%); /* Fade to white */
+  background: linear-gradient(to bottom, white 0%, transparent 100%);
 }
 
 .repos::after {
   bottom: 0;
-  background: linear-gradient(to top, white 100%, transparent 0%); /* Fade to white */
+  background: linear-gradient(to top, white 100%, transparent 0%);
 }
 
 .repos.expanded::before,
