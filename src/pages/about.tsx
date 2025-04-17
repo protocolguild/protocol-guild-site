@@ -180,6 +180,20 @@
                   </a>
                 </div>
                 <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Total Donated - Initial value"
+                  variableName="total_historical_value"
+                  type="currency"
+                />
+                <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Total Donation - Current Value"
+                  variableName="total_current_value"
+                  type="currency"
+                />
+                <DuneStat 
                   queryId="4872646" 
                   theme="light" 
                   title="Total Amount Vesting"
