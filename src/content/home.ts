@@ -12,7 +12,7 @@ export const homeContent = {
   mission: {
     title: "The most effective way to fund Ethereum's future",
     subtitle1: "Having a stable contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem.",
-    subtitle2: "We distribute all donations directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
+    subtitle2: "We distribute all tokens directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
     features: [
       {
         title: "Quarterly Curation",
