@@ -45,14 +45,6 @@ const Repos: FC = () => {
           {showAll ? repoData.map(renderRow) : [...repoData, ...repoData].map(renderRow)}
         </div>
       </div>
-      <div className="flex">
-        <button 
-          className="bg-[var(--gray-dark)] text-[var(--white)] hover:opacity-80 transition-opacity duration-200 text-[15px] leading-[19px] mt-3 px-4 py-2 rounded focus:outline-none"
-          onClick={() => setShowAll(!showAll)}
-        >
-          {showAll ? 'Hide full list' : `Show all ${repoData.length} repos  `}
-        </button>
-      </div>
     </div>
   )
 }
