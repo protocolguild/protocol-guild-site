@@ -3,27 +3,9 @@ export const aboutContent = {
     title: "Securing the future of Ethereum core development",
     subtitle: "Protocol Guild is the leading independent organization addressing sustainable funding for Ethereum’s core protocol development."
   },
-  impactAreas: {
-    title: "Our impact areas.",
-    subtitle: "Protocol Guild funds core work across the entire span of Ethereum core development.",
-    areas: [
-      {
-        title: "Research",
-        description: "R&D to improve Ethereum's security, scalability, and efficiency."
-      },
-      {
-        title: "EIPs",
-        description: "Chain upgrades and protocol hard forks."
-      },
-      {
-        title: "Maintenance",
-        description: "Critical bug fixes, security patches, and network upkeep."
-      },
-      {
-        title: "Development",
-        description: "New features and infrastructure improvements for the Ethereum network."
-      }
-    ]
+  section1: {
+    title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
+    subtitle: "We collect donations from projects building on Ethereum, to distribute directly to Ethereum’s active core protocol contributors, vested over 4 years.",
   },
   organization: {
     title: "About the organization.",
