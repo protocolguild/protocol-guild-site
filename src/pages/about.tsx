@@ -92,12 +92,83 @@ const About: FC = () => {
         </Section.Row>
       </Section>
 
+      <Section background="white" divider="var(--gray-dark)">
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section2.title}</h2>
+              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section2.subtitle}</h2>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <div className="w-full flex flex-row justify-between items-center">
+                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section2.statsHeader}</p>
+                <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
+                  View on Dune
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+              <DuneStat 
+                queryId="4876407"
+                theme="light" 
+                title="Total Amount Distributed"
+                variableName="total_vested_hist"
+                type="currency"
+              />
+              <DuneChart 
+                  queryId="4992674" 
+                  theme="light" 
+                  title="Cumulative Amount Distributed"
+                  xAxisKey="date"
+                  yAxisKey="cumulative_historical_value"
+                  formatCurrency
+                  formatDate
+                />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+      <Section background="white" divider="var(--gray-dark)">
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
+              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section3.subtitle}</h2>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <div className="w-full flex flex-row justify-between items-center">
+                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section3.statsHeader}</p>
+                <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
+                  View on Dune
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+              <DuneStat 
+                queryId="4876407"
+                theme="light" 
+                title="Total Amount Distributed"
+                variableName="total_vested_hist"
+                type="currency"
+              />
+              <DuneChart 
+                  queryId="4992674" 
+                  theme="light" 
+                  title="Cumulative Amount Distributed"
+                  xAxisKey="date"
+                  yAxisKey="cumulative_historical_value"
+                  formatCurrency
+                  formatDate
+                />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
       <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funding.title}</h2>
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funding.description}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
