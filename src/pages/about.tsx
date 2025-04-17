@@ -109,6 +109,7 @@
                 </h2>
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
+                <Repos />
               </Grid.Item>
             </Grid>
           </Section.Row>
