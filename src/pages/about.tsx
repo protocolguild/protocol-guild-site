@@ -14,6 +14,9 @@ import chainsImage from '../assets/images/chains.png'
 import HeroLockup from '../components/HeroLockup'
 import DuneStat from '../components/DuneStat'
 import DuneChart from '../components/DuneChart'
+import MemberFaces from '../components/MemberFaces'
+import Repos from '../components/Repos'
+import DonorSection from '../components/DonorSection'
 
 const About: FC = () => {
 
@@ -99,6 +102,7 @@ const About: FC = () => {
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section2.title}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section2.subtitle}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+              <MemberFaces />
                 <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer">
                   {aboutContent.section2.link}
                 </a>
