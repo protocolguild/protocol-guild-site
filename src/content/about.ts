@@ -48,6 +48,6 @@ export const aboutContent = {
           twitter: "https://x.com/timbeiko"
         }
       ]
-    },
+    }
   }
 }
