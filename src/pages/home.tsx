@@ -100,11 +100,6 @@ const Home: FC = () => {
                 variableName="total_count"
                 type="number"
               />
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">
-                <a href="https://protocol-guild.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer">
-                  {homeContent.mission.link}
-                </a>
-              </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               {homeContent.mission.features.map((feature, index) => (
