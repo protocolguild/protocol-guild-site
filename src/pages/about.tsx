@@ -126,11 +126,26 @@
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <div className="w-full flex flex-row justify-between items-center">
-                  <p className="text-[var(--white)] text-base sm:text-sm">{homeContent.ssection3.table.title}</p>
+                  <p className="text-[var(--white)] text-base sm:text-sm">{pledgeContent.ecosystem.table.title}</p>
                   <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                     <span className="text-[var(--white)] text-base sm:text-sm">View on Dune</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                   </a>
+                </div>
+                <DuneTable queryId={pledgeContent.ecosystem.table.duneQueryId} theme="dark" />
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+                  <DuneStat
+                    title={pledgeContent.ecosystem.stats[0].title}
+                    variableName={pledgeContent.ecosystem.stats[0].variableName}
+                    queryId={pledgeContent.ecosystem.stats[0].queryId}
+                    theme="dark"
+                  />
+                  <DuneStat
+                    title={pledgeContent.ecosystem.stats[1].title}
+                    variableName={pledgeContent.ecosystem.stats[1].variableName}
+                    queryId={pledgeContent.ecosystem.stats[1].queryId}
+                    theme="dark"
+                  />
                 </div>
               </Grid.Item>
             </Grid>
