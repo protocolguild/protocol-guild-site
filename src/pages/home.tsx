@@ -206,15 +206,6 @@ const Home: FC = () => {
                 variableName="median_vesting_365_days"
                 type="currency"
               />
-              <DuneChart 
-                  queryId="3851797" 
-                  theme="light" 
-                  title="Total Vesting History + Forecast"
-                  xAxisKey="date"
-                  yAxisKey="total_vesting"
-                  formatCurrency
-                  formatDate
-                />
             </Grid.Item>
           </Grid>
         </Section.Row>
