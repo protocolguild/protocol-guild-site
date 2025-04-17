@@ -104,6 +104,18 @@ const About: FC = () => {
           </Grid>
         </Section.Row>
       </Section>
+
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-6">
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
       
       <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
