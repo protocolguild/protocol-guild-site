@@ -55,9 +55,13 @@ const Home: FC = () => {
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.impact.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.quote.text1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.quote.text2}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.quote.text3}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+                <a href="https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng" target="_blank" rel="noopener noreferrer">
+                  {homeContent.impact.subtitle1}
+                </a>
+              </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <Repos />
