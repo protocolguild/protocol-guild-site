@@ -70,7 +70,7 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="gray-dark-mid" divider="var(--brand-primary)" line={true}>
+      <Section background="gray-mid" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start" >
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
@@ -79,7 +79,7 @@ const Home: FC = () => {
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.mission.subtitle2}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              {homeContent.value.features.map((feature, index) => (
+              {homeContent.mission.features.map((feature, index) => (
                 <FeatureCard
                   key={index}
                   title={feature.title}
