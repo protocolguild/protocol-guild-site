@@ -142,6 +142,34 @@
             <Grid columns={12} className="py-16">
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funding.title}</h2>
+                <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Total Donations"
+                  variableName="total_donors"
+                  type="number"
+                />
+                <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Unique Donors"
+                  variableName="unique_donors"
+                  type="number"
+                />
+                <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Median Donation"
+                  variableName="median_donation"
+                  type="currency"
+                />
+                <DuneStat 
+                  queryId="2478156" 
+                  theme="light" 
+                  title="Average Donation"
+                  variableName="avg_donation"
+                  type="currency"
+                />
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <div className="w-full flex flex-row justify-between items-center">
