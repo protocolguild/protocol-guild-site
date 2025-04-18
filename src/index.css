@@ -113,3 +113,46 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Custom Scrollbar Styles */
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color for light theme */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color for light theme */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover for light theme */
+}
+
+/* For dark theme */
+.dark-theme ::-webkit-scrollbar-track {
+  background: #222222; /* Track color for dark theme */
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+  background: #444; /* Thumb color for dark theme */
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background: #666; /* Thumb color on hover for dark theme */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color for light theme */
+}
+
+/* Dark theme styles for Firefox */
+.dark-theme .scrollbar {
+  scrollbar-color: #444 #222222; /* Thumb color and track color for dark theme */
+}
