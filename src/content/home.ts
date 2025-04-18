@@ -1,6 +1,6 @@
 export const homeContent = {
   hero: {
-    title: "Join us in supporting the future of Ethereum",
+    title: "Join us in supporting the future of Ethereum's core protocol",
     subtitle: "Our goal is to create a sustainable and decentralized funding stream for Ethereum’s core protocol development, backed by the projects built on Ethereum."
   },
   section1: {
