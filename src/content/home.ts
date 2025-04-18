@@ -21,7 +21,7 @@ export const homeContent = {
       },
       {
         title: "Trustless Vesting",
-        description: "All donations are vested linearly over 4 years via immutable contracts, directly to everyone in the registry."
+        description: "All tokens are vested linearly over 4 years via immutable contracts, directly to everyone in the registry."
       },
       {
         title: "Neutral Distribution",
