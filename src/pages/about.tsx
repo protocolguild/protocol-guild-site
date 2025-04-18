@@ -78,7 +78,6 @@
                 <DuneChart 
                     queryId="5001629" 
                     theme="light" 
-                    title="Cumulative Amount Distributed"
                     xAxisKey="date"
                     yAxisKey="cumulative_historical_value"
                     formatCurrency
