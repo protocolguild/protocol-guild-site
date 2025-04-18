@@ -96,7 +96,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
     }
     switch (columnLower) {
       case 'donor_name':
-        return 'w-[320px] min-w-[160px] max-w-[320px] truncate'
+        return 'w-[160px] min-w-[160px] max-w-[320px] truncate'
       case 'n':
         return 'w-[50px] min-w-[50px] max-w-[50px]'
       case '1%':
