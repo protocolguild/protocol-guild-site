@@ -135,7 +135,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
 
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm overflow-hidden`}>
-      <div className="max-h-[600px] overflow-auto relative scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-[#222222]">
+      <div className={`max-h-[600px] overflow-auto relative scrollbar-thin ${theme === 'dark' ? 'scrollbar-thumb-gray-400 scrollbar-track-[#222222]' : 'scrollbar-thumb-gray-300 scrollbar-track-gray-200'}`}>        
         <table className="w-full table-fixed border-collapse">
           <colgroup>
             {visibleColumns.map((column, index) => (
