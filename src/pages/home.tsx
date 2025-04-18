@@ -102,7 +102,7 @@ const Home: FC = () => {
                 queryId="2665887" 
                 theme="light" 
                 title="Total Core Protocol Contributors"
-                suffix=" Core Protocol Contributors"
+                suffix="individuals"
                 variableName="total_count"
                 type="number"
               />
@@ -207,14 +207,16 @@ const Home: FC = () => {
               <DuneStat 
                 queryId="4876407" 
                 theme="light" 
-                title="Median Distributed per Dev Last 12 Months"
+                title="Median Distributed Last 12 Months"
+                suffix="/ contributor"
                 variableName="yr_median_vested_hist"
                 type="currency"
               />
               <DuneStat 
                 queryId="4872646" 
                 theme="light" 
-                title="Expected Median Distribution per Dev Next 12 Months"
+                title="Expected Median Distribution Next 12 Months"
+                suffix="/ contributor"
                 variableName="median_vesting_365_days"
                 type="currency"
               />
