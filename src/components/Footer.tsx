@@ -22,11 +22,11 @@ const Footer: FC = () => {
                   <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     ABOUT
                   </Link>
-                  <a 
-                    href="mailto:contact@protocolguild.org" 
-                    className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity"
-                  >
-                    CONTACT
+                  <a href="https://calendly.com/vecchiarelli-peter/30min" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    CALL
+                  </a>
+                  <a href="mailto:contact@protocolguild.org" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    EMAIL
                   </a>
                 </nav>
               </div>
