@@ -180,7 +180,7 @@
                 <DuneStat 
                   queryId="4872646" 
                   theme="light" 
-                  title="Total Amount Vesting"
+                  title="Total Amount Vesting (4 Years)"
                   variableName="total_vesting"
                   type="currency"
                 />
