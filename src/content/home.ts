@@ -1,12 +1,12 @@
 export const homeContent = {
   hero: {
     title: "Join us in securing the future of Ethereum's core protocol",
-    subtitle: "Our goal is to create sustainable and decentralized funding for Ethereum’s core protocol development, backed by projects building on Ethereum."
+    subtitle: "Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol development, backed by projects building on Ethereum."
   },
   section1: {
     title: "Take the Protocol Guild Pledge",
-    subtitle1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
-    subtitle2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
+    subtitle1: "Imagine if every project building on Ethereum contributed 1% of their token supply to fund the core protocol work they depend on?",
+    subtitle2: "You don’t need to imagine—join some of the leading projects in the ecosystem that have already taken the pledge!",
     link: "Protocol Guild Pledge announcement on Mirror"
   },
   section2: {
@@ -32,7 +32,7 @@ export const homeContent = {
   section3: {
     title: "Fund your dependencies",
     subtitle1: "Taking the Protocol Guild Pledge isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
-    subtitle2: "Ethereum core devs and researchers are in high demand: they could earn significantly more doing something else. By donating tokens, you allow them to share in the value being created in the ecosystem, incentivizing them to keep shipping the scalability and security upgrades needed for your project to thrive."
+    subtitle2: "Ethereum core devs and researchers are in high demand: they could earn significantly more elsewhere. By donating tokens, you allow them to share in the value created in the ecosystem, incentivizing them to continue delivering the scalability and security upgrades essential for your project's success."
   },
   quotes: [
     {
@@ -50,13 +50,13 @@ export const homeContent = {
   ],
   section4: {
     title: "It takes a village",
-    subtitle1: "If we want the funding distributed via Protocol Guild to be enough to onboard and retain Ethereum’s core protocol contributors over the long term - and in the worst case, be a funder of last resort - then we still need to increase our funding by orders of magnitude.",
+    subtitle1: "To ensure that the funding distributed via Protocol Guild is sufficient to onboard and retain Ethereum’s core protocol contributors over the long term—and, in the worst case, serve as a funder of last resort—we need to significantly increase our funding.",
     subtitle2: "We can only do this with buy-in from the majority of projects in the ecosystem.",
     statsHeader: "Distribution Stats"
   },
   section5: {
     title: "How to Pledge?",
     subtitle1: "Taking the Protocol Guild Pledge couldn’t be more simple: just announce it publicly! You can even do so before you have a token.",
-    subtitle2: "Still have questions? We’d love to chat with you!"
+    subtitle2: "Have questions? We’d love to chat with you!"
   }
 }
