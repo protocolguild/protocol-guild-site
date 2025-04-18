@@ -23,7 +23,7 @@ const Footer: FC = () => {
                     ABOUT
                   </Link>
                   <a 
-                    href="mailto:protocolguild@gmail.com" 
+                    href="mailto:contact@protocolguild.org" 
                     className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity"
                   >
                     CONTACT
