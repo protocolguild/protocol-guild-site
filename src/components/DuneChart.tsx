@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+
 interface DuneChartProps {
   queryId: string
   theme?: 'light' | 'dark'
@@ -10,8 +11,6 @@ interface DuneChartProps {
   formatCurrency?: boolean
   formatDate?: boolean
 }
-
-
 
 interface DuneData {
   result: {
@@ -56,7 +55,7 @@ const formatNumber = (value: number | string) => {
 }
 
 const formatCurrencyValue = (value: number | string) => {
-  return `$${formatNumber(value)}`
+  return `${formatNumber(value)}`
 }
 
 const DuneChart: FC<DuneChartProps> = ({
@@ -160,11 +159,32 @@ const DuneChart: FC<DuneChartProps> = ({
     fetchData()
   }, [queryId])
 
-  if (loading || error || !data?.result?.rows?.length) {
+  // Render loading state, error message, or the chart
+  if (loading) {
     return (
       <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
         <div className="h-4 w-1/3 mb-4 rounded animate-shimmer"></div>
         <div className="h-[200px] rounded animate-shimmer"></div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
+        <h3 className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'} mb-2`}>
+          Error: {error}
+        </h3>
+      </div>
+    )
+  }
+
+  if (!data?.result?.rows?.length) {
+    return (
+      <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
+        <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
+          No data available
+        </h3>
       </div>
     )
   }
@@ -207,7 +227,6 @@ const DuneChart: FC<DuneChartProps> = ({
               axisLine={false}
               interval="preserveStartEnd"
               dy={8}
-              // Use category type to ensure consistent rendering across browsers
               type="category"
             />
             <YAxis 
