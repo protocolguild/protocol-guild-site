@@ -5,7 +5,7 @@ export const aboutContent = {
   },
   section1: {
     title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
-    subtitle: "We collect donations from projects building on Ethereum, to distribute directly to Ethereum’s active core protocol contributors, vested over 4 years.",
+    subtitle: "We collect tokens from projects building on Ethereum, to distribute directly to Ethereum’s active core protocol contributors, vested over 4 years.",
     statsHeader: "Cumulative Amount Distributed"
   },
   section2: {
