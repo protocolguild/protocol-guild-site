@@ -51,7 +51,7 @@ export const homeContent = {
   section4: {
     title: "It takes a village",
     subtitle1: "To ensure that the funding distributed via Protocol Guild is sufficient to onboard and retain Ethereum’s core protocol contributors over the long term—and, in the worst case, serve as a funder of last resort—we need to significantly increase our funding.",
-    subtitle2: "We can only do this with buy-in from the majority of projects in the ecosystem.",
+    subtitle2: "We can only achieve this with buy-in from the majority of projects in our ecosystem.",
     statsHeader: "Distribution Stats"
   },
   section5: {
