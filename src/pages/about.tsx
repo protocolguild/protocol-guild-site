@@ -66,13 +66,6 @@
               <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
                 <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section1.title}</h2>
                 <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section1.subtitle}</h2>
-                <DuneStat 
-                  queryId="4876407"
-                  theme="light" 
-                  title="Total Amount Distributed"
-                  variableName="total_vested_hist"
-                  type="currency"
-                />
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <div className="w-full flex flex-row justify-between items-center">
