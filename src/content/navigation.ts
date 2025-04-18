@@ -6,7 +6,7 @@ export const navigation = {
   ],
   footer: {
     contact: {
-      email: "protocolguild@gmail.com",
+      email: "contact@protocolguild.org",
       twitter: "https://x.com/ProtocolGuild"
     }
   }
