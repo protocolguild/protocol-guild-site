@@ -114,7 +114,7 @@ const DuneStat: FC<DuneStatProps> = ({ queryId, theme = 'light', title, variable
       </h3>
       <div className={`text-2xl md:text-3xl font-medium ${theme === 'dark' ? 'text-white' : 'text-[var(--gray-dark)]'}`}>
         {formattedValue} {/* Display the formatted value */}
-        {suffix && <span className="text-sm text-gray-500 ml-1">{suffix}</span>} {/* Display the suffix with smaller font size */}
+        {suffix && <span className="text-base text-gray-500 ml-1">{suffix}</span>} {/* Adjusted to text-base for larger suffix */}
       </div>
     </div>
   )
