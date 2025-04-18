@@ -15,9 +15,9 @@ export const aboutContent = {
   },
   section3: {
     title: "Funded by projects building on Ethereum",
-    statsHeader: "Donor Leadernboard",
+    statsHeader: "Donor Leadernboard by Currently Vesting",
     table: {
-      title: "Donor Leaderboard",
+      title: "Donor Leaderboard by Currently Vesting",
       duneQueryId: "4561127"
     },
   },
