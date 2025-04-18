@@ -129,9 +129,9 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   )
   if (!data?.result) return null
 
-  // Limit to first 25 rows and filter out vesting_value column
+  // Limit to first 25 rows and filter out vested_value and total_value column
   const rows = data.result.rows.slice(0, 25)
-  const visibleColumns = data.result.metadata.column_names.filter(col => col !== 'vesting_value')
+  const visibleColumns = data.result.metadata.column_names.filter(col => col !== 'vested_value' && col !== 'total_value')
 
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm overflow-hidden`}>
