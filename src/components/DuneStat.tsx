@@ -7,6 +7,7 @@ interface DuneStatProps {
   variableName: string
   type?: 'currency' | 'number'
   formatValue?: (value: any) => string
+  suffix?: string // New prop for suffix
 }
 
 interface DuneData {
@@ -28,7 +29,7 @@ const formatNumber = (value: number | string, type?: 'currency' | 'number') => {
   }).format(num)
 }
 
-const DuneStat: FC<DuneStatProps> = ({ queryId, theme = 'light', title, variableName, type = 'number', formatValue }) => {
+const DuneStat: FC<DuneStatProps> = ({ queryId, theme = 'light', title, variableName, type = 'number', formatValue, suffix }) => {
   const [data, setData] = useState<DuneData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
@@ -102,16 +103,20 @@ const DuneStat: FC<DuneStatProps> = ({ queryId, theme = 'light', title, variable
     )
   }
 
+  // Format the value and append the suffix
+  const formattedValue = formatValue ? formatValue(value) : formatNumber(value, type);
+  const displayValue = suffix ? `${formattedValue} ${suffix}` : formattedValue;
+
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
       <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
         {title}
       </h3>
       <div className={`text-2xl md:text-3xl font-medium ${theme === 'dark' ? 'text-white' : 'text-[var(--gray-dark)]'}`}>
-        {formatValue ? formatValue(value) : formatNumber(value, type)}
+        {displayValue} {/* Display the formatted value with the suffix */}
       </div>
     </div>
   )
 }
 
-export default DuneStat
+export default DuneStat;
