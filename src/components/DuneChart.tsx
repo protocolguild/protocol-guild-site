@@ -55,7 +55,7 @@ const formatNumber = (value: number | string) => {
 }
 
 const formatCurrencyValue = (value: number | string) => {
-  return `${formatNumber(value)}`
+  return `$${formatNumber(value)}`
 }
 
 const DuneChart: FC<DuneChartProps> = ({
