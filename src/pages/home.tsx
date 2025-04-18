@@ -134,9 +134,9 @@ const Home: FC = () => {
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">{homeContent.cta.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.cta.subtitle2}</h2>
+              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">{homeContent.section3.title}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section3.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section3.subtitle2}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="relative h-[280px]">
