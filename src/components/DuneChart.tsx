@@ -26,18 +26,12 @@ interface DuneData {
 }
 
 const formatDateString = (dateStr: string) => {
-  let date: Date;
-  
-  // Handle "2026-09-16 00:00:00" format
-  if (dateStr.includes(':')) {
-    date = new Date(dateStr);
-  } 
-  // Handle "23-Nov-2023" format
-  else {
-    const [day, month, year] = dateStr.split('-');
-    date = new Date(`${month} ${day} ${year}`);
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) {
+    console.error('Invalid date:', dateStr);
+    return 'Invalid Date';
   }
-
+  
   const month = date.toLocaleString('en-US', { month: 'short' });
   const year = date.getFullYear().toString().slice(-2);
   return `${month} ${year}`;
