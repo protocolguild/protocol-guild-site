@@ -83,6 +83,15 @@
                   type="currency"
                 />
                 <DuneChart 
+                    queryId="3610299" 
+                    theme="light" 
+                    title="Cumulative Amount Distributed"
+                    xAxisKey="time"
+                    yAxisKey="cumulative_value"
+                    formatCurrency
+                    formatDate
+                  />
+                <DuneChart 
                     queryId="4992674" 
                     theme="light" 
                     title="Cumulative Amount Distributed"
