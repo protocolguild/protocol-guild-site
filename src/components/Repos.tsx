@@ -38,7 +38,7 @@ const Repos: FC = () => {
 
   return (
     <div className="repos-container">
-      <div className="repos-header">{`189 developers, ${repoData.length} core repositories, 1 Ethereum protocol.`}</div>
+      <div className="repos-header">{`188 contributors, ${repoData.length} core repositories, 1 Ethereum protocol`}</div>
       <div className="repos-divider"></div>
       <div className={`repos ${showAll ? 'expanded' : ''}`}>
         <div className={`repos-scroll-container ${showAll ? 'paused' : ''}`}>
