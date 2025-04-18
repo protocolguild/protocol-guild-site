@@ -52,7 +52,7 @@ export const homeContent = {
     title: "It takes a village",
     subtitle1: "If we want the funding distributed via Protocol Guild to be enough to onboard and retain Ethereum’s core protocol contributors over the long term - and in the worst case, be a funder of last resort - then we still need to increase our funding by orders of magnitude.",
     subtitle2: "We can only do this with buy-in from the majority of projects in the ecosystem.",
-    statsHeader: "Distribution + Vesting Stats"
+    statsHeader: "Distribution Stats"
   },
   section5: {
     title: "How to Pledge?",
