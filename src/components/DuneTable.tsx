@@ -96,7 +96,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
     }
     switch (columnLower) {
       case 'donor_name':
-        return 'w-[160px] min-w-[160px] max-w-[320px] truncate'
+        return 'min-w-[160px] max-w-[320px] truncate'
       case 'n':
         return 'w-[50px] min-w-[50px] max-w-[50px]'
       case '1%':
@@ -136,7 +136,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm overflow-hidden`}>
       <div className={`max-h-[600px] overflow-auto relative scrollbar-thin ${theme === 'dark' ? 'scrollbar-thumb-gray-400 scrollbar-track-[#222222]' : 'scrollbar-thumb-gray-300 scrollbar-track-gray-200'}`}>        
-        <table className="w-full table-fixed border-collapse">
+        <table className="w-full table-auto border-collapse">
           <colgroup>
             {visibleColumns.map((column, index) => (
               <col key={index} className={getColumnWidth(column, index === visibleColumns.length - 1)} />
