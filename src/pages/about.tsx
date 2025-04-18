@@ -177,7 +177,7 @@
                   type="currency"
                 />
                 <DuneChart 
-                    queryId="3851797" 
+                    queryId="5001842" 
                     theme="light" 
                     title="Vesting Forecast"
                     xAxisKey="date"
