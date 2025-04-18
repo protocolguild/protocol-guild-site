@@ -1,11 +1,11 @@
 export const aboutContent = {
   hero: {
     title: "Securing the future of Ethereum core development",
-    subtitle: "Protocol Guild is the leading independent organization addressing sustainable funding for Ethereum’s core protocol development."
+    subtitle: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development."
   },
   section1: {
     title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
-    subtitle: "We receive tokens from projects building on Ethereum, to distribute directly to Ethereum’s active core protocol contributors, vested over 4 years.",
+    subtitle: "We receive tokens from projects building on Ethereum and distribute them directly to active core protocol contributors, vested over four years.",
     statsHeader: "Cumulative Amount Distributed"
   },
   section2: {
@@ -26,7 +26,7 @@ export const aboutContent = {
   },
   organization: {
     title: "About the organization",
-    description: "Protocol Guild is a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about making a donation or Protocol Guild generally please reach out!",
+    description: "Protocol Guild is a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
     team: {
       title: "Operating Team",
       members: [
