@@ -92,7 +92,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   const getColumnWidth = (column: string, isLastColumn: boolean) => {
     const columnLower = column.toLowerCase()
     if (isLastColumn) {
-      return 'w-full min-w-[120px]'
+      return 'w-[120px] min-w-[120px]'
     }
     switch (columnLower) {
       case 'donor_name':
