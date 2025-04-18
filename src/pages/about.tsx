@@ -130,7 +130,6 @@
                 </div>
                 <DuneTable 
                     queryId="4561127"
-                    title="Donor Leaderboard by Currently Vesting"
                     theme="light"
                   />
               </Grid.Item>
