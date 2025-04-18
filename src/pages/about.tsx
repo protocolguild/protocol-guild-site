@@ -66,6 +66,13 @@
               <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
                 <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section1.title}</h2>
                 <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section1.subtitle}</h2>
+                <DuneStat 
+                  queryId="4876407"
+                  theme="light" 
+                  title="Total Amount Distributed"
+                  variableName="total_vested_hist"
+                  type="currency"
+                />
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
                 <div className="w-full flex flex-row justify-between items-center">
@@ -75,13 +82,6 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                   </a>
                 </div>
-                <DuneStat 
-                  queryId="4876407"
-                  theme="light" 
-                  title="Total Amount Distributed"
-                  variableName="total_vested_hist"
-                  type="currency"
-                />
                 <DuneChart 
                     queryId="5001629" 
                     theme="light" 
