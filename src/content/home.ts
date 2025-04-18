@@ -3,7 +3,7 @@ export const homeContent = {
     title: "Join us in supporting the future of Ethereum",
     subtitle: "Our goal is to create a sustainable and decentralized funding stream for Ethereum’s core protocol development, backed by the projects built on Ethereum."
   },
-  impact: {
+  section1: {
     title: "Take the Protocol Guild Pledge",
     subtitle1: "What if every project building on Ethereum contributed 1% of their token supply to help fund the core protocol work they depend on?",
     subtitle2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
