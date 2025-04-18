@@ -9,7 +9,7 @@ export const homeContent = {
     subtitle2: "You don’t have to imagine it—join some of the biggest projects in the ecosystem that have already taken the pledge!",
     link: "Protocol Guild Pledge announcement on Mirror"
   },
-  mission: {
+  section2: {
     title: "The most effective way to fund Ethereum's future",
     subtitle1: "Having a stable core protocol contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem.",
     subtitle2: "We distribute all tokens directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
