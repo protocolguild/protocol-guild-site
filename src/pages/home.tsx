@@ -102,6 +102,7 @@ const Home: FC = () => {
                 queryId="2665887" 
                 theme="light" 
                 title="Total Core Protocol Contributors"
+                suffix=" Core Protocol Contributors"
                 variableName="total_count"
                 type="number"
               />
