@@ -15,7 +15,7 @@ export const aboutContent = {
   },
   section3: {
     title: "Funded by projects building on Ethereum",
-    statsHeader: "Donor Leadernboard by Currently Vesting"
+    tableHeader: "Donor Leadernboard by Currently Vesting"
   },
   funding: {
     title: "Transparent and effective funding"
