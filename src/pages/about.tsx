@@ -164,7 +164,7 @@
                 <DuneStat 
                   queryId="2478156" 
                   theme="light" 
-                  title="Total Donation - Current Value"
+                  title="Total Donated - Current Value"
                   variableName="total_current_value"
                   type="currency"
                 />
