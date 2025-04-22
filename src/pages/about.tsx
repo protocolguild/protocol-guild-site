@@ -37,15 +37,6 @@
               </Grid.Item>
             </Grid>
           </Section.Row>
-          <Section.Row 
-            className="min-h-0 flex items-center"
-          >
-            <Grid>
-              <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
-                <HeroLockup theme="light" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
           <Section.Row className="flex-none">
             <Grid>
               <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
