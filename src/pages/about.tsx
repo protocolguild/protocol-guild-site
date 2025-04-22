@@ -112,7 +112,7 @@
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                           </svg>
                         </a>
-                        <p className="text-xs">Internal ops, foundation, fundraising</p>
+                        <p className="text-xs">Internal ops, legal, fundraising</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
