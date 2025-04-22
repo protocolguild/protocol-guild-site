@@ -1,4 +1,6 @@
 import { FC, useState } from 'react'
+import chainsImage from '../assets/images/chains.png'
+import authorImage from '../assets/images/michaelsproul.jpg'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
 import DonorSectionDark from '../components/DonorSectionDark'
@@ -7,7 +9,6 @@ import Navbar from '../components/Navbar'
 import HeroLockup from '../components/HeroLockup'
 import MemberFaces from '../components/MemberFaces'
 import { homeContent } from '../content/home'
-import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
 import DuneChart from '../components/DuneChart'
 
@@ -72,8 +73,9 @@ const Home: FC = () => {
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section1.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent..title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.text}</h2>
+              <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.author}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
@@ -90,14 +92,14 @@ const Home: FC = () => {
               <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.section2.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle1}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle2}</h2>
-              <DuneStat 
-                queryId="2665887" 
-                theme="light" 
-                title="Total Core Protocol Contributors"
-                suffix="individuals"
-                variableName="total_count"
-                type="number"
-              />
+              <DuneChart 
+                  queryId="5001629" 
+                  theme="light" 
+                  xAxisKey="date"
+                  yAxisKey="cumulative_historical_value"
+                  formatCurrency
+                  formatDate
+                />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               {homeContent.section2.features.map((feature, index) => (
