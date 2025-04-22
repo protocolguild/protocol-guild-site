@@ -29,7 +29,7 @@ const Home: FC = () => {
 
   return (
     <main>
-      <Section background="brand-primary" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
+      <Section background="white" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
         <img
           src={chainsImage}
           alt="Ethereum chains"
@@ -39,7 +39,7 @@ const Home: FC = () => {
         <Section.Row>
           <Grid>
             <Grid.Item span={3} className="flex flex-col">
-              <Navbar theme="brand" />
+              <Navbar theme="light" />
             </Grid.Item>
           </Grid>
         </Section.Row>
@@ -48,17 +48,17 @@ const Home: FC = () => {
         >
           <Grid columns={12}>
             <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
-              <HeroLockup theme="light" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
+              <HeroLockup theme="color" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
             </Grid.Item>
           </Grid>
         </Section.Row>
         <Section.Row className="flex-none relative z-1">
           <Grid>
             <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--white)]">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
                 {homeContent.hero.title}
               </h1>
-              <p className="text-lg leading-[23px] text-[var(--white)]">
+              <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
                 {homeContent.hero.subtitle}
               </p>
             </Grid.Item>
@@ -242,4 +242,4 @@ const Home: FC = () => {
   )
 }
 
-export default Home 
+export default Home
