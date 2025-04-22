@@ -9,7 +9,7 @@ import authorImage from '../assets/images/michaelsproul.jpg'
 import DuneChart from '../components/DuneChart'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
-import DonorSectionDark2 from '../components/DonorSectionDark'
+import DonorSectionDark2 from '../components/DonorSectionDark2'
 
 const Home: FC = () => {
 
@@ -137,8 +137,6 @@ const Home: FC = () => {
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section3.subtitle1}</h2>
               <a href={homeContent.section3.buttonLink} target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Fund Our Work</a>
             </Grid.Item>
-          </Grid>
-          <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
               <DonorSectionDark2 theme="dark" type="Donors" />
