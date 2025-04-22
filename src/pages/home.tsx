@@ -73,7 +73,7 @@ const Home: FC = () => {
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section1.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.text}</h2>
               <div className="flex items-center">
                 <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
@@ -81,8 +81,14 @@ const Home: FC = () => {
               </div>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <DonorSectionDark theme="dark" type="Partners" featured={true}/>
-            </Grid.Item>
+              <DuneChart 
+                  queryId="5001629" 
+                  theme="light" 
+                  xAxisKey="date"
+                  yAxisKey="cumulative_historical_value"
+                  formatCurrency
+                  formatDate
+                />            </Grid.Item>
           </Grid>
         </Section.Row>
       </Section>
