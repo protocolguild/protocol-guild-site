@@ -95,7 +95,7 @@ const Home: FC = () => {
         <Section.Row align="start" >
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.section2.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section2.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle1}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle2}</h2>
               <DuneStat 
@@ -113,7 +113,7 @@ const Home: FC = () => {
                   key={index}
                   title={feature.title}
                   description={feature.description}
-                  color="var(--white)"
+                  color="var(--gray-dark)"
                 />
               ))}
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
