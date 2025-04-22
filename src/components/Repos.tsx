@@ -40,7 +40,7 @@ const Repos: FC = () => {
   return (
     <div className="repos-container"> 
       <div className="repos-header" style={{ fontWeight: 'normal' }}>
-        {`188 contributors, ${repoData.length} core repositories, 1 Ethereum protocol`}
+        {`189 contributors, ${repoData.length} core repositories, 1 Ethereum protocol`}
       </div>     
       <div className="repos-divider"></div>
       <div className="repos">
