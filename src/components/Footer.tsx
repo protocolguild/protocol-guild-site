@@ -19,6 +19,9 @@ const Footer: FC = () => {
                   <Link to="/" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     HOME
                   </Link>
+                  <Link to="/donate" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    DONATE
+                  </Link>
                   <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     ABOUT
                   </Link>
