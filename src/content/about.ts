@@ -4,36 +4,7 @@ export const aboutContent = {
   },
   organization: {
     title: "Who we are.",
-    description: "Protocol Guild is a non-profit organization that serves hundreds of Ethereum core developers. Our operating team, board, and membership are active maintainers who work on scaling and sustaining Ethereum every day.",
-    members: {
-      title: "Protocol Guild Members",
-      description: "189 researchers and developers are members of Protocol Guild",
-      buttonText: "View all members",
-      buttonLink: "https://protocol-guild.readthedocs.io/en/latest/02-membership.html"
-    },
-    team: {
-      title: "Core Team",
-      members: [
-        {
-          name: "Trent Van Epps",
-          image: "trentImg",
-          handle: "@trent_vanepps",
-          twitter: "https://x.com/trent_vanepps"
-        },
-        {
-          name: "Cheeky Gorilla",
-          image: "cheekyImg",
-          handle: "@cheekygorilla0x",
-          twitter: "https://x.com/cheekygorilla0x"
-        },
-        {
-          name: "Peter Vecchiarelli",
-          image: "peterImg",
-          handle: "@AlphaLemonade",
-          twitter: "https://x.com/AlphaLemonade"
-        }
-      ]
-    }
+    description: "Protocol Guild is a non-profit organization that serves hundreds of Ethereum core developers. Our operating team, board, and membership are active maintainers who work on scaling and sustaining Ethereum every day."
   },
   section2: {
     title: "Supporting the stewards of Ethereum’s core protocol",
