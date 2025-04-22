@@ -249,4 +249,4 @@ const Donate: FC = () => {
   )
 }
 
-export default Pledge
+export default Donate
