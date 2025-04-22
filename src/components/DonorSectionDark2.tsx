@@ -135,7 +135,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         </div>
       </div>
       ) : type === 'Donors' ? (
-        <div className="silver-gradient silver-shimmer rounded-xl p-8">
+        <div className="p-8">
           <div className="flex flex-wrap justify-center gap-6">
             {logos.map((donor) => (
               <a 
