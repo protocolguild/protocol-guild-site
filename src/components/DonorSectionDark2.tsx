@@ -135,49 +135,22 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         </div>
       </div>
       ) : type === 'Donors' ? (
-        <div className="flex flex-col gap-8 w-full overflow-hidden group">
-          <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="flex whitespace-nowrap min-w-max donor-scroll group-hover:animate-pause">
-              {[...logos.slice(0, Math.ceil(logos.length / 2)), ...logos.slice(0, Math.ceil(logos.length / 2))].map((donor, index) => (
-                <a
-                  key={`${donor.name}-${index}`}
-                  href={donor.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 h-10 md:h-12"
-                >
-                  <img 
-                    src={theme === 'light' ? donor.logoWhite : donor.logo} 
-                    alt={donor.name}
-                    className="h-full w-auto max-w-[120px]"
-                  />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="flex whitespace-nowrap min-w-max donor-scroll-reverse group-hover:animate-pause">
-              {[...logos.slice(Math.ceil(logos.length / 2)), ...logos.slice(Math.ceil(logos.length / 2))].map((donor, index) => (
-                <a
-                  key={`${donor.name}-${index}`}
-                  href={donor.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 h-10 md:h-12"
-                >
-                  <img 
-                    src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
-                    alt={donor.name}
-                    className="h-full w-auto max-w-[120px]"
-                  />
-                </a>
-              ))}
-            </div>
-          </div>
+        <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
+          {logos.map(donor => (
+            <a 
+              key={donor.name}
+              href={donor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-10 md:h-14"
+            >
+              <img 
+                src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
+                alt={donor.name}
+                className="h-full w-auto max-w-[140px]"
+              />
+            </a>
+          ))}
         </div>
       ) : (
         <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
