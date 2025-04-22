@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import lockupLight from '../assets/images/lockup-left-light.svg'
+import lockupLight from '../assets/images/og-image.png'
 import lockupDark from '../assets/images/lockup-left-dark.svg'
 import lockupColor from '../assets/images/lockup-left-color.svg'
 
