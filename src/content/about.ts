@@ -28,7 +28,8 @@ export const aboutContent = {
         title: "Development",
         description: "New features and infrastructure improvements for the Ethereum network."
       }
-    ]
+    ],
+    link: "Learn about eligibility"
   },
   funding: {
     title: "Effective and transparent funding.",
