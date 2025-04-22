@@ -8,10 +8,27 @@ export const aboutContent = {
     link: "View all members",
     team: "Core Team"
   },
-  section2: {
-    title: "Supporting the stewards of Ethereum’s core protocol",
-    subtitle: "Every quarter, we curate and update an onchain registry of Ethereum’s active core protocol contributors, to distribute funding towards.",
-    link: "View all core devs & researchers"
+  impactAreas: {
+    title: "Our impact areas.",
+    subtitle: "Protocol Guild is the only org that comprehensively funds contributors from across all of Ethereum's core development.",
+    areas: [
+      {
+        title: "Research",
+        description: "R&D to improve Ethereum's security, scalability, and efficiency."
+      },
+      {
+        title: "EIPs",
+        description: "Chain upgrades and protocol hard forks."
+      },
+      {
+        title: "Maintenance",
+        description: "Critical bug fixes, security patches, and network upkeep."
+      },
+      {
+        title: "Development",
+        description: "New features and infrastructure improvements for the Ethereum network."
+      }
+    ]
   },
   section3: {
     title: "Funded by projects building on Ethereum",
