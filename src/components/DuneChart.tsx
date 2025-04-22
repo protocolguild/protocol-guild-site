@@ -1,3 +1,4 @@
+
 import { FC, useEffect, useState } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
@@ -196,18 +197,10 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-  const dataLength = data?.result?.rows.length || 0; // Calculate data length
-  const startDate = new Date(data?.result?.rows[0]?.[xAxisKey]); // Get the start date
-  const endDate = new Date(data?.result?.rows[dataLength - 1]?.[xAxisKey]); // Get the end date
-
-  // Generate an array of January dates for each year in the range
-  const years = [];
-  for (let year = startDate.getFullYear(); year <= endDate.getFullYear(); year++) {
-    years.push(new Date(year, 0, 1)); // January 1st of each year
-  }
-
-  // Format the ticks to match the data format
-  const formattedTicks = years.map(date => date.toISOString().split('T')[0]); // Adjust this if your data format is different
+const dataLength = data?.result?.rows.length || 0; // Calculate data length
+const startDate = new Date(data?.result?.rows[0]?.[xAxisKey]); // Get the start date
+const endDate = new Date(data?.result?.rows[dataLength - 1]?.[xAxisKey]); // Get the end date
+const years = endDate.getFullYear() - startDate.getFullYear() + 1; // Calculate the number of years
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
@@ -226,13 +219,13 @@ return (
             vertical={false}
           />
           <XAxis 
-            dataKey={xAxisKey} ticks={years.map(date => date.toISOString().split('T')[0])}
-            ticks={formattedTicks}
+            dataKey={xAxisKey} 
             stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
             tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
             tickLine={false}
             axisLine={false}
+            interval={Math.floor(dataLength / years)} // Show one tick per year
             dy={8}
             type="category"
           />
