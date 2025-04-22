@@ -213,9 +213,8 @@ const About: FC = () => {
           </Grid>
         </Section.Row>
       </Section>
-
       
-      <Section background="gray-dark" divider="var(--white)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
               <Grid.Item span={6} className="flex flex-col gap-4">
