@@ -140,6 +140,7 @@ const Home: FC = () => {
               <a href={homeContent.section3.buttonLink} target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Fund Our Work</a>
             </Grid.Item>
           </Grid>
+          <Grid.Item span={6} className="flex flex-col gap-6">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
               <DonorSectionDark2 theme="dark" type="Donors" />
