@@ -22,33 +22,32 @@
   const About: FC = () => {
   
     return (
-        <main>
-          <Section background="gray-dark" className="min-h-[400px] md:min-h-[400px] flex flex-col pb-8 md:pb-16 mt-0">
-            <img
-              src={chainsImage}
-              alt="Ethereum chains"
-              className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-              style={{ maxWidth: 'none' }}
-            />
-            <Section.Row>
-              <Grid>
-                <Grid.Item span={3}>
-                  <Navbar theme="dark" />
-                </Grid.Item>
-              </Grid>
-            </Section.Row>
-            <Section.Row className="flex flex-col flex-grow justify-center items-center">
-              <Grid>
-                <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--white)]">
-                    {aboutContent.hero.title}
-                  </h1>
-                </Grid.Item>
-              </Grid>
-            </Section.Row>
-          </Section>
-        </main>
-        
+      <main>
+        <Section background="gray-dark" className="min-h-[400px] md:min-h-[400px] flex flex-col pb-8 md:pb-16 mt-0">
+          <img
+            src={chainsImage}
+            alt="Ethereum chains"
+            className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+            style={{ maxWidth: 'none' }}
+          />
+          <Section.Row>
+            <Grid>
+              <Grid.Item span={3}>
+                <Navbar theme="dark" />
+              </Grid.Item>
+            </Grid>
+          </Section.Row>
+          <Section.Row className="flex flex-col flex-grow justify-center items-center">
+            <Grid>
+              <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--white)]">
+                  {aboutContent.hero.title}
+                </h1>
+              </Grid.Item>
+            </Grid>
+          </Section.Row>
+        </Section>
+          
         <Section background="white" divider="var(--gray-dark)">
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
