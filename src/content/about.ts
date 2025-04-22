@@ -30,11 +30,13 @@ export const aboutContent = {
       }
     ]
   },
-  section3: {
-    title: "Funded by projects building on Ethereum",
-    tableHeader: "Donor Leaderboard by Currently Vesting"
-  },
   funding: {
-    title: "Transparent and effective funding"
+    title: "Effective and transparent funding.",
+    description: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    statsHeader: "Distribution Stats"
+  },
+  docs: {
+    title: "Read our documentation.",
+    description: "See our full internal documentation for the latest updates and information on Protocol Guild."
   }
 }
