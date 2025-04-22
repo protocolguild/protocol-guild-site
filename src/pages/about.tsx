@@ -83,6 +83,7 @@
                     </a>
                   </h2>
                 </div>
+                <br/>
                 <div>
                   <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
