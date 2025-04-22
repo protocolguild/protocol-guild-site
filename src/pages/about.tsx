@@ -97,7 +97,7 @@
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <img src={cheekyImg} alt="Cheeky Gorilla" className="w-full aspect-square object-cover rounded-full" />
+                      <img src={cheekyImg} alt="Cheeky Gorilla" className="w-full aspect-square object-cover" />
                       <div className="mt-2 flex items-start justify-between w-full gap-2">
                         <p className="text-sm">Cheeky Gorilla</p>
                         <a href="https://x.com/cheekygorilla0x" target="_blank" rel="noopener noreferrer" className="text-[var(--gray-dark)]">
@@ -106,7 +106,7 @@
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <img src={peterImg} alt="Peter Vecchiarelli" className="w-full aspect-square object-cover rounded-full" />
+                      <img src={peterImg} alt="Peter Vecchiarelli" className="w-full aspect-square object-cover" />
                       <div className="mt-2 flex items-start justify-between w-full gap-2">
                         <p className="text-sm">Peter Vecchiarelli</p>
                         <a href="https://x.com/AlphaLemonade" target="_blank" rel="noopener noreferrer" className="text-[var(--gray-dark)]">
