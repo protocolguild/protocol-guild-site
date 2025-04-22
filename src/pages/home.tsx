@@ -106,9 +106,9 @@ const Home: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.section2.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle2}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle3}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle2}</h2>
+              <h2 className="!text-lg font-bold !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle3}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
             </Grid.Item>
