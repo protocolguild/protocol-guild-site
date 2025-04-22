@@ -32,7 +32,11 @@ export const aboutContent = {
   },
   funding: {
     title: "Effective and transparent funding.",
-    description: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    description1: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    description2: "Neutral Distribution",
+    description3: "Vested tokens are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
+    description4: "Quarterly Curation",
+    description5: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated onchain every quarter.",
     statsHeader: "Distribution Stats"
   },
   docs: {
