@@ -57,10 +57,10 @@ const Donate: FC = () => {
         <Section.Row className="flex-none">
           <Grid>
             <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--white)]">
                 {donateContent.hero.title}
               </h1>
-              <p className="text-lg leading-[23px] text-[var(--gray-dark)]">
+              <p className="text-lg leading-[23px] text-[var(--white)]">
                 {donateContent.hero.subtitle}
               </p>
             </Grid.Item>
