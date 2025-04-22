@@ -77,8 +77,10 @@ const Home: FC = () => {
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
                 <em>{homeContent.section1.quote.text}</em>
               </h2>
-              <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.author}</h2>
+              <div className="flex items-center">
+                <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
+                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.author}</h2>
+              </div>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
