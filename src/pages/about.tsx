@@ -79,7 +79,7 @@
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team.title}</h3>
+                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="flex flex-col items-start">
                       <img src={trentImg} alt="Trent Van Epps" className="w-full aspect-square object-cover rounded-full" />
