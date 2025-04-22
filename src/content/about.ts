@@ -36,7 +36,7 @@ export const aboutContent = {
     description2: "Neutral Distribution",
     description3: "We dont make discretionary funding allocations - all tokens are streamed over 4 years via immutable contracts, and are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
     description4: "Quarterly Curation",
-    description5: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated onchain every quarter.",
+    description5: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated quarterly, ensuring that funding only goes to the individuals who are actively building and maintaining Ethereum's core protocol.",
     statsHeader: "Distribution Stats"
   },
   docs: {
