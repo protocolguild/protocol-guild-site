@@ -52,9 +52,6 @@
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px]  text-[var(--white)]">
                   {aboutContent.hero.title}
                 </h1>
-                <p className="text-lg leading-[23px] text-[var(--white)]">
-                  {aboutContent.hero.subtitle}
-                </p>
               </Grid.Item>
             </Grid>
           </Section.Row>
