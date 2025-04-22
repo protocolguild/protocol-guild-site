@@ -198,9 +198,6 @@ const DuneChart: FC<DuneChartProps> = ({
   })
 
 const dataLength = data?.result?.rows.length || 0; // Calculate data length
-const startDate = new Date(data?.result?.rows[0]?.[xAxisKey]); // Get the start date
-const endDate = new Date(data?.result?.rows[dataLength - 1]?.[xAxisKey]); // Get the end date
-const years = endDate.getFullYear() - startDate.getFullYear() + 1; // Calculate the number of years
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
@@ -225,7 +222,7 @@ return (
             tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
             tickLine={false}
             axisLine={false}
-            interval={Math.floor(dataLength / years)} // Show one tick per year
+            interval={Math.ceil(dataLength / 6)} // Show a maximum of 6 ticks
             dy={8}
             type="category"
           />
