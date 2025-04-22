@@ -28,9 +28,9 @@ const Repos: FC = () => {
         </a>
       </div>
       <div className="repo-description flex-1 truncate text-white/70">{repo.description}</div>
-      <div className="repositories-table whitespace-nowrap flex-shrink-0">
-        {repo.contributors} {repo.contributors === 1 ? 'contributor' : 'contributors'}
-      </div>
+    <div className="repositories-table whitespace-nowrap flex-shrink-0">
+      {repo.contributors} {repo.contributors === 1 ? 'contributor' : 'contributors'}
+    </div>
     </div>
   );
 
