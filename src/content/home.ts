@@ -13,24 +13,11 @@ export const homeContent = {
     statsHeader: "Cumulative Amount Distributed"
   },
   section2: {
-    title: "The most effective way to fund Ethereum's future",
-    subtitle1: "Having a stable core protocol contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem.",
-    subtitle2: "We distribute all tokens directly to contributors in a way that's sufficiently fair, remains accurate over time and maintains Ethereum’s credible neutrality.",
-    link: "Learn more in our docs",
-    features: [
-      {
-        title: "Quarterly Curation",
-        description: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated onchain every quarter."
-      },
-      {
-        title: "Trustless Vesting",
-        description: "All tokens are vested linearly over 4 years via immutable contracts, directly to everyone in the registry."
-      },
-      {
-        title: "Neutral Distribution",
-        description: "Vested tokens are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions."      
-      }
-    ]
+    title: "Our moonshot: Ethereum R&D, funded forever",
+    subtitle1: "Our ecosystem depends on open source infrastructure. There's still a lot to do to deliver Ethereum as globally ubiquitous infra.",
+    subtitle2: "To allow the ecosystem to fund this work, we make the entire set of Ethereum’s core protocol contributors directly legible onchain, by maintaining an up-to-date registry of Ethereum’s active core protocol contributors, updated every quarter. We receive tokens from projects building on Ethereum and distribute them directly to active core protocol contributors, vested over four years.",
+    subtitle3: "188 contributors, 19 core repositories, 1 Ethereum protocol.",
+    link: "See all individuals"
   },
   section3: {
     title: "Fund your dependencies",
