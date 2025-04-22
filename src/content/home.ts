@@ -7,7 +7,7 @@ export const homeContent = {
   section1: {
     title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
     quote: {
-      text: "I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.",
+      text: "\"I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
       author: "Michael Sproul, Lighthouse",
     },
     statsHeader: "Cumulative Amount Distributed"
