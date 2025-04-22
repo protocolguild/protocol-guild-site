@@ -87,7 +87,7 @@
                 <div>
                   <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start max-w-[40%]">
                       <img src={trentImg} alt="Trent Van Epps" className="w-full aspect-square object-cover" />
                       <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm font-bold">Trent Van Epps</p>
@@ -98,11 +98,10 @@
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                           </svg>
                         </a>
-                        <br />
                         <p className="text-xs">Strategy, fundraising, internal gov.</p>
                       </div>
                     </div>
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start max-w-[40%]">
                       <img src={cheekyImg} alt="Cheeky Gorilla" className="w-full aspect-square object-cover" />
                       <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm font-bold">Cheeky Gorilla</p>
@@ -113,11 +112,10 @@
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                           </svg>
                         </a>
-                        <br />
                         <p className="text-xs">Internal ops, foundation, fundraising</p>
                       </div>
                     </div>
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start max-w-[40%]">
                       <img src={peterImg} alt="Peter Vecchiarelli" className="w-full aspect-square object-cover" />
                       <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm font-bold">Peter Vecchiarelli</p>
@@ -128,7 +126,6 @@
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                           </svg>
                         </a>
-                        <br />
                         <p className="text-xs">Fundraising, comms</p>
                       </div>
                     </div>
@@ -138,7 +135,9 @@
             </Grid>
           </Section.Row>
         </Section>
-      
+
+
+        
         <Section background="white" divider="var(--brand-primary)" line={true}>
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
