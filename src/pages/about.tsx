@@ -197,18 +197,6 @@ const About: FC = () => {
                   formatCurrency
                   formatDate
                 />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FeatureCard
-                  title="Transparent Finance"
-                  description="Funding is fully onchain and fully auditable. Review our smart contracts and funding history."
-                  color="var(--gray-dark)"
-                />
-                <FeatureCard
-                  title="Self-curation"
-                  description="Members of Protocol Guild participate in real-time adjustment of who's eligible for Protocol Guild rewards."
-                  color="var(--gray-dark)"
-                />
-              </div>
             </Grid.Item>
           </Grid>
         </Section.Row>
