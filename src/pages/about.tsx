@@ -84,7 +84,7 @@
                   </h2>
                 </div>
                 <br />
-                <div>
+                <div className="border-t border-black my-4" />
                   <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div className="flex flex-col items-start">
