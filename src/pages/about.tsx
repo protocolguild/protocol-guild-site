@@ -210,7 +210,14 @@ const About: FC = () => {
                   {aboutContent.docs.title}
                 </h2>
                 <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.docs.description}</h2>
-                <a href="https://protocol-guild.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">View Documentation</a>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
+                <a href="https://protocol-guild.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  View Documentation
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
               </Grid.Item>
             </Grid>
           </Section.Row>
