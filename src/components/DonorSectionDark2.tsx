@@ -116,7 +116,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
 
     {featured && type === 'Partners' ? (
       <div className="silver-gradient silver-shimmer rounded-xl p-8">
-        <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 items-center">
+        <div className="flex flex-wrap justify-center gap-6">
           {logos.map((donor) => (
             <a 
               key={donor.name}
