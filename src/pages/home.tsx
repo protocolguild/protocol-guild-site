@@ -66,7 +66,7 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
       
-      <Section background="gray-light" divider="#ffffff">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
@@ -91,13 +91,13 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="gray-mid" divider="var(--gray-light)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start" >
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.section2.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section2.subtitle2}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle2}</h2>
               <DuneStat 
                 queryId="2665887" 
                 theme="light" 
@@ -116,7 +116,7 @@ const Home: FC = () => {
                   color="var(--white)"
                 />
               ))}
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)] flex items-center">
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
                 <a href="https://protocol-guild.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   {homeContent.section2.link}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"> {/* Add margin to the left for spacing */}
@@ -131,13 +131,13 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
      
-      <Section background="gray-dark" divider="var(--gray-mid)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">{homeContent.section3.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section3.subtitle1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section3.subtitle2}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section3.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section3.subtitle2}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="relative h-[280px]">
@@ -148,7 +148,7 @@ const Home: FC = () => {
                   >
                     {homeContent.quotes.map((quote, index) => (
                       <div key={index} className="min-w-full px-12 md:px-16">
-                        <h2 className="!text-[16px] md:!text-lg !font-normal !leading-[20px] md:!leading-[24px] !text-[var(--white)] italic">
+                        <h2 className="!text-[16px] md:!text-lg !font-normal !leading-[20px] md:!leading-[24px] !text-[var(--gray-dark)] italic">
                           {quote.text} <span className="block mt-4">-{quote.author}</span>
                         </h2>
                       </div>
@@ -188,7 +188,7 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="gray-light" divider="var(--gray-dark)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
@@ -225,13 +225,13 @@ const Home: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="gray-mid" divider="var(--gray-light)">
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start" >
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.section5.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section5.subtitle1}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.section5.subtitle2}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section5.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section5.subtitle2}</h2>
               <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Schedule Call</a>
             </Grid.Item>
           </Grid>
