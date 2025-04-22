@@ -20,7 +20,7 @@
 }
 
 .repos {
-  height: 280px;
+  height: 200px;
   position: relative;
   overflow-y: auto;
 }
@@ -90,6 +90,7 @@
   color: var(--gray-dark);
   min-width: fit-content;
   font-weight: 500;
+  padding-right: 16px;
 }
 
 /* Remove the scroll animation */
