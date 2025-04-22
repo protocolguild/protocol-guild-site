@@ -1,14 +1,12 @@
-import { FC, useState } from 'react'
-import './Repos.css'
-import { repoData, RepoData } from '../content/repos'
+import { FC } from 'react';
+import './Repos.css';
+import { repoData, RepoData } from '../content/repos';
 
 const Repos: FC = () => {
-  const [showAll, setShowAll] = useState(false)
-  
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // Scroll to top before navigating to the link
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  };
 
   const renderRow = (repo: RepoData, idx: number) => (
     <div 
@@ -34,21 +32,19 @@ const Repos: FC = () => {
         {repo.contributors} {repo.contributors === 1 ? 'contributor' : 'contributors'}
       </div>
     </div>
-  )
+  );
+
+  // Sort the repoData by repo name
+  const sortedRepoData = [...repoData].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="repos-container">
-      <div className="repos-header" style={{ fontWeight: 'normal' }}>
-        {`188 contributors, ${repoData.length} core repositories, 1 Ethereum protocol`}
-      </div>     
+    <div className="repos-container">  
       <div className="repos-divider"></div>
-      <div className={`repos ${showAll ? 'expanded' : ''}`}>
-        <div className={`repos-scroll-container ${showAll ? 'paused' : ''}`}>
-          {showAll ? repoData.map(renderRow) : [...repoData, ...repoData].map(renderRow)}
-        </div>
+      <div className="repos">
+        {sortedRepoData.map(renderRow)} {/* Render the sorted rows here */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Repos 
+export default Repos
