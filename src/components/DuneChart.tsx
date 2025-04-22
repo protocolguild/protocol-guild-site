@@ -199,9 +199,17 @@ const DuneChart: FC<DuneChartProps> = ({
   })
 
 const dataLength = data?.result?.rows.length || 0;
-const startDate = new Date(data?.result?.rows[0]?.[xAxisKey]);
-const month = startDate.toLocaleString('en-US', { month: 'short' }); // Get the short month name
-const year = startDate.getFullYear().toString().slice(-2); // Get the last two digits of the year
+
+let month = '';
+let years = 0;
+
+if (dataLength > 0) {
+  const startDate = new Date(data.result.rows[0][xAxisKey]);
+  month = startDate.toLocaleString('en-US', { month: 'short' }); // Get the short month name
+  const endDate = new Date(data.result.rows[dataLength - 1][xAxisKey]);
+  years = endDate.getFullYear() - startDate.getFullYear() + 1; // Calculate the number of years
+}
+
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
@@ -225,12 +233,12 @@ return (
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
             tickFormatter={(value) => {
               const date = new Date(value.toString());
-              const currentYear = date.getFullYear().toString().slice(-2); // Get last two digits of the year
+              const currentYear = date.getFullYear().toString().slice(-2);
               return `${month} '${currentYear}`; // Use the dynamic month with the year
             }}
             tickLine={false}
             axisLine={false}
-            interval={Math.floor(dataLength / years)}
+            interval={Math.floor(dataLength / years) || 0} // Ensure interval is not undefined
             dy={8}
             type="category"
           />
