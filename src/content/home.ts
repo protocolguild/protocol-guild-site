@@ -5,10 +5,12 @@ export const homeContent = {
     subtitle2: "Our misssion is to create sustainable streams backed by projects building on Ethereum."
   },
   section1: {
-    title: "Take the Protocol Guild Pledge",
-    subtitle1: "Imagine if every project building on Ethereum contributed 1% of their token supply to fund the core protocol work they depend on?",
-    subtitle2: "You don’t need to imagine—join some of the leading projects in the ecosystem that have already taken the pledge!",
-    link: "Protocol Guild Pledge announcement on Mirror"
+    title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
+    quote: {
+      text: "I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.",
+      author: "Michael Sproul, Lighthouse",
+    },
+    statsHeader: "Cumulative Amount Distributed"
   },
   section2: {
     title: "The most effective way to fund Ethereum's future",
