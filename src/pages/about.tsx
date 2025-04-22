@@ -175,6 +175,14 @@ const About: FC = () => {
                 </a>
               </div>
               <DuneStat 
+                queryId="4876407" 
+                theme="light" 
+                title="Median Distributed Last 12 Months"
+                suffix="/ contributor"
+                variableName="yr_median_vested_hist"
+                type="currency"
+              />
+              <DuneStat 
                 queryId="4872646" 
                 theme="light" 
                 title="Median Vesting per Member over Next 12 Months"
