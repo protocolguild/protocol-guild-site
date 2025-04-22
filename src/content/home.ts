@@ -21,6 +21,7 @@ export const homeContent = {
   },
   section3: {
     title: "Funded by builders from all across the Ethereum ecosystem.",
-    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come."
+    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
+    buttonLink: "/pledge"
   }
 }
