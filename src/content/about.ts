@@ -37,6 +37,7 @@ export const aboutContent = {
   },
   docs: {
     title: "Read our documentation.",
-    description: "See our full internal documentation for the latest updates and information on Protocol Guild."
+    description: "See our full internal documentation for the latest updates and information on Protocol Guild.",
+    link: "View Documentation"
   }
 }
