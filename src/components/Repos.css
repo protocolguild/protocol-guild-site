@@ -20,9 +20,9 @@
 }
 
 .repos {
-  height: 280px;
+  height: 200px;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .repos.expanded {
@@ -30,18 +30,7 @@
   overflow: visible;
 }
 
-.repos-scroll-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  animation: scroll 60s linear infinite;
-}
-
-.repos-scroll-container.paused {
-  animation: none;
-  transform: none;
-}
-
+/* Remove the repos-scroll-container class and its styles */
 .repo-row {
   display: flex;
   justify-content: space-between;
@@ -103,6 +92,7 @@
   font-weight: 500;
 }
 
+/* Remove the scroll animation */
 @keyframes scroll {
   0% {
     transform: translateY(0);
@@ -112,29 +102,8 @@
   }
 }
 
-/* Gradient overlays */
+/* Remove gradient overlays */
 .repos::before,
 .repos::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 60px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.repos::before {
-  top: 0;
-  background: linear-gradient(to bottom, white 0%, transparent 100%);
-}
-
-.repos::after {
-  bottom: 0;
-  background: linear-gradient(to top, white 0%, transparent 100%);
-}
-
-.repos.expanded::before,
-.repos.expanded::after {
-  display: none;
+  display: none; /* Hide the gradient overlays */
 }
