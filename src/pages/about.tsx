@@ -215,7 +215,7 @@ const About: FC = () => {
               <DuneStat 
                 queryId="4876407" 
                 theme="light" 
-                title="Total Amount Distributed by Protocol Guild"
+                title="Total Amount Distributed"
                 variableName="total_vested_hist"
                 type="currency"
               />
