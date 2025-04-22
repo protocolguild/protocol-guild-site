@@ -1,4 +1,4 @@
-export const pledgeContent = {
+export const donateContent = {
   hero: {
     title: "Join Protocol Guild in supporting the future of Ethereum.",
     subtitle: "There are many ways to contribute, whether you're a project founder, a builder, an ETH holder, or any other ecosystem stakeholder."
