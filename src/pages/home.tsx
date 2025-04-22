@@ -47,7 +47,7 @@ const Home: FC = () => {
           className="min-h-0 flex items-center relative z-1"
         >
           <Grid columns={12}>
-            <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
+            <Grid.Item span={6} className="flex flex-col gap-4 min-h-[100px] my-8 md:my-16">
               <HeroLockup theme="color" className="w-[100%] md:w-[100%] lg:w-[100%] h-auto min-h-0 flex-shrink-1"  />
             </Grid.Item>
           </Grid>
