@@ -1,5 +1,5 @@
 // Component imports
-import pgIcon from '../assets/images/pg-icon-dark.png'
+import pgIcon from '../assets/images/pg-icon-dark.svg'
 // 1% Partners
 import etherfiSvg from '../assets/images/donors/etherfi.svg'
 import etherfiWhiteSvg from '../assets/images/donors/etherfi-white.svg'
@@ -114,26 +114,26 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         </div>
       )}
 
-      {featured && type === 'Partners' ? (
-        <div className="silver-gradient silver-shimmer rounded-xl p-8">
-          <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
-            {logos.map(donor => (
-              <a 
-                key={donor.name}
-                href={donor.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 md:h-14"
-              >
-                <img 
-                  src={donor.logo} 
-                  alt={donor.name}
-                  className="h-full w-auto max-w-[140px]"
-                />
-              </a>
-            ))}
-          </div>
+    {featured && type === 'Partners' ? (
+      <div className="silver-gradient silver-shimmer rounded-xl p-8">
+        <div className="flex flex-wrap justify-center gap-6">
+          {logos.map((donor) => (
+            <a 
+              key={donor.name}
+              href={donor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-10 md:h-14"
+            >
+              <img 
+                src={donor.logo} 
+                alt={donor.name}
+                className="h-full w-auto max-w-[140px]"
+              />
+            </a>
+          ))}
         </div>
+      </div>
       ) : type === 'Donors' ? (
         <div className="flex flex-col gap-8 w-full overflow-hidden group">
           <div className="relative w-full h-16 overflow-hidden flex items-center">
