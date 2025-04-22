@@ -6,7 +6,7 @@
 
 .repos-header {
   font-size: 15px;
-  line-: 19px;
+  line-height: 19px;
   font-weight: 600;
   color: var(--gray-dark);
   margin-bottom: 16px;
@@ -14,7 +14,7 @@
 
 .repos-divider {
   width: 100%;
-  : 1px;
+  height: 1px;
   background-color: var(--gray-dark);
   margin-bottom: 16px;
 }
@@ -39,7 +39,7 @@
   color: var(--white);
   gap: 8px;
   padding: 8px 0;
-  min-: 40px;
+  min-height: 40px;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@
 
 .repo-row .github-icon {
   width: 20px;
-  : 20px;
+  height: 20px;
   color: var(--gray-dark);
   flex-shrink: 0;
 }
@@ -69,14 +69,14 @@
 
 .repo-name {
   font-size: 15px;
-  line-: 19px;
+  line-height: 19px;
   color: var(--gray-dark);
   font-weight: 500;
 }
 
 .repo-description {
   font-size: 15px;
-  line-: 19px;
+  line-height: 19px;
   min-width: 0;
   color: var(--gray-dark);
   font-weight: 300;
@@ -86,7 +86,7 @@
 
 .repositories-table {
   font-size: 15px;
-  line-: 19px;
+  line-height: 19px;
   color: var(--gray-dark);
   min-width: fit-content;
   font-weight: 500;
