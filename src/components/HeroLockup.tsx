@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import lockupLight from '../assets/images/og-image.png'
+import lockupLight from '../assets/images/hero-logo.png'
 import lockupDark from '../assets/images/lockup-left-dark.svg'
-import lockupColor from '../assets/images/og-image.png'
+import lockupColor from '../assets/images/hero-logo.png'
 
 interface HeroLockupProps {
   className?: string
