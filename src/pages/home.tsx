@@ -60,6 +60,7 @@ const Home: FC = () => {
               </h1>
               <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
                 {homeContent.hero.subtitle1}
+                <br/>
                 {homeContent.hero.subtitle2}
               </p>
             </Grid.Item>
