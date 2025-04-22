@@ -206,6 +206,9 @@ const DuneChart: FC<DuneChartProps> = ({
     years.push(new Date(year, 0, 1)); // January 1st of each year
   }
 
+  // Format the ticks to match the data format
+  const formattedTicks = years.map(date => date.toISOString().split('T')[0]); // Adjust this if your data format is different
+
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
     <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
@@ -224,12 +227,12 @@ return (
           />
           <XAxis 
             dataKey={xAxisKey} ticks={years.map(date => date.toISOString().split('T')[0])}
+            ticks={formattedTicks}
             stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
             tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
             tickLine={false}
             axisLine={false}
-            ticks={years.map(date => date.toISOString().split('T')[0])} // Show one tick per year
             dy={8}
             type="category"
           />
