@@ -198,31 +198,35 @@ const DuneChart: FC<DuneChartProps> = ({
 
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
-      <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
-        {title}
-      </h3>
-      <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            data={data?.result?.rows || []}
-            margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
-          >
-            <CartesianGrid 
-              strokeDasharray="3 3" 
-              stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
-              vertical={false}
-            />
-            <XAxis 
-              dataKey={xAxisKey} 
-              stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
-              tick={{ fontSize: 12, fontFamily: 'Inter' }}
-              tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
-              tickLine={false}
-              axisLine={false}
-              interval={12}
-              dy={8}
-              type="category"
-            />
+        <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
+          {title}
+        </h3>
+        <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart
+              data={data?.result?.rows || []}
+              margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
+            >
+              <CartesianGrid 
+                strokeDasharray="3 3" 
+                stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
+                vertical={false}
+              />
+              {/* Define dataLength before the return statement */}
+              {(() => {
+                const dataLength = data?.result?.rows.length || 0; // Calculate data length here
+                return (
+                  <XAxis 
+                    dataKey={xAxisKey} 
+                    stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
+                    tick={{ fontSize: 12, fontFamily: 'Inter' }}
+                    tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
+                    tickLine={false}
+                    axisLine={false}
+                    interval={dataLength > 12 ? Math.floor(dataLength / 12) : 1}          
+                    dy={8}
+                    type="category"
+                  />
             <YAxis 
               stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
               tickFormatter={(value) => formatCurrency ? formatCurrencyValue(value) : value.toString()}
