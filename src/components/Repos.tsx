@@ -38,7 +38,10 @@ const Repos: FC = () => {
   const sortedRepoData = [...repoData].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="repos-container">  
+    <div className="repos-container"> 
+      <div className="repos-header" style={{ fontWeight: 'normal' }}>
+        {`188 contributors, ${repoData.length} core repositories, 1 Ethereum protocol`}
+      </div>     
       <div className="repos-divider"></div>
       <div className="repos">
         {sortedRepoData.map(renderRow)} {/* Render the sorted rows here */}
