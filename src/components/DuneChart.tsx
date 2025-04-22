@@ -198,7 +198,7 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-const dataLength = data?.result?.rows.length || 0
+const dataLength = data?.result?.rows.length || 0;
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
