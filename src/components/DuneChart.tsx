@@ -14,7 +14,8 @@ interface DuneChartProps {
 }
 
 interface DuneData {
-  result: {
+  result: {const dataLength = data?.result?.rows.length || 0; // Calculate data length
+
     rows: Array<{
       [key: string]: any
     }>
@@ -197,7 +198,7 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-const dataLength = data?.result?.rows.length || 0; // Calculate data length
+const dataLength = data?.result?.rows.length || 0
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
@@ -222,7 +223,7 @@ return (
             tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
             tickLine={false}
             axisLine={false}
-            interval={Math.ceil(dataLength / 6)} // Show a maximum of 6 ticks
+            interval={Math.floor(dataLength / years)}
             dy={8}
             type="category"
           />
