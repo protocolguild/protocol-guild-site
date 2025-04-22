@@ -38,9 +38,7 @@ const Repos: FC = () => {
     <div className="repos-container">  
       <div className="repos-divider"></div>
       <div className="repos">
-        <div className="repos-static-container">
-          {repoData.map(renderRow)}
-        </div>
+        {repoData.map(renderRow)} {/* Directly render the rows here */}
       </div>
     </div>
   );
