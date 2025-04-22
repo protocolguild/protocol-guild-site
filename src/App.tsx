@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import Home from './pages/home'
-import Donate from './pages/donaate'
+import Donate from './pages/donate'
 import About from './pages/about'
 import ScrollToTop from './components/ScrollToTop'
 
