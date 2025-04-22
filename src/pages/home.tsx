@@ -8,9 +8,11 @@ import Grid from '../components/Grid'
 import Navbar from '../components/Navbar'
 import HeroLockup from '../components/HeroLockup'
 import MemberFaces from '../components/MemberFaces'
+import Repos from '../components/Repos'
 import { homeContent } from '../content/home'
 import DuneStat from '../components/DuneStat'
 import DuneChart from '../components/DuneChart'
+
 
 const Home: FC = () => {
 
@@ -116,7 +118,7 @@ const Home: FC = () => {
               <MemberFaces />
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
                 <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  {aboutContent.section2.link}
+                  {homeContent.section2.link}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"> {/* Add margin to the left for spacing */}
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -124,6 +126,7 @@ const Home: FC = () => {
                   </svg>
                 </a>
               </h2>
+              <Repos />
             </Grid.Item>
           </Grid>
         </Section.Row>
