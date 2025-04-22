@@ -72,25 +72,10 @@ const partners = [
 const donors = [
   { name: 'LayerZero', logo: layerzeroSvg, logoWhite: layerzeroWhiteSvg, url: 'https://layerzero.network' },
   { name: 'Optimism', logo: optimismSvg, logoWhite: optimismWhiteSvg, url: 'https://optimism.io' },
+  { name: 'Starknet', logo: starknetSvg, logoWhite: starknetWhiteSvg, url: 'https://starknet.io' },
   { name: 'ZKSync', logo: zksyncSvg, logoWhite: zksyncWhiteSvg, url: 'https://zksync.io' },
   { name: 'Scroll', logo: scrollSvg, logoWhite: scrollWhiteSvg, url: 'https://scroll.io' },
-  { name: 'Starknet', logo: starknetSvg, logoWhite: starknetWhiteSvg, url: 'https://starknet.io' },
-  { name: 'ENS', logo: ensSvg, logoWhite: ensWhiteSvg, url: 'https://ens.domains' },
-  { name: 'Octant', logo: octantSvg, logoWhite: octantWhiteSvg, url: 'https://octant.io' },
-  { name: 'SAFE DAO', logo: safeSvg, logoWhite: safeWhiteSvg, url: 'https://docs.safe.global/safenet/protocol/safe-dao' },
-  { name: 'Bitwise', logo: bitwiseSvg, logoWhite: bitwiseWhiteSvg, url: 'https://bitwiseinvestments.com/' },
-  { name: 'Gitcoin', logo: gitcoinSvg, logoWhite: gitcoinWhiteSvg, url: 'https://gitcoin.co' },
-  { name: 'Arbitrum', logo: arbitrumSvg, logoWhite: arbitrumWhiteSvg, url: 'https://arbitrum.io/community' },
-  { name: 'Lido', logo: lidoSvg, logoWhite: lidoWhiteSvg, url: 'https://lido.fi' },
-  { name: 'Uniswap', logo: uniswapSvg, logoWhite: uniswapWhiteSvg, url: 'https://uniswap.org' },
-  { name: 'MolochDAO', logo: molochSvg, logoWhite: molochWhiteSvg, url: 'https://molochdao.com' },
-  { name: 'NounsDAO', logo: nounsSvg, logoWhite: nounsWhiteSvg, url: 'https://nouns.wtf' },
-  { name: 'Lambda Class', logo: lambdaClassSvg, logoWhite: lambdaClassWhiteSvg, url: 'https://lambdaclass.com' },
-  { name: 'Tetranode', logo: tetranodeSvg, logoWhite: tetranodeWhiteSvg, url: 'https://x.com/Tetranode' },
-  { name: 'Anthony Sassano', logo: anthonySassanoSvg, logoWhite: anthonySassanoWhiteSvg, url: 'https://x.com/sassal0x' },
-  { name: 'Drips', logo: dripsSvg, logoWhite: dripsWhiteSvg, url: 'https://drips.network' },
-  { name: 'Stateful Works', logo: statefulWorksSvg, logoWhite: statefulWorksWhiteSvg, url: 'https://x.com/StatefulWorks' },
-  { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' }
+  { name: 'Octant', logo: octantSvg, logoWhite: octantWhiteSvg, url: 'https://octant.io' }
 ]
 
 
@@ -135,48 +120,23 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         </div>
       </div>
       ) : type === 'Donors' ? (
-        <div className="flex flex-col gap-8 w-full overflow-hidden group">
-          <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="flex whitespace-nowrap min-w-max donor-scroll group-hover:animate-pause">
-              {[...logos.slice(0, Math.ceil(logos.length / 2)), ...logos.slice(0, Math.ceil(logos.length / 2))].map((donor, index) => (
-                <a
-                  key={`${donor.name}-${index}`}
-                  href={donor.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 h-10 md:h-12"
-                >
-                  <img 
-                    src={theme === 'light' ? donor.logoWhite : donor.logo} 
-                    alt={donor.name}
-                    className="h-full w-auto max-w-[120px]"
-                  />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="relative w-full h-16 overflow-hidden flex items-center">
-            <div className="absolute h-full left-0 w-[10%] z-10 pointer-events-none bg-gradient-to-r from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="absolute h-full right-0 w-[10%] z-10 pointer-events-none bg-gradient-to-l from-[var(--white)] via-[var(--white)] to-transparent" />
-            <div className="flex whitespace-nowrap min-w-max donor-scroll-reverse group-hover:animate-pause">
-              {[...logos.slice(Math.ceil(logos.length / 2)), ...logos.slice(Math.ceil(logos.length / 2))].map((donor, index) => (
-                <a
-                  key={`${donor.name}-${index}`}
-                  href={donor.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 h-10 md:h-12"
-                >
-                  <img 
-                    src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
-                    alt={donor.name}
-                    className="h-full w-auto max-w-[120px]"
-                  />
-                </a>
-              ))}
-            </div>
+        <div className="p-8">
+          <div className="flex flex-wrap justify-center gap-6">
+            {logos.map((donor) => (
+              <a 
+                key={donor.name}
+                href={donor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-10 md:h-14"
+              >
+                <img 
+                  src={donor.logo} 
+                  alt={donor.name}
+                  className="h-full w-auto max-w-[140px]"
+                />
+              </a>
+            ))}
           </div>
         </div>
       ) : (
