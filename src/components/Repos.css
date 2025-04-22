@@ -20,9 +20,9 @@
 }
 
 .repos {
-  height: 280px; /* Keep this height to allow scrolling */
+  height: 200px;
   position: relative;
-  overflow-y: auto; /* Change to allow vertical scrolling */
+  overflow-y: auto;
 }
 
 .repos.expanded {
