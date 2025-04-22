@@ -148,7 +148,7 @@ const About: FC = () => {
                 title="Cumulative Years Contributed"
                 suffix="years"
                 variableName="time"
-                type="currency"
+                type="number"
               />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
