@@ -196,92 +196,92 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-  return (
-    <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
-        <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
-          {title}
-        </h3>
-        <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart
-              data={data?.result?.rows || []}
-              margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
-            >
-              <CartesianGrid 
-                strokeDasharray="3 3" 
-                stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
-                vertical={false}
-              />
-              {/* Define dataLength before the return statement */}
-              {(() => {
-                const dataLength = data?.result?.rows.length || 0; // Calculate data length here
-                return (
-                  <XAxis 
-                    dataKey={xAxisKey} 
-                    stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
-                    tick={{ fontSize: 12, fontFamily: 'Inter' }}
-                    tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
-                    tickLine={false}
-                    axisLine={false}
-                    interval={dataLength > 12 ? Math.floor(dataLength / 12) : 1}          
-                    dy={8}
-                    type="category"
-                  />
-            <YAxis 
-              stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
-              tickFormatter={(value) => formatCurrency ? formatCurrencyValue(value) : value.toString()}
-              tick={{ fontSize: 12, fontFamily: 'Inter' }}
-              tickLine={false}
-              axisLine={false}
-              dx={-10}
-            />
-            <Tooltip 
-              formatter={(value: string | number, _name, props) => {
-                const formattedValue = formatCurrency ? formatCurrencyValue(value) : value.toString();
-                const label = formatCurrency ? 'Amount' : 'Total Members';
-                // Safely access the date value from payload
-                const payload = props?.payload as Record<string, any> | undefined;
-                const date = payload?.[xAxisKey]?.toString() || '';
-                return [formattedValue, label, formatDate ? formatDateString(date) : date];
-              }}
-              contentStyle={{
-                backgroundColor: theme === 'dark' ? 'var(--gray-darker)' : 'white',
-                border: `1px solid ${theme === 'dark' ? 'var(--gray-dark)' : 'var(--gray-light)'}`,
-                borderRadius: '0.375rem',
-                padding: '0.5rem',
-                fontSize: '0.875rem',
-                fontFamily: 'Inter'
-              }}
-              labelStyle={{
-                color: theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-darker)',
-                marginBottom: '0.125rem',
-                fontSize: '0.75rem',
-                fontFamily: 'Inter'
-              }}
-              itemStyle={{
-                color: 'var(--gray-darker)',
-                padding: '0'
-              }}
-              cursor={{
-                stroke: 'var(--brand-primary)',
-                strokeWidth: 1,
-                strokeDasharray: '3 3'
-              }}
-            />
-            <Line 
-              type="monotone" 
-              dataKey={yAxisKey} 
-              stroke="var(--brand-primary)" 
-              strokeWidth={2}
-              dot={false}
-              activeDot={{
-                r: 4,
-                fill: 'var(--brand-primary)',
-                stroke: 'white',
-                strokeWidth: 2
-              }}
-            />
-          </LineChart>
+const dataLength = data?.result?.rows.length || 0; // Calculate data length
+const startDate = new Date(data?.result?.rows[0]?.[xAxisKey]); // Get the start date
+const endDate = new Date(data?.result?.rows[dataLength - 1]?.[xAxisKey]); // Get the end date
+const years = endDate.getFullYear() - startDate.getFullYear() + 1; // Calculate the number of years
+
+return (
+  <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
+    <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
+      {title}
+    </h3>
+    <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          data={data?.result?.rows || []}
+          margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
+        >
+          <CartesianGrid 
+            strokeDasharray="3 3" 
+            stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
+            vertical={false}
+          />
+          <XAxis 
+            dataKey={xAxisKey} 
+            stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
+            tick={{ fontSize: 12, fontFamily: 'Inter' }}
+            tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
+            tickLine={false}
+            axisLine={false}
+            interval={Math.floor(dataLength / years)} // Show one tick per year
+            dy={8}
+            type="category"
+          />
+          <YAxis 
+            stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
+            tickFormatter={(value) => formatCurrency ? formatCurrencyValue(value) : value.toString()}
+            tick={{ fontSize: 12, fontFamily: 'Inter' }}
+            tickLine={false}
+            axisLine={false}
+            dx={-10}
+          />
+          <Tooltip 
+            formatter={(value: string | number, _name, props) => {
+              const formattedValue = formatCurrency ? formatCurrencyValue(value) : value.toString();
+              const label = formatCurrency ? 'Amount' : 'Total Members';
+              const payload = props?.payload as Record<string, any> | undefined;
+              const date = payload?.[xAxisKey]?.toString() || '';
+              return [formattedValue, label, formatDate ? formatDateString(date) : date];
+            }}
+            contentStyle={{
+              backgroundColor: theme === 'dark' ? 'var(--gray-darker)' : 'white',
+              border: `1px solid ${theme === 'dark' ? 'var(--gray-dark)' : 'var(--gray-light)'}`,
+              borderRadius: '0.375rem',
+              padding: '0.5rem',
+              fontSize: '0.875rem',
+              fontFamily: 'Inter'
+            }}
+            labelStyle={{
+              color: theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-darker)',
+              marginBottom: '0.125rem',
+              fontSize: '0.75rem',
+              fontFamily: 'Inter'
+            }}
+            itemStyle={{
+              color: 'var(--gray-darker)',
+              padding: '0'
+            }}
+            cursor={{
+              stroke: 'var(--brand-primary)',
+              strokeWidth: 1,
+              strokeDasharray: '3 3'
+            }}
+          />
+          <Line 
+            type="monotone" 
+            dataKey={yAxisKey} 
+            stroke="var(--brand-primary)" 
+            strokeWidth={2}
+            dot={false}
+            activeDot={{
+              r: 4,
+              fill: 'var(--brand-primary)',
+              stroke: 'white',
+              strokeWidth: 2
+            }}
+          />
+        </LineChart>
         </ResponsiveContainer>
       </div>
     </div>
