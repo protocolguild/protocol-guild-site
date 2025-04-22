@@ -23,7 +23,7 @@
   
     return (
       <main>
-        <Section background="gray-dark" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0" >
+        <Section background="gray-dark" className="min-h-[200px] md:min-h-[200px] flex flex-col pb-8 md:pb-16 mt-0" >
           <img
             src={chainsImage}
             alt="Ethereum chains"
