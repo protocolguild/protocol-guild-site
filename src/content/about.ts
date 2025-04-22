@@ -1,7 +1,6 @@
 export const aboutContent = {
   hero: {
-    title: "Securing the future of Ethereum core development",
-    subtitle: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development."
+    title: "About Protocol Guild"
   },
   section1: {
     title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
