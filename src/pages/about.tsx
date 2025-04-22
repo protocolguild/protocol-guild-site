@@ -136,50 +136,24 @@
           </Section.Row>
         </Section>
        
-        <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section background="white" divider="var(--gray-dark)">
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section2.title}</h2>
-                <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section2.subtitle}</h2>
-                <MemberFaces />
-                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
-                  <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    {aboutContent.section2.link}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"> {/* Add margin to the left for spacing */}
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </h2>
+              <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
+                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.impactAreas.title}</h2>
+                <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.impactAreas.subtitle}</h2>
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-6">
-                <Repos />
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
-        </Section>
-        <Section background="white" divider="var(--brand-primary)" line={true}>
-          <Section.Row align="start">
-            <Grid columns={12} className="py-16">
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
-                <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
-                <DonorSectionDark2 theme="dark" type="Donors" />
-              </Grid.Item>
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <div className="w-full flex flex-row justify-between items-center">
-                  <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section3.tableHeader}</p>
-                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <span className="text-[var(--gray-dark)] text-base sm:text-sm">View on Dune</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  </a>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {aboutContent.impactAreas.areas.map((area, index) => (
+                    <FeatureCard
+                      key={index}
+                      title={area.title}
+                      description={area.description}
+                      color="var(--gray-dark)"
+                    />
+                  ))}
                 </div>
-                <DuneTable 
-                    queryId="4561127"
-                    theme="light"
-                  />
               </Grid.Item>
             </Grid>
           </Section.Row>
