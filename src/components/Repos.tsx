@@ -34,11 +34,14 @@ const Repos: FC = () => {
     </div>
   );
 
+  // Sort the repoData by repo name
+  const sortedRepoData = [...repoData].sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <div className="repos-container">  
       <div className="repos-divider"></div>
       <div className="repos">
-        {repoData.map(renderRow)} {/* Directly render the rows here */}
+        {sortedRepoData.map(renderRow)} {/* Render the sorted rows here */}
       </div>
     </div>
   );
