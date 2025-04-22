@@ -29,7 +29,7 @@ const Home: FC = () => {
 
   return (
     <main>
-      <Section background="white" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
+      <Section background="brand-primary" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
         <img
           src={chainsImage}
           alt="Ethereum chains"
@@ -39,7 +39,7 @@ const Home: FC = () => {
         <Section.Row>
           <Grid>
             <Grid.Item span={3} className="flex flex-col">
-              <Navbar theme="light" />
+              <Navbar theme="brand" />
             </Grid.Item>
           </Grid>
         </Section.Row>
@@ -58,7 +58,7 @@ const Home: FC = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
                 {homeContent.hero.title}
               </h1>
-              <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
+              <p className="text-lg leading-[23px] text-[var(--gray-dark)]">
                 {homeContent.hero.subtitle}
               </p>
             </Grid.Item>
