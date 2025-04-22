@@ -1,17 +1,15 @@
 import { FC, useState } from 'react'
-import chainsImage from '../assets/images/chains.png'
-import authorImage from '../assets/images/michaelsproul.jpg'
-import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
-import DonorSectionDark from '../components/DonorSectionDark'
 import Grid from '../components/Grid'
 import Navbar from '../components/Navbar'
 import HeroLockup from '../components/HeroLockup'
+import chainsImage from '../assets/images/chains.png'
+import { homeContent } from '../content/home'
+import authorImage from '../assets/images/michaelsproul.jpg'
+import DuneChart from '../components/DuneChart'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
-import { homeContent } from '../content/home'
-import DuneStat from '../components/DuneStat'
-import DuneChart from '../components/DuneChart'
+import DonorSectionDark2 from '../components/DonorSectionDark'
 
 const Home: FC = () => {
 
