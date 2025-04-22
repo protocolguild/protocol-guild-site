@@ -14,8 +14,7 @@ interface DuneChartProps {
 }
 
 interface DuneData {
-  result: {const dataLength = data?.result?.rows.length || 0; // Calculate data length
-
+  result: {
     rows: Array<{
       [key: string]: any
     }>
@@ -198,18 +197,7 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-const dataLength = data?.result?.rows.length || 0;
-
-let month = '';
-let years = 0;
-
-if (dataLength > 0) {
-  const startDate = new Date(data.result.rows[0][xAxisKey]);
-  month = startDate.toLocaleString('en-US', { month: 'short' }); // Get the short month name
-  const endDate = new Date(data.result.rows[dataLength - 1][xAxisKey]);
-  years = endDate.getFullYear() - startDate.getFullYear() + 1; // Calculate the number of years
-}
-
+const dataLength = data?.result?.rows.length || 0; // Calculate data length
 
 return (
   <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
@@ -231,14 +219,10 @@ return (
             dataKey={xAxisKey} 
             stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
-            tickFormatter={(value) => {
-              const date = new Date(value.toString());
-              const currentYear = date.getFullYear().toString().slice(-2);
-              return `${month} '${currentYear}`; // Use the dynamic month with the year
-            }}
+            tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
             tickLine={false}
             axisLine={false}
-            interval={Math.floor(dataLength / years) || 0} // Ensure interval is not undefined
+            interval={Math.ceil(dataLength / 6)} // Show a maximum of 6 ticks
             dy={8}
             type="category"
           />
