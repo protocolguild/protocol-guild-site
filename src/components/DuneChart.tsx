@@ -219,7 +219,7 @@ const DuneChart: FC<DuneChartProps> = ({
               tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
               tickLine={false}
               axisLine={false}
-              interval="preserveStartEnd"
+              interval={12}
               dy={8}
               type="category"
             />
