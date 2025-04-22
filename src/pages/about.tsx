@@ -47,7 +47,7 @@
             </Grid>
           </Section.Row>
         </Section>
-
+        
         <Section background="white" divider="var(--brand-primary)" line={true}>
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
@@ -83,13 +83,13 @@
                     </a>
                   </h2>
                 </div>
-                <br />
+                <br/>
                 <div>
-                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team.title}</h3>
+                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="flex flex-col items-start">
                       <img src={trentImg} alt="Trent Van Epps" className="w-full aspect-square object-cover" />
-                      <div className="mt-2 flex items-start justify-between w-full gap-2">
+                      <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm">Trent Van Epps</p>
                         <a href="https://x.com/trent_vanepps" target="_blank" rel="noopener noreferrer" className="text-[var(--gray-dark)] text-sm font-normal">@trent_vanepps
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1">
@@ -103,7 +103,7 @@
                     </div>
                     <div className="flex flex-col items-start">
                       <img src={cheekyImg} alt="Cheeky Gorilla" className="w-full aspect-square object-cover" />
-                      <div className="mt-2 flex items-start justify-between w-full gap-2">
+                      <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm">Cheeky Gorilla</p>
                         <a href="https://x.com/cheekygorilla0x" target="_blank" rel="noopener noreferrer" className="text-[var(--gray-dark)] text-sm font-normal">@cheekygorilla0x
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1">
@@ -117,7 +117,7 @@
                     </div>
                     <div className="flex flex-col items-start">
                       <img src={peterImg} alt="Peter Vecchiarelli" className="w-full aspect-square object-cover" />
-                      <div className="mt-2 flex items-start justify-between w-full gap-2">
+                      <div className="mt-2 flex flex-col items-start w-full gap-1">
                         <p className="text-sm">Peter Vecchiarelli</p>
                         <a href="https://x.com/AlphaLemonade" target="_blank" rel="noopener noreferrer" className="text-[var(--gray-dark)] text-sm font-normal">@AlphaLemonade
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1">
@@ -135,7 +135,7 @@
             </Grid>
           </Section.Row>
         </Section>
-              
+  
         <Section background="white" divider="var(--brand-primary)" line={true}>
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
