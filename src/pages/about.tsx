@@ -142,13 +142,13 @@ const About: FC = () => {
             <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.impactAreas.title}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.impactAreas.subtitle}</h2>
-              <DuneChart 
+              <DuneStat 
                 queryId="5021583" 
                 theme="light" 
                 title="Cumulative Years Contributed"
                 suffix="years"
                 variableName="time"
-                type="number"
+                type="currency"
               />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
