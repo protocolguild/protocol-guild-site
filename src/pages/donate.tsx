@@ -2,6 +2,7 @@ import { FC, useState } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
+import DonorSectionDark3 from '../components/DonorSectionDark3'
 import Grid from '../components/Grid'
 import HeroLockup from '../components/HeroLockup'
 import medallionSvg from '../assets/images/medallion.svg'
@@ -128,6 +129,7 @@ const Donate: FC = () => {
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.ecosystem.title}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle1}</h2>
               <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle2}</h2>
+              <DonorSectionDark3 theme="dark" type="Donors" />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
