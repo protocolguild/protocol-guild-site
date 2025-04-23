@@ -1,18 +1,9 @@
 // Component imports
 import pgIcon from '../assets/images/pg-icon-dark.svg'
 // 1% Partners
-import etherfiSvg from '../assets/images/donors/etherfi.svg'
-import etherfiWhiteSvg from '../assets/images/donors/etherfi-white.svg'
-import taikoSvg from '../assets/images/donors/taiko.svg'
-import taikoWhiteSvg from '../assets/images/donors/taiko-white.svg'
-import eigenlayerSvg from '../assets/images/donors/eigenlayer.svg'
-import eigenlayerWhiteSvg from '../assets/images/donors/eigenlayer-white.svg'
-import pwnSvg from '../assets/images/donors/pwn.svg'
-import pwnWhiteSvg from '../assets/images/donors/pwn-white.svg'
-import pufferSvg from '../assets/images/donors/puffer.svg'
-import pufferWhiteSvg from '../assets/images/donors/puffer-white.svg'
 
 // Donors
+import ethereumLogo from '../assets/images/ethereum.svg'
 import baseLogo from '../assets/images/base.svg'
 import optimismLogo from '../assets/images/optimism.svg'
 import polygonLogo from '../assets/images/polygon.svg'
@@ -31,6 +22,7 @@ const partners = [
 ]
 
 const donors = [
+  { name: 'Ethereum', logo: ethereumLogo },
   { name: 'Arbitrum', logo: arbitrumLogo },
   { name: 'Base', logo: baseLogo },
   { name: 'Optimism', logo: optimismLogo },
