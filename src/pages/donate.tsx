@@ -134,19 +134,19 @@ const Donate: FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
               </div>
-              <DuneTable queryId={donateContent.ecosystem.table.duneQueryId} theme="dark" />
+              <DuneTable queryId={donateContent.ecosystem.table.duneQueryId} theme="light" />
               <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
                 <DuneStat
                   title={donateContent.ecosystem.stats[0].title}
                   variableName={donateContent.ecosystem.stats[0].variableName}
                   queryId={donateContent.ecosystem.stats[0].queryId}
-                  theme="dark"
+                  theme="light"
                 />
                 <DuneStat
                   title={donateContent.ecosystem.stats[1].title}
                   variableName={donateContent.ecosystem.stats[1].variableName}
                   queryId={donateContent.ecosystem.stats[1].queryId}
-                  theme="dark"
+                  theme="light"
                 />
               </div>
             </Grid.Item>
