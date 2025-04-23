@@ -99,7 +99,7 @@ const Donate: FC = () => {
               <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">
                 {donateContent.pledge.title}
               </h2>
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.description}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.description}</h2>
               <a href={donateContent.pledge.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
                 {donateContent.pledge.buttonText}
               </a>
@@ -127,8 +127,8 @@ const Donate: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.ecosystem.title}</h2>
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle1}</h2>
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle2}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle1}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle2}</h2>
               <DonorSectionDark3 theme="dark" type="Donors" />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
@@ -155,7 +155,7 @@ const Donate: FC = () => {
               <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">
                 {donateContent.planning.title}
               </h2>
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.planning.description}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.planning.description}</h2>
               <a href={donateContent.pledge.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit">
                 {donateContent.planning.buttonText}
               </a>
