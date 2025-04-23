@@ -172,8 +172,17 @@ return (
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funders.subtitle1}</h2>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
-            <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
-            <DonorSectionDark2 theme="dark" type="Donors" />
+            <div className="w-full flex flex-row justify-between items-center">
+              <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.funders.tableHeader}</p>
+              <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <span className="text-[var(--gray-dark)] text-base sm:text-sm">View on Dune</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <DuneTable 
+                queryId="4561127"
+                theme="light"
+              />
           </Grid.Item>
         </Grid>
       </Section.Row>
