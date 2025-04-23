@@ -65,18 +65,18 @@
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section1.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.distribution.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
-                <em>{aboutContent.section1.quote.text}</em>
+                <em>{aboutContent.distribution.quote.text}</em>
               </h2>
               <div className="flex items-center">
                 <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
-                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section1.quote.author}</h2>
+                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.distribution.quote.author}</h2>
               </div>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
-                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section1.statsHeader}</p>
+                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.distribution.statsHeader}</p>
                 <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
                   View on Dune
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -95,122 +95,25 @@
         </Section.Row>
       </Section>
   
-        <Section background="white" divider="var(--brand-primary)" line={true}>
-          <Section.Row align="start">
-            <Grid columns={12} className="py-16">
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section2.title}</h2>
-                <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section2.subtitle}</h2>
-                <MemberFaces />
-                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
-                  <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    {aboutContent.section2.link}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"> {/* Add margin to the left for spacing */}
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </h2>
-              </Grid.Item>
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <Repos />
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
-        </Section>
-        <Section background="white" divider="var(--brand-primary)" line={true}>
-          <Section.Row align="start">
-            <Grid columns={12} className="py-16">
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section3.title}</h2>
-                <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
-                <DonorSectionDark2 theme="dark" type="Donors" />
-              </Grid.Item>
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <div className="w-full flex flex-row justify-between items-center">
-                  <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section3.tableHeader}</p>
-                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <span className="text-[var(--gray-dark)] text-base sm:text-sm">View on Dune</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  </a>
-                </div>
-                <DuneTable 
-                    queryId="4561127"
-                    theme="light"
-                  />
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
-        </Section>
+
+
+
+
+
+
         
-        <Section background="white" divider="var(--brand-primary)" line={true}>
-          <Section.Row align="start">
-            <Grid columns={12} className="py-16">
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funding.title}</h2>
-                <DuneStat 
-                  queryId="2478156" 
-                  theme="light" 
-                  title="Total Donations"
-                  variableName="total_donors"
-                  type="number"
-                />
-                <DuneStat 
-                  queryId="2478156" 
-                  theme="light" 
-                  title="Total Donated - Initial value"
-                  variableName="total_historical_value"
-                  type="currency"
-                />
-                <DuneStat 
-                  queryId="2478156" 
-                  theme="light" 
-                  title="Total Donated - Current Value"
-                  variableName="total_current_value"
-                  type="currency"
-                />
-              </Grid.Item>
-              <Grid.Item span={6} className="flex flex-col gap-6">
-                <div className="w-full flex flex-row justify-between items-center">
-                  <p className="text-[var(--gray-dark)] text-base sm:text-sm"></p>
-                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
-                    View on Dune
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  </a>
-                </div>
-                <DuneStat 
-                  queryId="4872646" 
-                  theme="light" 
-                  title="Total Amount Vesting (4 Years)"
-                  variableName="total_vesting"
-                  type="currency"
-                />
-                <DuneChart 
-                    queryId="5001842" 
-                    theme="light" 
-                    title="Vesting Forecast"
-                    xAxisKey="date"
-                    yAxisKey="total_vesting"
-                    formatCurrency
-                    formatDate
-                  />
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
-        </Section>
   
         <Section background="white" divider="var(--brand-primary)" line={true}>
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
               <Grid.Item span={6} className="flex flex-col gap-4">
-                <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.title}</h2>
-                <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.organization.description}</h2>
+                <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.org.title}</h2>
+                <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.org.description}</h2>
                 <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Schedule Call</a>
               </Grid.Item>
               <Grid.Item span={6} className="flex flex-col gap-4">
                 <div>
-                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team.title}</h3>
+                  <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.org.team.title}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="flex flex-col items-start">
                       <img src={trentImg} alt="Trent Van Epps" className="w-full aspect-square object-cover rounded-full" />
