@@ -61,7 +61,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-[90px] w-auto max-w-[158px]"
+                className="h-[60px] w-auto max-w-[158px]"
               />
             </a>
           ))}
@@ -81,7 +81,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-[90px] w-auto max-w-[158px]"
+                className="h-[60px] w-auto max-w-[158px]"
               />
             </a>
           ))}
@@ -100,7 +100,7 @@ return (
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
               alt={donor.name}
-              className="h-[90px] w-auto max-w-[158px]"
+              className="h-[60px] w-auto max-w-[158px]"
             />
           </a>
         ))}
