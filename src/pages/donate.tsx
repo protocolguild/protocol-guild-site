@@ -76,12 +76,14 @@ const Donate: FC = () => {
       </Grid.Item>
       <Grid.Item span={12} className="grid grid-cols-3 gap-6">
         {donateContent.value.features.map((feature, index) => (
-          <div className="col-span-1" style={{ width: '90%' }} key={index}>
-            <FeatureCard
-              title={feature.title}
-              description={feature.description}
-              color="var(--gray-dark)"
-            />
+          <div className="flex justify-center" key={index}>
+            <div className="w-[90%]">
+              <FeatureCard
+                title={feature.title}
+                description={feature.description}
+                color="var(--gray-dark)"
+              />
+            </div>
           </div>
         ))}
       </Grid.Item>
