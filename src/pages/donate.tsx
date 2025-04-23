@@ -161,7 +161,7 @@ const Donate: FC = () => {
               </a>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <div className="relative h-[280px]">
+              <div className="relative h-[200px]">
                 <div className="overflow-hidden absolute inset-0">
                   <div 
                     className="flex h-full transition-transform duration-500 ease-in-out" 
