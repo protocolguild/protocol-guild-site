@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
-import DonorSection from '../components/DonorSection2'
+import DonorSectionDark2 from '../components/DonorSectionDark2'
 import Grid from '../components/Grid'
 import HeroLockup from '../components/HeroLockup'
 import medallionSvg from '../assets/images/medallion.svg'
