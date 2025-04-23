@@ -163,17 +163,8 @@
                 </a>
               </h2>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {homeContent.impact.areas.map((area, index) => (
-                  <FeatureCard
-                    key={index}
-                    title={area.title}
-                    description={area.description}
-                    color="var(--gray-dark)"
-                  />
-                ))}
-              </div>
+
+            
             </Grid.Item>
           </Grid>
         </Section.Row>
