@@ -269,7 +269,7 @@ return (
               {homeContent.planning.title}
             </h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.planning.description}</h2>
-            <a href={homeContent.pledge.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit">
+            <a href={homeContent.planning.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit">
               {homeContent.planning.buttonText}
             </a>
           </Grid.Item>
