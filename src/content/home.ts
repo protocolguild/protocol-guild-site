@@ -28,8 +28,9 @@ export const homeContent = {
   },
   section4: {
     title: "It takes a village",
-    subtitle1: "To ensure that the funding distributed via Protocol Guild is sufficient to onboard and retain Ethereum’s core protocol contributors over the long term—and, in the worst case, serve as a funder of last resort—we need to significantly increase our funding.",
-    subtitle2: "We can only achieve this with buy-in from the majority of projects in our ecosystem.",
+    subtitle1: "Having a stable core protocol contributor set that is sufficiently incentivized is a strategic advantage for Ethereum’s ecosystem. By donating tokens, you allow Ethereum's core contributors to share in the value created in the ecosystem, incentivizing them to continue delivering the scalability and security upgrades essential for your project's success.",
+    subtitle2: "But to ensure that the funding distributed via Protocol Guild is sufficient to onboard and retain Ethereum’s core protocol contributors over the long term—and, in the worst case, serve as a funder of last resort—we need to significantly increase our funding.",
+    subtitle3: "We can only achieve this with buy-in from the majority of projects in our ecosystem.",
     statsHeader: "Distribution Stats"
   },
   planning: {
