@@ -4,8 +4,11 @@ export const aboutContent = {
     subtitle: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development."
   },
   section1: {
-    title: "Since 2022, we have distributed $28M directly to Ethereum core developers",
-    subtitle: "We receive tokens from projects building on Ethereum and distribute them directly to active core protocol contributors, vested over four years.",
+    title: "Since 2022, we have distributed $28M directly to Ethereum core developers.",
+    quote: {
+      text: "\"I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
+      author: "Michael Sproul, Lighthouse",
+    },
     statsHeader: "Cumulative Amount Distributed"
   },
   section2: {
