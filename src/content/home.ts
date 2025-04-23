@@ -71,9 +71,32 @@ export const homeContent = {
     subtitle2: "We can only achieve this with buy-in from the majority of projects in our ecosystem.",
     statsHeader: "Distribution Stats"
   },
-  section5: {
-    title: "How to Pledge?",
-    subtitle1: "Taking the Protocol Guild Pledge couldn’t be more simple: just announce it publicly! You can even do so before you have a token.",
-    subtitle2: "Have questions? We’d love to chat with you!"
-  }
+  planning: {
+    title: "Plan your token allocation with Protocol Guild.",
+    description: "Planning for sustainable open-source funding can begin at the earliest stages of your project. Work with Protocol Guild to design a token allocation strategy tailored to your goals.",
+    buttonText: "Get in Touch",
+    buttonLink: "https://calendly.com/vecchiarelli-peter/30min"
+  },
+  quotes: [
+    {
+      text: "Ethereum thrives because of its incredible contributors — the developers, researchers, and coordinators working tirelessly behind the scenes.",
+      author: "EigenLayer"
+    },
+    {
+      text: "The 1% allocation is our way of giving back to the core Ethereum maintainer community and acknowledging their exceptional work over the years.",
+      author: "Taiko"
+    },
+    {
+      text: "Thank you, Ethereum contributors, for nearly a decade of relentless building & ongoing stewardship of this common infrastructure.",
+      author: "VanEck"
+    },
+    {
+      text: "It is in the interest of our community to help ensure the stability of the Ethereum L1 R&D contributor set.",
+      author: "INTMAX"
+    },
+    {
+      text: "We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.",
+      author: "Lambda Class"
+    }
+  ]
 }
