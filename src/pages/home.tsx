@@ -178,7 +178,7 @@ return (
             <DuneChart 
                 queryId="5001842" 
                 theme="light" 
-                title="Vesting Forecast"
+                title="Total Funds Vesting to Core Contributors"
                 xAxisKey="date"
                 yAxisKey="total_vesting"
                 formatCurrency
