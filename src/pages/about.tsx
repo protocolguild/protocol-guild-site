@@ -123,7 +123,7 @@ return (
       </Section.Row>
     </Section>
 
-    <Section background="white" divider="var(--gray-dark)" line={true}>
+    <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid columns={12} className="py-16">
           <Grid.Item span={6} className="flex flex-col gap-6 md:h-full">
@@ -179,7 +179,7 @@ return (
       </Section.Row>
     </Section>
 
-    <Section background="white" divider="var(--gray-dark)" line={true}>
+    <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid columns={12} className="py-16">
           <Grid.Item span={6} className="flex flex-col gap-6">
