@@ -7,16 +7,16 @@ export const donateContent = {
     title: "The most effective way to fund Ethereum's future.",
     features: [
       {
-        title: "Align your project.",
-        description: "Protocol Guild is the only Ethereum funding institution that serves every core repository. We fund 189 core contributors across all 26 core Ethereum repositories, from consensus to client execution."
-      },
-      {
         title: "Future-proof your dependencies.",
-        description: "Ensure the repos you and your customers rely on will be maintained for years to come. Learn what dependency funding strategy is right to invest in the future of your business.."
+        description: "Ensure the repos you and your customers rely on will be maintained for years to come. Learn what dependency funding strategy is right to invest in the future of your business."
       },
       {
-        title: "Accelerate innovation.",
-        description: "More money for core development doesn't just ensure successful long-term maintenance of core repos. It also makes the Ethereum roadmap happen faster, keeping the EVM competitive."
+        title: "Align your project.",
+        description: "Protocol Guild is the only Ethereum funding institution that serves 189 core contributors across all 47 core Ethereum repositories, from consensus to client execution."
+      },
+      {
+        title: "Trustless Vesting.",
+        description: "All donations are vested linearly over 4 years onchain via immutable contracts, and are distributed directly to all core contributers, ensuring continuity and depth of the contributor set."
       }
     ]
   },
