@@ -152,6 +152,14 @@ return (
               </a>
             </div>
             <DuneStat 
+              queryId="2665887" 
+              theme="light" 
+              title="Total Core Protocol Contributors"
+              suffix="individuals"
+              variableName="total_count"
+              type="number"
+            />
+            <DuneStat 
               queryId="4876407" 
               theme="light" 
               title="Median Distributed Last 12 Months"
