@@ -19,7 +19,7 @@ export const aboutContent = {
     link: "See all individuals"
   },
   impact: {
-    title: "Impact areas",
+    title: "Comprehensive funding for the entire protocol",
     subtitle: "Protocol Guild is the only org that comprehensively funds contributors from across all of Ethereum's core development.",
     areas: [
       {
