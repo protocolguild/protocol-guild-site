@@ -48,11 +48,7 @@ export const donateContent = {
     title: "Plan your token allocation with Protocol Guild.",
     description: "Planning for sustainable open-source funding can begin at the earliest stages of your project. Work with Protocol Guild to design a token allocation strategy tailored to your goals.",
     buttonText: "Get in Touch",
-    buttonLink: "https://calendly.com/vecchiarelli-peter/30min",
-    quote: "We've proudly committed 1% of our token supply to Protocol Guild, supporting their ongoing efforts in Ethereum's development. ProtocolGuild is a powerhouse of core Ethereum maintainers pushing the boundaries of what's possible on Ethereum. Their invaluable work and support formed the backbone of all existing projects in the Ethereum ecosystem. - John Smith, Imagine Protocol"
-  },
-  stability: {
-    title: "Stability for developers means stability for Ethereum."
+    buttonLink: "https://calendly.com/vecchiarelli-peter/30min"
   },
   quotes: [
     {
