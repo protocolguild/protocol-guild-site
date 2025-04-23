@@ -4,7 +4,7 @@ export const homeContent = {
     subtitle: "Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol development, backed by projects building on Ethereum."
   },
   section0: {
-    title: "The most effective way to fund Ethereum's future.",
+    title: "The most effective way to fund Ethereum's future",
     features: [
       {
         title: "Future-proof your dependencies.",
