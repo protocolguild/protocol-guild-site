@@ -160,21 +160,6 @@ const Donate: FC = () => {
                 {donateContent.planning.buttonText}
               </a>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col">
-              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)] italic">{donateContent.planning.quote}</h2>
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
-
-      <Section background="white" divider="var(--brand-primary)" line={true}>
-        <Section.Row align="start" >
-          <Grid columns={12} className="py-16">
-          <Grid.Item span={6} className="flex flex-col gap-4">
-              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">
-                {donateContent.stability.title}
-              </h2>
-            </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="relative h-[280px]">
                 <div className="overflow-hidden absolute inset-0">
@@ -220,7 +205,6 @@ const Donate: FC = () => {
                 </div>
               </div>
             </Grid.Item>
-
           </Grid>
         </Section.Row>
       </Section>
