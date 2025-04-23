@@ -109,6 +109,17 @@ return (
             </h2>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
+            <img 
+              src={medallionSvg}
+              alt="Protocol Guild medallion" 
+              className="mt-0 w-48 transform-gpu"
+              style={{
+                WebkitBackfaceVisibility: 'hidden',
+                WebkitTransform: 'translateZ(0)',
+                imageRendering: '-webkit-optimize-contrast'
+              }}
+            />
+            <br/><br/>
             <DonorSectionDark theme="dark" type="Partners" featured={true}/>
           </Grid.Item>
         </Grid>
