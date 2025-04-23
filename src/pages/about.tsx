@@ -222,7 +222,7 @@ const About: FC = () => {
               <DuneChart 
                   queryId="3851797" 
                   theme="light" 
-                  title="Vesting Forecast"
+                  title="Vesting History + Forecast"
                   xAxisKey="date"
                   yAxisKey="total_vesting"
                   formatCurrency
