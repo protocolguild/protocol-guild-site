@@ -220,11 +220,11 @@ const Donate: FC = () => {
                 {donateContent.donate.buttonText}
               </a>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col h-full items-center justify-center">
+            <Grid.Item span={6} className="flex flex-col gap-6">
               <DuneStat 
                 queryId="2478156" 
                 theme="light" 
-                title="Number of Donations"
+                title="Total Donations"
                 variableName="total_donors"
                 type="number"
               />
@@ -237,7 +237,6 @@ const Donate: FC = () => {
               />
               <TokenCarousel theme="dark" />
             </Grid.Item>
-
           </Grid>
         </Section.Row>
       </Section>
