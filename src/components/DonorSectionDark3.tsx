@@ -105,8 +105,8 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
   const logos = type === 'Donors' ? donors : partners
 
   return (
-    <div className={`donors ${className} ${`border-t ${theme === 'light' ? 'border-[#fff]' : 'border-[var(--gray-dark)]'}`} pt-4 pb-0`}>
-
+    <div className={`donors ${className} pt-4 pb-0`}>
+      
     {featured && type === 'Partners' ? (
       <div className="silver-gradient silver-shimmer rounded-xl p-8">
         <div className="flex flex-wrap justify-center gap-6">
