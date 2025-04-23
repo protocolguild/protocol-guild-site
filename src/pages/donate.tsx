@@ -3,6 +3,7 @@ import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
 import DonorSectionDark3 from '../components/DonorSectionDark3'
+import DonorSectionDark4 from '../components/DonorSectionDark4'
 import Grid from '../components/Grid'
 import HeroLockup from '../components/HeroLockup'
 import medallionSvg from '../assets/images/medallion.svg'
@@ -208,44 +209,43 @@ const Donate: FC = () => {
         </Section.Row>
       </Section>
 
-<Section background="white" divider="var(--brand-primary)" line={true}>
-  <Section.Row align="start">
-    <Grid columns={12} className="py-16">
-      <Grid.Item span={6} className="flex flex-col gap-6">
-        <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.donate.title}</h2>
-        <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.donate.description1}</h2>
-        <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.donate.description2}</h2>
-        <a href={donateContent.donate.buttonLink} target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
-          {donateContent.donate.buttonText}
-        </a>
-      </Grid.Item>
-      <Grid.Item span={6} className="flex flex-col gap-6">
-        <div className="flex justify-between">
-          <div className="w-[49%]">
-            <DuneStat 
-              queryId="2478156" 
-              theme="light" 
-              title="Total Donations"
-              variableName="total_donors"
-              type="number"
-            />
-          </div>
-          <div className="w-[49%]">
-            <DuneStat 
-              queryId="2478156" 
-              theme="light" 
-              title="Unique Donors"
-              variableName="unique_donors"
-              type="number"
-            />
-          </div>
-        </div>
-        <TokenCarousel theme="dark" />
-      </Grid.Item>
-    </Grid>
-  </Section.Row>
-</Section>
-
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.donate.title}</h2>
+              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.donate.description1}</h2>
+              <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.donate.description2}</h2>
+              <a href={donateContent.donate.buttonLink} target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
+                {donateContent.donate.buttonText}
+              </a>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <div className="flex justify-between">
+                <div className="w-[49%]">
+                  <DuneStat 
+                    queryId="2478156" 
+                    theme="light" 
+                    title="Total Donations"
+                    variableName="total_donors"
+                    type="number"
+                  />
+                </div>
+                <div className="w-[49%]">
+                  <DuneStat 
+                    queryId="2478156" 
+                    theme="light" 
+                    title="Unique Donors"
+                    variableName="unique_donors"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <DonorSectionDark4 theme="dark" type="Donors" />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
       
     </main>
   )
