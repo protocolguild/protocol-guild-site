@@ -16,7 +16,6 @@ import pufferWhiteSvg from '../assets/images/donors/puffer-white.svg'
 import baseLogo from '../assets/images/base.svg'
 import optimismLogo from '../assets/images/optimism.svg'
 import polygonLogo from '../assets/images/polygon.svg'
-import realLogo from '../assets/images/real.svg'
 import scrollLogo from '../assets/images/scroll.svg'
 import shapeLogo from '../assets/images/shape.svg'
 import zksyncLogo from '../assets/images/zksync.svg'
@@ -36,7 +35,6 @@ const donors = [
   { name: 'Base', logo: baseLogo },
   { name: 'Optimism', logo: optimismLogo },
   { name: 'Polygon', logo: polygonLogo },
-  { name: 're.al', logo: realLogo },
   { name: 'Scroll', logo: scrollLogo },
   { name: 'Shape', logo: shapeLogo },
   { name: 'zkSync', logo: zksyncLogo },
