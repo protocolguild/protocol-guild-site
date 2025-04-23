@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import FeatureCard from '../components/FeatureCard'
 import Section from '../components/Section'
-import DonorSection from '../components/DonorSection'
+import DonorSection from '../components/DonorSection2'
 import Grid from '../components/Grid'
 import HeroLockup from '../components/HeroLockup'
 import medallionSvg from '../assets/images/medallion.svg'
@@ -102,6 +102,8 @@ const Donate: FC = () => {
               <a href={donateContent.pledge.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
                 {donateContent.pledge.buttonText}
               </a>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col">
               <img 
                 src={medallionSvg}
                 alt="Protocol Guild medallion" 
@@ -112,9 +114,7 @@ const Donate: FC = () => {
                   imageRendering: '-webkit-optimize-contrast'
                 }}
               />
-            </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col">
-              <DonorSection theme="light" type="Partners" featured={true}/>
+              <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
             </Grid.Item>
           </Grid>
         </Section.Row>
