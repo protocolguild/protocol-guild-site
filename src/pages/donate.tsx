@@ -225,24 +225,20 @@ const Donate: FC = () => {
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col gap-6">
         <div className="flex justify-between">
-          <div className="w-[45%]">
-            <DuneStat 
-              queryId="2478156" 
-              theme="light" 
-              title="Total Donations"
-              variableName="total_donors"
-              type="number"
-            />
-          </div>
-          <div className="w-[45%]">
-            <DuneStat 
-              queryId="2478156" 
-              theme="light" 
-              title="Unique Donors"
-              variableName="unique_donors"
-              type="number"
-            />
-          </div>
+          <DuneStat 
+            queryId="2478156" 
+            theme="light" 
+            title="Total Donations"
+            variableName="total_donors"
+            type="number"
+          />
+          <DuneStat 
+            queryId="2478156" 
+            theme="light" 
+            title="Unique Donors"
+            variableName="unique_donors"
+            type="number"
+          />
         </div>
         <TokenCarousel theme="dark" />
       </Grid.Item>
