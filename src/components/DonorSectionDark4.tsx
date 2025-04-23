@@ -10,9 +10,6 @@ import zksyncLogo from '../assets/images/zksync.svg'
 import zoraLogo from '../assets/images/zora.svg'
 import arbitrumLogo from '../assets/images/arbitrum.svg'
 
-const partners = [
-]
-
 const donors = [
   { name: 'Ethereum', logo: ethereumLogo },
   { name: 'Arbitrum', logo: arbitrumLogo },
@@ -29,37 +26,17 @@ const donors = [
 interface DonorSectionProps {
   className?: string
   theme?: 'dark' | 'light'
-  type?: 'Donors' | 'Partners'
+  type?: 'Donors'
   featured?: boolean
 }
 
 const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featured = false }: DonorSectionProps) => {
-  const logos = type === 'Donors' ? donors : partners
+  const logos = type === 'Donors' ? donors
 
 return (
   <div className={`donors ${className} pt-4 pb-0`}>
     
-    {featured && type === 'Partners' ? (
-      <div className="silver-gradient silver-shimmer rounded-xl p-8">
-        <div className="flex flex-wrap justify-center gap-6">
-          {logos.map((donor) => (
-            <a 
-              key={donor.name}
-              href={donor.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center h-10 md:h-15"
-            >
-              <img 
-                src={donor.logo} 
-                alt={donor.name}
-                className="h-[60px] w-auto max-w-[158px]"
-              />
-            </a>
-          ))}
-        </div>
-      </div>
-    ) : type === 'Donors' ? (
+    {type === 'Donors' ? (
       <div className="p-8">
         <div className="flex flex-wrap justify-center gap-6">
           {logos.map((donor) => (
