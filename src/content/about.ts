@@ -43,7 +43,8 @@ export const aboutContent = {
   },
   funders: {
     title: "Funded by builders from all across Ethereum's ecosystem",
-    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
+    subtitle1: "Protocol Guild wouldnt exist without generous donations from projects and individuals in Ethereum's ecosystem.",
+    subtitle2: "We are extremely grateful to all donors for helping to normalize dependency funding, and for doing their part in securing the future of Ethereum.",
     tableHeader: "Donor Leaderboard by Currently Vesting"
   },
   stats: {
