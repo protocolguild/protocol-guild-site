@@ -44,11 +44,11 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               rel="noopener noreferrer"
               className="flex items-center justify-center h-5 md:h-7"
             >
-              <img 
-                src={donor.logo} 
-                alt={donor.name}
-                className="h-[90px] w-[90px]"
-              />
+            <img 
+              src={donor.logo} 
+              alt={donor.name}
+              style={{ height: '90px', width: '90px' }}
+            />
             </a>
           ))}
         </div>
