@@ -2,7 +2,7 @@ export const homeContent = {
   hero: {
     title: "Securing the future of Ethereum core development.",
     subtitle1: "Protocol Guild is the leading independent funding organization for Ethereum core developers. We proactively fund maintainers doing work the ecosystem depends on.",
-    subtitle2: "Our misssion is to create sustainable streams backed by projects building on Ethereum."
+    subtitle2: "Our mission is to create sustainable streams backed by projects building on Ethereum."
   },
   section1: {
     title: "Since 2022, we have distributed $28M directly to Ethereum core developers.",
