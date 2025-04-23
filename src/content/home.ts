@@ -8,11 +8,11 @@ export const homeContent = {
     features: [
       {
         title: "Future-proof your dependencies.",
-        description: "Ensure the repos you and your customers rely on will be maintained for years to come. Learn what dependency funding strategy is right to invest in the future of your business."
+        description: "Ensure the repos you and your users rely on will be maintained for years to come. Donating to Protocol Guild is an investment in the future of your project."
       },
       {
         title: "Align your project.",
-        description: "Protocol Guild is the only Ethereum funding institution that serves 189 core contributors across all 47 core Ethereum repositories, from consensus to client execution."
+        description: "Protocol Guild is the easiest and highest-signal way to support 189 core contributors across 47 core Ethereum repositories, from research to client implementations."
       },
       {
         title: "Trustless Vesting.",
