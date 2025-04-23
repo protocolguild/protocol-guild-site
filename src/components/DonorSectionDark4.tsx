@@ -56,7 +56,7 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7"
+              className="flex items-center justify-center h-7 md:h-10" // Adjusted height
             >
               <img 
                 src={donor.logo} 
@@ -76,7 +76,7 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7"
+              className="flex items-center justify-center h-7 md:h-10" // Adjusted height
             >
               <img 
                 src={donor.logo} 
@@ -95,7 +95,7 @@ return (
             href={donor.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center h-5 md:h-7"
+            className="flex items-center justify-center h-7 md:h-10" // Adjusted height
           >
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
