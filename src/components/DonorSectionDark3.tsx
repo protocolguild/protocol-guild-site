@@ -89,8 +89,7 @@ const donors = [
   { name: 'Anthony Sassano', logo: anthonySassanoSvg, logoWhite: anthonySassanoWhiteSvg, url: 'https://x.com/sassal0x' },
   { name: 'Drips', logo: dripsSvg, logoWhite: dripsWhiteSvg, url: 'https://drips.network' },
   { name: 'Stateful Works', logo: statefulWorksSvg, logoWhite: statefulWorksWhiteSvg, url: 'https://x.com/StatefulWorks' },
-  { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' },
-  { name: 'PWN Dao', logo: pwnSvg, logoWhite: pwnWhiteSvg, url: 'https://pwn.xyz/' }
+  { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' }
 ]
 
 
