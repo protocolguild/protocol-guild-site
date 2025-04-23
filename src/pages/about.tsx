@@ -65,18 +65,18 @@
         <Section.Row align="start">
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section1.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.section1.title}</h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
-                <em>{homeContent.section1.quote.text}</em>
+                <em>{aboutContent.section1.quote.text}</em>
               </h2>
               <div className="flex items-center">
                 <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
-                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.author}</h2>
+                <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.section1.quote.author}</h2>
               </div>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">
               <div className="w-full flex flex-row justify-between items-center">
-                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{homeContent.section1.statsHeader}</p>
+                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section1.statsHeader}</p>
                 <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
                   View on Dune
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
