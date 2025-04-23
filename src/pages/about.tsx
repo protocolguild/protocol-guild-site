@@ -18,6 +18,7 @@ import DuneTable from '../components/DuneTable'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
+import DonorSectionDark3 from '../components/DonorSectionDark3'
 import authorImage from '../assets/images/michaelsproul.jpg'
 
 const About: FC = () => {
@@ -171,6 +172,7 @@ return (
             <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funders.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funders.subtitle1}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funders.subtitle2}</h2>
+            <DonorSectionDark3 theme="dark" type="Donors" />
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
             <div className="w-full flex flex-row justify-between items-center">
