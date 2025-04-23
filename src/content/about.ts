@@ -42,7 +42,7 @@ export const aboutContent = {
     link: "Learn about eligibility"
   },
   funders: {
-    title: "Funded by builders from all across the Ethereum ecosystem",
+    title: "Funded by builders from all across Ethereum's ecosystem",
     subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
     buttonLink: "/donate"
   },
