@@ -56,12 +56,12 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7" // Adjusted height
+              className="flex items-center justify-center h-5 md:h-7"
             >
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]" // Set valid max width
+                className="h-full w-auto max-w-[70px]"
               />
             </a>
           ))}
@@ -76,12 +76,12 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7" // Adjusted height
+              className="flex items-center justify-center h-5 md:h-7"
             >
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]" // Set valid max width
+                className="h-full w-auto max-w-[70px]"
               />
             </a>
           ))}
@@ -95,12 +95,12 @@ return (
             href={donor.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center h-5 md:h-7" // Adjusted height
+            className="flex items-center justify-center h-5 md:h-7"
           >
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
               alt={donor.name}
-              className="h-full w-auto max-w-[70px]" // Set valid max width
+              className="h-full w-auto max-w-[70px]"
             />
           </a>
         ))}
