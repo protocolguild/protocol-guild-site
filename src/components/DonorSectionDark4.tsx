@@ -10,6 +10,9 @@ import zksyncLogo from '../assets/images/zksync.svg'
 import zoraLogo from '../assets/images/zora.svg'
 import arbitrumLogo from '../assets/images/arbitrum.svg'
 
+const partners = [
+]
+
 const donors = [
   { name: 'Ethereum', logo: ethereumLogo },
   { name: 'Arbitrum', logo: arbitrumLogo },
@@ -26,12 +29,12 @@ const donors = [
 interface DonorSectionProps {
   className?: string
   theme?: 'dark' | 'light'
-  type?: 'Donors'
+  type?: 'Donors' | 'Partners'
   featured?: boolean
 }
 
 const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featured = false }: DonorSectionProps) => {
-  const logos = type === 'Donors' ? donors
+  const logos = type === 'Donors' ? donors : partners
 
 return (
   <div className={`donors ${className} pt-4 pb-0`}>
