@@ -121,21 +121,6 @@
           </Grid>
         </Section.Row>
       </Section>
-        
-      <Section background="white" divider="var(--brand-primary)" line={true}>
-        <Section.Row align="start" >
-          <Grid columns={12} className="py-16">
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funders.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funders.subtitle1}</h2>
-            </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
-              <DonorSectionDark2 theme="dark" type="Donors" />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
 
       <Section background="white" divider="var(--gray-dark)" line={true}>
         <Section.Row align="start">
@@ -177,6 +162,23 @@
           </Grid>
         </Section.Row>
       </Section>
+        
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start" >
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.funders.title}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.funders.subtitle1}</h2>
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
+              <DonorSectionDark2 theme="dark" type="Donors" />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+
 
 
 
