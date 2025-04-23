@@ -47,7 +47,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-[90px] w-auto max-w-[158px]"
+                className="h-[90px] w-auto max-w-[90px]"
               />
             </a>
           ))}
