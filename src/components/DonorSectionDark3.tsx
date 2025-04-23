@@ -160,7 +160,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]"
+                className="h-full w-auto max-w-[140px]"
               />
             </a>
           ))}
