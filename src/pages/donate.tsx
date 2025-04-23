@@ -221,6 +221,20 @@ const Donate: FC = () => {
               </a>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col h-full items-center justify-center">
+              <DuneStat 
+                queryId="2478156" 
+                theme="light" 
+                title="Number of Donations"
+                variableName="total_donors"
+                type="number"
+              />
+              <DuneStat 
+                queryId="2478156" 
+                theme="light" 
+                title="Unique Donors"
+                variableName="unique_donors"
+                type="number"
+              />
               <TokenCarousel theme="dark" />
             </Grid.Item>
 
