@@ -61,7 +61,7 @@ const Donate: FC = () => {
                 {donateContent.hero.title}
               </h1>
               <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
-                {donateContent.hero.subtitle1}
+                {donateContent.hero.subtitle}
               </p>
             </Grid.Item>
           </Grid>
