@@ -30,6 +30,7 @@ export const donateContent = {
     title: "Partners from across the Ethereum ecosystem make Protocol Guild possible.",
     subtitle1: "Donating to isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
     subtitle2: "Ethereum core devs and researchers are in high demand: they could earn significantly more elsewhere. By donating tokens, you allow them to share in the value created in the ecosystem, incentivizing them to continue delivering the scalability and security upgrades essential for your project's success.",
+    tableHeader: "Donor Leaderboard by Currently Vesting",
     stats: [
       {
         title: "Number of Donations",
