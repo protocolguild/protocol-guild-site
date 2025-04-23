@@ -31,7 +31,7 @@ const Donate: FC = () => {
 
   return (
     <main>
-      <Section background="white" className="min-h-[500px] md:min-h-[600px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
+      <Section background="white" className="min-h-[400px] md:min-h-[500px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
         <img
           src={chainsImage}
           alt="Ethereum chains"
