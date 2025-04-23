@@ -167,6 +167,15 @@ return (
               variableName="median_vesting_365_days"
               type="currency"
             />
+            <DuneChart 
+                queryId="5001842" 
+                theme="light" 
+                title="Vesting Forecast"
+                xAxisKey="date"
+                yAxisKey="total_vesting"
+                formatCurrency
+                formatDate
+              />
           </Grid.Item>
         </Grid>
       </Section.Row>
