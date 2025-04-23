@@ -11,11 +11,6 @@ export const aboutContent = {
     },
     statsHeader: "Cumulative Amount Distributed"
   },
-  stewards: {
-    title: "Supporting the stewards of Ethereum’s core protocol",
-    subtitle: "Every quarter, we curate and update an onchain registry of Ethereum’s active core protocol contributors, to distribute funding towards.",
-    link: "View all core devs & researchers"
-  },
   moonshot: {
     title: "Our moonshot: Ethereum R&D, funded forever.",
     subtitle1: "Our ecosystem depends on open source infrastructure. There's still a lot to do to deliver Ethereum as globally ubiquitous infra.",
