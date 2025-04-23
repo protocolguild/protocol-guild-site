@@ -57,7 +57,7 @@ export const donateContent = {
     },
     {
       text: "We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.",
-      author: "Lambda Class
+      author: "Lambda Class"
     }
   ],
   donate: {
