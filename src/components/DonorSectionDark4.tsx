@@ -1,8 +1,5 @@
 // Component imports
 import pgIcon from '../assets/images/pg-icon-dark.svg'
-// 1% Partners
-
-// Donors
 import ethereumLogo from '../assets/images/ethereum.svg'
 import baseLogo from '../assets/images/base.svg'
 import optimismLogo from '../assets/images/optimism.svg'
@@ -12,11 +9,6 @@ import shapeLogo from '../assets/images/shape.svg'
 import zksyncLogo from '../assets/images/zksync.svg'
 import zoraLogo from '../assets/images/zora.svg'
 import arbitrumLogo from '../assets/images/arbitrum.svg'
-
-/*
-
-VanEck
-*/
 
 const partners = [
 ]
