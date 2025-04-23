@@ -61,7 +61,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]"
+                className="h-full w-auto max-w-[105px]" // Increased from 70px to 105px
               />
             </a>
           ))}
@@ -81,7 +81,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]"
+                className="h-full w-auto max-w-[105px]" // Increased from 70px to 105px
               />
             </a>
           ))}
@@ -100,7 +100,7 @@ return (
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
               alt={donor.name}
-              className="h-full w-auto max-w-[70px]"
+              className="h-full w-auto max-w-[105px]" // Increased from 70px to 105px
             />
           </a>
         ))}
