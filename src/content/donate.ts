@@ -40,7 +40,7 @@ export const donateContent = {
   },
   quotes: [
     {
-      text: "Ethereum thrives because of its incredible contributors—the developers, researchers, and coordinators working tirelessly behind the scenes.",
+      text: "Ethereum thrives because of its incredible contributors — the developers, researchers, and coordinators working tirelessly behind the scenes.",
       author: "EigenLayer"
     },
     {
