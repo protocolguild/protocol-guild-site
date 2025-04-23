@@ -3,8 +3,25 @@ export const homeContent = {
     title: "Join us in securing the future of Ethereum's core protocol",
     subtitle: "Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol development, backed by projects building on Ethereum."
   },
+  section0: {
+    title: "The most effective way to fund Ethereum's future.",
+    features: [
+      {
+        title: "Future-proof your dependencies.",
+        description: "Ensure the repos you and your customers rely on will be maintained for years to come. Learn what dependency funding strategy is right to invest in the future of your business."
+      },
+      {
+        title: "Align your project.",
+        description: "Protocol Guild is the only Ethereum funding institution that serves 189 core contributors across all 47 core Ethereum repositories, from consensus to client execution."
+      },
+      {
+        title: "Trustless Vesting.",
+        description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributers, ensuring continuity and depth of the contributor set."
+      }
+    ]
+  },
   section1: {
-    title: "Take the Protocol Guild Pledge",
+    title: "Take the 1% Pledge",
     subtitle1: "Imagine if every project building on Ethereum contributed 1% of their token supply to fund the core protocol work they depend on?",
     subtitle2: "You don’t need to imagine—join some of the leading projects in the ecosystem that have already taken the pledge!",
     link: "Protocol Guild Pledge announcement on Mirror"
