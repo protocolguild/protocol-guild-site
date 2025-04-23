@@ -20,7 +20,7 @@
 }
 
 .repos {
-  height: 280px;
+  height: 200px;
   position: relative;
   overflow-y: auto;
 }
