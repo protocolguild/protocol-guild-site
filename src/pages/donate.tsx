@@ -11,7 +11,10 @@ import DuneTable from '../components/DuneTable'
 import TokenCarousel from '../components/TokenCarousel'
 import { donateContent } from '../content/donate'
 import chainsImage from '../assets/images/chains.png'
-import DuneStat from '../components/DuneStat'
+import DuneStat from '../components/DuneStat'nCarousel from '../components/TokenCarousel'
+import { donateContent } from '../content/donate'
+import chainsImage from '../assets/images/chains.png'
+import DuneSta
 
 
 const Donate: FC = () => {
@@ -222,20 +225,24 @@ const Donate: FC = () => {
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col gap-6">
         <div className="flex justify-between">
-          <DuneStat 
-            queryId="2478156" 
-            theme="light" 
-            title="Total Donations"
-            variableName="total_donors"
-            type="number"
-          />
-          <DuneStat 
-            queryId="2478156" 
-            theme="light" 
-            title="Unique Donors"
-            variableName="unique_donors"
-            type="number"
-          />
+          <div className="w-[45%]">
+            <DuneStat 
+              queryId="2478156" 
+              theme="light" 
+              title="Total Donations"
+              variableName="total_donors"
+              type="number"
+            />
+          </div>
+          <div className="w-[45%]">
+            <DuneStat 
+              queryId="2478156" 
+              theme="light" 
+              title="Unique Donors"
+              variableName="unique_donors"
+              type="number"
+            />
+          </div>
         </div>
         <TokenCarousel theme="dark" />
       </Grid.Item>
