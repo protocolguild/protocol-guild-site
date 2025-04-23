@@ -25,9 +25,9 @@ export const aboutContent = {
   },
   organization: {
     title: "About the organization",
-    description: "Protocol Guild is a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
+    description: "Protocol Guild is structured as a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
     team: {
-      title: "Operating Team",
+      title: "Core Contributooors",
       members: [
         {
           name: "Trent Van Epps",
