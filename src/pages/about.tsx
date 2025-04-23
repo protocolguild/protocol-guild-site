@@ -241,7 +241,7 @@ const About: FC = () => {
                   {aboutContent.docs.title}
                 </h2>
                 <h2 className="!text-lg mt-5 !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.docs.description}</h2>
-                <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
+                <a href="https://protocol-guild.readthedocs.io" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
                   {aboutContent.docs.link}
                 </a>
               </Grid.Item>
