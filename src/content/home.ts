@@ -7,15 +7,15 @@ export const homeContent = {
     title: "The most effective way to fund Ethereum's future",
     features: [
       {
-        title: "Future-proof your dependencies.",
+        title: "Fund your dependencies",
         description: "Ensure the repos you and your users rely on will be maintained for years to come. Donating to Protocol Guild is an investment in the future of your project."
       },
       {
-        title: "Align your project.",
+        title: "Align your project",
         description: "Protocol Guild is the easiest and highest-signal way to support 189 core contributors across 47 core Ethereum repositories, from research to client implementations."
       },
       {
-        title: "Trustless Vesting.",
+        title: "Trustless Vesting",
         description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributers, ensuring continuity and depth of the contributor set."
       }
     ]
