@@ -65,8 +65,9 @@ export const donateContent = {
     }
   ],
   donate: {
-    title: "Donate tokens.",
-    description: "Every donation counts. Future-proofing Ethereum requires sustained contributions to grow our support for core protocol engineering. Help us build the future funding model for Ethereum.",
+    title: "Donate any Amount",
+    description1: "Every donation counts. Future-proofing Ethereum requires sustained contributions to grow our support for core protocol engineering. Help us build the future funding model for Ethereum.",
+    description2: "We're proud to have receive donations from individuals from across the entire community. We accept donations on most Ethereum chains.",
     buttonText: "Donate",
     buttonLink: "https://protocol-guild.readthedocs.io/en/latest/04-donate.html"
   }
