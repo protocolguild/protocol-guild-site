@@ -68,11 +68,11 @@ const Donate: FC = () => {
         </Section.Row>
       </Section>
       
-      <Section background="gray-dark" divider="var(--brand-primary)" line={true}>
+      <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--white)]">{donateContent.value.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.value.title}</h2>
             </Grid.Item>
             <Grid.Item span={6} className="grid grid-cols-3 gap-6">
               {donateContent.value.features.map((feature, index) => (
@@ -80,7 +80,7 @@ const Donate: FC = () => {
                   key={index}
                   title={feature.title}
                   description={feature.description}
-                  color="var(--white)"
+                  color="var(--gray-dark)"
                 />
               ))}
             </Grid.Item>
