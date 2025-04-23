@@ -24,7 +24,7 @@ export const donateContent = {
     title: "Take the 1% Pledge.",
     description: "Ethereum's future depends on inspired leadership. Join some of the biggest crypto startups and institutions in allocating 1% of your tokens supply to secure Ethereum's future.",
     buttonText: "Get in Touch",
-    buttonLink: "mailto:trenton.vanepps@ethereum.org"
+    buttonLink: "https://calendly.com/vecchiarelli-peter/30min"
   },
   ecosystem: {
     title: "Partners from across the Ethereum ecosystem make Protocol Guild possible.",
@@ -49,7 +49,7 @@ export const donateContent = {
     title: "Plan your token allocation with Protocol Guild.",
     description: "Planning for sustainable open-source funding can begin at the earliest stages of your project. Work with Protocol Guild to design a token allocation strategy tailored to your goals.",
     buttonText: "Get in Touch",
-    buttonLink: "mailto:trenton.vanepps@ethereum.org",
+    buttonLink: "https://calendly.com/vecchiarelli-peter/30min",
     quote: "We've proudly committed 1% of our token supply to Protocol Guild, supporting their ongoing efforts in Ethereum's development. ProtocolGuild is a powerhouse of core Ethereum maintainers pushing the boundaries of what's possible on Ethereum. Their invaluable work and support formed the backbone of all existing projects in the Ethereum ecosystem. - John Smith, Imagine Protocol"
   },
   stability: {
