@@ -40,16 +40,24 @@ export const donateContent = {
   },
   quotes: [
     {
-      text: "We've proudly committed 1% of our token supply to Protocol Guild, supporting their ongoing efforts in Ethereum's development. ProtocolGuild is a powerhouse of core Ethereum maintainers pushing the boundaries of what's possible on Ethereum. Their invaluable work and support formed the backbone of all existing projects in the Ethereum ecosystem.",
-      author: "John Smith, Imagine Protocol"
+      text: "Ethereum thrives because of its incredible contributors—the developers, researchers, and coordinators working tirelessly behind the scenes.",
+      author: "EigenLayer"
     },
     {
-      text: "Protocol Guild has been instrumental in ensuring the long-term sustainability of Ethereum core development. Their model of directly supporting individual contributors creates the right incentives for continued protocol maintenance.",
-      author: "Jane Doe, DeFi Project"
+      text: "The 1% allocation is our way of giving back to the core Ethereum maintainer community and acknowledging their exceptional work over the years.",
+      author: "Taiko"
     },
     {
-      text: "The work that Protocol Guild does is essential for the entire ecosystem. We're proud to support their mission of making Ethereum development sustainable for the long term.",
-      author: "Mike Wilson, Blockchain Foundation"
+      text: "Thank you, Ethereum contributors, for nearly a decade of relentless building & ongoing stewardship of this common infrastructure.",
+      author: "VanEck"
+    },
+    {
+      text: "It is in the interest of our community to help ensure the stability of the Ethereum L1 R&D contributor set.",
+      author: "INTMAX"
+    },
+    {
+      text: "We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.",
+      author: "Lambda Class
     }
   ],
   donate: {
