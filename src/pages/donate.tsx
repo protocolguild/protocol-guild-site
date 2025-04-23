@@ -221,7 +221,7 @@ const Donate: FC = () => {
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col gap-6">
         <div className="flex justify-between">
-          <div className="w-[45%]">
+          <div className="w-[49%]">
             <DuneStat 
               queryId="2478156" 
               theme="light" 
@@ -230,7 +230,7 @@ const Donate: FC = () => {
               type="number"
             />
           </div>
-          <div className="w-[45%]">
+          <div className="w-[49%]">
             <DuneStat 
               queryId="2478156" 
               theme="light" 
