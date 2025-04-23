@@ -104,8 +104,6 @@ const Donate: FC = () => {
         </a>
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col items-center">
-        <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
-        <br/><br/>
         <img 
           src={medallionSvg}
           alt="Protocol Guild medallion" 
@@ -115,7 +113,9 @@ const Donate: FC = () => {
             WebkitTransform: 'translateZ(0)',
             imageRendering: '-webkit-optimize-contrast'
           }}
-        />      
+        />
+        <br/><br/>
+        <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
       </Grid.Item>
     </Grid>
   </Section.Row>
