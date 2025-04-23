@@ -59,5 +59,12 @@ export const homeContent = {
       text: "We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.",
       author: "Lambda Class"
     }
-  ]
+  ],
+  donate: {
+    title: "Every donation counts. ",
+    description1: "Future-proofing Ethereum requires sustained contributions to grow our support for core protocol engineering. Help us build the future funding model for Ethereum.",
+    description2: "We're proud to have receive donations from individuals from across the entire community. We accept donations on various Ethereum chains.",
+    buttonText: "Donate",
+    buttonLink: "https://protocol-guild.readthedocs.io/en/latest/04-donate.html"
+  }
 }
