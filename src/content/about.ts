@@ -18,11 +18,6 @@ export const aboutContent = {
     subtitle3: "189 contributors, 47 core repositories, 1 Ethereum protocol.",
     link: "See all individuals"
   },
-  funders: {
-    title: "Funded by builders from all across the Ethereum ecosystem",
-    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
-    buttonLink: "/donate"
-  },
   impact: {
     title: "Impact areas",
     subtitle: "Protocol Guild is the only org that comprehensively funds contributors from across all of Ethereum's core development.",
@@ -45,6 +40,11 @@ export const aboutContent = {
       }
     ],
     link: "Learn about eligibility"
+  },
+  funders: {
+    title: "Funded by builders from all across the Ethereum ecosystem",
+    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
+    buttonLink: "/donate"
   },
   stats: {
     title: "Effective and transparent funding",
