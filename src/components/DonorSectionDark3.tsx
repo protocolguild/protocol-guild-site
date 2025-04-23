@@ -155,7 +155,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7"
+              className="flex items-center justify-center h-10 md:h-14"
             >
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
