@@ -12,19 +12,19 @@ export const aboutContent = {
     statsHeader: "Cumulative Amount Distributed"
   },
   moonshot: {
-    title: "Our moonshot: Ethereum R&D, funded forever.",
+    title: "Our moonshot: Ethereum R&D, funded forever",
     subtitle1: "Our ecosystem depends on open source infrastructure. There's still a lot to do to deliver Ethereum as globally ubiquitous infra.",
     subtitle2: "To allow our ecosystem to fund this work, we make the entire set of Ethereum’s core protocol contributors directly legible onchain, by maintaining an up-to-date registry of Ethereum’s active core protocol contributors. We receive tokens from projects building on Ethereum and distribute them directly to these individuals, vested over four years.",
     subtitle3: "189 contributors, 47 core repositories, 1 Ethereum protocol.",
     link: "See all individuals"
   },
   funders: {
-    title: "Funded by builders from all across the Ethereum ecosystem.",
+    title: "Funded by builders from all across the Ethereum ecosystem",
     subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
     buttonLink: "/donate"
   },
   impact: {
-    title: "Our impact areas.",
+    title: "Impact areas",
     subtitle: "Protocol Guild is the only org that comprehensively funds contributors from across all of Ethereum's core development.",
     areas: [
       {
@@ -47,7 +47,7 @@ export const aboutContent = {
     link: "Learn about eligibility"
   },
   stats: {
-    title: "Effective and transparent funding.",
+    title: "Effective and transparent funding",
     description1: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
     description2: "Neutral Distribution",
     description3: "We dont make discretionary funding allocations - all tokens are streamed over 4 years via immutable contracts, and are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
