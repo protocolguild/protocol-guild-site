@@ -18,6 +18,7 @@
   import MemberFaces from '../components/MemberFaces'
   import Repos from '../components/Repos'
   import DonorSectionDark2 from '../components/DonorSectionDark2'
+  import authorImage from '../assets/images/michaelsproul.jpg'
   
   const About: FC = () => {
   
