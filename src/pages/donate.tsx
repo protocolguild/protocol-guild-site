@@ -114,6 +114,7 @@ const Donate: FC = () => {
             imageRendering: '-webkit-optimize-contrast'
           }}
         />
+        <br/><br/>
         <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
       </Grid.Item>
     </Grid>
