@@ -10,6 +10,7 @@ import { homeContent } from '../content/home'
 import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
 import DuneChart from '../components/DuneChart'
+import medallionSvg from '../assets/images/medallion.svg'
 
 const Home: FC = () => {
 
