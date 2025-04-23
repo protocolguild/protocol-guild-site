@@ -126,31 +126,22 @@ const Donate: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.ecosystem.title}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle1}</h2>
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.ecosystem.subtitle2}</h2>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <div className="w-full flex flex-row justify-between items-center">
-                <p className="text-[var(--gray-dark)] text-base sm:text-sm">{donateContent.ecosystem.table.title}</p>
-                <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                  <span className="text-[var(--gray-dark)] text-base sm:text-sm">View on Dune</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-              </div>
-              <DuneTable queryId={donateContent.ecosystem.table.duneQueryId} theme="light" />
-              <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
-                <DuneStat
-                  title={donateContent.ecosystem.stats[0].title}
-                  variableName={donateContent.ecosystem.stats[0].variableName}
-                  queryId={donateContent.ecosystem.stats[0].queryId}
-                  theme="light"
-                />
-                <DuneStat
-                  title={donateContent.ecosystem.stats[1].title}
-                  variableName={donateContent.ecosystem.stats[1].variableName}
-                  queryId={donateContent.ecosystem.stats[1].queryId}
-                  theme="light"
-                />
-              </div>
-            </Grid.Item>
+              <Grid.Item span={6} className="flex flex-col gap-6">
+                <div className="w-full flex flex-row justify-between items-center">
+                  <p className="text-[var(--gray-dark)] text-base sm:text-sm">{aboutContent.section3.tableHeader}</p>
+                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <span className="text-[var(--gray-dark)] text-base sm:text-sm">View on Dune</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+                <DuneTable 
+                    queryId="4561127"
+                    theme="light"
+                  />
+              </Grid.Item>
           </Grid>
         </Section.Row>
       </Section>
