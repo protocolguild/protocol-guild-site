@@ -68,30 +68,28 @@ const Donate: FC = () => {
         </Section.Row>
       </Section>
       
-<Section background="white" divider="var(--brand-primary)" line={true}>
-  <Section.Row align="start">
-    <Grid columns={12} className="py-16">
-      {/* Title Row */}
-      <Grid.Item span={12} className="flex flex-col gap-6">
-        <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.value.title}</h2>
-      </Grid.Item>
-      {/* Features Row */}
-      <Grid.Item span={12} className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6">
-        {donateContent.value.features.map((feature, index) => (
-          <div className="flex justify-center" key={index}>
-            <div className="w-full"> {/* Use full width for the feature card */}
-              <FeatureCard
-                title={feature.title}
-                description={feature.description}
-                color="var(--gray-dark)" // Assuming FeatureCard accepts a color prop
-              />
-            </div>
-          </div>
-        ))}
-      </Grid.Item>
-    </Grid>
-  </Section.Row>
-</Section>
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={12} className="flex flex-col gap-6">
+              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{donateContent.value.title}</h2>
+            </Grid.Item>
+            <Grid.Item span={12} className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
+              {donateContent.value.features.map((feature, index) => (
+                <div className="flex justify-center" key={index}>
+                  <div className="w-full">
+                    <FeatureCard
+                      title={feature.title}
+                      description={feature.description}
+                      color="var(--gray-dark)"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
 
       <Section background="gray-dark" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
