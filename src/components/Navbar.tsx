@@ -14,36 +14,36 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
 
   return (
     <nav className="bg-white py-6">
-      <div className="flex flex-col items-start md:flex-row gap-8 md:items-center justify-between w-full">
+      <div className="flex justify-between items-center w-full">
         <Link to="/">
           <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
         </Link>
-      </div>
-      <div className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center justify-end">
-        {links.map(link => (
-          link.target === '_blank' ? (
-            <a
-              key={link.path}
-              href={link.path}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
-            >
-              {link.name}
-            </a>
-          ) : (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
-            >
-              {link.name}
-            </Link>
-          )
-        ))}
+        <div className="flex gap-6 md:gap-8 ml-auto">
+          {links.map(link => (
+            link.target === '_blank' ? (
+              <a
+                key={link.path}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
+              >
+                {link.name}
+              </Link>
+            )
+          ))}
+        </div>
       </div>
     </nav>
   );
 };
 
-export default Navbar
+export default Navbar;
