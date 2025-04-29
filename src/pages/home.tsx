@@ -17,7 +17,7 @@ const [currentQuote, setCurrentQuote] = useState(0);
 
 const nextQuote = () => {
   setCurrentQuote((prev) => (prev + 1) % homeContent.quotes.length);
-};f
+};
 
 const previousQuote = () => {
   setCurrentQuote((prev) => (prev - 1 + homeContent.quotes.length) % homeContent.quotes.length);
