@@ -59,9 +59,10 @@ return (
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
               {homeContent.hero.title}
             </h1>
-            <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mt-4">
               {homeContent.hero.subtitle1}
-              <br/><br/>
+            </p>
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">
               {homeContent.hero.subtitle2}
             </p>
           </Grid.Item>
