@@ -108,7 +108,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                 href={donor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
+                className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
               >
                 <img 
                   src={donor.logo} 
@@ -128,7 +128,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                 href={donor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
+                className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
               >
                 <img 
                   src={donor.logo} 
@@ -147,7 +147,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
+              className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
             >
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
