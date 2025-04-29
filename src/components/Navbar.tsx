@@ -77,11 +77,11 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
           })}
         </div>
         <Link to="/" className="md:order-1">
-          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-12 max-w-[600px]" />
+          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
         </Link>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar
