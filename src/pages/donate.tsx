@@ -214,7 +214,7 @@ const Donate: FC = () => {
                 {donateContent.donate.buttonText}
               </a>
             </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col gap-6">
+            <Grid.Item span={6} className="flex flex-col gap-3">
               <div className="flex justify-between">
                 <div className="w-[49%]">
                   <DuneStat 
