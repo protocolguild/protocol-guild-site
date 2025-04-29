@@ -32,37 +32,23 @@ const Donate: FC = () => {
 
   return (
     <main>
-      <Section background="white" className="min-h-[400px] md:min-h-[500px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-        <img
-          src={chainsImage}
-          alt="Ethereum chains"
-          className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-          style={{ maxWidth: 'none' }}
-        />
+
+      <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
         <Section.Row>
           <Grid>
-            <Grid.Item span={3} className="flex flex-col">
+            <Grid.Item span={12} className="flex flex-col">
               <Navbar theme="light" />
             </Grid.Item>
           </Grid>
         </Section.Row>
-        <Section.Row 
-          className="min-h-0 flex items-center relative z-1"
-        >
-          <Grid columns={12}>
-            <Grid.Item span={8} className="flex flex-col gap-4 min-h-[100px] my-8 md:my-16">
-              <HeroLockup theme="color" className="w-[100%] md:w-[100%] lg:w-[100%] h-auto min-h-0 flex-shrink-1"  />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-        <Section.Row className="flex-none relative z-1">
+        <Section.Row className="flex-1 flex items-center justify-center relative z-1 pt-7 md:pb-15">
           <Grid>
-            <Grid.Item span={8} className="flex flex-col gap-3 mt-5">
+            <Grid.Item span={8} className="flex flex-col gap-6">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
                 {donateContent.hero.title}
               </h1>
               <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
-                {donateContent.hero.subtitle}
+                {donateContent.hero.subtitle1}
               </p>
             </Grid.Item>
           </Grid>
