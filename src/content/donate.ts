@@ -1,7 +1,7 @@
 export const donateContent = {
   hero: {
     title: "Fund our Work",
-    subtitle: "There are many ways to contribute funding - whether you're a project founder, a builder, an ETH holder, or any other ecosystem stakeholder."
+    subtitle1: "There are many ways to contribute funding - whether you're a project founder, a builder, an ETH holder, or any other ecosystem stakeholder."
   },
   value: {
     title: "The most effective way to fund Ethereum's future.",
