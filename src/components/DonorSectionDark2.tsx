@@ -95,30 +95,30 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
       {featured && (
         <div className="flex flex-row justify-between items-center w-full mb-6">
           <p className={`text-[15px] font-medium ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE PARTNERS'}</p>
-          <img className="h-6 md:h-7" src={pgIcon} alt="PG Icon" />
+          <img className="h-12 md:h-14" src={pgIcon} alt="PG Icon" />
         </div>
       )}
 
-      {featured && type === 'Partners' ? (
-        <div className="silver-gradient silver-shimmer rounded-xl p-8">
-          <div className="flex flex-wrap justify-center gap-6">
-            {logos.map((donor) => (
-              <a 
-                key={donor.name}
-                href={donor.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
-              >
-                <img 
-                  src={donor.logo} 
-                  alt={donor.name}
-                  className="h-full w-auto max-w-[210px]" // Increased max width by 50%
-                />
-              </a>
-            ))}
-          </div>
+    {featured && type === 'Partners' ? (
+      <div className="silver-gradient silver-shimmer rounded-xl p-8">
+        <div className="flex flex-wrap justify-center gap-6">
+          {logos.map((donor) => (
+            <a 
+              key={donor.name}
+              href={donor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-10 md:h-14"
+            >
+              <img 
+                src={donor.logo} 
+                alt={donor.name}
+                className="h-full w-auto max-w-[140px]"
+              />
+            </a>
+          ))}
         </div>
+      </div>
       ) : type === 'Donors' ? (
         <div className="p-8">
           <div className="flex flex-wrap justify-center gap-6">
@@ -128,12 +128,12 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                 href={donor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
+                className="flex items-center justify-center h-10 md:h-14"
               >
                 <img 
                   src={donor.logo} 
                   alt={donor.name}
-                  className="h-full w-auto max-w-[210px]" // Increased max width by 50%
+                  className="h-full w-auto max-w-[140px]"
                 />
               </a>
             ))}
@@ -147,19 +147,17 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-15 md:h-21" // Increased height by 50%
+              className="flex items-center justify-center h-10 md:h-14"
             >
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[210px]" // Increased max width by 50%
+                className="h-full w-auto max-w-[140px]"
               />
             </a>
           ))}
         </div>
       )}
-
-      
     </div>
   )
 }
