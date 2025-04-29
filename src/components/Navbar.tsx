@@ -13,36 +13,39 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
   const { main: links } = navigation;
 
   return (
-    <nav className="bg-white py-6">
-      <div className="flex justify-between items-center w-full">
-        <Link to="/">
-          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
-        </Link>
-        <div className="flex gap-6 md:gap-8 ml-auto">
-          {links.map(link => (
-            link.target === '_blank' ? (
-              <a
-                key={link.path}
-                href={link.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
-              >
-                {link.name}
-              </a>
-            ) : (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
-              >
-                {link.name}
-              </Link>
-            )
-          ))}
+    <Grid>
+      <Grid.Item span={12}>
+        <div className="flex flex-col items-start md:flex-row gap-8 md:items-center justify-between w-full">
+          <Link to="/">
+            <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
+          </Link>
+          <nav className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
+            {links.map(link => (
+              link.target === '_blank' ? (
+                <a
+                  key={link.path}
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity`}
+                >
+                  {link.name}
+                </Link>
+              )
+            ))}
+          </nav>
         </div>
-      </div>
-    </nav>
+      </Grid.Item>
+    </Grid>
+
   );
 };
 
