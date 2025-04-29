@@ -44,9 +44,7 @@ return (
           </Grid.Item>
         </Grid>
       </Section.Row>
-      <Section.Row 
-        className="min-h-0 flex items-center relative z-1"
-      >
+      <Section.Row className="min-h-0 flex items-center relative z-1">
         <Grid columns={12}>
           <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
             <HeroLockup theme="color" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
@@ -62,7 +60,7 @@ return (
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mt-4">
               {homeContent.hero.subtitle1}
             </p>
-            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
               {homeContent.hero.subtitle2}
             </p>
           </Grid.Item>
