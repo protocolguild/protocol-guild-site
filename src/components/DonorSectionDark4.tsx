@@ -37,17 +37,17 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
   const logos = type === 'Donors' ? donors : partners
 
   return (
-    <div className={`donors ${className} pt-8 pb-8`}> {/* Increased padding here */}
+    <div className={`donors ${className} pt-4 pb-0`}>
       {type === 'Donors' ? (
-        <div className="p-12"> {/* Increased padding here */}
-          <div className="flex flex-wrap justify-center gap-8"> {/* Increased gap for better spacing */}
+        <div className="p-8">
+          <div className="flex flex-wrap justify-center gap-6">
             {logos.map((donor) => (
               <a 
                 key={donor.name}
                 href={donor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 md:h-15"
+                className="flex items-center justify-center h-10 md:h-15 mb-4"
               >
                 <img 
                   src={donor.logo} 
@@ -59,14 +59,14 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
           </div>
         </div>
       ) : (
-        <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10 items-center"> {/* Increased gap for better spacing */}
+        <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
           {logos.map(donor => (
             <a 
               key={donor.name}
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-10 md:h-15"
+              className="flex items-center justify-center h-10 md:h-15 mb-4"
             >
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
