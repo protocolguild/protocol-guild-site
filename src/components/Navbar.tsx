@@ -77,7 +77,7 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
           })}
         </div>
         <div className="md:order-1 pt-8">
-          <HeroLockup theme="color" className="w-[95%] md:w-[70%] h-auto min-h-0 flex-shrink-1" />
+          <HeroLockup theme="color" className="w-[90%] md:w-[80%] lg:w-[70%] h-auto min-h-0 flex-shrink-1" />
         </div>
       </div>
     </nav>
