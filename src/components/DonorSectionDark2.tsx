@@ -99,26 +99,26 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         </div>
       )}
 
-    {featured && type === 'Partners' ? (
-      <div className="silver-gradient silver-shimmer rounded-xl p-8">
-        <div className="flex flex-wrap justify-center gap-6">
-          {logos.map((donor) => (
-            <a 
-              key={donor.name}
-              href={donor.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center h-10 md:h-14"
-            >
-              <img 
-                src={donor.logo} 
-                alt={donor.name}
-                className="h-full w-auto max-w-[140px]"
-              />
-            </a>
-          ))}
+      {featured && type === 'Partners' ? (
+        <div className="silver-gradient silver-shimmer rounded-xl p-8">
+          <div className="flex flex-wrap justify-center gap-6">
+            {logos.map((donor) => (
+              <a 
+                key={donor.name}
+                href={donor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
+              >
+                <img 
+                  src={donor.logo} 
+                  alt={donor.name}
+                  className="h-full w-auto max-w-[210px]" // Increased max width by 50%
+                />
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
       ) : type === 'Donors' ? (
         <div className="p-8">
           <div className="flex flex-wrap justify-center gap-6">
@@ -128,12 +128,12 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                 href={donor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 md:h-14"
+                className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
               >
                 <img 
                   src={donor.logo} 
                   alt={donor.name}
-                  className="h-full w-auto max-w-[140px]"
+                  className="h-full w-auto max-w-[210px]" // Increased max width by 50%
                 />
               </a>
             ))}
@@ -147,17 +147,19 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-10 md:h-14"
+              className="flex items-center justify-center h-10 md:h-21" // Increased height by 50%
             >
               <img 
                 src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[140px]"
+                className="h-full w-auto max-w-[210px]" // Increased max width by 50%
               />
             </a>
           ))}
         </div>
       )}
+
+      
     </div>
   )
 }
