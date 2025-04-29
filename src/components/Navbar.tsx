@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
         <Link to="/">
           <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
         </Link>
-        <div className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
+        <div className="flex flex-col items-end md:flex-row gap-6 md:gap-8 md:items-center md:ml-auto">
           {links.map(link => (
             link.target === '_blank' ? (
               <a
