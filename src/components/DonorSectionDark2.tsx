@@ -95,7 +95,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
       {featured && (
         <div className="flex flex-row justify-between items-center w-full mb-6">
           <p className={`text-[15px] font-medium ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE PARTNERS'}</p>
-          <img className="h-12 md:h-14" src={pgIcon} alt="PG Icon" />
+          <img className="h-6 md:h-7" src={pgIcon} alt="PG Icon" />
         </div>
       )}
 
