@@ -30,15 +30,9 @@ const Home: FC = () => {
   return (
     <main>
       <Section background="white" className="min-h-[500px] md:min-h-[600px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-        <img
-          src={chainsImage}
-          alt="Ethereum chains"
-          className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-          style={{ maxWidth: 'none' }}
-        />
         <Section.Row>
           <Grid>
-            <Grid.Item span={11} className="flex flex-col">
+            <Grid.Item span={12} className="flex flex-col">
               <Navbar theme="light" />
             </Grid.Item>
           </Grid>
