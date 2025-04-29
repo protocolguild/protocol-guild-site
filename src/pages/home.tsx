@@ -39,7 +39,7 @@ return (
       </Section.Row>
       <Section.Row className="flex-1 flex items-center justify-center relative z-1">
         <Grid>
-          <Grid.Item span={8} className="flex flex-col gap-3">
+          <Grid.Item span={8} className="flex flex-col gap-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
               {homeContent.hero.title}
             </h1>
