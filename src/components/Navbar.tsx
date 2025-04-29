@@ -15,7 +15,7 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
   return (
     <nav className="flex flex-row items-center justify-between py-6">
       <Link to="/">
-        <PGLockup fill="var(--gray-dark)" color="#3cbeed" className="h-8 w-auto max-w-[200px]" />
+        <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
       </Link>
       <div className="flex flex-row items-center gap-8">
         {links.map(link => (
