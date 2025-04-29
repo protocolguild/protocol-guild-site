@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navigation } from '../content/navigation'
-import HeroLockup from '../components/HeroLockup'
+import PGLockup from './PGLockup'
 
 interface NavbarProps {
   theme?: 'light' | 'brand' | 'dark';
@@ -15,7 +15,8 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
   return (
     <nav className="flex flex-row items-center justify-between py-6">
       <Link to="/">
-        <HeroLockup fill="var(--gray-dark)" className="h-8 w-auto max-w-[200px]" />
+        <PGLockup fill="var(--gray-dark)        <PGLockup fill="var(--gray-dark)" className="h-8 w-auto max-w-[200px]" />
+" className="h-8 w-auto max-w-[200px]" />
       </Link>
       <div className="flex flex-row items-center gap-8">
         {links.map(link => (
