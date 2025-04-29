@@ -29,7 +29,7 @@ const Home: FC = () => {
 
   return (
     <main>
-      <Section background="white" className="min-h-[400px] md:min-h-[400px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
+      <Section background="white" className="min-h-[450px] md:min-h-[450px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
         <Section.Row>
           <Grid>
             <Grid.Item span={12} className="flex flex-col">
