@@ -9,7 +9,6 @@ import shapeLogo from '../assets/images/shape.svg'
 import zksyncLogo from '../assets/images/zksync.svg'
 import zoraLogo from '../assets/images/zora.svg'
 import arbitrumLogo from '../assets/images/arbitrum.svg'
-
 const partners = [
   // Add partner logos here if needed
 ]
@@ -42,11 +41,8 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
         <div className="p-8">
           <div className="flex flex-wrap justify-center gap-6">
             {logos.map((donor) => (
-              <a 
+              <div 
                 key={donor.name}
-                href={donor.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center justify-center h-10 md:h-15 mb-4"
               >
                 <img 
@@ -54,18 +50,15 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                   alt={donor.name}
                   className="h-[60px] w-auto max-w-[158px]"
                 />
-              </a>
+              </div>
             ))}
           </div>
         </div>
       ) : (
         <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
           {logos.map(donor => (
-            <a 
+            <div 
               key={donor.name}
-              href={donor.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center justify-center h-10 md:h-15 mb-4"
             >
               <img 
@@ -73,7 +66,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
                 alt={donor.name}
                 className="h-[60px] w-auto max-w-[158px]"
               />
-            </a>
+            </div>
           ))}
         </div>
       )}
