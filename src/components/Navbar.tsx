@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navigation } from '../content/navigation'
-import PGLockup from './PGLockup'
+import HeroLockup from '../components/HeroLockup'
 
 interface NavbarProps {
   theme?: 'light' | 'brand' | 'dark';
@@ -77,7 +77,7 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
           })}
         </div>
         <Link to="/" className="md:order-1">
-          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
+          <HeroLockup theme="color" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
         </Link>
       </div>
     </nav>
