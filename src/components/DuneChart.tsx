@@ -232,8 +232,7 @@ return (
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
             tickLine={false}
             axisLine={false}
-            dx={-10}
-            dy={12}
+            dx={-20}
           />
           <Tooltip 
             formatter={(value: string | number, _name, props) => {
