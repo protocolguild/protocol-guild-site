@@ -7,24 +7,25 @@ export const donateContent = {
     title: "The most effective way to fund Ethereum's future.",
     features: [
       {
-        title: "Future-proof your dependencies.",
-        description: "Ensure the repos you and your customers rely on will be maintained for years to come. Learn what dependency funding strategy is right to invest in the future of your business."
+        title: "Fund your dependencies",
+        description: "Ensure the repos you and your users rely on will be maintained for years to come. Donating to Protocol Guild is an investment in the future of your project."
       },
       {
-        title: "Align your project.",
-        description: "Protocol Guild is the only Ethereum funding institution that serves 189 core contributors across all 47 core Ethereum repositories, from consensus to client execution."
+        title: "Align your project",
+        description: "Protocol Guild is the easiest and highest-signal way to support 189 core contributors across 47 core Ethereum repositories, from research to client implementations."
       },
       {
-        title: "Trustless Vesting.",
+        title: "Trustless Vesting",
         description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributers, ensuring continuity and depth of the contributor set."
       }
     ]
   },
   pledge: {
     title: "Take the 1% Pledge.",
-    description: "Ethereum's future depends on inspired leadership. Join some of the biggest crypto startups and institutions in allocating 1% of your tokens supply to secure Ethereum's future.",
-    buttonText: "Get in Touch",
-    buttonLink: "https://calendly.com/vecchiarelli-peter/30min"
+    subtitle1: "Ethereum's future depends on inspired leadership. Imagine if every project building on Ethereum contributed 1% of their token supply to fund the core protocol work they depend on!",
+    subtitle2: "Fortunately you don’t need to imagine—join some of the biggest crypto startups and institutions in allocating 1% of your token supply to secure Ethereum's future.",
+    link: "Protocol Guild Pledge announcement on Mirror"
+
   },
   ecosystem: {
     title: "Partners from across the Ethereum ecosystem make Protocol Guild possible.",
