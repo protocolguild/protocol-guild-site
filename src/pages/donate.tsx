@@ -235,7 +235,7 @@ const Donate: FC = () => {
                   />
                 </div>
               </div>
-              <DonorSectionDark4 theme="dark" type="Donors" className="max-w-[100%] lg:max-w-[80%] mx-auto" />
+              <DonorSectionDark4 theme="dark" type="Donors" className="max-w-[100%] lg:max-w-[90%] mx-auto" />
             </Grid.Item>
           </Grid>
         </Section.Row>
