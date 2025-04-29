@@ -14,11 +14,11 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
 
   return (
     <nav className="bg-white py-6">
-      <div className="flex flex-col md:flex-row justify-start items-start w-full">
-        <Link to="/">
+      <div className="flex flex-col md:flex-row justify-between items-start w-full">
+        <Link to="/" className="self-start md:self-center">
           <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
         </Link>
-        <div className="flex gap-6 md:gap-8">
+        <div className="flex gap-6 md:gap-8 w-full justify-end md:justify-start">
           {links.map(link => {
             return link.target === '_blank' ? (
               <a
