@@ -158,7 +158,7 @@ const Donate: FC = () => {
               <div className="relative h-[200px]">
                 <div className="overflow-hidden absolute inset-0">
                   <div 
-                    className="flex h-full transition-transform duration-500 ease-in-out" 
+                    className="flex h-full items-center transition-transform duration-500 ease-in-out" 
                     style={{ transform: `translateX(-${currentQuote * 100}%)` }}
                   >
                     {donateContent.quotes.map((quote, index) => (
