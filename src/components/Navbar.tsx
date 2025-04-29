@@ -56,4 +56,4 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
   );
 };
 
-export default Navbar;
+export default Navbar
