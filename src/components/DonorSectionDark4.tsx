@@ -11,6 +11,7 @@ import zoraLogo from '../assets/images/zora.svg'
 import arbitrumLogo from '../assets/images/arbitrum.svg'
 
 const partners = [
+  // Add partner logos here if needed
 ]
 
 const donors = [
@@ -25,7 +26,6 @@ const donors = [
   { name: 'Zora', logo: zoraLogo },
 ]
 
-
 interface DonorSectionProps {
   className?: string
   theme?: 'dark' | 'light'
@@ -36,13 +36,31 @@ interface DonorSectionProps {
 const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featured = false }: DonorSectionProps) => {
   const logos = type === 'Donors' ? donors : partners
 
-return (
-  <div className={`donors ${className} pt-4 pb-0`}>
-    
-    {type === 'Donors' ? (
-      <div className="p-8">
-        <div className="flex flex-wrap justify-center gap-6">
-          {logos.map((donor) => (
+  return (
+    <div className={`donors ${className} pt-8 pb-8`}> {/* Increased padding here */}
+      {type === 'Donors' ? (
+        <div className="p-12"> {/* Increased padding here */}
+          <div className="flex flex-wrap justify-center gap-8"> {/* Increased gap for better spacing */}
+            {logos.map((donor) => (
+              <a 
+                key={donor.name}
+                href={donor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-10 md:h-15"
+              >
+                <img 
+                  src={donor.logo} 
+                  alt={donor.name}
+                  className="h-[60px] w-auto max-w-[158px]"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10 items-center"> {/* Increased gap for better spacing */}
+          {logos.map(donor => (
             <a 
               key={donor.name}
               href={donor.url}
@@ -51,35 +69,16 @@ return (
               className="flex items-center justify-center h-10 md:h-15"
             >
               <img 
-                src={donor.logo} 
+                src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
                 alt={donor.name}
                 className="h-[60px] w-auto max-w-[158px]"
               />
             </a>
           ))}
         </div>
-      </div>
-    ) : (
-      <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
-        {logos.map(donor => (
-          <a 
-            key={donor.name}
-            href={donor.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center h-10 md:h-15"
-          >
-            <img 
-              src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
-              alt={donor.name}
-              className="h-[60px] w-auto max-w-[158px]"
-            />
-          </a>
-        ))}
-      </div>
-    )}
-  </div>
-)
+      )}
+    </div>
+  )
 }
 
 export default DonorSection
