@@ -38,7 +38,7 @@ const Home: FC = () => {
         />
         <Section.Row>
           <Grid>
-            <Grid.Item span={12} className="flex flex-col">
+            <Grid.Item span={11} className="flex flex-col">
               <Navbar theme="light" />
             </Grid.Item>
           </Grid>
