@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { navigation } from '../content/navigation'
 import PGLockup from './PGLockup'
 import Section from './Section'
+import Grid from './Grid'
 
 interface NavbarProps {
   theme?: 'light' | 'brand' | 'dark';
