@@ -208,7 +208,7 @@ return (
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={data?.result?.rows || []}
-          margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
+          margin={{ top: 5, right: 5, left: 10, bottom: 20 }}
         >
           <CartesianGrid 
             strokeDasharray="3 3" 
@@ -232,7 +232,7 @@ return (
             tick={{ fontSize: 12, fontFamily: 'Inter' }}
             tickLine={false}
             axisLine={false}
-            dx={-20}
+            dx={-10}
           />
           <Tooltip 
             formatter={(value: string | number, _name, props) => {
