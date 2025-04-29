@@ -14,7 +14,7 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
 
   return (
     <nav className="bg-white py-6">
-      <div className="flex flex-col md:flex-row justify-start md:justify-between items-center w-full"> {/* Changed justify-between to justify-start for small screens */}
+      <div className="flex flex-col md:flex-row items-start w-full">
         <div className="flex gap-6 md:gap-8 mb-4 md:mb-0 md:order-2">
           {links.map(link => {
             return link.target === '_blank' ? (
