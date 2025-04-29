@@ -14,11 +14,8 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
 
   return (
     <nav className="bg-white py-6">
-      <div className="flex flex-col md:flex-row justify-between items-start w-full">
-        <Link to="/" className="self-start">
-          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
-        </Link>
-        <div className="flex gap-6 md:gap-8 ml-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+        <div className="flex gap-6 md:gap-8 mb-4 md:mb-0 md:order-2"> {/* Added md:order-2 to keep the logo on the left on larger screens */}
           {links.map(link => {
             return link.target === '_blank' ? (
               <a
@@ -79,6 +76,9 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
             )
           })}
         </div>
+        <Link to="/" className="md:order-1"> {/* Added md:order-1 to keep the logo on the left on larger screens */}
+          <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
+        </Link>
       </div>
     </nav>
   );
