@@ -233,6 +233,7 @@ return (
             tickLine={false}
             axisLine={false}
             dx={-10}
+            dy={10}
           />
           <Tooltip 
             formatter={(value: string | number, _name, props) => {
