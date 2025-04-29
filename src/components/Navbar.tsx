@@ -73,3 +73,6 @@ const Navbar: FC<NavbarProps> = ({ theme = 'light' }) => {
       </div>
     </nav>
   );
+};
+
+export default Navbar
