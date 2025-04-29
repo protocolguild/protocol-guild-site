@@ -90,7 +90,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
   const logos = type === 'Donors' ? donors : partners
 
   return (
-    <div className={`donors ${className} ${`border-t ${theme === 'light' ? 'border-[#fff]' : 'border-[var(--gray-dark)]'}`} pt-4 pb-1`}>
+    <div className={`donors ${className} ${`border-t ${theme === 'light' ? 'border-[#fff]' : 'border-[var(--gray-dark)]'}`} pt-4 pb-0`}>
       {!featured && <p className={`text-[15px] font-medium mb-2 ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE PARTNERS'}</p>}
       {featured && (
         <div className="flex flex-row justify-between items-center w-full mb-6">
