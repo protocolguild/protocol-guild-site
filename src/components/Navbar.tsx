@@ -18,7 +18,7 @@ return (
     <div className="flex flex-col md:flex-row justify-between w-full">
       
       <Link to="/" className="md:order-1 mb-4 md:mb-0 no-hover">
-        <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
+        <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[170px]" />
       </Link>
       
       <div className="flex gap-6 md:gap-8 mb-4 md:mb-0 md:order-2">
