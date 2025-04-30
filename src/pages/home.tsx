@@ -31,20 +31,20 @@ return (
   <main>
     
     <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-      <div className="relative w-full md:w-8/12"> {/* Adjust width as needed */}
-        <img
-          src={chainsImage}
-          alt="Ethereum chains"
-          className="h-full w-auto object-cover object-right z-0 hidden md:block"
-          style={{ maxWidth: '100%' }} // Ensure the image does not exceed the container width
-        />
-      </div>
-      <Section.Row>
-        <Grid>
+      <Section.Row className="flex flex-col md:flex-row items-start">
+        <Grid className="flex-1">
           <Grid.Item span={12} className="flex flex-col">
             <Navbar theme="light" />
           </Grid.Item>
         </Grid>
+        <div className="relative w-full md:w-8/12 flex justify-end"> {/* Adjust width as needed */}
+          <img
+            src={chainsImage}
+            alt="Ethereum chains"
+            className="h-auto w-auto object-cover object-right z-0 hidden md:block"
+            style={{ maxWidth: '100%' }} // Ensure the image does not exceed the container width
+          />
+        </div>
       </Section.Row>
       <Section.Row className="flex-1 flex items-center justify-center relative z-1 pt-7 md:pb-15">
         <Grid>
