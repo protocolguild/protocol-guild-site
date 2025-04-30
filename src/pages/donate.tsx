@@ -112,7 +112,7 @@ return (
             <img 
               src={medallionSvg}
               alt="Protocol Guild medallion" 
-              className="mt-0 w-48 transform-gpu mb-4"
+              className="mt-0 w-48 transform-gpu mb-8"
               style={{
                 WebkitBackfaceVisibility: 'hidden',
                 WebkitTransform: 'translateZ(0)',
