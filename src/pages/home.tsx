@@ -38,6 +38,7 @@ return (
     backgroundSize: 'cover', // Ensures the image covers the entire section
     backgroundPosition: 'right', // Aligns the image to the right
     backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+    height: '100%', // Ensures the section takes the full height
   }}
 >
   <Section.Row className="relative z-1">
@@ -62,6 +63,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
 
       
     <Section background="white" divider="var(--brand-primary)" line={true}>
