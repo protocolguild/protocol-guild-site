@@ -5,8 +5,8 @@ export const aboutContent = {
   },
   organization: {
     title: "Who we are.",
-    description1: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development. Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol development, backed by projects building on Ethereum.",
-    description2: "We maintain an onchain registry of active core protocol contributors, enabling Ethereum's ecosystem to direct funding directly to all the individuals building the future of Ethereum.",
+    description1: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development. Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol work, backed by projects building on Ethereum.",
+    description2: "We maintain an onchain registry of Ethereum's active core protocol contributors, enabling the ecosystem to direct funding directly to all the individuals building the future of Ethereum.",
     description3: "Protocol Guild is structured as a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
     link: "View all members",
     team: "Core Contributors"
