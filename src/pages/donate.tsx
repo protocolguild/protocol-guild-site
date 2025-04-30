@@ -110,7 +110,7 @@ return (
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.quote.author}</h2>
             </div>
           </Grid.Item>
-          <Grid.Item span={6} className="flex flex-col items-center">
+          <Grid.Item span={6} className="flex flex-col items-center mb-4">
             <img 
               src={medallionSvg}
               alt="Protocol Guild medallion" 
@@ -121,7 +121,6 @@ return (
                 imageRendering: '-webkit-optimize-contrast'
               }}
             />
-            <br/><br/>
             <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
           </Grid.Item>
         </Grid>
