@@ -30,42 +30,43 @@ const goToQuote = (index: number) => {
 return (
   <main>
     
-    <Section background="white" className="flex flex-col relative overflow-hidden">
-      <Section.Row className="relative z-1">
+<Section background="white" className="flex flex-col relative overflow-hidden">
+  <Section.Row className="relative z-1">
+    
+    <Grid>
+      <Grid.Item span={12} className="relative">
+        <div className="flex justify-end">
+          <img
+            src={chainsImage}
+            alt="Ethereum chains"
+            className="h-auto max-h-[700px] w-auto object-contain z-0 opacity-100 md:opacity-100 transition-opacity duration-300 ease-in-out"
+          />
+        </div>
         
-        <Grid>
-          <Grid.Item span={12} className="relative">
-            <div className="flex justify-end">
-              <img
-                src={chainsImage}
-                alt="Ethereum chains"
-                className="h-auto max-h-[700px] w-auto object-contain z-0 opacity-100 md:opacity-100 transition-opacity duration-300 ease-in-out"
-              />
-            </div>
-            
-            <Grid className="absolute top-0 left-0 w-full z-10">
-              <Grid.Item span={12}>
-                <Navbar theme="light" />
-              </Grid.Item>
-            </Grid>
-            
-            <Grid className="absolute top-40 left-0 w-full z-10"> {/* Adjust top positioning as needed */}
-              <Grid.Item span={8}>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
-                  {homeContent.hero.title}
-                </h1>
-                <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
-                  {homeContent.hero.subtitle1}
-                  <br/><br/>
-                  {homeContent.hero.subtitle2}
-                </p>
-              </Grid.Item>
-            </Grid>
-            
+        <Grid className="w-full z-10"> {/* Removed absolute positioning */}
+          <Grid.Item span={12}>
+            <Navbar theme="light" />
           </Grid.Item>
         </Grid>
-      </Section.Row>
-    </Section>
+        
+        <Grid className="w-full z-10 flex flex-col items-start"> {/* Added flex and items-start for left alignment */}
+          <Grid.Item span={8}>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
+              {homeContent.hero.title}
+            </h1>
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
+              {homeContent.hero.subtitle1}
+              <br/><br/>
+              {homeContent.hero.subtitle2}
+            </p>
+          </Grid.Item>
+        </Grid>
+        
+      </Grid.Item>
+    </Grid>
+  </Section.Row>
+</Section>
+
 
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
