@@ -31,7 +31,7 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col relative overflow-hidden">
-  <Grid className="relative">
+  <Grid span ={12} className="relative">
     <img
       src={chainsImage}
       alt="A background image representing Ethereum chains"
