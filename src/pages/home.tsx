@@ -43,14 +43,16 @@ return (
         </div>
         <Grid className="absolute top-0 left-0 w-full z-10"> {/* Nested grid for the navbar */}
           <Grid.Item span={12}>
-            <Navbar theme="light" /> {/* Navbar inside the nested grid */}
+            <Navbar theme="light" className="block md:hidden" /> {/* Navbar visible on small screens */}
           </Grid.Item>
         </Grid>
       </Grid.Item>
     </Grid>
   </Section.Row>
+  <div className="hidden md:block"> {/* Navbar for medium and larger screens */}
+    <Navbar theme="light" /> {/* This navbar is only visible on medium and larger screens */}
+  </div>
 </Section>
-
 
 
 
