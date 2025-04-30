@@ -36,7 +36,7 @@ return (
       src={chainsImage}
       alt="Ethereum chains"
       className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-      style={{ maxWidth: '100%', width: '100%', height: 'auto' }} // Ensure it scales responsively
+      style={{ maxWidth: 'none' }}
     />
   </div>
   <Section.Row className="relative z-1">
