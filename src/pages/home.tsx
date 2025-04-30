@@ -29,7 +29,7 @@ const goToQuote = (index: number) => {
 
 return (
   <main>
-
+    
 <Section background="white" className="flex flex-col relative overflow-hidden">
   <Section.Row className="relative z-1">
     
