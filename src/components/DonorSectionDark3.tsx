@@ -99,7 +99,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
   const logos = type === 'Donors' ? donors : partners
 
 return (
-  <div className={`donors ${className} pt-0 pb-0 w-full max-w-screen-lg`}>
+  <div className={`donors ${className} pt-0 pb-0 w-full`}>
     
     {type === 'Donors' ? (
       <div className="p-8">
@@ -120,24 +120,6 @@ return (
             </a>
           ))}
         </div>
-      </div>
-    ) : (
-      <div className="donor-logos grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 items-center">
-        {logos.map(donor => (
-          <a 
-            key={donor.name}
-            href={donor.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center h-5 md:h-7" // Adjusted height
-          >
-            <img 
-              src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
-              alt={donor.name}
-              className="h-full w-auto max-w-[120px]" // Set max width
-            />
-          </a>
-        ))}
       </div>
     )}
     
