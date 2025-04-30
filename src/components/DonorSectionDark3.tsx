@@ -1,5 +1,6 @@
 // Component imports
 import pgIcon from '../assets/images/pg-icon-dark.svg'
+
 // 1% Partners
 import etherfiSvg from '../assets/images/donors/etherfi.svg'
 import etherfiWhiteSvg from '../assets/images/donors/etherfi-white.svg'
@@ -56,11 +57,6 @@ import statefulWorksWhiteSvg from '../assets/images/donors/statefulworks-white.s
 import vanEckSvg from '../assets/images/donors/vaneck.svg'
 import vanEckWhiteSvg from '../assets/images/donors/vaneck-white.svg'
 
-/*
-
-VanEck
-*/
-
 const partners = [
 ]
 
@@ -92,7 +88,6 @@ const donors = [
   { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' }
 ]
 
-
 interface DonorSectionProps {
   className?: string
   theme?: 'dark' | 'light'
@@ -106,27 +101,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
 return (
   <div className={`donors ${className} pt-4 pb-0`}>
     
-    {featured && type === 'Partners' ? (
-      <div className="silver-gradient silver-shimmer rounded-xl p-8">
-        <div className="flex flex-wrap justify-center gap-6">
-          {logos.map((donor) => (
-            <a 
-              key={donor.name}
-              href={donor.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7" // Adjusted height
-            >
-              <img 
-                src={donor.logo} 
-                alt={donor.name}
-                className="h-full w-auto max-w-[70px]" // Set valid max width
-              />
-            </a>
-          ))}
-        </div>
-      </div>
-    ) : type === 'Donors' ? (
+    {type === 'Donors' ? (
       <div className="p-8">
         <div className="flex flex-wrap justify-center gap-6">
           {logos.map((donor) => (
@@ -140,7 +115,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[70px]" // Set valid max width
+                className="h-full w-auto max-w-[70px]" // Set max width
               />
             </a>
           ))}
@@ -159,12 +134,13 @@ return (
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
               alt={donor.name}
-              className="h-full w-auto max-w-[70px]" // Set valid max width
+              className="h-full w-auto max-w-[70px]" // Set max width
             />
           </a>
         ))}
       </div>
     )}
+    
   </div>
 )
 }
