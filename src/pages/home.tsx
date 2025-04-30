@@ -35,7 +35,7 @@ return (
     src={chainsImage}
     alt="Ethereum chains"
     className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-    style={{ maxWidth: 'none', right: '2rem' }} // Adjust the right value as needed
+    style={{ maxWidth: 'none', right: '4rem' }} // Adjust the right value as needed
   />
   <Section.Row className="relative z-1">
     <Grid>
