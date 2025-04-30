@@ -50,7 +50,7 @@ return (
         </Grid>
         
         <Grid className="absolute top-40 left-0 w-full z-10 flex flex-col items-start gap-6">
-          <Grid.Item span={12} className="w-full mg:w-[65%]">
+          <Grid.Item span={12} className="w-full md:w-[65%]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
               {homeContent.hero.title}
             </h1>
