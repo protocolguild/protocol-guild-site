@@ -37,7 +37,7 @@ return (
         className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
         style={{ maxWidth: 'none' }}
       />
-      <Section.Row>
+      <Section.Row className="z-1">
         <Grid>
           <Grid.Item span={12} className="flex flex-col">
             <Navbar theme="light" />
