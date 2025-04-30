@@ -111,7 +111,7 @@ return (
         <div className="grid grid-cols-1 gap-6">
           <FeatureCard
             title="Protocol Guild Members"
-            description="Over 190 researchers and developers are members of Protocol Guild"
+            description="189 researchers and developers are members of Protocol Guild"
             color="var(--gray-dark)"
           />
           <MemberFaces />
