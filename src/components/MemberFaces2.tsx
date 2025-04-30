@@ -20,9 +20,9 @@ const MemberFaces: FC<MemberFacesProps> = () => {
     setShuffledMembers(shuffleArray(members));
   }, []);
 
-  const ninthLength = Math.ceil(shuffledMembers.length / 9);
-  const rows = Array.from({ length: 9 }, (_, index) => 
-    shuffledMembers.slice(index * ninthLength, (index + 1) * ninthLength)
+  const tenthLength = Math.ceil(shuffledMembers.length / 10);
+  const rows = Array.from({ length: 10 }, (_, index) => 
+    shuffledMembers.slice(index * tenthLength, (index + 1) * tenthLength)
   );
 
   return (
