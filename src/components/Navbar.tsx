@@ -14,7 +14,7 @@ const { main: links } = navigation;
 
 return (
   
-  <nav className="bg-white py-6">
+  <nav className="bg-transparent py-6">
     <div className="flex flex-col md:flex-row justify-between w-full">
       
       <Link to="/" className="md:order-1 mb-4 md:mb-0 no-hover">
@@ -34,13 +34,13 @@ return (
                 ? theme === 'light' 
                   ? 'text-[var(--brand-primary)]'
                   : theme === 'brand'
-                    ? 'text-[var(--bg-white)] hover:!text-[var(--bg-white)] hover:!opacity-50'
+                    ? 'text-[var(--bg-transparent)] hover:!text-[var(--bg-transparent)] hover:!opacity-50'
                     : 'text-[var(--brand-primary)] hover:!text-[var(--brand-primary)] hover:!opacity-50'
                 : theme === 'light'
                   ? 'text-[#212121] hover:text-[var(--gray-dark)]'
                   : theme === 'brand'
                     ? 'text-[var(--gray-dark)] hover:!text-[var(--gray-dark)] hover:!opacity-50'
-                    : 'text-[var(--bg-white)] hover:!text-[var(--bg-white)] hover:!opacity-50'
+                    : 'text-[var(--bg-transparent)] hover:!text-[var(--bg-transparent)] hover:!opacity-50'
             }`}
           >
             {link.name}
@@ -61,13 +61,13 @@ return (
                   ? theme === 'light' 
                     ? 'text-[var(--brand-primary)]'
                     : theme === 'brand'
-                      ? 'text-[var(--bg-white)] hover:!text-[var(--bg-white)] hover:!opacity-50'
+                      ? 'text-[var(--bg-transparent)] hover:!text-[var(--bg-transparent)] hover:!opacity-50'
                       : 'text-[var(--brand-primary)] hover:!text-[var(--brand-primary)] hover:!opacity-50'
                   : theme === 'light'
                     ? 'text-[#212121] hover:text-[var(--gray-dark)]'
                     : theme === 'brand'
                       ? 'text-[var(--gray-dark)] hover:!text-[var(--gray-dark)] hover:!opacity-50'
-                      : 'text-[var(--bg-white)] hover:!text-[var(--bg-white)] hover:!opacity-50'
+                      : 'text-[var(--bg-transparent)] hover:!text-[var(--bg-transparent)] hover:!opacity-50'
               }`}
             >
               {link.name}
