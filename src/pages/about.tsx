@@ -17,7 +17,7 @@ import DuneTable from '../components/DuneTable'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
-import MemberFaces from '../components/MemberFaces2'
+import MemberFaces from '../components/MemberFaces'
 
 const About: FC = () => {
 
@@ -118,6 +118,7 @@ return (
           <DuneChart 
             queryId="2665887" 
             theme="light" 
+            title="# of Members"
             xAxisKey="time2"
             yAxisKey="total_count"
             formatDate
