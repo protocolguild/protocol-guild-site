@@ -49,7 +49,7 @@ return (
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid columns={12} className="py-16">
-          <Grid.Item span={6} className="flex flex-col gap-4">
+          <Grid.Item span={6} className="flex flex-col gap-6">
             <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.organization.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.organization.description1}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.organization.description2}</h2>
@@ -234,12 +234,10 @@ return (
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid columns={12} className="py-16">
-          <Grid.Item span={6} className="flex flex-col gap-4">
+          <Grid.Item span={6} className="flex flex-col gap-6">
             <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{aboutContent.docs.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{aboutContent.docs.description}</h2>
-            <a href="https://protocol-guild.readthedocs.io" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block">
-              {aboutContent.docs.link}
-            </a>
+            <a href="https://protocol-guild.readthedocs.io" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">{aboutContent.docs.link}</a>
           </Grid.Item>
         </Grid>
       </Section.Row>
