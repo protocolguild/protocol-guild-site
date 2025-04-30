@@ -110,7 +110,7 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-10" // Set a fixed height for the anchor
+              className="flex items-center justify-center h-7" // Set a fixed height for the anchor
             >
               <img 
                 src={donor.logo} 
