@@ -104,12 +104,12 @@ return (
                 </svg>
               </a>
             </h2>
-            <h2 className="!text-lg !font-normal !leading-[24px] mt-16 mb-16 !text-[var(--gray-dark)]">
+            <h2 className="!text-lg !font-normal !leading-[24px] mt-16 !text-[var(--gray-dark)]">
               <em>{donateContent.pledge.quote.text}</em>
             </h2>
             <div className="flex items-center">
               <img src={authorImage} alt="EigenLayer" className="w-8 h-8 mr-2" />
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.quote.author}</h2>
+              <h2 className="!text-lg !font-normal !leading-[24px] mb-16 !text-[var(--gray-dark)]">{donateContent.pledge.quote.author}</h2>
             </div>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col items-center">
