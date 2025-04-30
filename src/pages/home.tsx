@@ -31,11 +31,11 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col relative overflow-hidden">
-  <div className="relative w-full max-w-screen-lg mx-auto"> {/* Container for alignment */}
+  <div className="absolute top-0 right-0 h-full w-auto max-w-full md:max-w-[calc(100%-2rem)]">
     <img
       src={chainsImage}
       alt="Ethereum chains"
-      className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+      className="h-full w-auto object-cover object-right z-0 hidden md:block"
       style={{ maxWidth: 'none' }}
     />
   </div>
