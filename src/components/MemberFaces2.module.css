@@ -1,11 +1,11 @@
 .scroll {
-  animation: scroll 300s linear infinite;
+  animation: scroll 150s linear infinite;
   will-change: transform;
   margin: 0 -100px;
 }
 
 .scroll-reverse {
-  animation: scroll-reverse 300s linear infinite;
+  animation: scroll-reverse 150s linear infinite;
   will-change: transform;
   margin: 0 -100px;
 }
