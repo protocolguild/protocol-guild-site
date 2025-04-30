@@ -96,12 +96,13 @@ interface DonorSectionProps {
 }
 
 const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featured = false }: DonorSectionProps) => {
-const logos = type === 'Donors' ? donors : partners
+const logos = type === 'Donors' ? donors : partners;
 
 return (
+  
   <div className={`donors ${className} pt-0 pb-0 w-full`}>
     
-    type === 'Donors' ? (
+    {logos.length > 0 ? (
       <div className="p-8">
         <div className="flex flex-wrap justify-center gap-6">
           {logos.map((donor) => (
@@ -121,10 +122,14 @@ return (
           ))}
         </div>
       </div>
-    )
+    ) : (
+      <div className="p-8 text-center">
+        <p>No {type.toLowerCase()} available.</p>
+      </div>
+    )}
     
   </div>
 )
 }
 
-export default DonorSection
+export default DonorSection;
