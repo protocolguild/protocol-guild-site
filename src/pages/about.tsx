@@ -30,7 +30,7 @@ return (
       <img
         src={chainsImage}
         alt="Ethereum chains"
-        className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+        className="absolute top-0 right-0 h-full w-[calc(100% - 3rem)] object-cover object-right z-0 hidden md:block"
         style={{ maxWidth: 'none' }}
       />
       <Section.Row>
@@ -40,9 +40,7 @@ return (
           </Grid.Item>
         </Grid>
       </Section.Row>
-      <Section.Row 
-        className="min-h-0 flex items-center"
-      >
+      <Section.Row className="min-h-0 flex items-center">
         <Grid>
           <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
             <HeroLockup theme="light" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
