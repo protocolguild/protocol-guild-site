@@ -39,7 +39,7 @@ return (
           <img
             src={chainsImage}
             alt="Ethereum chains"
-            className="h-auto max-h-[700px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
+            className="h-auto max-h-[600px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
           />
         </div>
         
