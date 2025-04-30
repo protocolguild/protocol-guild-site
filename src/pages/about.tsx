@@ -17,7 +17,7 @@ import DuneTable from '../components/DuneTable'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
-import MemberFaces from '../components/MemberFaces'
+import MemberFaces from '../components/MemberFaces2'
 
 const About: FC = () => {
 
