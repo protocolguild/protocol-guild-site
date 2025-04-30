@@ -29,41 +29,38 @@ const goToQuote = (index: number) => {
 
 return (
   <main>
-    
 
-<Section background="white" className="flex flex-col relative overflow-hidden">
-  <Section.Row className="relative z-1">
-    
-    <Grid className="relative">
-      <Grid.Item span={12} className="relative">
-        <div className="flex justify-end">
-          <img
-            src={chainsImage}
-            alt="Ethereum chains"
-            className="h-auto max-h-[600px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
-          />
-        </div>
+    <Section background="white" className="flex flex-col relative overflow-hidden">
+      <Section.Row className="relative z-1">
         
-        <Grid className="absolute top-0 left-0 w-full z-10">
-          <Grid.Item span={12} className="w-full md:w-[65%]">
-            <Navbar theme="light" />
+        <Grid className="relative">
+          <Grid.Item span={12} className="relative">
+            <div className="flex justify-end">
+              <img
+                src={chainsImage}
+                alt="Ethereum chains"
+                className="h-auto max-h-[600px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
+              />
+            </div>
+            
+            <Grid className="absolute top-0 left-0 w-full z-10">
+              <Grid.Item span={12} className="w-full md:w-[65%]">
+                <Navbar theme="light" />
+              </Grid.Item>
+            </Grid>
+            
+            <div className="absolute top-0 left-0 w-full z-10 h-[400px] flex items-center">
+              <div className="w-full md:w-[65%] mx-auto">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
+                <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
+                <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
+              </div>
+            </div>
+            
           </Grid.Item>
         </Grid>
-        
-        <div className="absolute top-0 left-0 w-full z-10 h-[400px] flex items-center">
-          <div className="w-full md:w-[65%] mx-auto">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
-            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
-            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
-          </div>
-        </div>
-        
-      </Grid.Item>
-    </Grid>
-  </Section.Row>
-</Section>
-
-
+      </Section.Row>
+    </Section>
 
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
