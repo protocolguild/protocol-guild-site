@@ -156,9 +156,7 @@ return (
               {donateContent.planning.title}
             </h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.planning.description}</h2>
-            <a href={donateContent.pledge.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit">
-              {donateContent.planning.buttonText}
-            </a>
+            <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Get in Touch</a>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
             <div className="relative h-[200px]">
