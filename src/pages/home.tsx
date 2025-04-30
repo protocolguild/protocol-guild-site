@@ -33,7 +33,7 @@ return (
 <Section background="white" className="flex flex-col relative overflow-hidden">
   <Section.Row className="relative z-1">
     <Grid>
-      <Grid.Item span={12} className="flex flex-col">
+      <Grid.Item span={12} className="flex flex-col relative"> {/* Make this relative to position the navbar absolutely */}
         <div className="flex justify-end"> {/* Add a flex container to align the image */}
           <img
             src={chainsImage}
@@ -41,13 +41,12 @@ return (
             className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Use object-contain to avoid cropping
           />
         </div>
-      </Grid.Item>
-      <Grid.Item span={12} className="flex flex-col">
-        <Navbar theme="light" />
+        <Navbar theme="light" className="absolute top-0 left-0 w-full z-10" /> {/* Position navbar absolutely */}
       </Grid.Item>
     </Grid>
   </Section.Row>
 </Section>
+
 
 
 
