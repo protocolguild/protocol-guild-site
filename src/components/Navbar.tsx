@@ -15,9 +15,9 @@ const { main: links } = navigation;
 return (
   
   <nav className="bg-transparent py-6">
-    <div className="flex flex-col md:flex-row justify-between w-full">
+    <div className="flex flex-col md:flex-row justify-between items-center w-full">
       
-      <Link to="/" className="md:order-1 mb-4 md:mb-0 no-hover">
+  <Link to="/" className="md:order-1 mb-4 md:mb-0 no-hover">
         <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
       </Link>
       
