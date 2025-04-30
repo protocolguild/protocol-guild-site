@@ -37,7 +37,7 @@ return (
         <img
           src={chainsImage}
           alt="Ethereum chains"
-          className="h-auto max-h-[700px] w-auto object-cover object-right z-0 hidden md:block"
+          className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Use object-contain to avoid cropping
         />            
       </Grid.Item>
     </Grid>
