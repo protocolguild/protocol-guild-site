@@ -32,13 +32,12 @@ return (
     
 <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
   <div
-    className="relative w-full h-auto bg-cover bg-no-repeat bg-right"
+    className="relative w-full bg-cover bg-no-repeat bg-right"
     style={{
       backgroundImage: `url(${chainsImage})`,
-      height: '300px', // Adjust height as needed
     }}
   >
-    <Section.Row className="flex flex-col md:flex-row items-start h-full">
+    <Section.Row className="flex flex-col md:flex-row items-start">
       <Grid className="flex-1">
         <Grid.Item span={12} className="flex flex-col">
           <Navbar theme="light" />
