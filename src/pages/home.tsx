@@ -43,14 +43,14 @@ return (
           />
         </div>
         
-        <Grid className="absolute top-0 left-0 w-[65%] z-10">
+        <Grid className="absolute top-0 left-0 w-full z-10">
           <Grid.Item span={12}>
             <Navbar theme="light" />
           </Grid.Item>
         </Grid>
         
         <Grid className="absolute top-50 left-0 w-full z-10 flex flex-col items-start gap-6 ">
-          <Grid.Item span={12} className="w-full md:w-[65%]">
+          <Grid.Item span={12} className="w-full md:w-[65%] gap-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
