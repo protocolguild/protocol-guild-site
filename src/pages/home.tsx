@@ -30,20 +30,20 @@ const goToQuote = (index: number) => {
 return (
   <main>
     
-    <Section background="white" className="flex flex-col relative overflow-hidden">
-      <Section.Row className="relative z-1">
-        <Grid>
-          <Grid.Item span={12} className="flex flex-col">
-            <img
-              src={chainsImage}
-              alt="Ethereum chains"
-              className="h-full w-auto object-cover object-right z-0 hidden md:block"
-              style={{ maxWidth: 'none' }}
-            />            
-          </Grid.Item>
-        </Grid>
-      </Section.Row>
-    </Section>
+<Section background="white" className="flex flex-col relative overflow-hidden">
+  <Section.Row className="relative z-1">
+    <Grid>
+      <Grid.Item span={12} className="flex flex-col">
+        <img
+          src={chainsImage}
+          alt="Ethereum chains"
+          className="h-full w-auto object-cover object-right z-0 hidden md:block"
+          style={{ maxWidth: 'none', maxHeight: '700px' }}
+        />            
+      </Grid.Item>
+    </Grid>
+  </Section.Row>
+</Section>
 
 
 
