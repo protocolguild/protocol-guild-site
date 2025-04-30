@@ -49,10 +49,12 @@ return (
           </Grid.Item>
         </Grid>
         
-        <Grid className="absolute top-40 left-0 w-full z-10 flex flex-col items-start gap-6">
+        <Grid className="absolute top-80 left-0 w-full z-10 flex flex-col items-start gap-6 ">
           <Grid.Item span={12} className="w-full md:w-[65%] gap-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">{homeContent.hero.title}</h1>
+            <br/><br/>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)]">{homeContent.hero.subtitle1}</p>
+            <br/><br/>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)]">{homeContent.hero.subtitle2}</p>
           </Grid.Item>
         </Grid>
