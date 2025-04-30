@@ -49,9 +49,6 @@ return (
       </Grid.Item>
     </Grid>
   </Section.Row>
-  <div className="md:hidden"> {/* Navbar for small screens */}
-    <Navbar theme="light" /> {/* Duplicate navbar for small screens */}
-  </div>
 </Section>
 
 
