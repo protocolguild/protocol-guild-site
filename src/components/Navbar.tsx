@@ -17,11 +17,11 @@ return (
   <nav className="bg-transparent py-6">
     <div className="flex flex-col lg:flex-row justify-between w-full">
 
-  <Link to="/" className="md:order-1 mb-4 md:mb-0 no-hover">
+  <Link to="/" className="lg:order-1 mb-4 lg:mb-0 no-hover">
         <PGLockup fill="var(--gray-dark)" logoColor="#3cbeed" className="h-8 w-auto max-w-[200px]" />
       </Link>
       
-      <div className="flex gap-6 lg:gap-8 mb-0 md:order-2">
+      <div className="flex gap-6 lg:gap-8 mb-0 lg:order-2">
         {links.map(link => {
           return link.target === '_blank' ? (
             <a
