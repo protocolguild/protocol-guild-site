@@ -101,7 +101,6 @@ const logos = type === 'Donors' ? donors : partners;
 return (
   
   <div className={`donors ${className} pt-0 pb-0 w-full`}>
-    
     {logos.length > 0 ? (
       <div className="p-8">
         <div className="flex flex-wrap justify-center gap-6">
@@ -111,12 +110,12 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7" // Adjusted height
+              className="flex items-center justify-center h-20" // Set a fixed height for the anchor
             >
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[120px]" // Set max width
+                className="h-full w-auto max-h-[80px] max-w-[120px]" // Set a max height for the logos
               />
             </a>
           ))}
@@ -127,8 +126,8 @@ return (
         <p>No {type.toLowerCase()} available.</p>
       </div>
     )}
-    
   </div>
+  
 )
 }
 
