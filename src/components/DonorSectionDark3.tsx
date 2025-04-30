@@ -115,7 +115,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[100px]" // Set a max height for the logos
+                className="h-full w-auto max-w-[100px]" // Set a max height for the logos (set to 70px for 5 per row in l screen)
               />
             </a>
           ))}
