@@ -156,3 +156,7 @@ button:focus-visible {
 .dark-theme .scrollbar {
   scrollbar-color: #444 #222222; /* Thumb color and track color for dark theme */
 }
+
+.no-hover:hover {
+  opacity: 1;
+}
