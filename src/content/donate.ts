@@ -35,9 +35,7 @@ export const donateContent = {
   },
   planning: {
     title: "Plan your token allocation with Protocol Guild.",
-    description: "Planning for sustainable open-source funding can begin at the earliest stages of your project. Work with Protocol Guild to design a token allocation strategy tailored to your goals.",
-    buttonText: "Get in Touch",
-    buttonLink: "https://calendly.com/vecchiarelli-peter/30min"
+    description: "Planning for sustainable open-source funding can begin at the earliest stages of your project. Work with Protocol Guild to design a token allocation strategy tailored to your goals."
   },
   quotes: [
     {
