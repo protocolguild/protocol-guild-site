@@ -103,14 +103,14 @@ return (
   <div className={`donors ${className} pt-0 pb-0 w-full`}>
     {logos.length > 0 ? (
       <div className="p-8">
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {logos.map((donor) => (
             <a 
               key={donor.name}
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-10" // Set a fixed height for the anchor
+              className="flex items-center justify-center h-5" // Set a fixed height for the anchor
             >
               <img 
                 src={donor.logo} 
