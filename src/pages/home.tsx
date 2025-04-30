@@ -34,11 +34,13 @@ return (
   <Section.Row className="relative z-1">
     <Grid>
       <Grid.Item span={12} className="flex flex-col">
-        <img
-          src={chainsImage}
-          alt="Ethereum chains"
-          className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Use object-contain to avoid cropping
-        />            
+        <div className="flex justify-end"> {/* Add a flex container to align the image */}
+          <img
+            src={chainsImage}
+            alt="Ethereum chains"
+            className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Use object-contain to avoid cropping
+          />
+        </div>
       </Grid.Item>
     </Grid>
   </Section.Row>
