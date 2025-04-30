@@ -36,11 +36,11 @@ return (
     <Grid>
       <Grid.Item span={12} className="relative">
         
-        <div className="absolute top-0 left-0 w-full z-0 flex justify-end max-h-full">
+        <div className="absolute top-0 left-0 w-full z-0 flex justify-end">
           <img
             src={chainsImage}
             alt="Ethereum chains"
-            className="h-auto max-h-full w-auto max-w-full object-contain opacity-0 md:opacity-100"
+            className="h-auto max-h-full w-full object-contain opacity-0 md:opacity-100"
           />
         </div>
         
