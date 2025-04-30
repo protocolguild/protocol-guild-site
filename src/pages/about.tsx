@@ -66,7 +66,6 @@ return (
               <DuneChart 
                 queryId="2665887" 
                 theme="light" 
-                title="Membership"
                 xAxisKey="time2"
                 yAxisKey="total_count"
                 formatDate
