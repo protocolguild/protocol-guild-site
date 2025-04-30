@@ -34,29 +34,27 @@ return (
   <Section.Row className="relative z-1">
     
     <Grid>
-      <Grid.Item span={12} className="relative flex flex-col items-center">
-        <div className="flex-grow" style={{ paddingTop: '300px', paddingBottom: '300px', width: '100%' }}>
-          <div className="flex justify-end">
-            <img
-              src={chainsImage}
-              alt="Ethereum chains"
-              className="h-auto max-h-[600px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
-            />
-          </div>
-          
-          <Grid className="absolute top-0 left-0 w-full z-10">
-            <Grid.Item span={12} className="w-full md:w-[65%]">
-              <Navbar theme="light" />
-            </Grid.Item>
-          </Grid>
-          
-          <Grid className="absolute top-[200px] md:top-[200px] left-0 w-full z-10 flex flex-col items-start">
-            <Grid.Item span={12} className="w-full md:w-[65%]">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
-              <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
-              <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
-            </Grid.Item>
-          </Grid>
+      <Grid.Item span={12} className="relative">
+        <div className="absolute top-0 left-0 w-full z-0 flex justify-end">
+          <img
+            src={chainsImage}
+            alt="Ethereum chains"
+            className="h-auto max-h-[600px] w-auto object-contain opacity-0 md:opacity-100"
+          />
+        </div>
+        
+        <Grid className="absolute top-0 left-0 w-full z-10">
+          <Grid.Item span={12} className="w-full md:w-[65%]">
+            <Navbar theme="light" />
+          </Grid.Item>
+        </Grid>
+        
+        <div className="relative z-10 flex flex-col items-start pt-[300px] pb-[300px]">
+          <Grid.Item span={12} className="w-full md:w-[65%]">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
+            <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
+          </Grid.Item>
         </div>
         
       </Grid.Item>
