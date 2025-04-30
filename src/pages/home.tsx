@@ -32,7 +32,7 @@ return (
     
 <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
   <div
-    className="relative w-full bg-cover bg-no-repeat bg-right"
+    className="relative w-full md:w-8/12 mx-auto bg-cover bg-no-repeat bg-right"
     style={{
       backgroundImage: `url(${chainsImage})`,
     }}
