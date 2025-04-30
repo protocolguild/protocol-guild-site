@@ -13,7 +13,7 @@ import TokenCarousel from '../components/TokenCarousel'
 import { donateContent } from '../content/donate'
 import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
-import authorImage from '../assets/images/michaelsproul.jpg'
+import authorImage from '../assets/images/EigenLayer.png'
 
 const Donate: FC = () => {
 
@@ -104,7 +104,7 @@ return (
                 </svg>
               </a>
             </h2>
-            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+            <h2 className="!text-lg !font-normal !leading-[24px] mt-4 !text-[var(--gray-dark)]">
               <em>{donateContent.pledge.quote.text}</em>
             </h2>
             <div className="flex items-center">
