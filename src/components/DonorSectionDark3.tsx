@@ -132,4 +132,4 @@ return (
 )
 }
 
-export default DonorSection;
+export default DonorSection
