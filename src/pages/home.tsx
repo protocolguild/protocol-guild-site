@@ -31,18 +31,19 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col relative overflow-hidden">
-  <Section.Row className="relative z-1 flex items-center justify-between"> {/* Flex container for alignment */}
+  <img
+    src={chainsImage}
+    alt="Ethereum chains"
+    className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+    style={{ maxWidth: 'none' }}
+  />
+  
+  <Section.Row className="relative z-1">
     <Grid>
       <Grid.Item span={12} className="flex flex-col">
         <Navbar theme="light" />
       </Grid.Item>
     </Grid>
-    <img
-      src={chainsImage}
-      alt="Ethereum chains"
-      className="h-full w-auto object-cover object-right z-0 hidden md:block" // Removed absolute positioning
-      style={{ maxWidth: 'none' }}
-    />
   </Section.Row>
   <Section.Row className="flex-1 flex items-center justify-center relative z-1 mt-4 mb-8 pt-4 pb-8 md:mt-16 md:mb-16 md:pt-16 md:pb-16">
     <Grid>
@@ -59,6 +60,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
 
       
     <Section background="white" divider="var(--brand-primary)" line={true}>
