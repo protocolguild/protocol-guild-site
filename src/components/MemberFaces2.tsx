@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from 'react'
-import styles from './MemberFaces.module.css'
+import styles from './MemberFaces2.module.css'
 import { members } from '../content/members'
 
 interface MemberFacesProps {}
