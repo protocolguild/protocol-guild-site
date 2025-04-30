@@ -31,8 +31,8 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-  {/* Background Image Container */}
-  <div className="absolute top-0 right-0 left-0 h-full z-0 hidden md:block">
+  {/* Background Image */}
+  <div className="absolute top-0 right-0 h-full z-0 hidden md:block" style={{ width: '100%', maxWidth: 'calc(100% - 2rem)' }}> {/* Adjust maxWidth as needed */}
     <img
       src={chainsImage}
       alt="Ethereum chains"
@@ -66,6 +66,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
     
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
