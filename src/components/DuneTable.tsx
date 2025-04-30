@@ -92,11 +92,11 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   const getColumnWidth = (column: string, isLastColumn: boolean) => {
     const columnLower = column.toLowerCase()
     if (isLastColumn) {
-      return 'w-full min-w-[120px]'
+      return 'w-[120px] min-w-[120px]'
     }
     switch (columnLower) {
       case 'donor_name':
-        return 'w-[160px] min-w-[160px] max-w-[160px] truncate'
+        return 'w-[160px] min-w-[160px] max-w-[320px] truncate'
       case 'n':
         return 'w-[50px] min-w-[50px] max-w-[50px]'
       case '1%':
@@ -125,18 +125,18 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   }
 
   if (loading) return (
-    <div className={`rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-200 to-gray-300'} h-[600px] animate-pulse`} />
+    <div className={`rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-200 to-gray-300'} h-[500px] md:h-[680px] animate-pulse`} />
   )
   if (!data?.result) return null
 
-  // Limit to first 25 rows and filter out vesting_value column
+  // Limit to first 25 rows and filter out vested_value and total_value column
   const rows = data.result.rows.slice(0, 25)
-  const visibleColumns = data.result.metadata.column_names.filter(col => col !== 'vesting_value')
+  const visibleColumns = data.result.metadata.column_names.filter(col => col !== 'vested_value' && col !== 'total_value')
 
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm overflow-hidden`}>
-      <div className="max-h-[600px] overflow-auto relative scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-[#222222]">
-        <table className="w-full table-fixed border-collapse">
+      <div className={`max-h-[500px] md:max-h-[680px] overflow-auto relative scrollbar-thin ${theme === 'dark' ? 'scrollbar-thumb-gray-400 scrollbar-track-[#222222]' : 'scrollbar-thumb-gray-300 scrollbar-track-gray-200'}`}>
+  <table className="w-full table-fixed border-collapse">
           <colgroup>
             {visibleColumns.map((column, index) => (
               <col key={index} className={getColumnWidth(column, index === visibleColumns.length - 1)} />

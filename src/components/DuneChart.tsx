@@ -1,5 +1,7 @@
+
 import { FC, useEffect, useState } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+
 interface DuneChartProps {
   queryId: string
   theme?: 'light' | 'dark'
@@ -10,8 +12,6 @@ interface DuneChartProps {
   formatCurrency?: boolean
   formatDate?: boolean
 }
-
-
 
 interface DuneData {
   result: {
@@ -27,21 +27,15 @@ interface DuneData {
 }
 
 const formatDateString = (dateStr: string) => {
-  let date: Date;
-  
-  // Handle "2026-09-16 00:00:00" format
-  if (dateStr.includes(':')) {
-    date = new Date(dateStr);
-  } 
-  // Handle "23-Nov-2023" format
-  else {
-    const [day, month, year] = dateStr.split('-');
-    date = new Date(`${month} ${day} ${year}`);
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) {
+    console.error('Invalid date:', dateStr);
+    return 'Invalid Date';
   }
-
+  
   const month = date.toLocaleString('en-US', { month: 'short' });
   const year = date.getFullYear().toString().slice(-2);
-  return `${month} ${year}`;
+  return `${month} '${year}`;
 }
 
 const formatNumber = (value: number | string) => {
@@ -160,11 +154,32 @@ const DuneChart: FC<DuneChartProps> = ({
     fetchData()
   }, [queryId])
 
-  if (loading || error || !data?.result?.rows?.length) {
+  // Render loading state, error message, or the chart
+  if (loading) {
     return (
       <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
         <div className="h-4 w-1/3 mb-4 rounded animate-shimmer"></div>
         <div className="h-[200px] rounded animate-shimmer"></div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
+        <h3 className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'} mb-2`}>
+          Error: {error}
+        </h3>
+      </div>
+    )
+  }
+
+  if (!data?.result?.rows?.length) {
+    return (
+      <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-6`}>
+        <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
+          No data available
+        </h3>
       </div>
     )
   }
@@ -182,89 +197,89 @@ const DuneChart: FC<DuneChartProps> = ({
     }
   })
 
-  return (
-    <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
-      <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
-        {title}
-      </h3>
-      <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            data={data?.result?.rows || []}
-            margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
-          >
-            <CartesianGrid 
-              strokeDasharray="3 3" 
-              stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
-              vertical={false}
-            />
-            <XAxis 
-              dataKey={xAxisKey} 
-              stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
-              tick={{ fontSize: 12, fontFamily: 'Inter' }}
-              tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
-              tickLine={false}
-              axisLine={false}
-              interval="preserveStartEnd"
-              dy={8}
-              // Use category type to ensure consistent rendering across browsers
-              type="category"
-            />
-            <YAxis 
-              stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
-              tickFormatter={(value) => formatCurrency ? formatCurrencyValue(value) : value.toString()}
-              tick={{ fontSize: 12, fontFamily: 'Inter' }}
-              tickLine={false}
-              axisLine={false}
-              dx={-10}
-            />
-            <Tooltip 
-              formatter={(value: string | number, _name, props) => {
-                const formattedValue = formatCurrency ? formatCurrencyValue(value) : value.toString();
-                const label = formatCurrency ? 'Amount' : 'Total Members';
-                // Safely access the date value from payload
-                const payload = props?.payload as Record<string, any> | undefined;
-                const date = payload?.[xAxisKey]?.toString() || '';
-                return [formattedValue, label, formatDate ? formatDateString(date) : date];
-              }}
-              contentStyle={{
-                backgroundColor: theme === 'dark' ? 'var(--gray-darker)' : 'white',
-                border: `1px solid ${theme === 'dark' ? 'var(--gray-dark)' : 'var(--gray-light)'}`,
-                borderRadius: '0.375rem',
-                padding: '0.5rem',
-                fontSize: '0.875rem',
-                fontFamily: 'Inter'
-              }}
-              labelStyle={{
-                color: theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-darker)',
-                marginBottom: '0.125rem',
-                fontSize: '0.75rem',
-                fontFamily: 'Inter'
-              }}
-              itemStyle={{
-                color: 'var(--gray-darker)',
-                padding: '0'
-              }}
-              cursor={{
-                stroke: 'var(--brand-primary)',
-                strokeWidth: 1,
-                strokeDasharray: '3 3'
-              }}
-            />
-            <Line 
-              type="monotone" 
-              dataKey={yAxisKey} 
-              stroke="var(--brand-primary)" 
-              strokeWidth={2}
-              dot={false}
-              activeDot={{
-                r: 4,
-                fill: 'var(--brand-primary)',
-                stroke: 'white',
-                strokeWidth: 2
-              }}
-            />
-          </LineChart>
+const dataLength = data?.result?.rows.length || 0; // Calculate data length
+
+return (
+  <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm p-4`}>
+    <h3 className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-2`}>
+      {title}
+    </h3>
+    <div style={{ width: '100%', height, minHeight: '200px', maxHeight: '200px' }}>
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          data={data?.result?.rows || []}
+          margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
+        >
+          <CartesianGrid 
+            strokeDasharray="3 3" 
+            stroke={theme === 'dark' ? 'var(--gray-dark)' : '#f0f0f0'}
+            vertical={false}
+          />
+          <XAxis 
+            dataKey={xAxisKey} 
+            stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
+            tick={{ fontSize: 12, fontFamily: 'Inter' }}
+            tickFormatter={(value) => formatDate ? formatDateString(value.toString()) : value}
+            tickLine={false}
+            axisLine={false}
+            interval={Math.ceil(dataLength / 6)} // Show a maximum of 6 ticks
+            dy={8}
+            type="category"
+          />
+          <YAxis 
+            stroke={theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-dark)'}
+            tickFormatter={(value) => formatCurrency ? formatCurrencyValue(value) : value.toString()}
+            tick={{ fontSize: 12, fontFamily: 'Inter' }}
+            tickLine={false}
+            axisLine={false}
+            dx={0}
+          />
+          <Tooltip 
+            formatter={(value: string | number, _name, props) => {
+              const formattedValue = formatCurrency ? formatCurrencyValue(value) : value.toString();
+              const label = formatCurrency ? 'Amount' : 'Total Members';
+              const payload = props?.payload as Record<string, any> | undefined;
+              const date = payload?.[xAxisKey]?.toString() || '';
+              return [formattedValue, label, formatDate ? formatDateString(date) : date];
+            }}
+            contentStyle={{
+              backgroundColor: theme === 'dark' ? 'var(--gray-darker)' : 'white',
+              border: `1px solid ${theme === 'dark' ? 'var(--gray-dark)' : 'var(--gray-light)'}`,
+              borderRadius: '0.375rem',
+              padding: '0.5rem',
+              fontSize: '0.875rem',
+              fontFamily: 'Inter'
+            }}
+            labelStyle={{
+              color: theme === 'dark' ? 'var(--gray-light)' : 'var(--gray-darker)',
+              marginBottom: '0.125rem',
+              fontSize: '0.75rem',
+              fontFamily: 'Inter'
+            }}
+            itemStyle={{
+              color: 'var(--gray-darker)',
+              padding: '0'
+            }}
+            cursor={{
+              stroke: 'var(--brand-primary)',
+              strokeWidth: 1,
+              strokeDasharray: '3 3'
+            }}
+          />
+          <Line 
+            type="monotone" 
+            dataKey={yAxisKey} 
+            stroke="var(--brand-primary)" 
+            strokeWidth={2}
+            dot={false}
+            activeDot={{
+              r: 4,
+              fill: 'var(--brand-primary)',
+              stroke: 'white',
+              strokeWidth: 2
+            }}
+          />
+        </LineChart>
         </ResponsiveContainer>
       </div>
     </div>

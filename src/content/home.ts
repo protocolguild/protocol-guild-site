@@ -1,34 +1,28 @@
 export const homeContent = {
   hero: {
-    title: "Securing the future of\nEthereum core development.",
-    subtitle: "Protocol Guild is the leading independent organization addressing sustainable funding for Ethereum core development. We proactively fund maintainers who do the work we all depend on."
+    title: "Securing the future of Ethereum core development",
+    subtitle1: "Protocol Guild is the leading independent funding organization for Ethereum core developers. We proactively fund maintainers doing work the ecosystem depends on.",
+    subtitle2: "Our mission is to create sustainable streams backed by projects building on Ethereum."
   },
-  impact: {
-    title: "Since 2022, Protocol Guild has distributed $28M directly to Ethereum core developers.",
+  section1: {
+    title: "Since 2022, we have distributed $28M directly to Ethereum core developers.",
     quote: {
-      text: "I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.",
-      author: "Michael Sproul, Lighthouse"
-    }
+      text: "\"I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
+      author: "Michael Sproul, Lighthouse",
+    },
+    statsHeader: "Cumulative Amount Distributed"
   },
-  mission: {
-    title: "Our moonshot: Ethereum protocol maintenance, funded forever.",
-    subtitle: "Sustainable funding for Ethereum core contributors drives protocol maintenance and growth.",
-    features: [
-      {
-        title: "Directly funding Ethereum's core builders.",
-        description: "Our model ensures that individual core developers are funded on a long-term basis. It's the best way to ensure long-term protocol maintenance.",
-        icon: "/src/assets/images/hammer-blue.svg"
-      },
-      {
-        title: "Building ecosystem partnerships to make Ethereum last.",
-        description: "We partner with leading and emerging crypto projects to ensure that shared infrastructure stays stable and competitive for years to come.",
-        icon: "/src/assets/images/hammer-blue.svg"
-      }
-    ]
+  section2: {
+    title: "Our moonshot: Ethereum R&D, funded forever.",
+    subtitle1: "There's still a lot of work to safely scale Ethereum to be globally accessible infrastructure.",
+    subtitle2: "To ensure the work continues smoothly, we maintain an onchain registry of active core protocol contributors.",
+    subtitle3: "This up-to-date list can then receive funding from projects building on Ethereum. Any funds go directly to these individuals after a linear 4 year vest.",
+    subtitle4: "189 contributors, 47 core repositories, 1 Ethereum protocol.",
+    link: "See all individuals"
   },
-  cta: {
+  section3: {
     title: "Funded by builders from all across the Ethereum ecosystem.",
-    buttonText: "Take the Pledge",
-    buttonLink: "/pledge"
+    subtitle1: "We partner with leading and emerging crypto projects to ensure that our shared infrastructure stays stable and competitive for years to come.",
+    buttonLink: "/donate"
   }
 }

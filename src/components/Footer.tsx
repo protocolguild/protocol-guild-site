@@ -19,17 +19,17 @@ const Footer: FC = () => {
                   <Link to="/" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     HOME
                   </Link>
-                  <Link to="/pledge" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    PLEDGE
+                  <Link to="/donate" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    DONATE
                   </Link>
                   <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
                     ABOUT
                   </Link>
-                  <a 
-                    href="mailto:trenton.vanepps@ethereum.org" 
-                    className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity"
-                  >
-                    CONTACT
+                  <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    CALL
+                  </a>
+                  <a href="mailto:contact@protocolguild.org" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
+                    EMAIL
                   </a>
                 </nav>
               </div>
@@ -41,4 +41,4 @@ const Footer: FC = () => {
   )
 }
 
-export default Footer 
+export default Footer

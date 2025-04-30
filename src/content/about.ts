@@ -1,11 +1,19 @@
 export const aboutContent = {
   hero: {
-    title: "Ethereum's leading independent funding organization.",
-    subtitle: "Learn more about Protocol Guild and our mission to fund the future of Ethereum."
+    title: "About Protocol Guild",
+    subtitle1: "Learn more about how the org operates in service of our mission to fund the future of Ethereum."
+  },
+  organization: {
+    title: "Who we are.",
+    description1: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development. Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol work, backed by projects building on Ethereum.",
+    description2: "We maintain an onchain registry of Ethereum's active core protocol contributors, enabling the ecosystem to direct funding directly to all the individuals building the future of Ethereum.",
+    description3: "Protocol Guild is structured as a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
+    link: "View all members",
+    team: "Core Contributors"
   },
   impactAreas: {
     title: "Our impact areas.",
-    subtitle: "Protocol Guild funds core work across the entire span of Ethereum core development.",
+    subtitle: "Protocol Guild is the only org that comprehensively funds contributors from across all of Ethereum's core development.",
     areas: [
       {
         title: "Research",
@@ -23,50 +31,21 @@ export const aboutContent = {
         title: "Development",
         description: "New features and infrastructure improvements for the Ethereum network."
       }
-    ]
-  },
-  organization: {
-    title: "About the organization.",
-    description: "Protocol Guild is a non-profit organization that serves hundreds of Ethereum core developers. Our operating team, board, and membership are active maintainers who work on scaling and sustaining Ethereum every day.",
-    team: {
-      title: "Operating Team",
-      members: [
-        {
-          name: "Trent Van Epps",
-          image: "trentImg",
-          twitter: "https://x.com/trent_vanepps"
-        },
-        {
-          name: "Cheeky Gorilla",
-          image: "cheekyImg",
-          twitter: "https://x.com/cheekygorilla0x"
-        },
-        {
-          name: "Tim Beiko",
-          image: "timImg",
-          twitter: "https://x.com/timbeiko"
-        },
-        {
-          name: "Peter Vecchiarelli",
-          image: "peterImg",
-          twitter: "https://x.com/AlphaLemonade"
-        }
-      ]
-    },
-    members: {
-      title: "Protocol Guild Members",
-      description: "Over 180 independent developers are members of Protocol Guild.",
-      buttonText: "View all members",
-      buttonLink: "https://protocol-guild.readthedocs.io/en/latest/02-membership.html"
-    }
+    ],
+    link: "Learn about eligibility"
   },
   funding: {
     title: "Effective and transparent funding.",
-    description: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    description1: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
+    description2: "Neutral Distribution",
+    description3: "We dont make discretionary funding allocations - all tokens are streamed over 4 years via immutable contracts, and are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
+    description4: "Quarterly Curation",
+    description5: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated quarterly, ensuring that funding only goes to the individuals who are actively building and maintaining Ethereum's core protocol.",
     statsHeader: "Distribution Stats"
   },
   docs: {
     title: "Read our documentation.",
-    description: "See our full internal documentation for the latest updates and information on Protocol Guild."
+    description: "See our full internal documentation for the latest updates and information on Protocol Guild.",
+    link: "View Documentation"
   }
 }
