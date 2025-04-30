@@ -104,7 +104,7 @@ return (
                 </svg>
               </a>
             </h2>
-            <h2 className="!text-lg !font-normal !leading-[24px] mt-16 !text-[var(--gray-dark)]">
+            <h2 className="!text-lg !font-normal !leading-[24px] mt-16 mb-16 !text-[var(--gray-dark)]">
               <em>{donateContent.pledge.quote.text}</em>
             </h2>
             <div className="flex items-center">
