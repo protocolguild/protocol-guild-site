@@ -31,12 +31,14 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col relative overflow-hidden">
-  <img
-    src={chainsImage}
-    alt="Ethereum chains"
-    className="absolute top-0 right-0 h-full w-full object-cover object-right z-0 hidden md:block"
-    style={{ maxWidth: 'none' }}
-  />
+  <div className="relative w-full max-w-screen-lg mx-auto"> {/* Container for alignment */}
+    <img
+      src={chainsImage}
+      alt="Ethereum chains"
+      className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+      style={{ maxWidth: '100%', width: '100%', height: 'auto' }} // Ensure it scales responsively
+    />
+  </div>
   <Section.Row className="relative z-1">
     <Grid>
       <Grid.Item span={12} className="flex flex-col">
@@ -59,6 +61,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
 
       
     <Section background="white" divider="var(--brand-primary)" line={true}>
