@@ -96,12 +96,12 @@ interface DonorSectionProps {
 }
 
 const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featured = false }: DonorSectionProps) => {
-  const logos = type === 'Donors' ? donors : partners
+const logos = type === 'Donors' ? donors : partners
 
 return (
   <div className={`donors ${className} pt-0 pb-0 w-full`}>
     
-    {type === 'Donors' ? (
+    type === 'Donors' ? (
       <div className="p-8">
         <div className="flex flex-wrap justify-center gap-6">
           {logos.map((donor) => (
@@ -121,7 +121,7 @@ return (
           ))}
         </div>
       </div>
-    )}
+    )
     
   </div>
 )
