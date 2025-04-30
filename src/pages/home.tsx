@@ -43,16 +43,14 @@ return (
           />
         </div>
         
-        {/* Navbar positioned absolutely */}
         <Grid className="absolute top-0 left-0 w-full z-10">
           <Grid.Item span={12}>
             <Navbar theme="light" />
           </Grid.Item>
         </Grid>
         
-        {/* Home content positioned absolutely and left-aligned with 65% width */}
         <Grid className="absolute top-40 left-0 w-full z-10 flex flex-col items-start">
-          <Grid.Item span={12} className="w-[65%]"> {/* Set width to 65% */}
+          <Grid.Item span={12} className="w-full lg:w-[65%]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
               {homeContent.hero.title}
             </h1>
