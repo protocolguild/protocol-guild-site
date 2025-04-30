@@ -40,7 +40,7 @@ return (
           <img
             src={chainsImage}
             alt="Ethereum chains"
-            className="h-auto max-h-full w-full object-contain opacity-0 md:opacity-100"
+            className="h-auto max-h-full w-auto max-w-full object-contain opacity-0 md:opacity-100"
           />
         </div>
         
@@ -60,9 +60,6 @@ return (
     </Grid>
   </Section.Row>
 </Section>
-
-
-
 
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
