@@ -9,7 +9,7 @@ export const aboutContent = {
     description2: "We maintain an onchain registry of Ethereum's active core protocol contributors, enabling the ecosystem to direct funding directly to all the individuals building the future of Ethereum.",
     description3: "Protocol Guild is structured as a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
     link: "View all members",
-    team: "Core Contributors"
+    team: "Operations Team"
   },
   impactAreas: {
     title: "Our impact areas.",
