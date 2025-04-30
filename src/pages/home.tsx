@@ -36,7 +36,7 @@ return (
     <Grid>
       <Grid.Item span={12} className="relative">
         
-        <div className="absolute top-0 left-0 w-full z-0 flex justify-end max-h-full">
+        <div className="absolute top-0 left-0 w-full z-0 flex justify-start max-h-full">
           <img
             src={chainsImage}
             alt="Ethereum chains"
