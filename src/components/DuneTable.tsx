@@ -125,7 +125,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
   }
 
   if (loading) return (
-    <div className={`rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-200 to-gray-300'} h-[600px] animate-pulse`} />
+    <div className={`rounded-xl ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-200 to-gray-300'} h-[500px] animate-pulse`} />
   )
   if (!data?.result) return null
 
@@ -135,7 +135,7 @@ const DuneTable: FC<DuneTableProps> = ({ queryId, theme = 'light' }) => {
 
   return (
     <div className={`${theme === 'dark' ? 'border-[var(--gray-dark)] bg-[var(--gray-darker)]' : 'border-gray-200 bg-white'} border rounded-xl shadow-sm overflow-hidden`}>
-      <div className={`max-h-[600px] overflow-auto relative scrollbar-thin ${theme === 'dark' ? 'scrollbar-thumb-gray-400 scrollbar-track-[#222222]' : 'scrollbar-thumb-gray-300 scrollbar-track-gray-200'}`}>        
+      <div className={`max-h-[500px] overflow-auto relative scrollbar-thin ${theme === 'dark' ? 'scrollbar-thumb-gray-400 scrollbar-track-[#222222]' : 'scrollbar-thumb-gray-300 scrollbar-track-gray-200'}`}>        
         <table className="w-full table-fixed border-collapse">
           <colgroup>
             {visibleColumns.map((column, index) => (
