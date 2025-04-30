@@ -38,7 +38,7 @@ return (
           <img
             src={chainsImage}
             alt="Ethereum chains"
-            className="h-auto max-h-[700px] w-auto object-contain z-0 opacity-100 md:opacity-100 transition-opacity duration-300 ease-in-out" // Image in the background
+            className="h-auto max-h-[700px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100" // Image in the background
           />
         </div>
         <Grid className="absolute top-0 left-0 w-full z-10"> {/* Nested grid for the navbar */}
@@ -50,6 +50,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
 
 
 
