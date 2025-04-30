@@ -41,11 +41,11 @@ return (
             className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Image in the background
           />
         </div>
-        <Grid className="absolute top-0 left-0 w-full z-10"> {/* Nested grid for the navbar */}
-          <Grid.Item span={12}>
-            <Navbar theme="light" /> {/* Navbar inside the nested grid */}
-          </Grid.Item>
-        </Grid>
+      </Grid.Item>
+    </Grid>
+    <Grid className="absolute top-0 left-0 w-full z-10"> {/* Navbar outside the image */}
+      <Grid.Item span={12}>
+        <Navbar theme="light" /> {/* Navbar always visible */}
       </Grid.Item>
     </Grid>
   </Section.Row>
