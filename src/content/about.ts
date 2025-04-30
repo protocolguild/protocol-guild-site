@@ -1,6 +1,7 @@
 export const aboutContent = {
   hero: {
-    title: "About Protocol Guild"
+    title: "About Protocol Guild",
+    subtitle1: "Learn more about how the org operates in service of our mission to fund the future of Ethereum."
   },
   organization: {
     title: "Who we are.",
