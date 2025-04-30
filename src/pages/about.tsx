@@ -17,6 +17,7 @@ import DuneTable from '../components/DuneTable'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
+import MemberFaces from '../components/MemberFaces'
 
 const About: FC = () => {
 
@@ -107,6 +108,7 @@ return (
         </div>
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col gap-4">
+        <MemberFaces />
         <div className="grid grid-cols-1 gap-6">
           <FeatureCard
             title="Protocol Guild Members"
