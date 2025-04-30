@@ -115,7 +115,7 @@ return (
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[100px]" // Set max width
+                className="h-full w-auto max-w-[120px]" // Set max width
               />
             </a>
           ))}
@@ -134,7 +134,7 @@ return (
             <img 
               src={theme === 'light' ? donor.logoWhite || donor.logo : donor.logo} 
               alt={donor.name}
-              className="h-full w-auto max-w-[100px]" // Set max width
+              className="h-full w-auto max-w-[120px]" // Set max width
             />
           </a>
         ))}
