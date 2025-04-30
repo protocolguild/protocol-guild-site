@@ -14,9 +14,10 @@ export const homeContent = {
   },
   section2: {
     title: "Our moonshot: Ethereum R&D, funded forever.",
-    subtitle1: "Our ecosystem depends on open source infrastructure. There's still a lot to do to deliver Ethereum as globally ubiquitous infra.",
-    subtitle2: "To allow our ecosystem to fund this work, we make the entire set of Ethereum’s core protocol contributors directly legible onchain, by maintaining an up-to-date registry of Ethereum’s active core protocol contributors. We receive tokens from projects building on Ethereum and distribute them directly to these individuals, vested over four years.",
-    subtitle3: "189 contributors, 47 core repositories, 1 Ethereum protocol.",
+    subtitle1: "There's still a lot of work to safely scale Ethereum to be globally accessible infrastructure.",
+    subtitle2: "To ensure the work continues smoothly, we maintain an onchain registry of active core protocol contributors.",
+    subtitle3: "This up-to-date list can then receive funding from projects building on Ethereum. Any funds go directly to these individuals after a linear 4 year vest.",
+    subtitle4: "189 contributors, 47 core repositories, 1 Ethereum protocol.",
     link: "See all individuals"
   },
   section3: {
