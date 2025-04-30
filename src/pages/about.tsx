@@ -70,8 +70,6 @@ return (
             </svg>
           </a>
         </h2>
-      </Grid.Item>
-      <Grid.Item span={6} className="flex flex-col gap-4">
         <h3 className="text-lg font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{aboutContent.organization.team}</h3>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col items-start">
