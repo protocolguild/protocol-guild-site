@@ -30,17 +30,13 @@ const goToQuote = (index: number) => {
 return (
   <main>
     
-<Section background="white" className="flex flex-col relative overflow-hidden">
-  <div className="flex justify-between">
-    <div className="flex-1">
+    <Section background="white" className="flex flex-col relative overflow-hidden">
       <img
         src={chainsImage}
         alt="Ethereum chains"
-        className="h-full w-auto object-cover object-right z-0 hidden md:block"
+        className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
         style={{ maxWidth: 'none' }}
       />
-    </div>
-    <div className="flex-1">
       <Section.Row className="relative z-1">
         <Grid>
           <Grid.Item span={12} className="flex flex-col">
@@ -62,13 +58,8 @@ return (
           </Grid.Item>
         </Grid>
       </Section.Row>
-    </div>
-  </div>
-</Section>
-
-
-
-      
+    </Section>
+    
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid className="py-16">
