@@ -94,7 +94,8 @@ return (
             <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section2.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle1}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle2}</h2>
-            <h2 className="!text-lg font-bold !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle3}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle3}</h2>
+            <h2 className="!text-lg font-bold !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle4}</h2>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
             <MemberFaces />
@@ -120,7 +121,7 @@ return (
           <Grid.Item span={6} className="flex flex-col gap-6">
             <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section3.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section3.subtitle1}</h2>
-            <a href={homeContent.section3.buttonLink} rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Fund Our Work</a>
+            <a href={homeContent.section3.buttonLink} rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Fund our Work</a>
           </Grid.Item>
           <Grid.Item span={6} className="flex flex-col gap-6">
             <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
