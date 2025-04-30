@@ -34,14 +34,14 @@ return (
   <Section.Row className="relative z-1">
     <Grid>
       <Grid.Item span={12} className="flex flex-col relative"> {/* Make this relative to position the navbar absolutely */}
-        <div className="flex justify-end"> {/* Add a flex container to align the image */}
+        <div className="flex justify-end relative"> {/* Add a flex container to align the image */}
           <img
             src={chainsImage}
             alt="Ethereum chains"
             className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Use object-contain to avoid cropping
           />
+          <Navbar theme="light" className="absolute top-0 left-0 w-full z-10" /> {/* Position navbar absolutely */}
         </div>
-        <Navbar theme="light" className="absolute top-0 left-0 w-full z-10" /> {/* Position navbar absolutely */}
       </Grid.Item>
     </Grid>
   </Section.Row>
