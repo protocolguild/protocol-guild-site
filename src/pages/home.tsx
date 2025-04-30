@@ -38,7 +38,7 @@ return (
           <img
             src={chainsImage}
             alt="Ethereum chains"
-            className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Image in the background
+            className="h-auto max-h-[700px] w-auto object-contain z-0 hidden md:block" // Image hidden on small screens
           />
         </div>
         <Grid className="absolute top-0 left-0 w-full z-10"> {/* Nested grid for the navbar */}
@@ -49,6 +49,9 @@ return (
       </Grid.Item>
     </Grid>
   </Section.Row>
+  <div className="md:hidden"> {/* Navbar for small screens */}
+    <Navbar theme="light" /> {/* Duplicate navbar for small screens */}
+  </div>
 </Section>
 
 
