@@ -34,13 +34,16 @@ return (
   <Section.Row className="relative z-1">
     
     <Grid>
-      <Grid.Item span={12} className="relative flex flex-col items-center">
+      <Grid.Item span={12} className="relative flex flex-col">
         <div className="flex-grow flex justify-center items-center" style={{ paddingTop: '300px', paddingBottom: '300px' }}>
-          <img
-            src={chainsImage}
-            alt="Ethereum chains"
-            className="h-auto max-h-[600px] w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
-          />
+          <div className="relative w-full h-full flex justify-center">
+            <img
+              src={chainsImage}
+              alt="Ethereum chains"
+              className="h-full w-auto object-contain z-0 bg-white opacity-0 md:opacity-100"
+              style={{ maxHeight: 'calc(100% - 600px)' }} // Adjust this if necessary
+            />
+          </div>
         </div>
         
         <Grid className="absolute top-0 left-0 w-full z-10">
@@ -61,6 +64,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
+
 
 
 
