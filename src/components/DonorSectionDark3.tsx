@@ -110,12 +110,13 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7" // Set a fixed height for the anchor
+              className="flex items-center justify-center h-5 md:h-7 flex-grow" // Allow the anchor to grow
+              style={{ minWidth: '100px' }} // Set a minimum width for the logos
             >
               <img 
                 src={donor.logo} 
                 alt={donor.name}
-                className="h-full w-auto max-w-[100px]" // Set a max height for the logos (set to 70px for 5 per row in l screen)
+                className="h-full w-auto max-w-[100px]" // Set a max height for the logos
               />
             </a>
           ))}
