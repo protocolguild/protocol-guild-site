@@ -44,7 +44,7 @@ return (
         </div>
         
         <Grid className="absolute top-0 left-0 w-full z-10">
-          <Grid.Item span={12}>
+          <Grid.Item span={12} className="w-full md:w-[65%]">
             <Navbar theme="light" />
           </Grid.Item>
         </Grid>
