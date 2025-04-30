@@ -30,10 +30,11 @@ const goToQuote = (index: number) => {
 return (
   <main>
     
+
 <Section background="white" className="flex flex-col relative overflow-hidden">
   <Section.Row className="relative z-1">
     
-    <Grid>
+    <Grid className="relative">
       <Grid.Item span={12} className="relative">
         <div className="flex justify-end">
           <img
@@ -49,19 +50,18 @@ return (
           </Grid.Item>
         </Grid>
         
-        <div className="absolute top-0 left-0 w-full z-10 h-[400px] flex flex-col justify-center items-start">
-          <Grid.Item span={12} className="w-full md:w-[65%]">
+        <div className="absolute top-0 left-0 w-full z-10 h-[400px] flex items-center">
+          <div className="w-full md:w-[65%] mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
-          </Grid.Item>
+          </div>
         </div>
         
       </Grid.Item>
     </Grid>
   </Section.Row>
 </Section>
-
 
 
 
