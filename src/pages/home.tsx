@@ -1,112 +1,143 @@
-import { FC } from 'react'
-import FeatureCard from '../components/FeatureCard'
+import { FC, useState } from 'react'
 import Section from '../components/Section'
-import Repos from '../components/Repos'
 import Grid from '../components/Grid'
 import Navbar from '../components/Navbar'
-import DonorSection from '../components/DonorSection'
-import HeroLockup from '../components/HeroLockup'
-import MemberFaces from '../components/MemberFaces'
-import { homeContent } from '../content/home'
 import chainsImage from '../assets/images/chains.png'
+import { homeContent } from '../content/home'
+import authorImage from '../assets/images/michaelsproul.jpg'
+import DuneChart from '../components/DuneChart'
+import MemberFaces from '../components/MemberFaces'
+import Repos from '../components/Repos'
+import DonorSectionDark2 from '../components/DonorSectionDark2'
 
 const Home: FC = () => {
-  return (
-    <main>
-      <Section background="white" className="min-h-[500px] md:min-h-[700px] flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-        <img
-          src={chainsImage}
-          alt="Ethereum chains"
-          className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-          style={{ maxWidth: 'none' }}
-        />
-        <Section.Row>
-          <Grid>
-            <Grid.Item span={3} className="flex flex-col">
-              <Navbar theme="light" />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-        <Section.Row 
-          className="min-h-0 flex items-center relative z-1"
-        >
-          <Grid columns={12}>
-            <Grid.Item span={6} className="flex flex-col gap-4 min-h-[200px] my-8 md:my-16">
-              <HeroLockup theme="color" className="w-[70%] md:w-[75%] lg:w-[60%] h-auto min-h-0 flex-shrink-1"  />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-        <Section.Row className="flex-none relative z-1">
-          <Grid>
-            <Grid.Item span={6} className="flex flex-col gap-3 mt-5">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
-                {homeContent.hero.title}
-              </h1>
-              <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
-                {homeContent.hero.subtitle}
-              </p>
-              <MemberFaces />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
-      
-      <Section background="gray-light" divider="#ffffff">
-        <Section.Row align="start">
-          <Grid className="py-16">
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.impact.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.impact.quote.text} – {homeContent.impact.quote.author}</h2>
-            </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <Repos />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
 
-      <Section background="gray-mid" divider="var(--gray-light)">
-        <Section.Row align="start">
-          <Grid className="py-16">
-            <Grid.Item span={6} className="flex flex-col gap-6">
-              <h2 className="text-3xl font-bold leading-[1.1] text-[#fff]">{homeContent.mission.title}</h2>
-              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--white)]">{homeContent.mission.subtitle}</h2>
-            </Grid.Item>
-            {homeContent.mission.features.map((feature, index) => (
-              <Grid.Item key={index} span={3} className="flex flex-col">
-                <FeatureCard
-                  title={feature.title}
-                  description={feature.description}
-                  color="#fff"
-                />
+const [currentQuote, setCurrentQuote] = useState(0);
+
+const nextQuote = () => {
+  setCurrentQuote((prev) => (prev + 1) % homeContent.quotes.length);
+};
+
+const previousQuote = () => {
+  setCurrentQuote((prev) => (prev - 1 + homeContent.quotes.length) % homeContent.quotes.length);
+};
+
+const goToQuote = (index: number) => {
+  setCurrentQuote(index);
+};
+
+return (
+  <main>
+    
+    <Section background="white" className="flex flex-col relative overflow-hidden">
+      <Section.Row className="relative z-1">
+        <Grid>
+          <Grid.Item span={12} className="relative flex">
+            {/* Image container */}
+            <div className="absolute top-0 left-0 w-full z-0 flex justify-end h-full">
+              <img
+                src={chainsImage}
+                alt="Ethereum chains"
+                className="h-full w-auto max-w-full object-contain opacity-0 md:opacity-100"
+              />
+            </div>
+            {/* Content container */}
+            <div className="relative z-10 flex flex-col items-start pt-[175px] lg:pt-[200px] pb-[70px] lg:pb-[130px] w-full md:w-[65%]">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
+                <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
+                <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
+            </div>
+            {/* Navbar */}
+            <Grid className="absolute top-0 left-0 w-full z-10">
+              <Grid.Item span={12} className="w-full md:w-[65%]">
+                <Navbar theme="light" />
               </Grid.Item>
-            ))}
-          </Grid>
-        </Section.Row>
-      </Section>
+            </Grid>
+          </Grid.Item>
+        </Grid>
+      </Section.Row>
+    </Section>
 
-      <Section background="gray-dark" divider="var(--gray-mid)">
-        <Section.Row align="start">
-          <Grid columns={12} className="py-16">
-            <Grid.Item span={6} className="flex flex-col">
-              <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[#fff] mb-4">
-                {homeContent.cta.title}
-              </h2>
-              <div className="w-fit">
-                <a href={homeContent.cta.buttonLink} className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors inline-block">
-                  {homeContent.cta.buttonText}
-                </a>
-              </div>
-            </Grid.Item>
-            <Grid.Item span={6} className="flex flex-col">
-              <DonorSection theme="light" type="Partners" featured={true} />
-              <DonorSection theme="light" type="Donors" />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
+    <Section background="white" divider="var(--brand-primary)" line={true}>
+      <Section.Row align="start">
+        <Grid className="py-16">
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section1.title}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+              <em>{homeContent.section1.quote.text}</em>
+            </h2>
+            <div className="flex items-center">
+              <img src={authorImage} alt="Michael Sproul" className="w-8 h-8 mr-2" />
+              <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section1.quote.author}</h2>
+            </div>
+          </Grid.Item>
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <div className="w-full flex flex-row justify-between items-center">
+              <p className="text-[var(--gray-dark)] text-base sm:text-sm">{homeContent.section1.statsHeader}</p>
+              <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[var(--gray-dark)] text-base sm:text-sm ">
+                View on Dune
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <DuneChart 
+                queryId="5001629" 
+                theme="light" 
+                xAxisKey="date"
+                yAxisKey="cumulative_historical_value"
+                formatCurrency
+                formatDate
+              />
+          </Grid.Item>
+        </Grid>
+      </Section.Row>
+    </Section>
+
+    <Section background="white" divider="var(--brand-primary)" line={true}>
+      <Section.Row align="start" >
+        <Grid columns={12} className="py-16">
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section2.title}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle1}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle2}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle3}</h2>
+            <h2 className="!text-lg font-bold !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section2.subtitle4}</h2>
+          </Grid.Item>
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <MemberFaces />
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
+              <a href="https://protocol-guild.readthedocs.io/en/latest/02-membership.html" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                {homeContent.section2.link}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </h2>
+            <Repos />
+          </Grid.Item>
+        </Grid>
+      </Section.Row>
+    </Section>
+
+    <Section background="white" divider="var(--brand-primary)" line={true}>
+      <Section.Row align="start" >
+        <Grid columns={12} className="py-16">
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">{homeContent.section3.title}</h2>
+            <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{homeContent.section3.subtitle1}</h2>
+            <a href={homeContent.section3.buttonLink} rel="noopener noreferrer" className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline">Fund our Work</a>
+          </Grid.Item>
+          <Grid.Item span={6} className="flex flex-col gap-6">
+            <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
+            <DonorSectionDark2 theme="dark" type="Donors" />
+          </Grid.Item>
+        </Grid>
+      </Section.Row>
+    </Section>
+
     </main>
   )
 }
 
-export default Home 
+export default Home

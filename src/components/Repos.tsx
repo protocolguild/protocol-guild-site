@@ -1,14 +1,12 @@
-import { FC, useState } from 'react'
-import './Repos.css'
-import { repoData, RepoData } from '../content/repos'
+import { FC } from 'react';
+import './Repos.css';
+import { repoData, RepoData } from '../content/repos';
 
 const Repos: FC = () => {
-  const [showAll, setShowAll] = useState(false)
-  
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // Scroll to top before navigating to the link
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  };
 
   const renderRow = (repo: RepoData, idx: number) => (
     <div 
@@ -30,31 +28,23 @@ const Repos: FC = () => {
         </a>
       </div>
       <div className="repo-description flex-1 truncate text-white/70">{repo.description}</div>
-      <div className="repositories-table whitespace-nowrap flex-shrink-0">
-        {repo.contributors} {repo.contributors === 1 ? 'contributor' : 'contributors'}
-      </div>
+    <div className="repositories-table whitespace-nowrap flex-shrink-0">
+      {repo.contributors} {repo.contributors === 1 ? 'contributor' : 'contributors'}
     </div>
-  )
+    </div>
+  );
+
+  // Sort the repoData by repo name
+  const sortedRepoData = [...repoData].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="repos-container">
-      <div className="repos-header">{`189 developers, ${repoData.length} core repositories, 1 Ethereum protocol.`}</div>
+    <div className="repos-container">  
       <div className="repos-divider"></div>
-      <div className={`repos ${showAll ? 'expanded' : ''}`}>
-        <div className={`repos-scroll-container ${showAll ? 'paused' : ''}`}>
-          {showAll ? repoData.map(renderRow) : [...repoData, ...repoData].map(renderRow)}
-        </div>
-      </div>
-      <div className="flex">
-        <button 
-          className="bg-[var(--gray-dark)] text-[var(--white)] hover:opacity-80 transition-opacity duration-200 text-[15px] leading-[19px] mt-3 px-4 py-2 rounded focus:outline-none"
-          onClick={() => setShowAll(!showAll)}
-        >
-          {showAll ? 'Hide full list' : `Show all ${repoData.length} repos  `}
-        </button>
+      <div className="repos">
+        {sortedRepoData.map(renderRow)} {/* Render the sorted rows here */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Repos 
+export default Repos
