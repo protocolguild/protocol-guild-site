@@ -44,7 +44,7 @@ return (
           />
         </div>
         
-        <div className="relative z-10 flex flex-col items-start pt-[300px] pb-[300px] w-full md:w-[65%]">
+        <div className="relative z-10 flex flex-col items-start pt-[200px] pb-[150px] w-full md:w-[65%]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">{homeContent.hero.title}</h1>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle1}</p>
             <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">{homeContent.hero.subtitle2}</p>
