@@ -87,9 +87,7 @@ return (
       <Section.Row align="start">
         <Grid columns={12} className="py-16">
           <Grid.Item span={6} className="flex flex-col gap-4">
-            <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">
-              {donateContent.pledge.title}
-            </h2>
+            <h2 className="col-span-3 text-3xl font-bold leading-[1.1] text-[var(--gray-dark)] mb-4">{donateContent.pledge.title}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.subtitle1}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">{donateContent.pledge.subtitle2}</h2>
             <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)] flex items-center">
@@ -114,14 +112,13 @@ return (
             <img 
               src={medallionSvg}
               alt="Protocol Guild medallion" 
-              className="mt-0 w-48 transform-gpu"
+              className="mt-0 w-48 transform-gpu mb-8"
               style={{
                 WebkitBackfaceVisibility: 'hidden',
                 WebkitTransform: 'translateZ(0)',
                 imageRendering: '-webkit-optimize-contrast'
               }}
             />
-            <br/><br/>
             <DonorSectionDark2 theme="dark" type="Partners" featured={true}/>
           </Grid.Item>
         </Grid>
