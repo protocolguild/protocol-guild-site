@@ -31,25 +31,27 @@ return (
   <main>
     
 <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-  {/* Background Image */}
-  <img
-    src={chainsImage}
-    alt="Ethereum chains"
-    className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-    style={{ maxWidth: 'none' }}
-  />
+  {/* Background Image Container */}
+  <div className="absolute top-0 right-0 left-0 h-full z-0 hidden md:block">
+    <img
+      src={chainsImage}
+      alt="Ethereum chains"
+      className="h-full w-auto object-cover object-right"
+      style={{ maxWidth: 'none' }}
+    />
+  </div>
   
   {/* Parent Grid */}
   <Section.Row>
     <Grid>
-      <Grid.Item span={12} className="flex flex-col relative z-10"> {/* Ensure this is above the background image */}
+      <Grid.Item span={12} className="flex flex-col relative z-10">
         <Navbar theme="light" />
       </Grid.Item>
     </Grid>
   </Section.Row>
   
   {/* Home Content */}
-  <Section.Row className="flex-1 flex items-center justify-center relative z-10 pt-7 md:pb-15"> {/* Ensure this is above the background image */}
+  <Section.Row className="flex-1 flex items-center justify-center relative z-10 pt-7 md:pb-15">
     <Grid>
       <Grid.Item span={8} className="flex flex-col gap-6">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
@@ -64,8 +66,7 @@ return (
     </Grid>
   </Section.Row>
 </Section>
-
-      
+    
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
         <Grid className="py-16">
