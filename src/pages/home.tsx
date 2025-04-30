@@ -30,35 +30,41 @@ const goToQuote = (index: number) => {
 return (
   <main>
     
-    <Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
-      <img
-        src={chainsImage}
-        alt="Ethereum chains"
-        className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
-        style={{ maxWidth: 'none' }}
-      />
-      <Section.Row>
-        <Grid>
-          <Grid.Item span={12} className="flex flex-col">
-            <Navbar theme="light" />
-          </Grid.Item>
-        </Grid>
-      </Section.Row>
-      <Section.Row className="flex-1 flex items-center justify-center relative z-1 pt-7 md:pb-15">
-        <Grid>
-          <Grid.Item span={8} className="flex flex-col gap-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
-              {homeContent.hero.title}
-            </h1>
-            <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
-              {homeContent.hero.subtitle1}
-              <br/><br/>
-              {homeContent.hero.subtitle2}
-            </p>
-          </Grid.Item>
-        </Grid>
-      </Section.Row>
-    </Section>
+<Section background="white" className="flex flex-col pb-8 md:pb-16 mt-0 relative overflow-hidden">
+  {/* Background Image */}
+  <img
+    src={chainsImage}
+    alt="Ethereum chains"
+    className="absolute top-0 right-0 h-full w-auto object-cover object-right z-0 hidden md:block"
+    style={{ maxWidth: 'none' }}
+  />
+  
+  {/* Parent Grid */}
+  <Section.Row>
+    <Grid>
+      <Grid.Item span={12} className="flex flex-col relative z-10"> {/* Ensure this is above the background image */}
+        <Navbar theme="light" />
+      </Grid.Item>
+    </Grid>
+  </Section.Row>
+  
+  {/* Home Content */}
+  <Section.Row className="flex-1 flex items-center justify-center relative z-10 pt-7 md:pb-15"> {/* Ensure this is above the background image */}
+    <Grid>
+      <Grid.Item span={8} className="flex flex-col gap-6">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)]">
+          {homeContent.hero.title}
+        </h1>
+        <p className="text-lg leading-[23px] text-[var(--gray-mid)]">
+          {homeContent.hero.subtitle1}
+          <br/><br/>
+          {homeContent.hero.subtitle2}
+        </p>
+      </Grid.Item>
+    </Grid>
+  </Section.Row>
+</Section>
+
       
     <Section background="white" divider="var(--brand-primary)" line={true}>
       <Section.Row align="start">
