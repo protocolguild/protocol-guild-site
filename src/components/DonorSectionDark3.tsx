@@ -99,7 +99,7 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
   const logos = type === 'Donors' ? donors : partners
 
 return (
-  <div className={`donors ${className} pt-0 pb-0` w-full max-w-screen-lg}>
+  <div className={`donors ${className} pt-0 pb-0 w-full max-w-screen-lg`}>
     
     {type === 'Donors' ? (
       <div className="p-8">
