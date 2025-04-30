@@ -108,13 +108,13 @@ return (
         </div>
       </Grid.Item>
       <Grid.Item span={6} className="flex flex-col gap-4">
-        <MemberFaces />
         <div className="grid grid-cols-1 gap-6">
           <FeatureCard
             title="Protocol Guild Members"
             description="Over 190 researchers and developers are members of Protocol Guild"
             color="var(--gray-dark)"
           />
+          <MemberFaces />
           <DuneChart 
             queryId="2665887" 
             theme="light" 
