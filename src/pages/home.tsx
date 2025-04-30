@@ -42,7 +42,7 @@ return (
           />
         </div>
         <Grid className="absolute top-0 left-0 w-full z-10"> {/* Nested grid for the navbar */}
-          <Grid.Item span={12}>
+          <Grid.Item span={8}>
             <Navbar theme="light" /> {/* Navbar inside the nested grid */}
           </Grid.Item>
         </Grid>
