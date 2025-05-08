@@ -16,7 +16,7 @@ export const donateContent = {
       },
       {
         title: "Trustless Vesting",
-        description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributers, ensuring continuity and depth of the contributor set."
+        description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributors, ensuring continuity and depth of the contributor set."
       }
     ]
   },
