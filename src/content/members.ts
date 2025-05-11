@@ -344,9 +344,9 @@ export const members: Member[] = [
 },
 {
     name: "Eitan Seri-Levi",
-    link: "https://github.com/@eserilev",
-    username: "@eserilev",
-    pfp: "https://avatars.githubusercontent.com/@eserilev"
+    link: "https://github.com/eserilev",
+    username: "eserilev",
+    pfp: "https://avatars.githubusercontent.com/eserilev"
 },
 {
     name: "Enrico Del Fante",
@@ -662,9 +662,9 @@ export const members: Member[] = [
 },
 {
     name: "Mark Holt",
-    link: "https://github.com/@mh0lt",
-    username: "@mh0lt",
-    pfp: "https://avatars.githubusercontent.com/@mh0lt"
+    link: "https://github.com/mh0lt",
+    username: "mh0lt",
+    pfp: "https://avatars.githubusercontent.com/mh0lt"
 },
 {
     name: "Mark Mackey",
