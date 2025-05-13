@@ -22,19 +22,19 @@ const Footer: React.FC = () => {
                 </Link>
                 <nav className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
                   <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer">
-                    <img src={DuneLogo} alt="Dune" className="h-8 w-auto" />
+                    <img src={DuneLogo} alt="Dune" className="h-6 w-auto" />
                   </a>
                   <a href="https://x.com/ProtocolGuild" target="_blank" rel="noopener noreferrer">
-                    <img src={TwitterLogo} alt="Twitter" className="h-8 w-auto" />
+                    <img src={TwitterLogo} alt="Twitter" className="h-6 w-auto" />
                   </a>
                   <a href="https://warpcast.com/protocolguild" target="_blank" rel="noopener noreferrer">
-                    <img src={WarpcastLogo} alt="Warpcast" className="h-8 w-auto" />
+                    <img src={WarpcastLogo} alt="Warpcast" className="h-6 w-auto" />
                   </a>
                   <a href="https://discord.gg/54JUcFSJ7u" target="_blank" rel="noopener noreferrer">
-                    <img src={DiscordLogo} alt="Discord" className="h-8 w-auto" />
+                    <img src={DiscordLogo} alt="Discord" className="h-6 w-auto" />
                   </a>
                   <a href="https://github.com/protocolguild/protocol-guild-site" target="_blank" rel="noopener noreferrer">
-                    <img src={GithubLogo} alt="Github" className="h-8 w-auto" />
+                    <img src={GithubLogo} alt="Github" className="h-6 w-auto" />
                   </a>
                 </nav>
               </div>
