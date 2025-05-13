@@ -1,9 +1,9 @@
-import React from 'react';
-import DuneLogo from '../assets/images/Dune.png';
-import TwitterLogo from '../assets/images/Twitter.png';
-import WarpcastLogo from '../assets/images/Warpcast.png';
-import DiscordLogo from '../assets/images/Discord.png';
-import GithubLogo from '../assets/images/Github.png';
+import React from 'react'
+import DuneLogo from '../assets/images/Dune.png'
+import TwitterLogo from '../assets/images/Twitter.png'
+import WarpcastLogo from '../assets/images/Warpcast.png'
+import DiscordLogo from '../assets/images/Discord.png'
+import GithubLogo from '../assets/images/Github.png'
 
 const Footer: React.FC = () => {
   return (
