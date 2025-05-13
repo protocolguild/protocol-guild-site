@@ -15,23 +15,23 @@ const Footer: FC = () => {
                 <Link to="/">
                   <PGLockup fill="var(--gray-dark)" className="h-8 w-auto max-w-[200px]" />
                 </Link>
-                <nav className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
-                  <Link to="/" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    HOME
-                  </Link>
-                  <Link to="/donate" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    DONATE
-                  </Link>
-                  <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    ABOUT
-                  </Link>
-                  <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    CALL
+                <div className="flex flex-row gap-6 md:gap-8 items-center">
+                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer">
+                    <img src={require('src/assets/images/Dune.png')} alt="Dune" className="h-8 w-auto" />
                   </a>
-                  <a href="mailto:contact@protocolguild.org" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    EMAIL
+                  <a href="https://x.com/ProtocolGuild" target="_blank" rel="noopener noreferrer">
+                    <img src={require('src/assets/images/Twitter.png')} alt="Twitter" className="h-8 w-auto" />
                   </a>
-                </nav>
+                  <a href="https://warpcast.com/protocolguild" target="_blank" rel="noopener noreferrer">
+                    <img src={require('src/assets/images/Warpcast.png')} alt="Warpcast" className="h-8 w-auto" />
+                  </a>
+                  <a href="https://discord.gg/54JUcFSJ7u" target="_blank" rel="noopener noreferrer">
+                    <img src={require('src/assets/images/Discord.png')} alt="Discord" className="h-8 w-auto" />
+                  </a>
+                  <a href="https://github.com/protocolguild/protocol-guild-site" target="_blank" rel="noopener noreferrer">
+                    <img src={require('src/assets/images/Github.png')} alt="Github" className="h-8 w-auto" />
+                  </a>
+                </div>
               </div>
             </Grid.Item>
           </Grid>
