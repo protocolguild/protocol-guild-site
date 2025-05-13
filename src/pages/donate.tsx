@@ -169,7 +169,10 @@ return (
                   {donateContent.quotes.map((quote, index) => (
                     <div key={index} className="min-w-full px-12 md:px-16">
                       <h2 className="!text-[16px] md:!text-lg !font-normal !leading-[20px] md:!leading-[24px] !text-[var(--gray-dark)] italic">
-                        {quote.text} <span className="block mt-4">-{quote.author}</span>
+                        {quote.text}
+                      </h2>
+                      <h2 className="!text-[16px] md:!text-lg !font-normal !leading-[20px] md:!leading-[24px] !text-[var(--gray-dark)]">
+                        <span className="block mt-4">{quote.author}</span>
                       </h2>
                     </div>
                   ))}

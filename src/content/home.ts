@@ -2,13 +2,13 @@ export const homeContent = {
   hero: {
     title: "Securing the future of Ethereum core development",
     subtitle1: "Protocol Guild is the leading independent funding organization for Ethereum core developers. We proactively fund maintainers doing work the ecosystem depends on.",
-    subtitle2: "Our mission is to create sustainable streams backed by projects building on Ethereum."
+    subtitle2: "Our mission is to secure Ethereum’s future by funding core contributors."
   },
   section1: {
-    title: "Since 2022, we have distributed $28M directly to Ethereum core developers.",
+    title: "Since 2022, we have distributed $28M directly to Ethereum core contributors.",
     quote: {
-      text: "\"I love that ProtocolGuild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
-      author: "Michael Sproul, Lighthouse",
+      text: "\"I love that Protocol Guild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
+      author: "Michael Sproul, Ethereum contributor at Lighthouse",
     },
     statsHeader: "Cumulative Amount Distributed"
   },

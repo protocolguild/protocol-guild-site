@@ -1,6 +1,6 @@
 export const donateContent = {
   hero: {
-    title: "Fund our Work",
+    title: "Fund our work",
     subtitle1: "There are many ways to contribute funding - whether you're a project founder, a builder, an ETH holder, or any other ecosystem stakeholder."
   },
   value: {
@@ -15,8 +15,8 @@ export const donateContent = {
         description: "Protocol Guild is the easiest and highest-signal way to support 189 core contributors across 47 core Ethereum repositories, from research to client implementations."
       },
       {
-        title: "Trustless Vesting",
-        description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributers, ensuring continuity and depth of the contributor set."
+        title: "Trustless vesting",
+        description: "Donations are vested onchain over 4 years via immutable contracts, and are distributed directly to core contributors, ensuring continuity and depth of the contributor set."
       }
     ]
   },
@@ -27,7 +27,7 @@ export const donateContent = {
     link: "Protocol Guild Pledge announcement on Mirror",
     quote: {
       text: "\"Ethereum thrives because of its incredible contributors — the developers, researchers, and coordinators working tirelessly behind the scenes.\"",
-      author: "EigenLayer",
+      author: "Eigenlayer, 1% Pledge Partner",
     }
   },
   ecosystem: {
@@ -42,26 +42,26 @@ export const donateContent = {
   },
   quotes: [
     {
-      text: "The 1% allocation is our way of giving back to the core Ethereum maintainer community and acknowledging their exceptional work over the years.",
-      author: "Taiko"
+      text: "\"The 1% allocation is our way of giving back to the core Ethereum maintainer community and acknowledging their exceptional work over the years.\"",
+      author: "Taiko, 1% Pledge Partner"
     },
     {
-      text: "Thank you, Ethereum contributors, for nearly a decade of relentless building & ongoing stewardship of this common infrastructure.",
-      author: "VanEck"
+      text: "\"Thank you, Ethereum contributors, for nearly a decade of relentless building & ongoing stewardship of this common infrastructure.\"",
+      author: "VanEck, Donor"
     },
     {
-      text: "It is in the interest of our community to help ensure the stability of the Ethereum L1 R&D contributor set.",
-      author: "INTMAX"
+      text: "\"It is in the interest of our community to help ensure the stability of the Ethereum L1 R&D contributor set.\"",
+      author: "INTMAX, 1% Pledge Partner"
     },
     {
-      text: "We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.",
-      author: "Lambda Class"
+      text: "\"We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.\"",
+      author: "Lambda Class, 1% Pledge Partner"
     }
   ],
   donate: {
     title: "Every donation counts. ",
     description1: "Future-proofing Ethereum requires sustained contributions to grow our support for core protocol engineering. Help us build the future funding model for Ethereum.",
-    description2: "We're proud to have received donations from projects and individuals across the entire ecosystem. We accept donations on various Ethereum chains.",
+    description2: "We're proud to have received donations from projects and individuals across the entire ecosystem. We accept donations on all major Ethereum chains.",
     buttonText: "Donate",
     buttonLink: "https://protocol-guild.readthedocs.io/en/latest/04-donate.html"
   }

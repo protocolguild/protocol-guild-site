@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom'
 import Section from './Section'
 import Grid from './Grid'
 import PGLockup from './PGLockup'
+import DuneLogo from '../assets/images/Dune.png'
+import TwitterLogo from '../assets/images/Twitter.png'
+import WarpcastLogo from '../assets/images/Warpcast.png'
+import DiscordLogo from '../assets/images/Discord.png'
+import GithubLogo from '../assets/images/Github.png'
 
-const Footer: FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-[var(--brand-primary)] pt-16 pb-8">
       <Section background="brand-primary">
@@ -15,21 +20,21 @@ const Footer: FC = () => {
                 <Link to="/">
                   <PGLockup fill="var(--gray-dark)" className="h-8 w-auto max-w-[200px]" />
                 </Link>
-                <nav className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
-                  <Link to="/" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    HOME
-                  </Link>
-                  <Link to="/donate" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    DONATE
-                  </Link>
-                  <Link to="/about" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    ABOUT
-                  </Link>
-                  <a href="https://calendly.com/vecchiarelli-peter/30min" target="_blank" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    CALL
+                <nav className="flex flex-row items-center gap-6 flex-wrap">
+                  <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer">
+                    <img src={DuneLogo} alt="Dune" className="h-6 w-auto" />
                   </a>
-                  <a href="mailto:contact@protocolguild.org" className="text-sm font-semibold text-[var(--gray-dark)] hover:opacity-80 transition-opacity">
-                    EMAIL
+                  <a href="https://x.com/ProtocolGuild" target="_blank" rel="noopener noreferrer">
+                    <img src={TwitterLogo} alt="Twitter" className="h-6 w-auto" />
+                  </a>
+                  <a href="https://warpcast.com/protocolguild" target="_blank" rel="noopener noreferrer">
+                    <img src={WarpcastLogo} alt="Warpcast" className="h-6 w-auto" />
+                  </a>
+                  <a href="https://discord.gg/54JUcFSJ7u" target="_blank" rel="noopener noreferrer">
+                    <img src={DiscordLogo} alt="Discord" className="h-6 w-auto" />
+                  </a>
+                  <a href="https://github.com/protocolguild/protocol-guild-site" target="_blank" rel="noopener noreferrer">
+                    <img src={GithubLogo} alt="Github" className="h-6 w-auto" />
                   </a>
                 </nav>
               </div>
