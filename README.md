@@ -1,3 +1,5 @@
+*Please note that we do not accept pull requests for minor corrections, such as typos. Instead, we encourage you to open an issue to report these items, and we will compile them into a single update. Thank you!*
+
 # Protocol Guild Website
 
 This repository contains the source code for the Protocol Guild website, a React-based web application that showcases Protocol Guild's mission, members, and initiatives in supporting Ethereum core development.
