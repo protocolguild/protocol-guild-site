@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 <Link to="/">
                   <PGLockup fill="var(--gray-dark)" className="h-8 w-auto max-w-[200px]" />
                 </Link>
-                <nav className="flex flex-col items-start md:flex-row gap-6 md:gap-8 md:items-center">
+                <nav className="flex flex-row items-center gap-6 flex-wrap">
                   <a href="https://dune.com/protocolguild/protocol-guild" target="_blank" rel="noopener noreferrer">
                     <img src={DuneLogo} alt="Dune" className="h-6 w-auto" />
                   </a>
