@@ -1,11 +1,11 @@
 export const aboutContent = {
   hero: {
-    title: "About Protocol Guild",
-    subtitle1: "Learn more about how the org operates in service of our mission to fund the future of Ethereum."
+    title: "Ethereum's leading independent funding organization",
+    subtitle1: "Learn more about our mission to fund Ethereum’s future."
   },
   organization: {
     title: "Who we are.",
-    description1: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development. Our mission is to create sustainable and decentralized funding for Ethereum’s core protocol work, backed by projects building on Ethereum.",
+    description1: "Protocol Guild is the leading independent organization dedicated to sustainable funding for Ethereum’s core protocol development. Our mission is to secure Ethereum’s future by funding core contributors.",
     description2: "We maintain an onchain registry of Ethereum's active core protocol contributors, enabling the ecosystem to direct funding directly to all the individuals building the future of Ethereum.",
     description3: "Protocol Guild is structured as a non-profit that serves hundreds of Ethereum core protocol contributors. If you have any questions about supporting our mission, please reach out!",
     link: "View all members",
@@ -37,9 +37,9 @@ export const aboutContent = {
   funding: {
     title: "Effective and transparent funding.",
     description1: "We aim to create the most credible and transparent model for rewarding open source contributions. Funding is fully onchain and fully auditable.",
-    description2: "Neutral Distribution",
+    description2: "Neutral distribution",
     description3: "We dont make discretionary funding allocations - all tokens are streamed over 4 years via immutable contracts, and are allocated based on a simple time-weighting system that incentivizes long-term, full-time contributions.",
-    description4: "Quarterly Curation",
+    description4: "Quarterly curation",
     description5: "We maintain an up-to-date registry of Ethereum’s active core protocol contributors, updated quarterly, ensuring that funding only goes to the individuals who are actively building and maintaining Ethereum's core protocol.",
     statsHeader: "Distribution Stats"
   },
