@@ -3,6 +3,7 @@ export const navigation = {
     { name: 'HOME', path: '/' },
     { name: 'DONATE', path: '/donate' },
     { name: 'ABOUT', path: '/about' },
+    { name: 'BLOG', path: '/blog' },
     { name: 'DOCS', path: 'https://protocol-guild.readthedocs.io/en/latest/index.html', target: '_blank' }
   ],
   footer: {
