@@ -4,7 +4,13 @@ import Grid from "../components/Grid";
 import Navbar from "../components/Navbar";
 import { blogContent } from "../content/blog";
 import chainsImage from "../assets/images/chains.png";
-const About: FC = () => {
+import { getAllPosts } from "../lib/posts";
+import PostCard from "../components/PostCard";
+import { Post } from "../types/post";
+
+const Blog: FC = () => {
+  const posts = getAllPosts();
+
   return (
     <main>
       <Section
@@ -42,11 +48,16 @@ const About: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="white" divider="var(--brand-primary)" line={true}>
-        <Section.Row>
-          <Grid>
-            <Grid.Item span={12}>
-              <h2>Blog content here</h2>
+      <Section background='white' divider='var(--brand-primary)' line={true}>
+        <Section.Row align='start'>
+          <Grid columns={12} className='py-16'>
+            <Grid.Item span={12} className='flex flex-col gap-8'>
+              <h2 className='text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]'>All posts</h2>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                {posts.map((post: Post) => (
+                  <PostCard key={post.slug} post={post} />
+                ))}
+              </div>
             </Grid.Item>
           </Grid>
         </Section.Row>
@@ -55,4 +66,4 @@ const About: FC = () => {
   );
 };
 
-export default About;
+export default Blog
