@@ -5,7 +5,7 @@ import Grid from '../components/Grid'
 import trentImg from '../assets/images/trent.jpg'
 import cheekyImg from '../assets/images/cheeky.jpg'
 import peterImg from '../assets/images/peter.jpg'
-import Navbar from '../components/Navbar'
+import HeroHeader from '../components/HeroHeader'
 import { aboutContent } from '../content/about'
 import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
@@ -15,40 +15,14 @@ import MemberFaces from '../components/MemberFaces2'
 const About: FC = () => {
   return (
     <main>
-      <Section
-        background="white"
-        className="flex flex-col relative overflow-hidden"
-      >
-        <Section.Row className="relative z-1">
-          <Grid>
-            <Grid.Item span={12} className="relative flex">
-              {/* Image container */}
-              <div className="absolute top-0 left-0 w-full z-0 flex justify-end h-full">
-                <img
-                  src={chainsImage}
-                  alt="Ethereum chains"
-                  className="h-full w-auto max-w-full object-contain opacity-0 md:opacity-100"
-                />
-              </div>
-              {/* Content container */}
-              <div className="relative z-10 flex flex-col items-start pt-[175px] lg:pt-[200px] pb-[70px] lg:pb-[192px] w-full md:w-[65%]">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">
-                  {aboutContent.hero.title}
-                </h1>
-                <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">
-                  {aboutContent.hero.subtitle1}
-                </p>
-              </div>
-              {/* Navbar */}
-              <Grid className="absolute top-0 left-0 w-full z-10">
-                <Grid.Item span={12} className="w-full md:w-[65%]">
-                  <Navbar theme="light" />
-                </Grid.Item>
-              </Grid>
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
+      <HeroHeader imageSrc={chainsImage} theme="light">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1.44px] text-[var(--gray-dark)] mb-4">
+          {aboutContent.hero.title}
+        </h1>
+        <p className="text-lg leading-[23px] text-[var(--gray-mid)] mb-4">
+          {aboutContent.hero.subtitle1}
+        </p>
+      </HeroHeader>
 
       <Section background="white" divider="var(--brand-primary)" line={true}>
         <Section.Row align="start">
