@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import chainsImage from '../assets/images/chains.png'
 import { getPostBySlug } from '../lib/posts'
 import type { Post } from '../types/post'
+import ReactMarkdown from 'react-markdown'
 
 const BlogPost: FC = () => {
   const params = useParams()
@@ -55,8 +56,8 @@ const BlogPost: FC = () => {
           <Grid columns={12} className='py-16'>
             <Grid.Item span={12} className='flex flex-col gap-6'>
               {post ? (
-                <article className='max-w-none text-[var(--gray-dark)] whitespace-pre-wrap'>
-                  {post.content}
+                <article className='prose prose-neutral max-w-none'>
+                  <ReactMarkdown>{post.content}</ReactMarkdown>
                 </article>
               ) : (
                 <p className='text-[var(--gray-dark)]'>This article could not be found.</p>
