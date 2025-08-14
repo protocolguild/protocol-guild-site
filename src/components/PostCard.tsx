@@ -7,6 +7,11 @@ interface PostCardProps {
 }
 
 const PostCard: FC<PostCardProps> = ({ post }) => {
+  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
   return (
     <Link to={`/blog/${post.slug}`} className='no-underline'>
       <div className='border rounded-xl shadow-sm p-6 hover:opacity-80 transition-opacity'>
@@ -22,12 +27,10 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
         <h3 className='text-xl font-semibold text-[var(--gray-dark)] mb-2'>
           {post.title}
         </h3>
+        <p className='text-[var(--gray-mid)] text-sm'>{formattedDate}</p>
         {post.excerpt && (
           <p className='text-[var(--gray-mid)] text-sm mb-2'>{post.excerpt}</p>
         )}
-        <p className='text-[var(--gray-mid)] text-xs'>
-          {new Date(post.date).toLocaleDateString()}
-        </p>
       </div>
     </Link>
   )
