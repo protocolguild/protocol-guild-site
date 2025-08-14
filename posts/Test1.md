@@ -1,7 +1,7 @@
 ---
 title: "Test 1"
 excerpt: "This is a small preview that may appear in an extended view."
-coverImage: "/og-image.png"
+coverImage: "/tv-test.png"
 date: "2025-08-13"
 slug: "protocol-guild-test1"
 ---

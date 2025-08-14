@@ -2,7 +2,7 @@
 title: "Protocol Guild Test Blog Post"
 excerpt: "This is a small preview that may appear in an extended view."
 coverImage: "/og-image.png"
-date: "2025-08-13"
+date: "2025-08-14"
 slug: "protocol-guild-test"
 ---
 
