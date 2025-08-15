@@ -46,9 +46,9 @@ const BlogPost: FC = () => {
                       />
                     </div>
                   ) : null}
-                  <article className="prose prose-neutral prose-lg max-w-none">
-                    <h1>{post.title}</h1>
-                    <h2>{formattedDate}</h2>
+                  <article className="prose prose-neutral prose-lg max-w-none prose-h1:mb-4 prose-h1:mt-0 prose-h2:mt-0 prose-h2:mb-6 ">
+                    <h1 className="text-5xl">{post.title}</h1>
+                    <h2 className="text-3xl">{formattedDate}</h2>
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
                       components={{
