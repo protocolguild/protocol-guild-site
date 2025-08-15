@@ -13,24 +13,40 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
     day: 'numeric',
   })
   return (
-    <Link to={`/blog/${post.slug}`} className='no-underline'>
-      <div className='border rounded-2xl shadow-sm overflow-hidden hover:opacity-90 transition-opacity'>
+    <Link to={`/blog/${post.slug}`} className="no-underline">
+      <div className="border rounded-2xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col h-[550px]">
         {post.coverImage && (
-          <div className='w-full'>
+          <div className="w-full overflow-hidden h-[400px]">
             <img
               src={post.coverImage}
               alt={post.title}
-              className='w-full h-auto object-cover'
+              className="w-full h-full object-cover object-center"
             />
           </div>
         )}
-        <div className='p-6 md:p-8'>
-          <h2 className='text-2xl md:text-3xl font-bold text-[var(--gray-dark)] mb-3'>
+        <div className="p-4 flex-1 flex flex-col gap-2">
+          <h2
+            className="text-2xl md:text-3xl font-bold text-[var(--gray-dark)]"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
             {post.title}
           </h2>
-          <p className='text-[var(--gray-mid)] text-sm mb-2'>{formattedDate}</p>
+          <p className="text-lg">{formattedDate}</p>
           {post.excerpt && (
-            <p className='text-[var(--gray-mid)] text-base md:text-lg'>
+            <p
+              className="text-[var(--gray-mid)] text-base md:text-lg"
+              style={{
+                display: '-webkit-box',
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+              }}
+            >
               {post.excerpt}
             </p>
           )}
@@ -41,5 +57,3 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
 }
 
 export default HeroPostCard
-
-

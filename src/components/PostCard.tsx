@@ -13,29 +13,47 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
     day: 'numeric',
   })
   return (
-    <Link to={`/blog/${post.slug}`} className='no-underline'>
-      <div className='border rounded-xl shadow-sm p-6 hover:opacity-80 transition-opacity'>
-        {post.coverImage && (
-          <div className='mb-4'>
+    <Link to={`/blog/${post.slug}`} className="no-underline">
+      <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity h-[450px] flex flex-col">
+        <div className="w-full h-[350px] overflow-hidden bg-[var(--gray-light)]">
+          {post.coverImage && (
             <img
               src={post.coverImage}
               alt={post.title}
-              className='w-full h-auto rounded-lg object-cover'
+              className="w-full h-full object-cover object-center"
             />
-          </div>
-        )}
-        <h3 className='text-xl font-semibold text-[var(--gray-dark)] mb-2'>
-          {post.title}
-        </h3>
-        <p className='text-[var(--gray-mid)] text-sm'>{formattedDate}</p>
-        {post.excerpt && (
-          <p className='text-[var(--gray-mid)] text-sm mb-2'>{post.excerpt}</p>
-        )}
+          )}
+        </div>
+        <div className="flex-1 p-4 flex flex-col gap-2">
+          <h3
+            className="text-lg font-semibold text-[var(--gray-dark)]"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
+            {post.title}
+          </h3>
+          <p className="text-[var(--gray-mid)] text-sm">{formattedDate}</p>
+          {post.excerpt && (
+            <p
+              className="text-[var(--gray-mid)] text-sm"
+              style={{
+                display: '-webkit-box',
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+              }}
+            >
+              {post.excerpt}
+            </p>
+          )}
+        </div>
       </div>
     </Link>
   )
 }
 
 export default PostCard
-
-
