@@ -1,9 +1,9 @@
 ---
-title: "Test 2"
-excerpt: "This is a small preview that may appear in an extended view."
-coverImage: "/og-image.png"
-date: "2025-08-13"
-slug: "protocol-guild-test2"
+title: 'Announcing a very long and prestigious incredible amazing outstanding title that may even take 3 lines to display'
+excerpt: 'This is a small preview that may appear in an extended view'
+coverImage: '/tv-test.png'
+date: '2025-02-13'
+slug: 'protocol-guild-test1'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
@@ -17,4 +17,3 @@ Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidu
 ### This is a Sub-Sub-Title
 
 Here is a [link](https://google.com)
-
