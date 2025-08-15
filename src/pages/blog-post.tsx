@@ -5,6 +5,7 @@ import Grid from '../components/Grid'
 import { getPostBySlug } from '../lib/posts'
 import type { Post } from '../types/post'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import StandaloneNavbar from '../components/StandaloneNavbar'
 
 const BlogPost: FC = () => {
@@ -35,7 +36,7 @@ const BlogPost: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={12} className="flex flex-col gap-6">
               {post ? (
-                <article className="prose prose-neutral max-w-none">
+                <article className="prose prose-neutral prose-lg max-w-none">
                   <h1>{post.title}</h1>
                   <h2>{formattedDate}</h2>
                 </article>
@@ -53,8 +54,40 @@ const BlogPost: FC = () => {
           <Section.Row align="start">
             <Grid columns={12} className="py-16">
               <Grid.Item span={12} className="flex flex-col gap-6">
-                <article className="prose prose-neutral max-w-none">
-                  <ReactMarkdown>{post.content}</ReactMarkdown>
+                <article className="prose prose-neutral prose-lg max-w-none">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      table: ({ node, ...props }) => (
+                        <div className="overflow-x-auto">
+                          <table
+                            {...props}
+                            className={`table-auto border-collapse w-full ${
+                              props.className || ''
+                            }`.trim()}
+                          />
+                        </div>
+                      ),
+                      th: (props) => (
+                        <th
+                          {...props}
+                          className={`px-3 py-2 border-b text-left ${
+                            props.className || ''
+                          }`.trim()}
+                        />
+                      ),
+                      td: (props) => (
+                        <td
+                          {...props}
+                          className={`px-3 py-2 border-b align-top ${
+                            props.className || ''
+                          }`.trim()}
+                        />
+                      ),
+                    }}
+                  >
+                    {post.content}
+                  </ReactMarkdown>
                 </article>
               </Grid.Item>
             </Grid>
