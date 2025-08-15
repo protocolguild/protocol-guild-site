@@ -1,6 +1,6 @@
 ---
-title: 'Test 4'
-excerpt: 'This is a small preview that may appear in an extended view'
+title: 'Test 4 also has an absurdly long title that goes on and on and on and on and on and on and on and on and on and on and on'
+excerpt: 'This description is somehow even loooooooooooooooooooooooooooooooooooooooooonger i mean really really really really really really really really really really really really really really really really long'
 coverImage: '/dog.png'
 date: '2025-07-10'
 slug: 'protocol-guild-test1'
