@@ -23,6 +23,7 @@ const BlogPost: FC = () => {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       })
     : null
   return (

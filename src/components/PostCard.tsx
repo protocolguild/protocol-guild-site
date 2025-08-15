@@ -11,6 +11,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   })
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
