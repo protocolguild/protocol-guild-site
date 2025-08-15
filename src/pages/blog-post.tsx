@@ -36,10 +36,54 @@ const BlogPost: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={12} className="flex flex-col gap-6">
               {post ? (
-                <article className="prose prose-neutral prose-lg max-w-none">
-                  <h1>{post.title}</h1>
-                  <h2>{formattedDate}</h2>
-                </article>
+                <>
+                  {post.coverImage ? (
+                    <div className="not-prose w-full h-[500px] overflow-hidden rounded-xl bg-[var(--gray-light)]">
+                      <img
+                        src={post.coverImage}
+                        alt={post.title}
+                        className="block w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  ) : null}
+                  <article className="prose prose-neutral prose-lg max-w-none">
+                    <h1>{post.title}</h1>
+                    <h2>{formattedDate}</h2>
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        table: ({ node, ...props }) => (
+                          <div className="overflow-x-auto">
+                            <table
+                              {...props}
+                              className={`table-auto border-collapse w-full ${
+                                props.className || ''
+                              }`.trim()}
+                            />
+                          </div>
+                        ),
+                        th: (props) => (
+                          <th
+                            {...props}
+                            className={`px-3 py-2 border-b text-left ${
+                              props.className || ''
+                            }`.trim()}
+                          />
+                        ),
+                        td: (props) => (
+                          <td
+                            {...props}
+                            className={`px-3 py-2 border-b align-top ${
+                              props.className || ''
+                            }`.trim()}
+                          />
+                        ),
+                      }}
+                    >
+                      {post.content}
+                    </ReactMarkdown>
+                  </article>
+                </>
               ) : (
                 <p className="text-[var(--gray-dark)]">
                   This article could not be found.
@@ -49,51 +93,6 @@ const BlogPost: FC = () => {
           </Grid>
         </Section.Row>
       </Section>
-      {post ? (
-        <Section background="white" divider="var(--brand-primary)" line={true}>
-          <Section.Row align="start">
-            <Grid columns={12} className="py-16">
-              <Grid.Item span={12} className="flex flex-col gap-6">
-                <article className="prose prose-neutral prose-lg max-w-none">
-                  <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
-                    components={{
-                      table: ({ node, ...props }) => (
-                        <div className="overflow-x-auto">
-                          <table
-                            {...props}
-                            className={`table-auto border-collapse w-full ${
-                              props.className || ''
-                            }`.trim()}
-                          />
-                        </div>
-                      ),
-                      th: (props) => (
-                        <th
-                          {...props}
-                          className={`px-3 py-2 border-b text-left ${
-                            props.className || ''
-                          }`.trim()}
-                        />
-                      ),
-                      td: (props) => (
-                        <td
-                          {...props}
-                          className={`px-3 py-2 border-b align-top ${
-                            props.className || ''
-                          }`.trim()}
-                        />
-                      ),
-                    }}
-                  >
-                    {post.content}
-                  </ReactMarkdown>
-                </article>
-              </Grid.Item>
-            </Grid>
-          </Section.Row>
-        </Section>
-      ) : null}
     </main>
   )
 }

@@ -1,12 +1,10 @@
 ---
-title: 'Dogs'
+title: 'Why Dogs Are the Best Companions'
 excerpt: 'This is a blog post about dogs'
 coverImage: '/dog.png'
 date: '2025-08-13'
 slug: 'protocol-guild-test2'
 ---
-
-# 🐶 Why Dogs Are the Best Companions
 
 Dogs have been our loyal friends for thousands of years.  
 From guarding our homes to warming our hearts, they’ve earned the title of **"man's best friend"**.
