@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography'
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   safelist: [
     'md:grid-cols-1',
     'md:grid-cols-2',
@@ -32,13 +30,13 @@ export default {
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' }
-        }
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
-        scroll: 'scroll 30s linear infinite'
-      }
+        scroll: 'scroll 30s linear infinite',
+      },
     },
   },
-  plugins: [],
-} 
+  plugins: [typography],
+}
