@@ -7,6 +7,7 @@ import type { Post } from '../types/post'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import StandaloneNavbar from '../components/StandaloneNavbar'
+import { Helmet } from 'react-helmet-async'
 
 const BlogPost: FC = () => {
   const params = useParams()
@@ -19,6 +20,20 @@ const BlogPost: FC = () => {
       return null
     }
   }, [slug])
+  const origin = typeof window !== 'undefined' ? window.location.origin : ''
+  const canonicalUrl = post
+    ? `${origin}/blog/${post.slug}`
+    : `${origin}/blog/${slug}`
+  const metaTitle = post
+    ? `${post.title} | Protocol Guild`
+    : 'Article not found | Protocol Guild'
+  const metaDescription =
+    post?.excerpt || 'Read the latest from Protocol Guild.'
+  const metaImage = post?.coverImage
+    ? post.coverImage.startsWith('http')
+      ? post.coverImage
+      : `${origin}${post.coverImage}`
+    : `${origin}/og-image.png`
   const formattedDate = post
     ? new Date(post.date).toLocaleDateString('en-US', {
         year: 'numeric',
@@ -29,6 +44,34 @@ const BlogPost: FC = () => {
     : null
   return (
     <main>
+      <Helmet>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+
+        <meta property="og:type" content={post ? 'article' : 'website'} />
+        <meta
+          property="og:title"
+          content={post ? post.title : 'Protocol Guild'}
+        />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+        <meta property="og:url" content={canonicalUrl} />
+        {post?.date ? (
+          <meta
+            property="article:published_time"
+            content={new Date(post.date).toISOString()}
+          />
+        ) : null}
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={post ? post.title : 'Protocol Guild'}
+        />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={metaImage} />
+      </Helmet>
       <StandaloneNavbar />
 
       <Section background="white">
