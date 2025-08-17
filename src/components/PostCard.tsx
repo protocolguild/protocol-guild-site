@@ -27,7 +27,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
         </div>
         <div className="flex-1 p-4 flex flex-col gap-2">
           <h3
-            className="text-lg font-semibold text-[var(--gray-dark)]"
+            className="text-xl font-bold text-[var(--gray-dark)]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
@@ -37,7 +37,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
           >
             {post.title}
           </h3>
-          <p className="text-[var(--gray-mid)] text-sm">{formattedDate}</p>
+          <p className="text-lg font-semibold">{formattedDate}</p>
           {post.excerpt && (
             <p
               className="text-[var(--gray-mid)] text-sm"

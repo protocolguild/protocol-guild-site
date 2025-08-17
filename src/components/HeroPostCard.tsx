@@ -37,7 +37,7 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
           >
             {post.title}
           </h2>
-          <p className="text-lg">{formattedDate}</p>
+          <p className="text-lg font-semibold">{formattedDate}</p>
           {post.excerpt && (
             <p
               className="text-[var(--gray-mid)] text-base md:text-lg"
