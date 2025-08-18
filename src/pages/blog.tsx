@@ -6,6 +6,7 @@ import PostCard from '../components/PostCard'
 import HeroPostCard from '../components/HeroPostCard'
 import { Post } from '../types/post'
 import StandaloneNavbar from '../components/StandaloneNavbar'
+import { blogContent } from '../content/blog'
 
 const Blog: FC = () => {
   const posts = getAllPosts()
@@ -31,7 +32,7 @@ const Blog: FC = () => {
           <Grid columns={12} className="py-16">
             <Grid.Item span={12} className="flex flex-col gap-8">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">
-                All posts
+                {blogContent.allPosts.title}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {rest.map((post: Post) => (
