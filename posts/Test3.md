@@ -3,7 +3,6 @@ title: 'Announcing a very long and prestigious incredible amazing outstanding ti
 excerpt: 'This is a small preview that may appear in an extended view'
 coverImage: '/tv-test.png'
 date: '2025-02-13'
-slug: 'protocol-guild-test1'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

@@ -3,7 +3,6 @@ title: 'Test 4 also has an absurdly long title that goes on and on and on and on
 excerpt: 'This description is somehow even loooooooooooooooooooooooooooooooooooooooooonger i mean really really really really really really really really really really really really really really really really long'
 coverImage: '/dog.png'
 date: '2025-07-10'
-slug: 'protocol-guild-test1'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

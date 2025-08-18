@@ -3,7 +3,6 @@ title: 'Why Dogs Are the Best Companions'
 excerpt: 'This is a blog post about dogs'
 coverImage: '/dog.png'
 date: '2025-08-13'
-slug: 'protocol-guild-test2'
 ---
 
 Dogs have been our loyal friends for thousands of years.  

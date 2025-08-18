@@ -3,7 +3,6 @@ title: 'Why Cats Might Just Be Better Than Dogs'
 excerpt: 'This is a long post about why cats are better than dogs'
 coverImage: '/cat.png'
 date: '2025-08-03'
-slug: 'protocol-guild-test1'
 ---
 
 For centuries, the debate over whether cats or dogs make better companions has been a source of passionate discussion among pet lovers. While dogs have their undeniable charms, there is a compelling case to be made for the quiet, graceful, and often underestimated cat. Cats have been living alongside humans for thousands of years, not as subservient helpers, but as independent partners. This difference in the nature of the relationship is at the heart of why many people find cats to be the superior choice.
