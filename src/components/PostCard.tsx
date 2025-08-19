@@ -16,7 +16,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
       <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity h-[450px] flex flex-col">
-        <div className="w-full h-[350px] overflow-hidden bg-[var(--gray-light)]">
+        <div className="w-full h-[260px] overflow-hidden bg-[var(--gray-light)]">
           {post.coverImage && (
             <img
               src={post.coverImage}
@@ -27,7 +27,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
         </div>
         <div className="flex-1 p-4 flex flex-col gap-2">
           <h3
-            className="text-xl font-bold text-[var(--gray-dark)]"
+            className="text-xl leading-[1.75rem] font-bold text-[var(--gray-dark)] min-h-[3.5rem]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
@@ -37,20 +37,18 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
           >
             {post.title}
           </h3>
-          <p className="text-lg font-semibold">{formattedDate}</p>
-          {post.excerpt && (
-            <p
-              className="text-[var(--gray-mid)] text-sm"
-              style={{
-                display: '-webkit-box',
-                WebkitLineClamp: 3,
-                WebkitBoxOrient: 'vertical',
-                overflow: 'hidden',
-              }}
-            >
-              {post.excerpt}
-            </p>
-          )}
+          <p
+            className="text-[var(--gray-mid)] text-sm leading-[1.25rem] min-h-[3.75rem]"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
+            {post.excerpt || ''}
+          </p>
+          <p className="mt-auto text-sm leading-[1.75rem]">{formattedDate}</p>
         </div>
       </div>
     </Link>
