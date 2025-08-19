@@ -27,7 +27,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
         </div>
         <div className="flex-1 p-4 flex flex-col gap-2">
           <h3
-            className="text-xl leading-[1.75rem] font-bold text-[var(--gray-dark)] min-h-[3.5rem]"
+            className="text-xl leading-[1.75rem] font-bold text-[var(--gray-dark)]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
