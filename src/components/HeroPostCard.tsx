@@ -15,19 +15,19 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
   })
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
-      <div className="border rounded-2xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col h-[550px]">
-        {post.coverImage && (
-          <div className="w-full overflow-hidden h-[400px]">
+      <div className="border rounded-xl md:rounded-2xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col h-[500px] md:h-auto">
+        <div className="w-full h-[300px] md:h-[400px]">
+          {post.coverImage && (
             <img
               src={post.coverImage}
               alt={post.title}
               className="w-full h-full object-cover object-center"
             />
-          </div>
-        )}
+          )}
+        </div>
         <div className="p-4 flex-1 flex flex-col gap-2">
           <h2
-            className="text-2xl md:text-3xl font-bold text-[var(--gray-dark)]"
+            className="text-xl md:text-3xl leading-[1.75rem] md:leading-[2rem] font-bold text-[var(--gray-dark)]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
@@ -37,20 +37,20 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
           >
             {post.title}
           </h2>
-          <p className="text-lg font-semibold">{formattedDate}</p>
-          {post.excerpt && (
-            <p
-              className="text-[var(--gray-mid)] text-base md:text-lg"
-              style={{
-                display: '-webkit-box',
-                WebkitLineClamp: 3,
-                WebkitBoxOrient: 'vertical',
-                overflow: 'hidden',
-              }}
-            >
-              {post.excerpt}
-            </p>
-          )}
+          <p
+            className="text-[var(--gray-mid)] text-sm md:text-lg leading-[1.25rem] md:leading-[1.5rem] min-h-[3.75rem] md:min-h-0"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
+            {post.excerpt || ''}
+          </p>
+          <p className="mt-auto text-sm md:text-lg md:font-semibold">
+            {formattedDate}
+          </p>
         </div>
       </div>
     </Link>
