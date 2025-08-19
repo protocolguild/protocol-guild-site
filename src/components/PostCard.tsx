@@ -15,8 +15,8 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
   })
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
-      <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity h-[450px] flex flex-col">
-        <div className="w-full h-[260px] overflow-hidden bg-[var(--gray-light)]">
+      <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity h-[500px] flex flex-col">
+        <div className="w-full h-[300px]">
           {post.coverImage && (
             <img
               src={post.coverImage}
@@ -48,7 +48,7 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
           >
             {post.excerpt || ''}
           </p>
-          <p className="mt-auto text-sm leading-[1.75rem]">{formattedDate}</p>
+          <p className="mt-auto text-sm">{formattedDate}</p>
         </div>
       </div>
     </Link>
