@@ -76,12 +76,12 @@ const BlogPost: FC = () => {
 
       <Section background="white">
         <Section.Row align="start">
-          <Grid columns={12} className="py-16">
+          <Grid columns={12} className="pt-0 pb-16">
             <Grid.Item span={12} className="flex flex-col gap-6 min-w-0">
               {post ? (
                 <>
                   {post.coverImage ? (
-                    <div className="not-prose w-full h-[500px] overflow-hidden rounded-xl bg-[var(--gray-light)]">
+                    <div className="not-prose w-full h-[500px] overflow-hidden border rounded-xl md:rounded-2xl shadow-sm bg-[var(--gray-light)]">
                       <img
                         src={post.coverImage}
                         alt={post.title}

@@ -18,7 +18,7 @@ const Blog: FC = () => {
       {latest && (
         <Section background="white">
           <Section.Row align="start">
-            <Grid columns={12} className="py-10">
+            <Grid columns={12} className="pt-0 pb-10">
               <Grid.Item span={12}>
                 <HeroPostCard post={latest} />
               </Grid.Item>
