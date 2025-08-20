@@ -1,4 +1,4 @@
-*Please note that we do not accept pull requests for minor corrections, such as typos. Instead, we encourage you to open an issue to report these items, and we will compile them into a single update. Thank you!*
+_Please note that we do not accept pull requests for minor corrections, such as typos. Instead, we encourage you to open an issue to report these items, and we will compile them into a single update. Thank you!_
 
 # Protocol Guild Website
 
@@ -42,6 +42,7 @@ npm run preview
 ```
 /
 ├── public/         # Static files served directly
+├── posts/          # Markdown posts to be shown on the blog page
 ├── src/
 │   ├── assets/     # Images, fonts, and other static assets
 │   ├── components/ # Reusable UI components
@@ -67,6 +68,7 @@ All website content is managed through TypeScript configuration files in the `sr
 - `members.ts`: Member list and profile information
 
 To update content:
+
 1. Navigate to the appropriate content file
 2. Modify the text values within the TypeScript objects
 3. Save the file - changes will hot-reload in development
@@ -84,7 +86,7 @@ To update the list of members displayed in the MemberFaces component:
        name: 'Full Name',
        username: '@handle',
        pfp: 'URL to profile picture',
-       link: 'https://github.com/handle'
+       link: 'https://github.com/handle',
      },
      // ... more members
    ]
@@ -93,6 +95,7 @@ To update the list of members displayed in the MemberFaces component:
 ### Managing Donors and Partners
 
 1. Add donor/partner logos:
+
    - Add regular logo to `src/assets/images/donors/[name].svg`
    - Add white version to `src/assets/images/donors/[name]-white.svg`
    - Image requirements:
@@ -101,6 +104,7 @@ To update the list of members displayed in the MemberFaces component:
      - Recommended size: height 40-60px, width proportional
 
 2. Update `src/components/DonorSection.tsx`:
+
    ```typescript
    // Import new logos
    import newDonorSvg from '../assets/images/donors/new-donor.svg'
@@ -112,7 +116,7 @@ To update the list of members displayed in the MemberFaces component:
        name: 'New Donor',
        logo: newDonorSvg,
        logoWhite: newDonorWhiteSvg,
-       url: 'https://donor-website.com'
+       url: 'https://donor-website.com',
      },
      // ... existing donors
    ]
@@ -125,6 +129,7 @@ To update the list of members displayed in the MemberFaces component:
 The website uses a combination of Tailwind CSS and CSS modules:
 
 1. **Global Styles**
+
    - `src/App.css`: Global CSS rules
    - `src/theme/colors.ts`: Color variables (--primary, --secondary, etc.)
    - `tailwind.config.js`: Tailwind configuration and theme customization
@@ -137,31 +142,36 @@ The website uses a combination of Tailwind CSS and CSS modules:
 ### Adding New Pages
 
 1. Create content file in `src/content/[page-name].ts`:
+
    ```typescript
    export const pageContent = {
      title: 'Page Title',
-     sections: [/* ... */]
-   };
+     sections: [
+       /* ... */
+     ],
+   }
    ```
 
 2. Create page component in `src/pages/[PageName].tsx`:
+
    ```typescript
-   import { pageContent } from '../content/[page-name]';
-   
+   import { pageContent } from '../content/[page-name]'
+
    export default function PageName() {
      return (
        <div className="container mx-auto">
          <h1>{pageContent.title}</h1>
          {/* ... */}
        </div>
-     );
+     )
    }
    ```
 
 3. Add route in `App.tsx`:
+
    ```typescript
    import PageName from './pages/PageName';
-   
+
    // In the router configuration:
    {
      path: '/page-url',
@@ -174,6 +184,7 @@ The website uses a combination of Tailwind CSS and CSS modules:
 ### Deployment
 
 1. Build the project:
+
    ```bash
    npm run build
    ```
@@ -187,7 +198,7 @@ The website uses a combination of Tailwind CSS and CSS modules:
 - **Framework**: React 18
 - **Language**: TypeScript 5
 - **Build Tool**: Vite 4
-- **Styling**: 
+- **Styling**:
   - Tailwind CSS 3
   - CSS Modules
 - **Routing**: React Router 6
