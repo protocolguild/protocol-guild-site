@@ -77,7 +77,7 @@ const BlogPost: FC = () => {
       <Section background="white">
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
-            <Grid.Item span={12} className="flex flex-col gap-6">
+            <Grid.Item span={12} className="flex flex-col gap-6 min-w-0">
               {post ? (
                 <>
                   {post.coverImage ? (
@@ -89,9 +89,15 @@ const BlogPost: FC = () => {
                       />
                     </div>
                   ) : null}
-                  <article className="prose prose-neutral prose-lg max-w-none prose-h1:mb-4 prose-h1:mt-0 prose-h2:mt-0 prose-h2:mb-6 ">
-                    <h1 className="text-5xl">{post.title}</h1>
-                    <h2 className="text-3xl">{formattedDate}</h2>
+                  <div className="w-full text-center px-4">
+                    <h1 className="text-5xl break-words">{post.title}</h1>
+                    {formattedDate ? (
+                      <p className="text-3xl mt-2 text-[var(--gray-dark)]">
+                        {formattedDate}
+                      </p>
+                    ) : null}
+                  </div>
+                  <article className="prose prose-neutral prose-lg w-full max-w-none md:max-w-3xl mx-auto px-4 md:px-0 break-words prose-a:break-words prose-code:break-words prose-pre:overflow-x-auto prose-h1:mb-4 prose-h1:mt-0 prose-h2:mt-0 prose-h2:mb-6 ">
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
                       components={{
