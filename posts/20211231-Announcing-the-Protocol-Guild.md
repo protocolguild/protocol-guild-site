@@ -1,7 +1,7 @@
 ---
 title: 'Announcing the Protocol Guild'
 excerpt: 'Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors'
-coverImage: '/emojicover.jpg'
+coverImage: '/src/assets/images/emojicover.png'
 date: '2021-12-31'
 ---
 *Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors - read the full proposal [here](https://protocol-guild.readthedocs.io/en/latest/index.html).*
