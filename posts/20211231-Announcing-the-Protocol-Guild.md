@@ -4,9 +4,6 @@ excerpt: 'Rough outline for an experimental new funding tool which provides recr
 coverImage: '/emojicover.jpg'
 date: '2021-12-31'
 ---
-
-# Announcing the Protocol Guild
-
 *Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors - read the full proposal [here](https://protocol-guild.readthedocs.io/en/latest/index.html).*
 
 Over the past year, Stateful Works has pushed the boundary on how to simultaneously accrue cultural and financial capital to protocol maintainers:
