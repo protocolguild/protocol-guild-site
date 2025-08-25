@@ -13,23 +13,23 @@ While it’s still a project in development, the Guild was structured to facilit
 
 1. a curation process which produces a list of eligible recipients
 
- 1. Protocol Guild uses “[self-curation](https://protocol-guild.readthedocs.io/en/latest/01-membership.html#self-curation)” by individual peers working on core development. This is somewhat contingent on a high-trust community of peer stewards, where the assumption is that high quality work will still be produced absent invasive oversight. This is also enabled through the perspective of a collective protocol emerging from the collaborative stewardship by many constituent parts, instead of something like a competitive RFP process.
+* Protocol Guild uses “[self-curation](https://protocol-guild.readthedocs.io/en/latest/01-membership.html#self-curation)” by individual peers working on core development. This is somewhat contingent on a high-trust community of peer stewards, where the assumption is that high quality work will still be produced absent invasive oversight. This is also enabled through the perspective of a collective protocol emerging from the collaborative stewardship by many constituent parts, instead of something like a competitive RFP process.
 
- 2. Communities using [Coordinape](https://coordinape.com/) also use self-curation
+* Communities using [Coordinape](https://coordinape.com/) also use self-curation
 
- 3. Members of the Gitcoin DAO curate the requirements and categories for Grants Rounds, which ultimately results in a list of grantees available for quadratic funding." [Source](https://gov.gitcoin.co/t/discussion-feedback-request-gitcoin-program-beta-round-eligibility/13306)
+* Members of the Gitcoin DAO curate the requirements and categories for Grants Rounds, which ultimately results in a list of grantees available for quadratic funding." [Source](https://gov.gitcoin.co/t/discussion-feedback-request-gitcoin-program-beta-round-eligibility/13306)
 
- 4. The Optimism Foundation [sets the scope for RPGF rounds](https://oplabs.notion.site/Optimism-RetroPGF-2-Project-Manual-0a2e741133cd49b0b), and then filters applications accordingly
+* The Optimism Foundation [sets the scope for RPGF rounds](https://oplabs.notion.site/Optimism-RetroPGF-2-Project-Manual-0a2e741133cd49b0b), and then filters applications accordingly
 
 2. a weighting mechanism applied to that list
 
- 1. Protocol Guild uses time-weighting instead of subjective peer ranking. While it’s true this prevents more granular measures of individual impact, using time-weighting sidesteps the contention that might come out of peer ranking, doesn’t require time to apply, and is objective and transparent to members.
+* Protocol Guild uses time-weighting instead of subjective peer ranking. While it’s true this prevents more granular measures of individual impact, using time-weighting sidesteps the contention that might come out of peer ranking, doesn’t require time to apply, and is objective and transparent to members.
 
- 2. Coordinape uses peer ranking where the particulars are decided by each community using the tool
+* Coordinape uses peer ranking where the particulars are decided by each community using the tool
 
- 3. Gitcoin places a max cap (IIRC 15%) to prevent any one project from being allocated too much of any single matching pool. Additionally, the preferences of the public are interpreted via Quadratic Funding (QF) to allocate $ weights
+* Gitcoin places a max cap (IIRC 15%) to prevent any one project from being allocated too much of any single matching pool. Additionally, the preferences of the public are interpreted via Quadratic Funding (QF) to allocate $ weights
 
- 4. OP RPGF rounds delegate the weighting responsibility to Badge Holders, instructing them to use the rough heuristic of “impact = profit.”
+* OP RPGF rounds delegate the weighting responsibility to Badge Holders, instructing them to use the rough heuristic of “impact = profit.”
 
 # The shape of the Guild
 
@@ -43,47 +43,47 @@ These may not map exactly to your situation, but are perhaps still useful for in
 
 1. **Member curation**
 
- 1. The Guild expects that the membership curates itself, not an external council/funder. Is the domain to evaluate easily observable? Is it roughly clear to see who is doing what work consistently? The Guild is concerned with a very narrow domain: core Ethereum protocol stewardship defined by this [eligibility framework](https://protocol-guild.readthedocs.io/en/latest/01-membership.html#eligibility-requirements).
+* The Guild expects that the membership curates itself, not an external council/funder. Is the domain to evaluate easily observable? Is it roughly clear to see who is doing what work consistently? The Guild is concerned with a very narrow domain: core Ethereum protocol stewardship defined by this [eligibility framework](https://protocol-guild.readthedocs.io/en/latest/01-membership.html#eligibility-requirements).
 
- 2. How easily could you make a list which covers the a sufficient number of contributors? Inarticulate eligibility frameworks may produce many edge cases, and potentially overwhelm your membership’s curation efforts.
+* How easily could you make a list which covers the a sufficient number of contributors? Inarticulate eligibility frameworks may produce many edge cases, and potentially overwhelm your membership’s curation efforts.
 
- 3. It’s important to find the right balance between overly permissive and overly restrictive curation. Having too many narrowly defined mechanisms (eg. one grant per individual) introduces excessive overhead to sponsors and members. Overly broad eligibility makes it hard to convincingly advocate the necessity of funding to potential sponsors eg. something like “Open Source Guild” would have 10s of thousands of potential members and is effectively impossible to curate or fundraise for.
+* It’s important to find the right balance between overly permissive and overly restrictive curation. Having too many narrowly defined mechanisms (eg. one grant per individual) introduces excessive overhead to sponsors and members. Overly broad eligibility makes it hard to convincingly advocate the necessity of funding to potential sponsors eg. something like “Open Source Guild” would have 10s of thousands of potential members and is effectively impossible to curate or fundraise for.
 
 2. **Broad based funding**
 
- 1. The Guild responded to a void in the commons funding space: a holistic core protocol that allows contributors to cooperate instead of compete for funding
+* The Guild responded to a void in the commons funding space: a holistic core protocol that allows contributors to cooperate instead of compete for funding
 
- 2. Are there funders who have expressed interest and are looking for a Guild-like mechanism in your space? Having the distribution mechanism is only one part of the equation. You will still have to do the non-trivial work of outreach to funders, demonstrating the value of past work, and making this case into the future. Starting with interested sponsors makes your work much less taxing.
+* Are there funders who have expressed interest and are looking for a Guild-like mechanism in your space? Having the distribution mechanism is only one part of the equation. You will still have to do the non-trivial work of outreach to funders, demonstrating the value of past work, and making this case into the future. Starting with interested sponsors makes your work much less taxing.
 
 3. **Onchain**
 
- 1. The Guild has ~150 members from 20+ teams. An onchain mechanism was necessary to facilitate funding from onchain orgs, with the lowest possible overhead, while also transparently & trustlessly distributing the funding.
+* The Guild has ~150 members from 20+ teams. An onchain mechanism was necessary to facilitate funding from onchain orgs, with the lowest possible overhead, while also transparently & trustlessly distributing the funding.
 
- 2. If your project is a one-off grant to a small number of people, it may not make sense to be onchain
+* If your project is a one-off grant to a small number of people, it may not make sense to be onchain
 
 4. **Concerned with funding holistic stewardship**
 
- 1. The Ethereum protocol will still be evolving over the next 5-10 years. The Guild exists to fund and incentivize a stable pool of contributors over that period.
+* The Ethereum protocol will still be evolving over the next 5-10 years. The Guild exists to fund and incentivize a stable pool of contributors over that period.
 
- 2. Just as the Ethereum distributed system takes inputs from many actors to produce a unified global state, the production of the underlying software combines efforts from many contributors. There is no single entity which maintains and evolves the protocol in isolation. Protocol Guild reproduces the qualities inherent to the production of a software commons as a funding stream. With this tool, the ecosystem can now share the collective responsibility of funding core protocol stewardship.
+* Just as the Ethereum distributed system takes inputs from many actors to produce a unified global state, the production of the underlying software combines efforts from many contributors. There is no single entity which maintains and evolves the protocol in isolation. Protocol Guild reproduces the qualities inherent to the production of a software commons as a funding stream. With this tool, the ecosystem can now share the collective responsibility of funding core protocol stewardship.
 
- 3. If you’re going to go through the trouble of bootstrapping a new institution and norms to fund it, it may be best to only do it for long term projects centered on the same domain, eg. ongoing workstreams with high trust between the collaborators.
+* If you’re going to go through the trouble of bootstrapping a new institution and norms to fund it, it may be best to only do it for long term projects centered on the same domain, eg. ongoing workstreams with high trust between the collaborators.
 
- 4. The Guild makes iterated social commitments (eg. quarterly membership updates) to continue curating, which builds trust with sponsors.
+* The Guild makes iterated social commitments (eg. quarterly membership updates) to continue curating, which builds trust with sponsors.
 
 5. **Autonomous weighting & disbursement**
 
- 1. The Guild has no treasury allocation process, at least in the traditional sense. Instead, it cedes that to an objective time-weighting and trustless vesting mechanism. The intentional tradeoff to foreclose this decision space from ourselves gives us lower governance overhead/ possible contention, at the cost of lower weighting granularity and less flexibility in funding disbursement.
+* The Guild has no treasury allocation process, at least in the traditional sense. Instead, it cedes that to an objective time-weighting and trustless vesting mechanism. The intentional tradeoff to foreclose this decision space from ourselves gives us lower governance overhead/ possible contention, at the cost of lower weighting granularity and less flexibility in funding disbursement.
 
- 2. If you intend to distribute grants to specific grants/applicants, following the autonomous strategy may not make sense.
+* If you intend to distribute grants to specific grants/applicants, following the autonomous strategy may not make sense.
 
- 3. Do you want to take feature requests in exchange for funding? The Guild does not do this and may not be the right mechanism for your project. If you’re interested in funders having a say in disbursements, then check out simple Moloch DAOs where membership proposals must come with funding attached, and grant governance rights over the treasury.
+* Do you want to take feature requests in exchange for funding? The Guild does not do this and may not be the right mechanism for your project. If you’re interested in funders having a say in disbursements, then check out simple Moloch DAOs where membership proposals must come with funding attached, and grant governance rights over the treasury.
 
 6. **Independent of external governance outcomes**
 
- 1. The Guild is concerned with a very narrow scope: producing a list of contributors, and building norms around funding it as a mechanism. Inasmuch as there is one, the entity and its collective membership claims no ownership over Ethereum governance. Setting development goals is the purview of the community through existing venues like the All Core Dev calls, the R&D Discord, client teams, and forums (eg. [ethresear.ch](https://ethresear.ch/), [ETH Magicians](https://ethereum-magicians.org/))
+* The Guild is concerned with a very narrow scope: producing a list of contributors, and building norms around funding it as a mechanism. Inasmuch as there is one, the entity and its collective membership claims no ownership over Ethereum governance. Setting development goals is the purview of the community through existing venues like the All Core Dev calls, the R&D Discord, client teams, and forums (eg. [ethresear.ch](https://ethresear.ch/), [ETH Magicians](https://ethereum-magicians.org/))
 
- 2. For potential other Guild projects: Is funding coupled with long-term governance of the software the contributors produce? Approaching this is a much larger design space than the Guild attempts to address - any attempts should keep this in mind.
+* For potential other Guild projects: Is funding coupled with long-term governance of the software the contributors produce? Approaching this is a much larger design space than the Guild attempts to address - any attempts should keep this in mind.
 
 ---
 
