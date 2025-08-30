@@ -1,6 +1,6 @@
 ---
 title: 'Protocol Guild Plege'
-excerpt: 'A rough, quantitative framing of Protocol Guild's mission is to make contributing to Ethereum L1 R&D economically rational on a risk-adjusted basis, while avoiding capture.'
+excerpt: 'A rough, quantitative framing of Protocol Guild's mission is to make contributing to Ethereum L1 R&D economically rational on a risk-adjusted basis'
 coverImage: '/emojicover.png'
 date: '2024-01-30'
 ---
