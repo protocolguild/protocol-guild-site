@@ -2,8 +2,10 @@
 title: 'Capital and enclosure in software commons: Linux & Ethereum'
 excerpt: 'Entities which extract profits from software commons like Linux and Ethereum have the greatest incentive and capacity to co-opt them.'
 coverImage: '/capenclosurecover.png'
-date: '2024-08-28'
+date: '2024-01-08'
 ---
+
+Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw)
 
 Entities which extract profits from software commons like Linux and Ethereum have the greatest incentive and capacity to co-opt them.
 
