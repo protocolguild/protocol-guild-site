@@ -27,7 +27,7 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
         </div>
         <div className="p-4 flex-1 flex flex-col gap-2">
           <h2
-            className="text-xl md:text-3xl leading-[1.75rem] md:leading-[2rem] font-bold text-[var(--gray-dark)]"
+            className="text-xl md:text-3xl font-bold text-[var(--gray-dark)]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
