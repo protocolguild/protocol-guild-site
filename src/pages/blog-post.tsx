@@ -92,7 +92,7 @@ const BlogPost: FC = () => {
                   <div className="w-full text-center px-4">
                     <h1 className="text-5xl break-words">{post.title}</h1>
                     {formattedDate ? (
-                      <p className="text-3xl mt-2 text-[var(--gray-dark)]">
+                      <p className="text-xl mt-2 text-[var(--gray-dark)]">
                         {formattedDate}
                       </p>
                     ) : null}
