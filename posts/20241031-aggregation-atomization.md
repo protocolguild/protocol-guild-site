@@ -4,7 +4,7 @@ excerpt: 'The term "public goods" has been diluted - "dependency" might be bette
 coverImage: '/atomcover.png'
 date: '2024-10-31'
 ---
-Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/ia1sSXWw6Q_0gseWhPDpt0WbsOadCfQ-23yAxNn4sXA)
+*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/ia1sSXWw6Q_0gseWhPDpt0WbsOadCfQ-23yAxNn4sXA)*
 
 The term "public goods" has been diluted - "dependency" might be better. Round-based funding mechanisms incentivize atomization - how can we avoid this?
 
