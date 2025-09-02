@@ -5,6 +5,8 @@ coverImage: '/startguildcover.png'
 date: '2023-04-27'
 ---
 
+*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/DLYnuoCN-Hwuu0s4G_XZVdI-c2OD2KP3UAg_UFB9MpY)*
+
 Recently, more people have reached out expressing interest in creating a version of [Protocol Guild](https://protocol-guild.readthedocs.io/en/latest/) for their particular domain. This post is for anyone also considering a similar “commons infra guild.” It explores the primitives and characteristics central to the mechanism as well as their tradeoffs in other contexts.
 
 # Funding allocation primitives
