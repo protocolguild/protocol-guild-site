@@ -4,7 +4,7 @@ excerpt: 'Rough outline for an experimental new funding tool which provides recr
 coverImage: '/emojicover.png'
 date: '2021-12-31'
 ---
-Reposted with permission by Trent Van Epps, original [here](https://stateful.mirror.xyz/mEDvFXGCKdDhR-N320KRtsq60Y2OPk8rHcHBCFVryXY)
+*Reposted with permission by Trent Van Epps, original [here](https://stateful.mirror.xyz/mEDvFXGCKdDhR-N320KRtsq60Y2OPk8rHcHBCFVryXY)*
 
 *Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors - read the full proposal [here](https://protocol-guild.readthedocs.io/en/latest/index.html).*
 
