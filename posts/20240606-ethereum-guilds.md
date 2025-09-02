@@ -4,7 +4,7 @@ excerpt: 'Rough outline for an experimental new funding tool which provides recr
 coverImage: '/ethguildcover.png'
 date: '2024-06-06'
 ---
-*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw)*
+*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/MsXtV_TGZHp05FN_qmzeT8bBc1lRghR3Y0TPvAd-WrA)*
 
 *Protocol Guild's design and traction emerged from a unique context - attempts to replicate should keep this in mind: e.g. Dev Tooling Guild, Basic Infra Guild*
 
