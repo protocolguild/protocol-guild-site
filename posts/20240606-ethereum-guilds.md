@@ -1,9 +1,12 @@
+- Mobile rendering, cleaner
 ---
 title: 'Ethereum Guilds: opportunities + challenges'
 excerpt: 'Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors'
 coverImage: '/ethguildcover.png'
 date: '2024-06-06'
 ---
+*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw)*
+
 *Protocol Guild's design and traction emerged from a unique context - attempts to replicate should keep this in mind: e.g. Dev Tooling Guild, Basic Infra Guild*
 
 *Thanks to Tim beiko and Josh Davis for review*
