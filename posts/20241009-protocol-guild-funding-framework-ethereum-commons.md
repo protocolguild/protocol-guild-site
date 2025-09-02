@@ -5,11 +5,11 @@ coverImage: '/pgframeworkcover.png'
 date: '2024-10-09'
 ---
 
-Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/Lehny46ZMdxMEow0XE_RgowV2ntkp30chJRWPCEYbGQ)
+*Reposted with permission by Trent Van Epps, original [here](https://trent.mirror.xyz/Lehny46ZMdxMEow0XE_RgowV2ntkp30chJRWPCEYbGQ)*
 
-*Valuable resources are produced within the Ethereum commons. The way they are produced matters to their integrity. Protocol Guild is a stewardship funding protocol which upholds that integrity.
+*Valuable resources are produced within the Ethereum commons. The way they are produced matters to their integrity. Protocol Guild is a stewardship funding protocol which upholds that integrity.*
 
-Thanks to [Barnabé](https://x.com/barnabemonnot), [John](https://x.com/jszcz_), [Josh](https://x.com/TBSocialist), [Paul](https://x.com/post_polar_), and [Tim](https://x.com/TimBeiko) for review.*
+*Thanks to [Barnabé](https://x.com/barnabemonnot), [John](https://x.com/jszcz_), [Josh](https://x.com/TBSocialist), [Paul](https://x.com/post_polar_), and [Tim](https://x.com/TimBeiko) for review.*
 
 ***************************************
 
