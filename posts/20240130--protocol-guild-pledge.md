@@ -5,7 +5,7 @@ coverImage: '/emojicover.png'
 date: '2024-01-30'
 ---
 
-Reposted with permission by Tim Beiko, original [here](https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng)
+*Reposted with permission by Tim Beiko, original [here](https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng)*
 
 *Important caveats:* *This piece assumes context about Protocol Guild and narrowly focuses on its economic implications. For an introduction to PG, see [Cheeky Gorilla's EDCON talk](https://www.youtube.com/watch?v=ZhopXK6haL8). For a more philosophical read on its role, see Trent Van Epps's article on [Capital and Enclosure in Software Commons.](https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw)*
 
