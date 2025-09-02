@@ -1,4 +1,3 @@
-- Mobile rendering, cleaner
 ---
 title: 'Ethereum Guilds: opportunities + challenges'
 excerpt: 'Rough outline for an experimental new funding tool which provides recruitment, retention, and reward mechanisms of core protocol contributors'
