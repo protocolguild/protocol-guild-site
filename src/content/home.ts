@@ -5,7 +5,7 @@ export const homeContent = {
     subtitle2: "Our mission is to secure Ethereum’s future by funding core contributors."
   },
   section1: {
-    title: "Since 2022, we have distributed $28M directly to Ethereum core contributors.",
+    title: "Since 2022, we have distributed $33M directly to Ethereum core contributors.",
     quote: {
       text: "\"I love that Protocol Guild centers individual contributors ahead of organizations, and in doing so grants autonomy to all of the people working on Ethereum's base layer.\"",
       author: "Michael Sproul, Ethereum contributor at Lighthouse",
