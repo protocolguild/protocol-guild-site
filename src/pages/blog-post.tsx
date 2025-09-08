@@ -90,7 +90,9 @@ const BlogPost: FC = () => {
                     </div>
                   ) : null}
                   <div className="w-full text-center px-4">
-                    <h1 className="text-5xl break-words">{post.title}</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl hyphens-auto sm:hyphens-none text-balance">
+                      {post.title}
+                    </h1>
                     {formattedDate ? (
                       <p className="text-xl mt-2 text-[var(--gray-dark)]">
                         {formattedDate}
