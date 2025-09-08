@@ -12,7 +12,7 @@ export const donateContent = {
       },
       {
         title: "Align your project",
-        description: "Protocol Guild is the easiest and highest-signal way to support 189 core contributors across 47 core Ethereum repositories, from research to client implementations."
+        description: "Protocol Guild is the easiest and highest-signal way to support 176 core contributors across 47 core Ethereum repositories, from research to client implementations."
       },
       {
         title: "Trustless vesting",
