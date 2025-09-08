@@ -179,3 +179,18 @@ button:focus-visible {
 .prose :where(thead, tbody) tr:last-child td {
   border-bottom: 0;
 }
+
+/* Hyphenation utilities with responsive support */
+@layer utilities {
+  .hyphens-auto {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+  .hyphens-none {
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
