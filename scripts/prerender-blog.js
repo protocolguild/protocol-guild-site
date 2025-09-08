@@ -186,8 +186,25 @@ async function ensureDir(dirPath) {
 }
 
 async function main() {
+  // Allow CLI override via --site/--base/--url
+  const args = process.argv.slice(2)
+  let cliSiteArg = ''
+  for (let i = 0; i < args.length; i += 1) {
+    const a = args[i]
+    if (a === '--site') {
+      cliSiteArg = args[i + 1] || ''
+      break
+    }
+    const match = a.match(/^--site=(.*)$/)
+    if (match) {
+      cliSiteArg = match[1]
+      break
+    }
+  }
+
   const baseUrl = normalizeBaseUrl(
-    process.env.SITE_URL ||
+    cliSiteArg ||
+      process.env.SITE_URL ||
       process.env.VERCEL_PROJECT_PRODUCTION_URL ||
       process.env.VERCEL_URL ||
       ''
