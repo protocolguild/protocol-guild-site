@@ -5,8 +5,6 @@ coverImage: '/20240410-pilot-retrospective/PilotRetro.png'
 date: '2024-04-10'
 ---
 
-*This retro was written April 10th 2024*
-
 The Protocol Guild was initially launched as a 1-year pilot which ran from May 2022 until May 2023. The mechanism tied together new components and ideas like self-curation, time-weighting and eligibility frameworks, to create a novel collective funding mechanism for Ethereum's core protocol maintainers.
 
 At the time, the decision to establish a new funding mechanism might have appeared counterintuitive, considering Ethereum's ecosystem had already given birth to a suite of innovative funding programs. Some of these programs focused on distributing grants via DAO / token-holder voting (e.g. [ENS](https://research.lido.fi/), [Uniswap](https://gov.uniswap.org)), others leveraged [quadratic funding](https://wtfisqf.com/) (e.g. [Gitcoin](https://www.gitcoin.co/)), while others sought to recognize impact via [retroactive public goods funding](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c) (e.g. [Optimism RPGF](https://app.optimism.io/retropgf)).
