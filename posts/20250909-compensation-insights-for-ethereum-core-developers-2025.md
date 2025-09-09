@@ -143,7 +143,7 @@ Over the last three years, Protocol Guild has demonstrated its ability to provid
 - Average PG member distribution (Last 12 Months): $74,285
 - Median PG member distribution (Last 12 Months): $67,121
 - Cumulative Distributions since 2022: $32mm
-- Impact: PG represents nearly 1/3 of total compensation for the median member
+- Impact: PG represents nearly **1/3 of total compensation** for the median member
 
 Through inflows attributed to 1% Protocol Guild Pledge Partners, PG has emerged as a leading funder of Ethereum core developers. [Read more about the 1% pledge](https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng).
 
@@ -266,7 +266,7 @@ Survey data reveals Protocol Guild's fundamental importance to talent retention.
 
 *"Protocol Guild is of the utmost importance (for) retaining existing talent."* - survey respondent
 
-Importance Rating Distribution:
+#### Importance Rating Distribution:
 
 - Extremely important: 16%
 - Very important: 42%
