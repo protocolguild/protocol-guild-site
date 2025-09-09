@@ -341,12 +341,14 @@ For Ethereum to sustainably deliver its long-term roadmap, we must address compe
 8. What was the cash compensation of the largest offer? (base salary + bonus in USD terms, round to nearest $10,000)
 9. If your job offers came with a token or equity grant, what % of total equity or token supply was offered in the largest offer?
 10. What categories of projects did you receive offers from (check all that apply)
+    
   1. Other L1
   2. Rollup / L2
   3. Infrastructure
   4. Application
   5. Non-Crypto
   6. Other
+     
 11. At what amount of total compensation would you accept an offer to work elsewhere? (USD terms, round to nearest $10,000)
 12. How important is Protocol Guild membership to your decision to continue working on Ethereum core protocol development?
 13. Is there any context we should be aware of to understand your submission?
