@@ -79,7 +79,7 @@ Protocol Guild total membership (190)
 
 1.2 - Respondent Specializations
 
-![Figure 1.2](../public/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
+![Figure 1.2](/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
 
 Respondent Specializations
 
