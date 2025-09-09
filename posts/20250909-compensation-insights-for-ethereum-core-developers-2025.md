@@ -124,7 +124,7 @@ One of the most interesting findings is the absence of meaningful risk (equity &
 
 Due to the nature of their organization or business structure, employers of client teams are often not in the position to offer attractive, liquid equity or token packages with high potential upside. 
 
-This stands in stark contrast to the broader crypto industry, where equity or token allocations are standard and often substantial - see this [2023 Dragonfly compensation report](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4). To get a sense of where risk compensation falls among comparable opportunities, see average token or equity grants from the Dragonfly report (percent denominated), and Coinbase compensation breakdown (dollar denominated). 
+This stands in stark contrast to the broader crypto industry, where equity or token allocations are standard and often substantial - see this [2023 Dragonfly compensation report](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4). To get a sense of where risk compensation falls among comparable opportunities, see average token or equity grants from the Dragonfly report (percent denominated), and Coinbase compensation breakdown (dollar denominated);
 
 - [Average Token Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
 - [Average Equity Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
@@ -149,7 +149,6 @@ Total Compensation Picture:
 
 ![Figure 2.4](/Figure%202.4%20-%20Total%20Compensation%20(1).png)
 
-
 * * * * *
 
 ## Market Realities: What Developers Could Earn
@@ -168,20 +167,20 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 - *"If I weren't in PG, I would more seriously consider offered positions. Despite PG income not being significant today, I'm optimistic that in the future it can close the gap enough to not feel I'm making a big compromise."*
 - *"I haven't actively explored job opportunities because I love my job. But I do feel very underpaid. Especially considering inflation and cost of living, my salary hasn't been adjusted for that."*
 
-### Offer Types by Category
+#### Offer Types by Category
 
  ![](/Figure%203.1%20-%20Offer%20Types%20by%20Category.png)
 
-### Overall Cash Offer Compensation
+#### Overall Cash Offer Compensation
 
 -   Average: $359,074
 -   Median: $300,000
 
-### Cash Offers by Years of Experience ($)
+#### Cash Offers by Years of Experience ($)
 
 ![](/Figure%203.2%20-%20Cash%20Offers%20by%20YoE.png)
 
-### Offer Rate by Years of Experience
+#### Offer Rate by Years of Experience
 
 ![](/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
 
@@ -189,11 +188,11 @@ This can potentially be interpreted a few ways:
 - Contributors with less tenure/pay are more likely to explore other opportunities
 - Contributors with less tenure/pay are more likely to be headhunted by recruiters
 
-### Cash Offers by Specialization ($)
+#### Cash Offers by Specialization ($)
 
 ![](/Figure%203.4%20Cash%20Offers%20by%20Role.png)
 
-### Offer Rate by Specialization
+#### Offer Rate by Specialization
 
 ![](/Figure%203.5%20Offer%20Rate%20by%20Role.png)
 
@@ -219,7 +218,7 @@ The median respondent reported a 6.5% token and/or equity grant. It should be he
 
 The Cash Compensation Gap refers to the figures derived by subtracting the levels of current compensation (Ccur) from the level of competing offers (Coff) then dividing the difference by the level of current compensation (Ccur). This gap illustrates the financial opportunity cost core devs face by working on Ethereum.
 
-(Coff - Ccur) / Ccur
+***(Coff - Ccur) / Ccur***
 
 **Where:**
 - Coff = competing offer fiat compensation
@@ -283,8 +282,6 @@ Importance Rating Distribution:
 
 * * * * *
 
--------------
-
 ## Conclusion
 
 This report illustrates the critical funding challenges for Ethereum core development. In-demand skillsets and local knowledge coupled with a lack of sufficiently scaled, sustainable funding creates significant financial pressures from higher market compensation offers.
@@ -318,9 +315,7 @@ For Ethereum to sustainably deliver its long-term roadmap, we must address compe
 
 * * * * *
 
--------------
-
-##Appendices
+## Appendices
 
 ### Appendix I: Methodology
 
@@ -335,25 +330,25 @@ For Ethereum to sustainably deliver its long-term roadmap, we must address compe
 
 **Survey Questions:**
 
-1\. What is your primary role/specialization?
-2\. How many years of experience do you have working in that role? (Round to the nearest year)
-3\. Full/Partial Weight
-4\. What is your current annual cash compensation from your employer? (Do not include Protocol Guild, base salary + bonus in USD terms, round to nearest $10,000)
-5\. Do you receive vested equity OR token grants from your employer? (Do not include Protocol Guild)
-6\. What was your equity or token compensation from your employer in 2024? (Do not include Protocol Guild, USD terms, round to nearest $10,000)
-7\. Have you received any job offers in the past 12 months?
-8\. What was the cash compensation of the largest offer? (base salary + bonus in USD terms, round to nearest $10,000)
-9\. If your job offers came with a token or equity grant, what % of total equity or token supply was offered in the largest offer?
-10\. What categories of projects did you receive offers from (check all that apply)
-1.  Other L1
-2.  Rollup / L2
-3.  Infrastructure
-4.  Application
-5.  Non-Crypto
-6.  Other
-11\. At what amount of total compensation would you accept an offer to work elsewhere? (USD terms, round to nearest $10,000)
-12\. How important is Protocol Guild membership to your decision to continue working on Ethereum core protocol development?
-13\. Is there any context we should be aware of to understand your submission?
+1. What is your primary role/specialization?
+2. How many years of experience do you have working in that role? (Round to the nearest year)
+3. Full/Partial Weight
+4. What is your current annual cash compensation from your employer? (Do not include Protocol Guild, base salary + bonus in USD terms, round to nearest $10,000)
+5. Do you receive vested equity OR token grants from your employer? (Do not include Protocol Guild)
+6. What was your equity or token compensation from your employer in 2024? (Do not include Protocol Guild, USD terms, round to nearest $10,000)
+7. Have you received any job offers in the past 12 months?
+8. What was the cash compensation of the largest offer? (base salary + bonus in USD terms, round to nearest $10,000)
+9. If your job offers came with a token or equity grant, what % of total equity or token supply was offered in the largest offer?
+10. What categories of projects did you receive offers from (check all that apply)
+  1. Other L1
+  2. Rollup / L2
+  3. Infrastructure
+  4. Application
+  5. Non-Crypto
+  6. Other
+11. At what amount of total compensation would you accept an offer to work elsewhere? (USD terms, round to nearest $10,000)
+12. How important is Protocol Guild membership to your decision to continue working on Ethereum core protocol development?
+13. Is there any context we should be aware of to understand your submission?
 
 ### Appendix II: Limitations
 
@@ -613,7 +608,5 @@ $23,158
 * * * * *
 
 This report was prepared by Protocol Guild to provide transparency on compensation challenges facing Ethereum core development. For questions or additional analysis, please email <contact@protocolguild.org>.
-
-* * * * *
 
 **About Protocol Guild:** an independent funding organization that supports Ethereum's core protocol development through ongoing distributions to active contributors. Learn more at [protocolguild.org](http://www.protocolguild.org).
