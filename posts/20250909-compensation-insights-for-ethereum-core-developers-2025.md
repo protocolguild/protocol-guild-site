@@ -75,7 +75,7 @@ Protocol Guild total membership (190)
 
 1.1 - Respondent Years of Experience
 
-![Figure 1.1](../public/Figure11RespondentYoE.png)
+![Figure 1.1](/Figure11RespondentYoE.png)
 
 1.2 - Respondent Specializations
 
@@ -106,7 +106,7 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 2.1 Cash Compensation vs. Years of Experience (Total)
 
-![Figure 2.1](../public/Figure%202.1%20-%20Current%20Cash%20vs.%20YoE.png)
+![Figure 2.1](/Figure%202.1%20-%20Current%20Cash%20vs.%20YoE.png)
 
 2.2 Cash Compensation by Years of Experience ($)
 
@@ -120,7 +120,7 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 -   9+ Years: $150,000 median
 
-![Figure 2.2](../public/Figure%202.2%20-%20Current%20Cash%20by%20YoE.png)
+![Figure 2.2](/Figure%202.2%20-%20Current%20Cash%20by%20YoE.png)
 
 2.3 Cash Compensation by Specialization ($)
 
@@ -130,7 +130,7 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 -   Coordination: $130,000 median
 
-![Figure 2.3](../public/Figure%202.3%20-%20Current%20Cash%20by%20Role.png)
+![Figure 2.3](/Figure%202.3%20-%20Current%20Cash%20by%20Role.png)
 
 ### Token & Equity Compensation
 
@@ -176,7 +176,7 @@ Total Compensation Picture:
 
 2.4 Total Compensation ($)
 
-![Figure 2.4](../public/Figure%202.4%20-%20Total%20Compensation%20(1).png)
+![Figure 2.4](/Figure%202.4%20-%20Total%20Compensation%20(1).png)
 
 
 * * * * *
@@ -206,7 +206,7 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 
 ### Offer Types by Category
 
- ![](../public/Figure%203.1%20-%20Offer%20Types%20by%20Category.png)
+ ![](/Figure%203.1%20-%20Offer%20Types%20by%20Category.png)
 
 ### Overall Cash Offer Compensation
 
@@ -216,11 +216,11 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 
 Cash Offers by Years of Experience ($)
 
-![](../public/Figure%203.2%20-%20Cash%20Offers%20by%20YoE.png)
+![](/Figure%203.2%20-%20Cash%20Offers%20by%20YoE.png)
 
 Offer Rate by Years of Experience
 
-![](../public/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
+![](/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
 
 This can potentially be interpreted a few ways:
 
@@ -230,11 +230,11 @@ This can potentially be interpreted a few ways:
 
 Cash Offers by Specialization ($)
 
-![](../public/Figure%203.4%20Cash%20Offers%20by%20Role.png)
+![](/Figure%203.4%20Cash%20Offers%20by%20Role.png)
 
 Offer Rate by Specialization
 
-![](../public/Figure%203.5%20Offer%20Rate%20by%20Role.png)
+![](/Figure%203.5%20Offer%20Rate%20by%20Role.png)
 
 ### Offer Token/Equity Compensation Analysis
 
@@ -281,11 +281,11 @@ Translation: Ethereum core developers are earning roughly half of the cash compe
 
 Cash Compensation Gap by Years of Experience ($)
 
-![](../public/Figure%204.1%20-%20Cash%20Gap%20by%20YoE.png)
+![](/Figure%204.1%20-%20Cash%20Gap%20by%20YoE.png)
 
 Cash Compensation Gap by Specialization ($)
 
-![](../public/Figure%204.2%20-%20Cash%20Gap%20by%20Role.png)
+![](/Figure%204.2%20-%20Cash%20Gap%20by%20Role.png)
 
 ### Token & Equity Gap
 
@@ -326,17 +326,17 @@ Importance Rating Distribution:
 
 -   Not important: 0%
 
-![](../public/Figure%205.1%20-%20Importance%20Rating%20Distribution.png)
+![](/Figure%205.1%20-%20Importance%20Rating%20Distribution.png)
 
 Key Insight: 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum.
 
 Protocol Guild Importance by Specialization
 
-![](../public/Figure%205.2%20-%20Importance%20by%20YoE.png)
+![](/Figure%205.2%20-%20Importance%20by%20YoE.png)
 
 Protocol Guild Importance by Years of Experience
 
-![](../public/Figure%205.3%20-%20Importance%20by%20Role.png)
+![](/Figure%205.3%20-%20Importance%20by%20Role.png)
 
 * * * * *
 
