@@ -52,12 +52,12 @@ The following data shows how the respondent base broke down by years of experien
 ### Member Tenure
 
 Survey Respondents (111)
--   Average: 4.3 years
--   Median: 4.0 years
+- Average: 4.3 years
+- Median: 4.0 years
 
 Protocol Guild total membership (190)
--   Average: 3.7 years
--   Median: 3.3 years
+- Average: 3.7 years
+- Median: 3.3 years
 
 #### 1.1 - Respondent Years of Experience
 
