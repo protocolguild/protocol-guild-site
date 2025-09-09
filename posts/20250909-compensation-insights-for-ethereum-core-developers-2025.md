@@ -63,11 +63,12 @@ Protocol Guild total membership (190)
 
 ![Figure 1.1](/Figure11RespondentYoE.png)
 
+### Respondent Specializations
+
 #### 1.2 - Respondent Specializations
 
 ![Figure 1.2](/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
 
-### Respondent Specializations
 - Client Development: the engineering work to maintain Execution and Consensus client implementations, helps to scope network upgrades
 - Research: new constructions or features that improve scalability, censorship resistance or permissionless access for ethereum resources
 - Coordination: specifications, governance, network releases, All Core Dev calls, engaging the broader community on priorities
@@ -119,8 +120,8 @@ One of the most interesting findings is the absence of meaningful risk (equity &
 
 - Only 37% receive any equity or token grants from their current employers
 - Equity compensation 
-- Median, across all respondents: $0
-- Average, for those that do receive: $19,000 annually
+  - Median, across all respondents: $0
+  - Average, for those that do receive: $19,000 annually
 
 Due to the nature of their organization or business structure, employers of client teams are often not in the position to offer attractive, liquid equity or token packages with high potential upside. 
 
