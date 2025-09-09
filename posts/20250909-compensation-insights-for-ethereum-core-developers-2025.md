@@ -7,47 +7,37 @@ date: '2025-09-09'
 
 * * * * *
 
-Summary
--------
+## Summary
 
-Core developers pass up at least 50% of their market value to maintain crucial ecosystem software. Protocol Guild facilitates significant funding to help reduce this gap and retain talent long term.
+**Core developers pass up at least 50% of their market value to maintain crucial ecosystem software. Protocol Guild facilitates significant funding to help reduce this gap and retain talent long term.**
 
 This report examines compensation data from a majority of Ethereum's core protocol contributors across 13 different orgs, revealing significant gaps between their current compensation and potential market earnings. While many members prioritize working on values-aligned projects, inadequate compensation is a risk to talent retention, the progress of Ethereum's technical roadmap, and long-term credible neutrality. As the leading independent funder of core development, Protocol Guild plays an increasingly important role in addressing this challenge - but there's still significant work to be done. Ecosystem funding entities should understand this as a serious challenge and focus on finding scalable solutions to close the compensation gap.
 
-Takeaways:
+### Takeaways:
 
-1.  High Demand: Nearly 40% of contributors received final offers from outside employment opportunities in the past year
-
-2.  Massive Pay Gap: Current fiat compensation (salary + bonus) is 50-60% below market offers
-
-3.  No Upside Exposure: The median contributor earns $0 in equity/tokens as part of their regular employment
-
-4.  Critical Lifeline: Protocol Guild funding made up almost 1/3 of the total compensation package for core contributors over the past year
-
-5.  Retention Boon: Protocol Guild funding is rated as "very/extremely important" by 59% of members to support their ongoing work
+1. High Demand: Nearly **40% of contributors received final offers** from outside employment opportunities in the past year
+2. Massive Pay Gap: Current fiat compensation (salary + bonus) is **50-60% below market offers**
+3. No Upside Exposure: The median contributor earns **$0 in equity/tokens** as part of their regular employment
+4. Critical Lifeline: Protocol Guild funding made up almost **1/3 of the total compensation** package for core contributors over the past year
+5. Retention Boon: Protocol Guild funding is rated as **"very/extremely important" by 59% of members** to support their ongoing work
 
 * * * * *
 
-Introduction
-============
+## Introduction
 
 Ethereum core development is the ongoing process of enhancing and evolving the underlying software and protocol that power the Ethereum blockchain. A diverse set of stakeholders deliver improvements to scalability, security, and functionality through research, design, and implementation of EIPs.
 
-This report was produced by [Protocol Guild](http://www.protocolguild.org), the leading independent funding organization for ~190 Ethereum core developers. The organization enables the ecosystem to directly fund all the individuals building our shared infrastructure - largely through a norm called the 1% Pledge. In a strategic and generous gesture, projects like EigenLayer, Ether.fi, Taiko, Puffer and others have contributed 1% of their token supply. Read more about the 1% Pledge [here](https://www.protocolguild.org/blog/20240130--protocol-guild-pledge).
+This report was produced by [Protocol Guild](http://www.protocolguild.org), the leading independent funding organization for ~190 Ethereum core developers. The organization enables the ecosystem to directly fund all the individuals building our shared infrastructure - largely through a norm called the 1% Pledge. In a strategic and generous gesture, projects like EigenLayer, Ether.fi, Taiko, Puffer and others have contributed 1% of their token supply. Read more about the 1% Pledge [here](https://www.protocolguild.org/blog/20240130-protocol-guild-pledge).
 
-Since Pilot launch in May 2022, Protocol Guild has distributed over $32mm of funding directly to Ethereum's core protocol contributors. The median member has received $66k over the last 12 months. Any funding sent by the ecosystem vests onchain over 4 years: these realtime, transparent distributions can be tracked via [this Dune dashboard](https://dune.com/protocolguild/protocol-guild). Protocol Guild does not employ these core protocol contributors. The direct funding they receive today is a supplement on top of their regular employment, focused on addressing the lack of risk (token and/or equity) compensation they might typically receive in a different role. The commercial entities which are the employers and fiscal hosts of core devs typically do not have direct ways to monetize this software work. Instead, they manifest as cost centers in large orgs, sometimes are used as in-house expertise for their own blockchain ventures, or have adjacent services built around them (eg. security, consulting, auditing, chain-specific releases), or scrape by on minimal grants funding.
+Since Pilot launch in May 2022, Protocol Guild has distributed over **$32mm of funding** directly to Ethereum's core protocol contributors. The median member has received **$66k over the last 12 months**. Any funding sent by the ecosystem vests onchain over 4 years: these realtime, transparent distributions can be tracked via [this Dune dashboard](https://dune.com/protocolguild/protocol-guild). Protocol Guild does not employ these core protocol contributors. The direct funding they receive today is a supplement on top of their regular employment, focused on addressing the lack of risk (token and/or equity) compensation they might typically receive in a different role. The commercial entities which are the employers and fiscal hosts of core devs typically do not have direct ways to monetize this software work. Instead, they manifest as cost centers in large orgs, sometimes are used as in-house expertise for their own blockchain ventures, or have adjacent services built around them (eg. security, consulting, auditing, chain-specific releases), or scrape by on minimal grants funding.
 
-In Q2 2025, Protocol Guild surveyed its membership to understand compensation levels, offer dynamics, and how the supplied funding facilitates talent retention. Anecdotally, it has been long known that these individuals were underpaid relative to market benchmarks. This has a number of downstream effects:
+In Q2 2025, Protocol Guild surveyed its membership to understand compensation levels, offer dynamics, and how the supplied funding facilitates talent retention. Anecdotally, it has been long known that these individuals were **underpaid relative to market benchmarks**. This has a number of downstream effects:
 
--   Limits Ethereum's ability to compete for talent. Does not expose our talent pool to the maximum range of available talent.
-
--   Increases churn, weakens the Ethereum political economy and makes the institutional memory less robust
-
--   Potentially makes client teams more likely to be acquired by larger entities
-
--   In the extreme, makes the Ethereum upgrade delivery process slower
-
--   In the extreme, may make core devs more susceptible to payments for influence or soft influence
+- Limits Ethereum's ability to compete for talent. Does not expose our talent pool to the maximum range of available talent.
+- Increases churn, weakens the Ethereum political economy and makes the institutional memory less robust
+- Potentially makes client teams more likely to be acquired by larger entities
+- In the extreme, makes the Ethereum upgrade delivery process slower
+- In the extreme, may make core devs more susceptible to payments for influence or soft influence
 
 This survey quantifies that undercompensation and explores how Protocol Guild helps close it, both now and in the future. With 111 responses from 190 total Protocol Guild members (a 58% response rate), this is the most comprehensive compensation analysis of Ethereum core development talent to date. It should be noted that there will be outliers or exceptions to this report within broader Ethereum core development (eg. in total ~200 to 300 contributors with roles that sometimes overlap but are typically broader than the core protocol) not adequately represented by the data here.
 
