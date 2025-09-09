@@ -1,7 +1,7 @@
 ---
 title: 'Compensation Insights for Ethereum Core Developers'
 excerpt: 'This report examines compensation data from a majority of Ethereum’s core protocol contributors, revealing significant gaps between their current compensation and potential market earnings.'
-coverImage: '/compreportcover25.png'
+coverImage: '/frame.png'
 date: '2025-09-09'
 ---
 
