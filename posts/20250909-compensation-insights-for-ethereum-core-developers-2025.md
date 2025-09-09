@@ -373,7 +373,7 @@ It goes without saying that Protocol Guild would not be where it is today withou
 
 These donations have enabled core contributors to focus on improving user experience, security, and scalability of the Ethereum network as it continues to push the boundaries for what is capable onchain. This report builds on the foundation that donors have established, and continued progress depends on the generosity and foresight of those who understand the vital importance of funding this infrastructure.
 
-Please recognize the top Protocol Guild donors, ranked by current value vesting:
+Please recognize the top Protocol Guild donors, ranked by current value vesting (excludes donations by projects which have already finished vesting):
 
 | Donor                                                                 | Value Vesting   |
 |-----------------------------------------------------------------------|------------------|
