@@ -13,7 +13,7 @@ date: '2025-09-09'
 
 This report examines compensation data from a majority of Ethereum's core protocol contributors across 13 different orgs, revealing significant gaps between their current compensation and potential market earnings. While many members prioritize working on values-aligned projects, inadequate compensation is a risk to talent retention, the progress of Ethereum's technical roadmap, and long-term credible neutrality. As the leading independent funder of core development, Protocol Guild plays an increasingly important role in addressing this challenge - but there's still significant work to be done. Ecosystem funding entities should understand this as a serious challenge and focus on finding scalable solutions to close the compensation gap.
 
-### Takeaways:
+### Takeaways
 
 1. High Demand: Nearly **40% of contributors received final offers** from outside employment opportunities in the past year
 2. Massive Pay Gap: Current fiat compensation (salary + bonus) is **50-60% below market offers**
@@ -45,46 +45,39 @@ Please refer to the Appendices at the end of the report for methodology/survey q
 
 * * * * *
 
-Who Are Ethereum's Core Developers?
+## Who Are Ethereum's Core Developers?
 
 The following data shows how the respondent base broke down by years of experience (1-2, 3-4, 5-6, 7-8, or 9+ years) and specialization (client development, research, or coordination) as well as in comparison to overall Protocol Guild makeup. Please note that individuals often work across areas of specialization, and responses indicate a general focus.
 
-Member Tenure
+### Member Tenure
 
 Survey Respondents (111)
-
 -   Average: 4.3 years
-
 -   Median: 4.0 years
 
 Protocol Guild total membership (190)
-
 -   Average: 3.7 years
-
 -   Median: 3.3 years
 
-1.1 - Respondent Years of Experience
+#### 1.1 - Respondent Years of Experience
 
 ![Figure 1.1](/Figure11RespondentYoE.png)
 
-1.2 - Respondent Specializations
+#### 1.2 - Respondent Specializations
 
 ![Figure 1.2](/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
 
-Respondent Specializations
-
--   Client Development: the engineering work to maintain Execution and Consensus client implementations, helps to scope network upgrades
-
--   Research: new constructions or features that improve scalability, censorship resistance or permissionless access for ethereum resources
-
--   Coordination: specifications, governance, network releases, All Core Dev calls, engaging the broader community on priorities
+#### Respondent Specializations
+- Client Development: the engineering work to maintain Execution and Consensus client implementations, helps to scope network upgrades
+- Research: new constructions or features that improve scalability, censorship resistance or permissionless access for ethereum resources
+- Coordination: specifications, governance, network releases, All Core Dev calls, engaging the broader community on priorities
 
 * * * * *
 
-Current Compensation
---------------------
+## Current Compensation
 
-### Current compensation refers to the aggregate funding that core contributors currently receive via their employer and Protocol Guild. This measure considers the last 12 months, including breakdowns for compensation types: cash (salary and bonus denominated in fiat) and risk (tokens and/or liquid equity).
+
+Current compensation refers to the aggregate funding that core contributors currently receive via their employer and Protocol Guild. This measure considers the last 12 months, including breakdowns for compensation types: cash (salary and bonus denominated in fiat) and risk (tokens and/or liquid equity).
 
 ### Cash Compensation
 
