@@ -67,7 +67,7 @@ Protocol Guild total membership (190)
 
 ![Figure 1.2](/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
 
-#### Respondent Specializations
+### Respondent Specializations
 - Client Development: the engineering work to maintain Execution and Consensus client implementations, helps to scope network upgrades
 - Research: new constructions or features that improve scalability, censorship resistance or permissionless access for ethereum resources
 - Coordination: specifications, governance, network releases, All Core Dev calls, engaging the broader community on priorities
@@ -76,22 +76,20 @@ Protocol Guild total membership (190)
 
 ## Current Compensation
 
-
 Current compensation refers to the aggregate funding that core contributors currently receive via their employer and Protocol Guild. This measure considers the last 12 months, including breakdowns for compensation types: cash (salary and bonus denominated in fiat) and risk (tokens and/or liquid equity).
 
 ### Cash Compensation
 
 The foundation of any compensation package is base salary, as well as bonuses, denominated in fiat - referred to in this report as "cash". Respondents were asked to report their cash compensation. Note: there may be some outliers towards the bottom of the chart because Protocol Guild has part-time and full-time members who may have answered the survey differently.
 
--   Average: $157,939
+- Average: $157,939
+- Median: $140,000
 
--   Median: $140,000
-
-2.1 Cash Compensation vs. Years of Experience (Total)
+#### 2.1 Cash Compensation vs. Years of Experience (Total)
 
 ![Figure 2.1](/Figure%202.1%20-%20Current%20Cash%20vs.%20YoE.png)
 
-2.2 Cash Compensation by Years of Experience ($)
+#### 2.2 Cash Compensation by Years of Experience ($)
 
 -   1-2 Years: $135,000 median
 
@@ -105,7 +103,7 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 ![Figure 2.2](/Figure%202.2%20-%20Current%20Cash%20by%20YoE.png)
 
-2.3 Cash Compensation by Specialization ($)
+#### 2.3 Cash Compensation by Specialization ($)
 
 -   Client Development: $130,000 median
 
@@ -119,13 +117,10 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 One of the most interesting findings is the absence of meaningful risk (equity & token) upside for most core developer respondents:
 
--   Only 37% receive any equity or token grants from their current employers
-
--   Equity compensation 
-
--   Median, across all respondents: $0
-
--   Average, for those that do receive: $19,000 annually
+- Only 37% receive any equity or token grants from their current employers
+- Equity compensation 
+- Median, across all respondents: $0
+- Average, for those that do receive: $19,000 annually
 
 Due to the nature of their organization or business structure, employers of client teams are often not in the position to offer attractive, liquid equity or token packages with high potential upside. 
 
@@ -141,51 +136,39 @@ This stands in stark contrast to the broader crypto industry, where equity or to
 
 Over the last three years, Protocol Guild has demonstrated its ability to provide the risk portion of employment packages and allow core developers to participate in some of the broader ecosystem's upside. When combined with survey data on employer compensation, data from [Dune](https://dune.com/protocolguild/protocol-guild) shows that Protocol Guild distributions have become a substantial portion of total core contributor compensation.
 
--   Average PG member distribution (Last 12 Months): $74,285
-
--   Median PG member distribution (Last 12 Months): $67,121
-
--   Cumulative Distributions since 2022: $32mm
-
--   Impact: PG represents nearly 1/3 of total compensation for the median member
+- Average PG member distribution (Last 12 Months): $74,285
+- Median PG member distribution (Last 12 Months): $67,121
+- Cumulative Distributions since 2022: $32mm
+- Impact: PG represents nearly 1/3 of total compensation for the median member
 
 Through inflows attributed to 1% Protocol Guild Pledge Partners, PG has emerged as a leading funder of Ethereum core developers. [Read more about the 1% pledge](https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng).
 
 Total Compensation Picture:
+- With employer only: $140,000 median
+- Including Protocol Guild: $207,121 median (+48%)
 
--   With employer only: $140,000 median
-
--   Including Protocol Guild: $207,121 median (+48%)
-
-2.4 Total Compensation ($)
+#### 2.4 Total Compensation ($)
 
 ![Figure 2.4](/Figure%202.4%20-%20Total%20Compensation%20(1).png)
 
 
 * * * * *
 
-Market Realities: What Developers Could Earn
---------------------------------------------
+## Market Realities: What Developers Could Earn
 
 ### The Offer Landscape
 
 The competitive talent market for Ethereum developers is very active:
-
--   38% of members received and explored job offers in the past 12 months
-
--   108 total offers across 42 respondents
-
--   Primary competition from Layer 2s and other Layer 1s. Please note that this data only includes those who received final offers. Those who did not explore offer opportunities and explorations that did not reach the final offer stage are not reflected in the dataset.
+- 38% of members received and explored job offers in the past 12 months
+- 108 total offers across 42 respondents
+- Primary competition from Layer 2s and other Layer 1s. Please note that this data only includes those who received final offers. Those who did not explore offer opportunities and explorations that did not reach the final offer stage are not reflected in the dataset.
 
 Qualitative responses from the survey give us insight into how Protocol Guild members weight their mission against higher pay:
 
--   "I received an offer of 700,000 USD/year total compensation. However, I did not even start the process because I (right now) prefer to work in ETH L1 with a lower compensation." 
-
--   "I don't want any other job at the moment... It's more of the project rather than receiving more money."
-
--   "If I weren't in PG, I would more seriously consider offered positions. Despite PG income not being significant today, I'm optimistic that in the future it can close the gap enough to not feel I'm making a big compromise."
-
--   "I haven't actively explored job opportunities because I love my job. But I do feel very underpaid. Especially considering inflation and cost of living, my salary hasn't been adjusted for that."
+- *"I received an offer of 700,000 USD/year total compensation. However, I did not even start the process because I (right now) prefer to work in ETH L1 with a lower compensation."*
+- *"I don't want any other job at the moment... It's more of the project rather than receiving more money."*
+- *"If I weren't in PG, I would more seriously consider offered positions. Despite PG income not being significant today, I'm optimistic that in the future it can close the gap enough to not feel I'm making a big compromise."*
+- *"I haven't actively explored job opportunities because I love my job. But I do feel very underpaid. Especially considering inflation and cost of living, my salary hasn't been adjusted for that."*
 
 ### Offer Types by Category
 
@@ -194,28 +177,25 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 ### Overall Cash Offer Compensation
 
 -   Average: $359,074
-
 -   Median: $300,000
 
-Cash Offers by Years of Experience ($)
+### Cash Offers by Years of Experience ($)
 
 ![](/Figure%203.2%20-%20Cash%20Offers%20by%20YoE.png)
 
-Offer Rate by Years of Experience
+### Offer Rate by Years of Experience
 
 ![](/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
 
 This can potentially be interpreted a few ways:
+- Contributors with less tenure/pay are more likely to explore other opportunities
+- Contributors with less tenure/pay are more likely to be headhunted by recruiters
 
--   Contributors with less tenure/pay are more likely to explore other opportunities
-
--   Contributors with less tenure/pay are more likely to be headhunted by recruiters
-
-Cash Offers by Specialization ($)
+### Cash Offers by Specialization ($)
 
 ![](/Figure%203.4%20Cash%20Offers%20by%20Role.png)
 
-Offer Rate by Specialization
+### Offer Rate by Specialization
 
 ![](/Figure%203.5%20Offer%20Rate%20by%20Role.png)
 
@@ -223,101 +203,83 @@ Offer Rate by Specialization
 
 While most current core developer employers don't offer significant risk compensation in the form of tokens or equity, the broader market does. From a respondent:
 
-"Majority of startups/bigger companies offer equity. PG is the equivalent of that for eth core devs so it is very important to continue improving it so it can better match equity packages across the software engineering industry as a whole."
+*"Majority of startups/bigger companies offer equity. PG is the equivalent of that for eth core devs so it is very important to continue improving it so it can better match equity packages across the software engineering industry as a whole."*
 
 One of the key differentiators of crypto compensation is that, due to the nature of onchain capital formation, workers can experience liquidity events for early-stage token and equity holdings tied to projects they contribute to at a rate that is significantly higher than public markets, pulling total compensation to the upside.
 
 The median respondent reported a 6.5% token and/or equity grant. It should be heavily caveated that this answer drew a small number of total responses (10). These offers came in at two distinct levels: cofounder level (10%-30%, possible heavy further dilution, 5 respondents) and early employee level (0.1%-3.0%, less likely to be diluted, 5 respondents). The latter aligns with the ranges reported in Dragonfly's compensation report.
 
--   Median equity grant offered: 6.5%
-
--   Primary sources: commercial entities developing L1s and L2 protocols
-
--   Represents substantial potential upside beyond cash compensation
+- Median equity grant offered: 6.5%
+- Primary sources: commercial entities developing L1s and L2 protocols
+- Represents substantial potential upside beyond cash compensation
 
 * * * * *
 
-The Compensation Gap: Quantifying Opportunity Cost
---------------------------------------------------
+## The Compensation Gap: Quantifying Opportunity Cost
 
 ### Cash Compensation Gap
 
 The Cash Compensation Gap refers to the figures derived by subtracting the levels of current compensation (Ccur) from the level of competing offers (Coff) then dividing the difference by the level of current compensation (Ccur). This gap illustrates the financial opportunity cost core devs face by working on Ethereum.
 
-Coff - CcurCcur
+(Coff - Ccur) / Ccur
 
-Where:
+**Where:**
+- Coff = competing offer fiat compensation
+- Ccur = current fiat compensation
 
--   Coff = competing offer fiat compensation
+**For All Members:**
+- Current median: $140,000
+- Offer median: $300,000
+- Gap: $160,000 (114%)
 
--   Ccur = current fiat compensation
+Translation: Ethereum core developers are earning roughly **half** of the cash compensation available to them via recruitment offers.
 
-For All Members:
-
--   Current median: $140,000
-
--   Offer median: $300,000
-
--   Gap: $160,000 (114%)
-
-Translation: Ethereum core developers are earning roughly half of the cash compensation available to them via recruitment offers.
-
-Cash Compensation Gap by Years of Experience ($)
+#### Cash Compensation Gap by Years of Experience ($)
 
 ![](/Figure%204.1%20-%20Cash%20Gap%20by%20YoE.png)
 
-Cash Compensation Gap by Specialization ($)
+#### Cash Compensation Gap by Specialization ($)
 
 ![](/Figure%204.2%20-%20Cash%20Gap%20by%20Role.png)
 
 ### Token & Equity Gap
 
 Beyond cash, there's a massive gap in upside participation:
+- Current token & equity exposure: $0 median (outside Protocol Guild)
+- Protocol Guild: $67,121 median
+- Market equity offers: 6.5% median grant -- this represents potentially millions in upside for successful protocols
 
--   Current token & equity exposure: $0 median (outside Protocol Guild)
-
--   Protocol Guild: $67,121 median
-
--   Market equity offers: 6.5% median grant -- this represents potentially millions in upside for successful protocols
-
-Total Compensation Gap
-
--   Cash Compensation Gap: $160,000 median
-
--   Token/Equity Gap: $67,121 median token/equity compensation via employer and Protocol Guild vs. 6.5% median token and/or equity grant
+### Total Compensation Gap
+- Cash Compensation Gap: $160,000 median
+- Token/Equity Gap: $67,121 median token/equity compensation via employer and Protocol Guild vs. 6.5% median token and/or equity grant
 
 * * * * *
 
-Protocol Guild's Critical Role
-------------------------------
+## Protocol Guild's Critical Role
 
 ### Retention Impact
 
 Survey data reveals Protocol Guild's fundamental importance to talent retention. One point of interest will be to note levels of importance reported as funding levels change.
 
-"Protocol Guild is of the utmost importance (for) retaining existing talent." - survey respondent
+*"Protocol Guild is of the utmost importance (for) retaining existing talent."* - survey respondent
 
 Importance Rating Distribution:
 
--   Extremely important: 16%
-
--   Very important: 42%
-
--   Moderately important: 32%
-
--   Slightly important: 9%
-
--   Not important: 0%
+- Extremely important: 16%
+- Very important: 42%
+- Moderately important: 32%
+- Slightly important: 9%
+- Not important: 0%
 
 ![](/Figure%205.1%20-%20Importance%20Rating%20Distribution.png)
 
-Key Insight: 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum.
+**Key Insight:** 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum.
 
-Protocol Guild Importance by Specialization
+#### Protocol Guild Importance by Specialization
 
 ![](/Figure%205.2%20-%20Importance%20by%20YoE.png)
 
-Protocol Guild Importance by Years of Experience
+#### Protocol Guild Importance by Years of Experience
 
 ![](/Figure%205.3%20-%20Importance%20by%20Role.png)
 
@@ -325,8 +287,7 @@ Protocol Guild Importance by Years of Experience
 
 -------------
 
-Conclusion
-----------
+## Conclusion
 
 This report illustrates the critical funding challenges for Ethereum core development. In-demand skillsets and local knowledge coupled with a lack of sufficiently scaled, sustainable funding creates significant financial pressures from higher market compensation offers.
 
@@ -334,26 +295,20 @@ This report illustrates the critical funding challenges for Ethereum core develo
 
 Protocol Guild has emerged as a critical piece of economic infrastructure for Ethereum (already funding nearly ⅓ of the total compensation for the median member) that:
 
--   Introduces some predictability through delayed release of a 4 yr vest funding mechanism
-
--   Aligns core developer incentives with the Ethereum ecosystem's long-term success
-
--   Creates equity-like upside today without needing traditional corporate structures (and potentially stable comp in the future)
-
--   Demonstrates ecosystem commitment to core development
+- Introduces some predictability through delayed release of a 4 yr vest funding mechanism
+- Aligns core developer incentives with the Ethereum ecosystem's long-term success
+- Creates equity-like upside today without needing traditional corporate structures (and potentially stable comp in the future)
+- Demonstrates ecosystem commitment to core development
 
 By continuing to enact the norm of 1% Protocol Guild pledges, as projects like EigenLayer, Ether.Fi, Taiko & others have, the ecosystem can collectively ensure the foundation it is building upon maintains stability and continues to thrive.
 
-An Emerging Economic Polity\
+### An Emerging Economic Polity
 Ethereum's success has created unprecedented opportunities in the broader crypto ecosystem: 
 
--   Nearly [$1 Trillion](https://ultrasound.money/) in value secured by Ethereum
-
--   [Millions of users](https://www.growthepie.com/fundamentals/daily-active-addresses) expressing digital property rights
-
--   [Thousands of protocols and applications](https://defillama.com/chain/ethereum) depending on core protocol improvements
-
--   [Global financial infrastructure](https://www.cnbc.com/2025/08/02/ethereum-turns-10-from-scrappy-experiment-to-wall-streets-invisible-backbone.html) being built on Ethereum rails
+- Nearly [$1 Trillion](https://ultrasound.money/) in value secured by Ethereum
+- [Millions of users](https://www.growthepie.com/fundamentals/daily-active-addresses) expressing digital property rights
+- [Thousands of protocols and applications](https://defillama.com/chain/ethereum) depending on core protocol improvements
+- [Global financial infrastructure](https://www.cnbc.com/2025/08/02/ethereum-turns-10-from-scrappy-experiment-to-wall-streets-invisible-backbone.html) being built on Ethereum rails
 
 Ethereum has been described by many metaphors - world computer, infinite garden, and [neutral ocean infra](https://x.com/trent_vanepps/status/1483266014087417856). A recent report from Fidelity introduced the frame of "[emerging economy](https://x.com/trent_vanepps/status/1483266014087417856)". As the ecosystem continues to mature, are we adequately investing in infrastructure and defense funding? Perhaps we should target the [Singaporean compensation model](https://www.nas.gov.sg/archivesonline/data/pdfdoc/2000063010.htm), where salaries for public servants are anchored to private market rates to attract and retain the best.
 
@@ -367,79 +322,51 @@ For Ethereum to sustainably deliver its long-term roadmap, we must address compe
 
 -------------
 
-Appendices
-----------
+##Appendices
 
-Appendix I: Methodology
+### Appendix I: Methodology
 
-Survey Details:
-------------------------------------------
+**Survey Details:**
 
--   Response Rate: 114 of 190 Protocol Guild members (60%)
+- Response Rate: 114 of 190 Protocol Guild members (60%)
+- Time Period: Q2 2025
+- Geographic Scope: Global
+- Compensation Period: Past 12 months
 
--   Time Period: Q2 2025
+**Data Collection:** All compensation figures converted to USD. Cash compensation rounded to nearest $10,000. Token/equity grants reported as percentages when possible.
 
--   Geographic Scope: Global
-
--   Compensation Period: Past 12 months
-
-Data Collection: All compensation figures converted to USD. Cash compensation rounded to nearest $10,000. Token/equity grants reported as percentages when possible.
-
-Survey Questions:
+**Survey Questions:**
 
 1\. What is your primary role/specialization?
-
 2\. How many years of experience do you have working in that role? (Round to the nearest year)
-
 3\. Full/Partial Weight
-
 4\. What is your current annual cash compensation from your employer? (Do not include Protocol Guild, base salary + bonus in USD terms, round to nearest $10,000)
-
 5\. Do you receive vested equity OR token grants from your employer? (Do not include Protocol Guild)
-
 6\. What was your equity or token compensation from your employer in 2024? (Do not include Protocol Guild, USD terms, round to nearest $10,000)
-
 7\. Have you received any job offers in the past 12 months?
-
 8\. What was the cash compensation of the largest offer? (base salary + bonus in USD terms, round to nearest $10,000)
-
 9\. If your job offers came with a token or equity grant, what % of total equity or token supply was offered in the largest offer?
-
 10\. What categories of projects did you receive offers from (check all that apply)
-
 1.  Other L1
-
 2.  Rollup / L2
-
 3.  Infrastructure
-
 4.  Application
-
 5.  Non-Crypto
-
 6.  Other
-
 11\. At what amount of total compensation would you accept an offer to work elsewhere? (USD terms, round to nearest $10,000)
-
 12\. How important is Protocol Guild membership to your decision to continue working on Ethereum core protocol development?
-
 13\. Is there any context we should be aware of to understand your submission?
 
 ### Appendix II: Limitations
 
-Key Limitations:
+**Key Limitations:**
 
--   Self-reported data may include reporting bias
-
--   Offer data limited to those who received final offers (38% of respondents)
-
--   Limited equity/token comp response to overall percentage and not market value ([based on findings in Dragonfly survey](https://dccr23.dragonfly.xyz/#1c7af13b6441811383c3f8fe7d8da8b6))
-
--   Low response total for equity/token offers
-
--   Token/equity valuations subject to market volatility
-
--   Geographic cost-of-living differences not adjusted ([based on findings in Dragonfly survey](https://dccr23.dragonfly.xyz/#1c7af13b6441811db2bfe6fadb954b04))
+- Self-reported data may include reporting bias
+- Offer data limited to those who received final offers (38% of respondents)
+- Limited equity/token comp response to overall percentage and not market value ([based on findings in Dragonfly survey](https://dccr23.dragonfly.xyz/#1c7af13b6441811383c3f8fe7d8da8b6))
+- Low response total for equity/token offers
+- Token/equity valuations subject to market volatility
+- Geographic cost-of-living differences not adjusted ([based on findings in Dragonfly survey](https://dccr23.dragonfly.xyz/#1c7af13b6441811db2bfe6fadb954b04))
 
 ### Appendix III: Donors
 
@@ -687,15 +614,8 @@ $23,158
 
 * * * * *
 
-This report was prepared by Protocol Guild to provide transparency on compensation challenges facing Ethereum core development. For questions or additional analysis, please contact <anything@protocolguild.org> .
+This report was prepared by Protocol Guild to provide transparency on compensation challenges facing Ethereum core development. For questions or additional analysis, please email <contact@protocolguild.org>.
 
 * * * * *
 
-About Protocol Guild: an independent funding organization that supports Ethereum's core protocol development through ongoing distributions to active contributors. Learn more at [protocolguild.org](http://www.protocolguild.org).
-Footer
-© 2025 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
+**About Protocol Guild:** an independent funding organization that supports Ethereum's core protocol development through ongoing distributions to active contributors. Learn more at [protocolguild.org](http://www.protocolguild.org).
