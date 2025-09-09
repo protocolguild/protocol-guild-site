@@ -173,7 +173,7 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 - *"If I weren't in PG, I would more seriously consider offered positions. Despite PG income not being significant today, I'm optimistic that in the future it can close the gap enough to not feel I'm making a big compromise."*
 - *"I haven't actively explored job opportunities because I love my job. But I do feel very underpaid. Especially considering inflation and cost of living, my salary hasn't been adjusted for that."*
 
-#### Offer Types by Category
+#### 3.1 Offer Types by Category
 
  ![](/Figure%203.1%20-%20Offer%20Types%20by%20Category.png)
 
@@ -182,11 +182,11 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 -   Average: $359,074
 -   Median: $300,000
 
-#### Cash Offers by Years of Experience ($)
+#### 3.2 Cash Offers by Years of Experience ($)
 
 ![](/Figure%203.2%20-%20Cash%20Offers%20by%20YoE.png)
 
-#### Offer Rate by Years of Experience
+#### 3.3 Offer Rate by Years of Experience
 
 ![](/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
 
@@ -194,11 +194,11 @@ This can potentially be interpreted a few ways:
 - Contributors with less tenure/pay are more likely to explore other opportunities
 - Contributors with less tenure/pay are more likely to be headhunted by recruiters
 
-#### Cash Offers by Specialization ($)
+#### 3.4 Cash Offers by Specialization ($)
 
 ![](/Figure%203.4%20Cash%20Offers%20by%20Role.png)
 
-#### Offer Rate by Specialization
+#### 3.5 Offer Rate by Specialization
 
 ![](/Figure%203.5%20Offer%20Rate%20by%20Role.png)
 
@@ -237,11 +237,11 @@ The Cash Compensation Gap refers to the figures derived by subtracting the level
 
 Translation: Ethereum core developers are earning roughly **half** of the cash compensation available to them via recruitment offers.
 
-#### Cash Compensation Gap by Years of Experience ($)
+#### 4.1 Cash Compensation Gap by Years of Experience ($)
 
 ![](/Figure%204.1%20-%20Cash%20Gap%20by%20YoE.png)
 
-#### Cash Compensation Gap by Specialization ($)
+#### 4.2 Cash Compensation Gap by Specialization ($)
 
 ![](/Figure%204.2%20-%20Cash%20Gap%20by%20Role.png)
 
@@ -266,7 +266,7 @@ Survey data reveals Protocol Guild's fundamental importance to talent retention.
 
 *"Protocol Guild is of the utmost importance (for) retaining existing talent."* - survey respondent
 
-#### Importance Rating Distribution:
+#### 5.1 Importance Rating Distribution:
 
 - Extremely important: 16%
 - Very important: 42%
@@ -278,11 +278,11 @@ Survey data reveals Protocol Guild's fundamental importance to talent retention.
 
 **Key Insight:** 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum.
 
-#### Protocol Guild Importance by Specialization
+#### 5.2 Protocol Guild Importance by Specialization
 
 ![](/Figure%205.2%20-%20Importance%20by%20YoE.png)
 
-#### Protocol Guild Importance by Years of Experience
+#### 5.3 Protocol Guild Importance by Years of Experience
 
 ![](/Figure%205.3%20-%20Importance%20by%20Role.png)
 
