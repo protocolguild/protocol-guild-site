@@ -9,9 +9,9 @@ date: '2025-09-09'
 
 ## Summary
 
-**Core developers pass up at least 50% of their market value to maintain crucial ecosystem software. Protocol Guild facilitates significant funding to help reduce this gap and retain talent long term.**
+**Core developers pass up at least 50% of their market value to maintain software the rest of the industry depends on. Protocol Guild facilitates significant funding to help reduce this gap and retain talent long term.**
 
-This report examines compensation data from a majority of Ethereum's core protocol contributors across 13 different orgs, revealing significant gaps between their current compensation and potential market earnings. While many members prioritize working on values-aligned projects, inadequate compensation is a risk to talent retention, the progress of Ethereum's technical roadmap, and long-term credible neutrality. As the leading independent funder of core development, Protocol Guild plays an increasingly important role in addressing this challenge - but there's still significant work to be done. Ecosystem funding entities should understand this as a serious challenge and focus on finding scalable solutions to close the compensation gap.
+This report examines compensation data from a majority of Ethereum's core protocol contributors across 11 different orgs, revealing significant gaps between their current compensation and potential market earnings. While many members prioritize working on values-aligned projects, inadequate compensation is a risk to talent retention, the progress of Ethereum's technical roadmap, and long-term credible neutrality. As the leading independent funder of core development, Protocol Guild plays an increasingly important role in addressing this challenge - but there's still significant work to be done. Ecosystem funding entities should understand this as a serious challenge and focus on finding scalable solutions to close the compensation gap.
 
 ### Takeaways
 
@@ -29,15 +29,20 @@ Ethereum core development is the ongoing process of enhancing and evolving the u
 
 This report was produced by [Protocol Guild](http://www.protocolguild.org), the leading independent funding organization for ~190 Ethereum core developers. The organization enables the ecosystem to directly fund all the individuals building our shared infrastructure - largely through a norm called the 1% Pledge. In a strategic and generous gesture, projects like EigenLayer, Ether.fi, Taiko, Puffer and others have contributed 1% of their token supply. Read more about the 1% Pledge [here](https://www.protocolguild.org/blog/20240130-protocol-guild-pledge).
 
-Since Pilot launch in May 2022, Protocol Guild has distributed over **$32mm of funding** directly to Ethereum's core protocol contributors. The median member has received **$66k over the last 12 months**. Any funding sent by the ecosystem vests onchain over 4 years: these realtime, transparent distributions can be tracked via [this Dune dashboard](https://dune.com/protocolguild/protocol-guild). Protocol Guild does not employ these core protocol contributors. The direct funding they receive today is a supplement on top of their regular employment, focused on addressing the lack of risk (token and/or equity) compensation they might typically receive in a different role. The commercial entities which are the employers and fiscal hosts of core devs typically do not have direct ways to monetize this software work. Instead, they manifest as cost centers in large orgs, sometimes are used as in-house expertise for their own blockchain ventures, or have adjacent services built around them (eg. security, consulting, auditing, chain-specific releases), or scrape by on minimal grants funding.
+Since launch in May 2022, the organization has distributed over **$33mm of funding**. The median member has received **$66k over the last 12 months**. Any funding sent by the ecosystem vests onchain over 4 years: these realtime, transparent distributions can be tracked via [this Dune dashboard](https://dune.com/protocolguild/protocol-guild). Protocol Guild does not employ these contributors. The direct funding they receive today from PG is a supplement on top of their regular employment, addressing the lack of risk (token and/or equity) compensation they might typically receive in a different role.  The non-profit and commercial entities which are the fiscal hosts of core devs either choose not to monetize, or do not have direct ways to monetize this software. This produces a range of outcomes:
+
+- as cost centers in large orgs
+- in-house expertise for their own blockchain ventures
+- adjacent services, including security, consulting, auditing, modified releases for other chains
+- scrape by on minimal grants funding
 
 In Q2 2025, Protocol Guild surveyed its membership to understand compensation levels, offer dynamics, and how the supplied funding facilitates talent retention. Anecdotally, it has been long known that these individuals were **underpaid relative to market benchmarks**. This has a number of downstream effects:
 
 - Limits Ethereum's ability to compete for talent. Does not expose our talent pool to the maximum range of available talent.
-- Increases churn, weakens the Ethereum political economy and makes the institutional memory less robust
+- Increases churn, weakens the Ethereum political economy and makes institutional memory less robust
 - Potentially makes client teams more likely to be acquired by larger entities
-- In the extreme, makes the Ethereum upgrade delivery process slower
-- In the extreme, may make core devs more susceptible to payments for influence or soft influence
+- In the extreme, may make the Ethereum upgrade delivery process slower
+- In the extreme, may make core devs more susceptible to payments for influence
 
 This survey quantifies that undercompensation and explores how Protocol Guild helps close it, both now and in the future. With 111 responses from 190 total Protocol Guild members (a 58% response rate), this is the most comprehensive compensation analysis of Ethereum core development talent to date. It should be noted that there will be outliers or exceptions to this report within broader Ethereum core development (eg. in total ~200 to 300 contributors with roles that sometimes overlap but are typically broader than the core protocol) not adequately represented by the data here.
 
@@ -70,7 +75,7 @@ Protocol Guild total membership (190)
 ![Figure 1.2](/Figure%201.2%20-%20Respondents%20by%20Role%20(1).png)
 
 - Client Development: the engineering work to maintain Execution and Consensus client implementations, helps to scope network upgrades
-- Research: new constructions or features that improve scalability, censorship resistance or permissionless access for ethereum resources
+- Research: new constructions or features that improve scalability, censorship resistance or permissionless access for Ethereum network resources
 - Coordination: specifications, governance, network releases, All Core Dev calls, engaging the broader community on priorities
 
 * * * * *
@@ -81,12 +86,15 @@ Current compensation refers to the aggregate funding that core contributors curr
 
 ### Cash Compensation
 
-The foundation of any compensation package is base salary, as well as bonuses, denominated in fiat - referred to in this report as "cash". Respondents were asked to report their cash compensation. Note: there may be some outliers towards the bottom of the chart because Protocol Guild has part-time and full-time members who may have answered the survey differently.
+The foundation of any compensation package is base salary, as well as bonuses, denominated in fiat - referred to in this report as "cash". Respondents were asked to report their cash compensation.
 
 - Average: $157,939
 - Median: $140,000
 
 #### 2.1 Cash Compensation vs. Years of Experience (Total)
+
+- There may be some outliers towards the bottom of the chart because Protocol Guild has part-time and full-time members who may have answered the survey differently
+- There are also responses with years of experience that may have been carried over from similar roles in other industries predating Ethereum
 
 ![Figure 2.1](/Figure%202.1%20-%20Current%20Cash%20vs.%20YoE.png)
 
@@ -116,7 +124,7 @@ The foundation of any compensation package is base salary, as well as bonuses, d
 
 ### Token & Equity Compensation
 
-One of the most interesting findings is the absence of meaningful risk (equity & token) upside for most core developer respondents:
+One of the most interesting findings is the absence of meaningful risk (equity & token) upside for most respondents:
 
 - Only 37% receive any equity or token grants from their current employers
 - Equity compensation 
@@ -138,14 +146,14 @@ This stands in stark contrast to the broader crypto industry, where equity or to
 
 ### Protocol Guild: A Critical Bridge
 
-Over the last three years, Protocol Guild has demonstrated its ability to provide the risk portion of employment packages and allow core developers to participate in some of the broader ecosystem's upside. When combined with survey data on employer compensation, data from [Dune](https://dune.com/protocolguild/protocol-guild) shows that Protocol Guild distributions have become a substantial portion of total core contributor compensation.
+Over the last three years, Protocol Guild has demonstrated its ability to provide the risk portion of employment packages and allow core developers to participate in some of the broader ecosystem's upside. When combined with survey data on employer compensation, data from [Dune](https://dune.com/protocolguild/protocol-guild) shows that Protocol Guild distributions have become a substantial portion of total member compensation.
 
 - Average PG member distribution (Last 12 Months): $74,285
 - Median PG member distribution (Last 12 Months): $67,121
-- Cumulative Distributions since 2022: $32mm
+- Cumulative Distributions since May 2022: $33mm
 - Impact: PG represents nearly **1/3 of total compensation** for the median member
 
-Through inflows attributed to 1% Protocol Guild Pledge Partners, PG has emerged as a leading funder of Ethereum core developers. [Read more about the 1% pledge](https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng).
+Through inflows attributed to 1% Protocol Guild Pledge Partners, PG has emerged as a leading funder of Ethereum core developers. [Read more about the 1% pledge](https://www.protocolguild.org/blog/20240130-protocol-guild-pledge).
 
 Total Compensation Picture:
 - With employer only: $140,000 median
@@ -190,7 +198,7 @@ Qualitative responses from the survey give us insight into how Protocol Guild me
 
 ![](/Figure%203.3%20-%20Offer%20Rate%20by%20YoE.png)
 
-This can potentially be interpreted a few ways:
+This can be interpreted a few ways:
 - Contributors with less tenure/pay are more likely to explore other opportunities
 - Contributors with less tenure/pay are more likely to be headhunted by recruiters
 
@@ -222,7 +230,7 @@ The median respondent reported a 6.5% token and/or equity grant. It should be he
 
 ### Cash Compensation Gap
 
-The Cash Compensation Gap refers to the figures derived by subtracting the levels of current compensation (Ccur) from the level of competing offers (Coff) then dividing the difference by the level of current compensation (Ccur). This gap illustrates the financial opportunity cost core devs face by working on Ethereum.
+The Cash Compensation Gap is obtained by subtracting the levels of current compensation (Ccur) from the level of competing offers (Coff) then dividing the difference by the level of current compensation (Ccur). This gap illustrates the financial opportunity cost core devs face by working on Ethereum.
 
 ***(Coff - Ccur) / Ccur***
 
@@ -248,7 +256,7 @@ Translation: Ethereum core developers are earning roughly **half** of the cash c
 ### Token & Equity Gap
 
 Beyond cash, there's a massive gap in upside participation:
-- Current token & equity exposure: $0 median (outside Protocol Guild)
+- Current token & equity exposure: $0 median (from employer, not including Protocol Guild funding)
 - Protocol Guild: $67,121 median
 - Market equity offers: 6.5% median grant -- this represents potentially millions in upside for successful protocols
 
@@ -262,7 +270,7 @@ Beyond cash, there's a massive gap in upside participation:
 
 ### Retention Impact
 
-Survey data reveals Protocol Guild's fundamental importance to talent retention. One point of interest will be to note levels of importance reported as funding levels change.
+Survey data reveals Protocol Guild's fundamental importance to talent retention. 
 
 *"Protocol Guild is of the utmost importance (for) retaining existing talent."* - survey respondent
 
@@ -276,7 +284,7 @@ Survey data reveals Protocol Guild's fundamental importance to talent retention.
 
 ![](/Figure%205.1%20-%20Importance%20Rating%20Distribution.png)
 
-**Key Insight:** 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum.
+**Key Insight:** 59% of members rate Protocol Guild as "Very" or "Extremely" important to their decision to continue working on Ethereum. For future iterations of this survey, it will be interesting to track levels of importance reported as PG funding levels change.
 
 #### Protocol Guild Importance by Specialization
 
@@ -298,10 +306,10 @@ Protocol Guild has emerged as a critical piece of economic infrastructure for Et
 
 - Introduces some predictability through delayed release of a 4 yr vest funding mechanism
 - Aligns core developer incentives with the Ethereum ecosystem's long-term success
-- Creates equity-like upside today without needing traditional corporate structures (and potentially stable comp in the future)
+- Creates equity-like upside today without needing traditional corporate structures (and potentially stable comp in the future as stablecoin contributions scale)
 - Demonstrates ecosystem commitment to core development
 
-By continuing to enact the norm of 1% Protocol Guild pledges, as projects like EigenLayer, Ether.Fi, Taiko & others have, the ecosystem can collectively ensure the foundation it is building upon maintains stability and continues to thrive.
+By continuing to build the norm of 1% Protocol Guild pledges, as projects like EigenLayer, Ether.Fi, Taiko & others have, the ecosystem can collectively ensure the software foundation it is building upon maintains stability and continues to scale.
 
 ### An Emerging Economic Polity
 Ethereum's success has created unprecedented opportunities in the broader crypto ecosystem: 
@@ -311,13 +319,13 @@ Ethereum's success has created unprecedented opportunities in the broader crypto
 - [Thousands of protocols and applications](https://defillama.com/chain/ethereum) depending on core protocol improvements
 - [Global financial infrastructure](https://www.cnbc.com/2025/08/02/ethereum-turns-10-from-scrappy-experiment-to-wall-streets-invisible-backbone.html) being built on Ethereum rails
 
-Ethereum has been described by many metaphors - world computer, infinite garden, and [neutral ocean infra](https://x.com/trent_vanepps/status/1483266014087417856). A recent report from Fidelity introduced the frame of "[emerging economy](https://x.com/trent_vanepps/status/1483266014087417856)". As the ecosystem continues to mature, are we adequately investing in infrastructure and defense funding? Perhaps we should target the [Singaporean compensation model](https://www.nas.gov.sg/archivesonline/data/pdfdoc/2000063010.htm), where salaries for public servants are anchored to private market rates to attract and retain the best.
+Ethereum has been described by many metaphors - world computer, infinite garden, and [neutral ocean](https://x.com/trent_vanepps/status/1483266014087417856). A recent report from Fidelity introduced the frame of "[emerging economy](https://x.com/trent_vanepps/status/1483266014087417856)". As the ecosystem continues to mature, are we adequately investing in our shared infra and defense funding? Perhaps we should target the [Singaporean compensation model](https://www.nas.gov.sg/archivesonline/data/pdfdoc/2000063010.htm), where salaries for public servants are anchored to private market rates to attract and retain the best.
 
-With all of the value that has been created on top of Ethereum and the [outsized role these open source developers play](https://www.hbs.edu/ris/Publication%20Files/24-038_51f8444f-502c-4139-8bf2-56eb4b65c58a.pdf), the cost of losing core talent could far exceed the funding required to develop and retain it. Supporting Ethereum core development is ultimately an investment in the entire ecosystem. These pressures will likely grow as the breadth of opportunities and depth of capital interests continue to increase. Protocol Guild has emerged as a critical stopgap solution, but will it be able to scale the norms and opt-in support from the broader ecosystem?
+With all of the value that has been created on top of Ethereum and the [outsized role these open source developers play](https://www.hbs.edu/ris/Publication%20Files/24-038_51f8444f-502c-4139-8bf2-56eb4b65c58a.pdf), the cost of losing core talent could far exceed the funding required to develop and retain it. Supporting Ethereum core development is ultimately an investment by the entire ecosystem back into itself. These competitive pressures will likely grow alongside the breadth of opportunities and depth of capital interests coming onchain. Protocol Guild has emerged as a critical stopgap solution, but will it be able to scale the norms and opt-in support from the broader ecosystem?
 
-Ecosystem funding entities should keep in mind the magnitude and urgency of this funding gap. This isn't something that can be accomplished by any single entity (eg. the Ethereum Foundation), but instead requires the entire ecosystem to coalesce around the means and mechanisms capable of tackling this problem at scale.
+Ecosystem funding entities should keep in mind the magnitude and urgency of this funding gap. This isn't something that can be accomplished by any single entity (eg. the Ethereum Foundation), but instead requires the entire ecosystem to coalesce around the means and mechanisms capable of tackling this problem at scale. 
 
-For Ethereum to sustainably deliver its long-term roadmap, we must address compensation disparities for these invaluable, foundational contributors. Core contributors should be funded proportional to market value (if not their impact) - otherwise we risk our next decade.
+For Ethereum to sustainably deliver its long-term roadmap, we must address compensation disparities for these invaluable, foundational contributors. Core contributors should be funded proportional to market value - if not their impact. Otherwise, we risk our next decade.
 
 * * * * *
 
@@ -371,9 +379,9 @@ For Ethereum to sustainably deliver its long-term roadmap, we must address compe
 
 It goes without saying that Protocol Guild would not be where it is today without its generous donors. The mechanism thrives via the entities and individuals who have supported Ethereum core development through its many evolutions.
 
-These donations have enabled core contributors to focus on improving user experience, security, and scalability of the Ethereum network as it continues to push the boundaries for what is capable onchain. This report builds on the foundation that donors have established, and continued progress depends on the generosity and foresight of those who understand the vital importance of funding this infrastructure.
+These donations have enabled core contributors to focus on improving scalability, security, and user experience of the Ethereum network. This report was funded by the precedent that these donors have established, and continued progress depends on the generosity and foresight of those who understand the vital importance of funding this infrastructure.
 
-Please recognize the top Protocol Guild donors, ranked by current value vesting (excludes donations by projects which have already finished vesting):
+Please recognize the top Protocol Guild donors, ranked by current value vesting (excludes donations by entities which have already finished vesting and been distributed to members):
 
 | Donor                                                                 | Value Vesting   |
 |-----------------------------------------------------------------------|------------------|
