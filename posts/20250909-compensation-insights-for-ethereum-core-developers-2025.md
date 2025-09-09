@@ -375,241 +375,33 @@ These donations have enabled core contributors to focus on improving user experi
 
 Please recognize the top Protocol Guild donors, ranked by current value vesting:
 
-|
-
-Donor
-
- |
-
-Value Vesting
-
- |
-| --- | --- |
-|
-
-Eigen Foundation
-
- |
-
-$16,686,927
-
- |
-|
-
-Ether.fi Foundation
-
- |
-
-$7,689,427
-
- |
-|
-
-LayerZero Foundation
-
- |
-
-$6,284,591
-
- |
-|
-
-Taiko Labs
-
- |
-
-$2,795,164
-
- |
-|
-
-Puffer
-
- |
-
-$1,798,673
-
- |
-|
-
-Optimism RPGF
-
- |
-
-$839,765
-
- |
-|
-
-Starknet Foundation
-
- |
-
-$633,234
-
- |
-|
-
-Octant / Golem Foundation
-
- |
-
-$566,164
-
- |
-|
-
-Delivery at Dawn
-
- |
-
-$397,790
-
- |
-|
-
-Enter DAO
-
- |
-
-$379,992
-
- |
-|
-
-Zksync Association
-
- |
-
-$331,547
-
- |
-|
-
-Scroll Foundation
-
- |
-
-$278,921
-
- |
-|
-
-Other Split Contracts
-
- |
-
-$157,440
-
- |
-|
-
-Uni Zorb
-
- |
-
-$142,054
-
- |
-|
-
-Andrew Keys
-
- |
-
-$113,417
-
- |
-|
-
-SAFE DAO
-
- |
-
-$104,136
-
- |
-|
-
-Infinite Garden on Shape
-
- |
-
-$85,966
-
- |
-|
-
-Bitwise
-
- |
-
-$68,295
-
- |
-|
-
-LambdaClass
-
- |
-
-$45,699
-
- |
-|
-
-Gitcoin Grants (PGN)
-
- |
-
-$45,549
-
- |
-|
-
-0x3250c2cee20fa34d1c4f68eaa87e53512e95a62a
-
- |
-
-$39,684
-
- |
-|
-
-0xf6cbdd6ea6ec3c4359e33de0ac823701cc56c6c4
-
- |
-
-$36,683
-
- |
-|
-
-Zora Airdrop
-
- |
-
-$32,490
-
- |
-|
-
-0xa29744b745800ccd814e6f59271ecd74682eccb0
-
- |
-
-$28,419
-
- |
-|
-
-drips-network.eth
-
- |
-
-$23,158
-
- |
+| Donor                                                                 | Value Vesting   |
+|-----------------------------------------------------------------------|------------------|
+| Eigen Foundation                                                      | $16,686,927      |
+| Ether.fi Foundation                                                   | $7,689,427       |
+| LayerZero Foundation                                                  | $6,284,591       |
+| Taiko Labs                                                           | $2,795,164       |
+| Puffer                                                                | $1,798,673       |
+| Optimism RPGF                                                        | $839,765         |
+| Starknet Foundation                                                   | $633,234         |
+| Octant / Golem Foundation                                            | $566,164         |
+| Delivery at Dawn                                                     | $397,790         |
+| Enter DAO                                                            | $379,992         |
+| Zksync Association                                                   | $331,547         |
+| Scroll Foundation                                                    | $278,921         |
+| Other Split Contracts                                                | $157,440         |
+| Uni Zorb                                                             | $142,054         |
+| Andrew Keys                                                          | $113,417         |
+| SAFE DAO                                                             | $104,136         |
+| Infinite Garden on Shape                                            | $85,966          |
+| Bitwise                                                              | $68,295          |
+| LambdaClass                                                          | $45,699          |
+| Gitcoin Grants (PGN)                                                | $45,549          |
+| 0x3250c2cee20fa34d1c4f68eaa87e53512e95a62a                          | $39,684          |
+| 0xf6cbdd6ea6ec3c4359e33de0ac823701cc56c6c4                          | $36,683          |
+| Zora Airdrop                                                         | $32,490          |
+| 0xa29744b745800ccd814e6f59271ecd74682eccb0                          | $28,419          |
+| drips-network.eth                                                    | $23,158          |
 
 * * * * *
 
