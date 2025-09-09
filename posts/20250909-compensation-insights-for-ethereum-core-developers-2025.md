@@ -126,11 +126,9 @@ Due to the nature of their organization or business structure, employers of clie
 
 This stands in stark contrast to the broader crypto industry, where equity or token allocations are standard and often substantial - see this [2023 Dragonfly compensation report](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4). To get a sense of where risk compensation falls among comparable opportunities, see average token or equity grants from the Dragonfly report (percent denominated), and Coinbase compensation breakdown (dollar denominated). 
 
-[Average Token Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
-
-[Average Equity Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
-
-[Average Compensation by Level, Coinbase (levels.fyi)](https://www.levels.fyi/companies/coinbase/salaries/software-engineer?country=254)
+- [Average Token Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
+- [Average Equity Grant -- Crypto Engineer (Dragonfly Crypto Compensation Report)](https://dccr23.dragonfly.xyz/#1c7af13b64418125951efdff0b14b3f4)
+- [Average Compensation by Level, Coinbase (levels.fyi)](https://www.levels.fyi/companies/coinbase/salaries/software-engineer?country=254)
 
 ### Protocol Guild: A Critical Bridge
 
