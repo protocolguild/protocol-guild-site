@@ -61,7 +61,7 @@ Protocol Guild total membership (190)
 
 #### 1.1 - Respondent Years of Experience
 
-![Figure 1.1](/Figure11RespondentYoE.png)
+![Figure 1.1](/Figure%201.1%20-%20Respondent%20YoE%20(1).png)
 
 ### Respondent Specializations
 
