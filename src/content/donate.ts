@@ -33,7 +33,8 @@ export const donateContent = {
   ecosystem: {
     title: "Partners from across the Ethereum ecosystem make Protocol Guild possible.",
     subtitle1: "Donating to Protocol Guild isn’t just an act of goodwill—it’s a strategic investment in your project’s future.",
-    subtitle2: "Ethereum core devs and researchers are in high demand: they could earn <a href='https://www.protocolguild.org/blog/20250909-compensation-insights-for-ethereum-core-developers-2025'>significantly more</a> elsewhere."    tableHeader: "Donor Leaderboard by Currently Vesting"
+    subtitle2: "Ethereum core devs and researchers are in high demand: they could earn <a href='https://www.protocolguild.org/blog/20250909-compensation-insights-for-ethereum-core-developers-2025'>significantly more</a> elsewhere.",
+    tableHeader: "Donor Leaderboard by Currently Vesting"
   },
   planning: {
     title: "Plan your token allocation with Protocol Guild.",
