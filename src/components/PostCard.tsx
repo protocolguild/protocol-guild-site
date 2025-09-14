@@ -15,8 +15,8 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
   })
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
-      <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity h-[500px] flex flex-col">
-        <div className="w-full h-[300px]">
+      <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col">
+        <div className="w-full bg-white" style={{ aspectRatio: '2 / 1' }}>
           {post.coverImage && (
             <img
               src={post.coverImage}
@@ -25,9 +25,9 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
             />
           )}
         </div>
-        <div className="flex-1 p-4 flex flex-col gap-2">
+        <div className="flex-1 p-3 md:p-4 flex flex-col gap-2">
           <h3
-            className="text-xl leading-[1.75rem] font-bold text-[var(--gray-dark)]"
+            className="text-xl leading-[1.75rem] font-bold text-[var(--gray-dark)] min-h-[3.5rem]"
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,
