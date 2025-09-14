@@ -15,8 +15,11 @@ const HeroPostCard: FC<HeroPostCardProps> = ({ post }) => {
   })
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
-      <div className="border rounded-xl md:rounded-2xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col h-[500px] md:h-auto">
-        <div className="w-full h-[300px] md:h-[400px]">
+      <div className="border rounded-xl md:rounded-2xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col">
+        <div
+          className="w-full overflow-hidden bg-white"
+          style={{ aspectRatio: '2 / 1' }}
+        >
           {post.coverImage && (
             <img
               src={post.coverImage}
