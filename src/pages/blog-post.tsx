@@ -1,4 +1,5 @@
-import { FC, useMemo } from 'react'
+import { FC, useMemo, useState } from 'react'
+import type React from 'react'
 import { useParams } from 'react-router-dom'
 import Section from '../components/Section'
 import Grid from '../components/Grid'
@@ -42,6 +43,12 @@ const BlogPost: FC = () => {
         timeZone: 'UTC',
       })
     : null
+  const [isCoverMismatched, setIsCoverMismatched] = useState(false)
+  const handleCoverLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget
+    const ratio = img.naturalWidth / img.naturalHeight
+    setIsCoverMismatched(Math.abs(ratio - 2) > 0.02)
+  }
   return (
     <main>
       <Helmet>
@@ -82,13 +89,16 @@ const BlogPost: FC = () => {
                 <>
                   {post.coverImage ? (
                     <div
-                      className="not-prose w-full overflow-hidden border rounded-xl md:rounded-2xl shadow-sm bg-white"
+                      className="not-prose w-full overflow-hidden border rounded-xl md:rounded-2xl shadow-sm bg-white flex-shrink-0"
                       style={{ aspectRatio: '2 / 1' }}
                     >
                       <img
                         src={post.coverImage}
                         alt={post.title}
-                        className="block w-full h-full object-cover object-center"
+                        onLoad={handleCoverLoad}
+                        className={`block w-full h-full object-center ${
+                          isCoverMismatched ? 'object-contain' : 'object-cover'
+                        }`}
                       />
                     </div>
                   ) : null}

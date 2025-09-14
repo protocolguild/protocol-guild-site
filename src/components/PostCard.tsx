@@ -1,4 +1,5 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
+import type React from 'react'
 import type { Post } from '../types/post'
 import { Link } from 'react-router-dom'
 
@@ -13,15 +14,27 @@ const PostCard: FC<PostCardProps> = ({ post }) => {
     day: 'numeric',
     timeZone: 'UTC',
   })
+  const [isImageMismatched, setIsImageMismatched] = useState(false)
+  const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget
+    const ratio = img.naturalWidth / img.naturalHeight
+    setIsImageMismatched(Math.abs(ratio - 2) > 0.02)
+  }
   return (
     <Link to={`/blog/${post.slug}`} className="no-underline">
       <div className="border rounded-xl shadow-sm overflow-hidden hover:opacity-95 transition-opacity flex flex-col">
-        <div className="w-full bg-white" style={{ aspectRatio: '2 / 1' }}>
+        <div
+          className="w-full overflow-hidden bg-white flex-shrink-0"
+          style={{ aspectRatio: '2 / 1' }}
+        >
           {post.coverImage && (
             <img
               src={post.coverImage}
               alt={post.title}
-              className="w-full h-full object-cover object-center"
+              onLoad={handleImageLoad}
+              className={`block w-full h-full object-center ${
+                isImageMismatched ? 'object-contain' : 'object-cover'
+              }`}
             />
           )}
         </div>
