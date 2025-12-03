@@ -1,7 +1,7 @@
 ---
 title: 'Q4 2025 Membership Audit'
 excerpt: 'Our 14th quarterly audit of funded members has been completed.'
-coverImage: 'quarterlyauditgraphic.png'
+coverImage: '/quarterlyauditgraphic.png'
 date: '2025-12-03'
 ---
 
