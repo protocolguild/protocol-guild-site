@@ -5,7 +5,7 @@ coverImage: '/Sponsor-core-dev.png'
 date: '2025-12-18'
 ---
 
-Protocol Guild is excited to launch the Sponsor a Core Dev funding program. This is a new funding vehicle designed to:
+Protocol Guild is excited to launch the **Sponsor a Core Dev** funding program. This is a new funding vehicle designed to:
 
 -   connect sponsor funding more directly with core devs
 
@@ -17,11 +17,11 @@ Protocol Guild is excited to launch the Sponsor a Core Dev funding program. This
 
 ### The Challenge: A Critical Funding Gap for Crucial Work
 
-The long-term health and security of our shared Ethereum infrastructure depends on the dedicated individuals who maintain it. Our recent report brought a critical issue to light: Ethereum's core developers are undercompensated by 50-60% compared to their market value. This makes us more at risk of losing essential talent, while failing to attract the next generation.
+The long-term health and security of our shared Ethereum infrastructure depends on the dedicated individuals who maintain it. Our recent report brought a critical issue to light: Ethereum's **core developers are undercompensated by 50-60%** compared to their market value. This makes us more at risk of losing essential talent, while failing to attract the next generation.
 
 Read the report →[  Compensation Insights for Ethereum Core Developers](https://www.protocolguild.org/blog/20250909-compensation-insights-for-ethereum-core-developers-2025)
 
-The data from the report is clear. With a median salary of $140,000 against market offers of $300,000, the median core developer faces a $160,000 annual compensation gap. Here's the data arranged by years of experience:
+The data from the report is clear. With a median salary of $140,000 against market offers of $300,000, the median core developer faces a **$160,000 annual compensation gap.** Here's the data arranged by years of experience:
 
 ![Comp Report Figure 4.1](/Figure%204.1%20-%20Cash%20Gap%20by%20YoE.png)
 
@@ -39,9 +39,9 @@ To support this crucial work, we are introducing annual sponsorships at the scal
 
 This initiative makes supporting core development personal. Here's how you can get involved:
 
--   Covering the gap: the sponsorship tiers are anchored to the comp gap: $160k in tokens, ETH, or stables. We will periodically update this number with each annual compensation survey, to ensure it stays in line with general industry comp trends.
+-   **Covering the gap:** the sponsorship tiers are anchored to the comp gap: **$160k in tokens, ETH, or stables.** We will periodically update this number with each annual compensation survey, to ensure it stays in line with general industry comp trends.
 
--   Who it goes to: contributions in this vehicle will vest over 1 year to our rigorously curated pool of core contributors - we audit our member beneficiaries every quarter
+-   **Who it goes to:** contributions in this vehicle will vest over 1 year to our rigorously curated pool of core contributors - we audit our member beneficiaries every quarter
 
 ### How you can help: Become a Sponsor
 
@@ -58,11 +58,11 @@ For projects that intend to introduce a protocol token, the 1% Pledge is still t
 
 ### Benefits for Sponsors
 
-1.  Invest in Shared Infrastructure: Directly support the security and scalability of the network your project relies on.
+1.  **Invest in Shared Infrastructure:** Directly support the security and scalability of the network your project relies on.
 
-2.  Gain Public Recognition: Be featured on our forthcoming donor page update, our[  public leaderboards](https://dune.com/protocolguild/protocol-guild), and in dedicated social announcements which showcase your project's commitment to the ecosystem. This provides the community with a clear view of the program's impact. We believe that transparency is essential for building trust and ensuring the long-term success of this initiative.
+2.  **Gain Public Recognition:** Be featured on our forthcoming donor page update, our[  public leaderboards](https://dune.com/protocolguild/protocol-guild), and in dedicated social announcements which showcase your project's commitment to the ecosystem. This provides the community with a clear view of the program's impact. We believe that transparency is essential for building trust and ensuring the long-term success of this initiative.
 
-3.  Attract Talent: Signal to the Ethereum developer community that your project values and supports foundational open-source work: a core norm of the broader community.
+3.  **Attract Talent:** Signal to the Ethereum developer community that your project values and supports foundational open-source work: a core norm of the broader community.
 
 ### Get Involved Today
 
