@@ -42,6 +42,7 @@ This initiative makes supporting core development personal. Here's how you can g
 -   **Covering the gap:** the sponsorship tiers are anchored to the comp gap: **$160k in tokens, ETH, or stables.** We will periodically update this number with each annual compensation survey, to ensure it stays in line with general industry comp trends.
 
 -   **Who it goes to:** contributions in this vehicle will vest over 1 year to our rigorously curated pool of core contributors - we audit our member beneficiaries every quarter
+    -   Please note: While the “Sponsor a Core Dev” vehicle is denominated based on the individual funding gap, all funding vests to the entirety of membership
 
 ### How you can help: Become a Sponsor
 
