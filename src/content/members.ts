@@ -163,12 +163,6 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/barnabemonnot"
 },
 {
-   name: "Bartosz Zawistowski",
-   link: "https://github.com/bzawisto",
-   username: "bzawisto",
-   pfp: "https://avatars.githubusercontent.com/bzawisto"
-},
-{
    name: "Bastin",
    link: "https://github.com/Inspector-Butters",
    username: "Inspector-Butters",
@@ -193,10 +187,28 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/b-wagn"
 },
 {
+   name: "Bharath Vedartham",
+   link: "https://github.com/bharath-123",
+   username: "bharath-123",
+   pfp: "https://avatars.githubusercontent.com/bharath-123"
+},
+{
    name: "Bhargava Shastry",
    link: "https://github.com/bshastry",
    username: "bshastry",
    pfp: "https://avatars.githubusercontent.com/bshastry"
+},
+{
+   name: "bing",
+   link: "https://github.com/spiral-ladder",
+   username: "spiral-ladder",
+   pfp: "https://avatars.githubusercontent.com/spiral-ladder"
+},
+{
+   name: "Bosul Mun",
+   link: "https://github.com/healthykim",
+   username: "healthykim",
+   pfp: "https://avatars.githubusercontent.com/healthykim"
 },
 {
    name: "Carl Beekhuizen",
@@ -227,6 +239,12 @@ export const members: Member[] = [
    link: "https://github.com/wemeetagain",
    username: "wemeetagain",
    pfp: "https://avatars.githubusercontent.com/wemeetagain"
+},
+{
+   name: "Chee Keong Tan",
+   link: "https://github.com/chong-he",
+   username: "chong-he",
+   pfp: "https://avatars.githubusercontent.com/chong-he"
 },
 {
    name: "cheeky-gorilla",
@@ -481,6 +499,12 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/jochem-brouwer"
 },
 {
+   name: "Josh Davis",
+   link: "https://github.com/joshdavislight",
+   username: "joshdavislight",
+   pfp: "https://avatars.githubusercontent.com/joshdavislight"
+},
+{
    name: "Josh King",
    link: "https://github.com/jking-aus",
    username: "jking-aus",
@@ -523,6 +547,12 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/kkaur01"
 },
 {
+   name: "karim taam",
+   link: "https://github.com/matkt",
+   username: "matkt",
+   pfp: "https://avatars.githubusercontent.com/matkt"
+},
+{
    name: "kasey",
    link: "https://github.com/kasey",
    username: "kasey",
@@ -547,10 +577,22 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/kdeme"
 },
 {
+   name: "Leo Lara",
+   link: "https://github.com/leolara",
+   username: "leolara",
+   pfp: "https://avatars.githubusercontent.com/leolara"
+},
+{
    name: "lightclient",
    link: "https://github.com/lightclient",
    username: "lightclient",
    pfp: "https://avatars.githubusercontent.com/lightclient"
+},
+{
+   name: "Louis Tsai",
+   link: "https://github.com/LouisTsai-Csie",
+   username: "LouisTsai-Csie",
+   pfp: "https://avatars.githubusercontent.com/LouisTsai-Csie"
 },
 {
    name: "lu-pinto",
@@ -671,6 +713,12 @@ export const members: Member[] = [
    link: "https://github.com/Matilda-Clerke",
    username: "Matilda-Clerke",
    pfp: "https://avatars.githubusercontent.com/Matilda-Clerke"
+},
+{
+   name: "Matt Joiner",
+   link: "https://github.com/anacrolix",
+   username: "anacrolix",
+   pfp: "https://avatars.githubusercontent.com/anacrolix"
 },
 {
    name: "Matthew Keil",
@@ -811,12 +859,6 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/pvecchiarelli"
 },
 {
-   name: "Phil Ngo",
-   link: "https://github.com/philknows",
-   username: "philknows",
-   pfp: "https://avatars.githubusercontent.com/philknows"
-},
-{
    name: "pk910",
    link: "https://github.com/pk910",
    username: "pk910",
@@ -827,12 +869,6 @@ export const members: Member[] = [
    link: "https://github.com/poojaranjan",
    username: "poojaranjan",
    pfp: "https://avatars.githubusercontent.com/poojaranjan"
-},
-{
-   name: "Pop",
-   link: "https://github.com/ppopth",
-   username: "ppopth",
-   pfp: "https://avatars.githubusercontent.com/ppopth"
 },
 {
    name: "potuz",
@@ -853,10 +889,10 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/prestonvanloon"
 },
 {
-   name: "Radosław Kapka",
-   link: "https://github.com/rkapka",
-   username: "rkapka",
-   pfp: "https://avatars.githubusercontent.com/rkapka"
+   name: "QED",
+   link: "https://github.com/mariosioannou-create",
+   username: "mariosioannou-create",
+   pfp: "https://avatars.githubusercontent.com/mariosioannou-create"
 },
 {
    name: "Rafael Matias",
@@ -901,18 +937,6 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/jflo"
 },
 {
-   name: "rodiazet",
-   link: "https://github.com/rodiazet",
-   username: "rodiazet",
-   pfp: "https://avatars.githubusercontent.com/rodiazet"
-},
-{
-   name: "RomanHodulak",
-   link: "https://github.com/RomanHodulak",
-   username: "RomanHodulak",
-   pfp: "https://avatars.githubusercontent.com/RomanHodulak"
-},
-{
    name: "Ruben Buniatyan",
    link: "https://github.com/rubo",
    username: "rubo",
@@ -947,6 +971,12 @@ export const members: Member[] = [
    link: "https://github.com/SamWilsn",
    username: "SamWilsn",
    pfp: "https://avatars.githubusercontent.com/SamWilsn"
+},
+{
+   name: "Satyajit Das",
+   link: "https://github.com/satushh",
+   username: "satushh",
+   pfp: "https://avatars.githubusercontent.com/satushh"
 },
 {
    name: "Saulius Grigaitis",
@@ -985,12 +1015,6 @@ export const members: Member[] = [
    pfp: "https://avatars.githubusercontent.com/somnathb1"
 },
 {
-   name: "Sophia Gold",
-   link: "https://github.com/Sophia-Gold",
-   username: "Sophia-Gold",
-   pfp: "https://avatars.githubusercontent.com/Sophia-Gold"
-},
-{
    name: "Spencer Taylor-Brown",
    link: "https://github.com/spencer-tb",
    username: "spencer-tb",
@@ -1013,12 +1037,6 @@ export const members: Member[] = [
    link: "https://github.com/sudeepdino008",
    username: "sudeepdino008",
    pfp: "https://avatars.githubusercontent.com/sudeepdino008"
-},
-{
-   name: "Tanishq Jasoria",
-   link: "https://github.com/tanishqjasoria",
-   username: "tanishqjasoria",
-   pfp: "https://avatars.githubusercontent.com/tanishqjasoria"
 },
 {
    name: "Terence Tsao",
