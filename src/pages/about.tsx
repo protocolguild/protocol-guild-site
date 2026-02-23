@@ -167,7 +167,7 @@ const About: FC = () => {
               <div className="grid grid-cols-1 gap-6">
                 <FeatureCard
                   title="Protocol Guild Members"
-                  description="184 researchers and developers are members of Protocol Guild"
+                  description="187 researchers and developers are members of Protocol Guild"
                   color="var(--gray-dark)"
                 />
                 <MemberFaces />
