@@ -1,7 +1,9 @@
-title: 'Q1 2026 Membership Audit'\
-excerpt: 'Our 15th quarterly audit of funded members has been completed.'\
-coverImage: '/quarterlyauditgraphic.png'\
+---
+title: 'Q1 2026 Membership Audit'
+excerpt: 'Our 15th quarterly audit of funded members has been completed.'
+coverImage: '/quarterlyauditgraphic.png'
 date: '2026-02-24'
+---
 
 Our membership has concluded its latest quarterly audit of funded members as of [Feb 20 2026](https://gov.protocolguild.org/proposals/70065505230967544692252086067427072769828647116762556567730009228970868277338). This 15th consecutive update reaffirms our institution's consistency and ability to self-regulate.
 
