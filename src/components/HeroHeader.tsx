@@ -31,19 +31,20 @@ const HeroHeader: FC<HeroHeaderProps> = ({
       background="white"
       className={`flex flex-col relative overflow-hidden ${className}`.trim()}
     >
+      {/* Image is positioned at the Section level (w-full) so it reaches the viewport edge */}
+      {imageSrc && (
+        <div className="absolute top-0 right-0 w-full h-full z-0 flex justify-end pointer-events-none">
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            className="h-full w-auto object-contain opacity-0 md:opacity-100"
+          />
+        </div>
+      )}
+
       <Section.Row className="relative z-1">
         <Grid>
           <Grid.Item span={12} className="relative flex">
-            {imageSrc && (
-              <div className="absolute top-0 left-0 w-full z-0 flex justify-end h-full">
-                <img
-                  src={imageSrc}
-                  alt={imageAlt}
-                  className="h-full w-auto max-w-full object-contain opacity-0 md:opacity-100"
-                />
-              </div>
-            )}
-
             <div
               className={`relative z-10 flex flex-col items-start ${paddingTopClassName} ${paddingBottomClassName} ${contentWidthClassName}`.trim()}
             >
