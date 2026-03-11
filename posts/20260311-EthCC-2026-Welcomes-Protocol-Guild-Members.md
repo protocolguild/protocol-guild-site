@@ -21,5 +21,6 @@ Learn more at their 2026 event at [ethcc.io](https://ethcc.io).
 
 Protocol Guild is a peer-managed collective of Ethereum protocol contributors and is the leading independent organization dedicated to sustainable funding for core development.
 
-Funding streams from the 1% Pledge vest over four years and are distributed directly to Protocol Guild's 187 current members according to transparent weighting and membership processes. Since 2022, Protocol Guild has distributed $37MM directly to the individuals stewarding protocol upgrades and maintenance.\
+Funding streams from the 1% Pledge vest over four years and are distributed directly to Protocol Guild's 187 current members according to transparent weighting and membership processes. Since 2022, Protocol Guild has distributed $37MM directly to the individuals stewarding protocol upgrades and maintenance.
+
 Learn more: [PG Website](https://www.protocolguild.org/)
