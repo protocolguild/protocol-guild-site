@@ -14,6 +14,8 @@ import pufferSvg from '../assets/images/donors/puffer.svg'
 import pufferWhiteSvg from '../assets/images/donors/puffer-white.svg'
 import shutterSvg from '../assets/images/donors/shutter.svg'
 import shutterWhiteSvg from '../assets/images/donors/shutter-white.svg'
+import shapeSvg from '../assets/images/donors/shape.svg'
+import shapeWhiteSvg from '../assets/images/donors/shape-white.svg'
 
 // Donors
 import layerzeroSvg from '../assets/images/donors/layerzero.svg'
@@ -91,7 +93,9 @@ const donors = [
   { name: 'Gitcoin', logo: gitcoinSvg, logoWhite: gitcoinWhiteSvg, url: 'https://gitcoin.co' },
   { name: 'Shutter DAO', logo: shutterSvg, logoWhite: shutterWhiteSvg, url: 'https://shutter.network/' },
   { name: 'Drips', logo: dripsSvg, logoWhite: dripsWhiteSvg, url: 'https://drips.network' },
-  { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' }
+  { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' },
+  { name: 'Shape', logo: shapeSvg, logoWhite: shapeWhiteSvg, url: 'https://shape.network' }
+
 ]
 
 interface DonorSectionProps {
