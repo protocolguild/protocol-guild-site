@@ -98,10 +98,10 @@ const DonorSection = ({ className = '', theme = 'light', type = 'Donors', featur
 
   return (
     <div className={`donors ${className} ${`border-t ${theme === 'light' ? 'border-[#fff]' : 'border-[var(--gray-dark)]'}`} pt-4 pb-0`}>
-      {!featured && <p className={`text-[15px] font-medium mb-2 ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE PARTNERS'}</p>}
+      {!featured && <p className={`text-[15px] font-medium mb-2 ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE DONORS'}</p>}
       {featured && (
         <div className="flex flex-row justify-between items-center w-full mb-6">
-          <p className={`text-[15px] font-medium ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE PARTNERS'}</p>
+          <p className={`text-[15px] font-medium ${theme === 'light' ? 'text-[var(--white)]' : 'text-[var(--gray-dark)]'}`}>{type === 'Donors' ? 'OTHER DONORS' : '1% PLEDGE DONORS'}</p>
           <img className="h-6 md:h-7" src={pgIcon} alt="PG Icon" />
         </div>
       )}
