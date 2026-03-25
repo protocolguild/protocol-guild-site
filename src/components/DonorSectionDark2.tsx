@@ -13,6 +13,8 @@ import pufferSvg from '../assets/images/donors/puffer.svg'
 import pufferWhiteSvg from '../assets/images/donors/puffer-white.svg'
 import shutterSvg from '../assets/images/donors/shutter.svg'
 import shutterWhiteSvg from '../assets/images/donors/shutter-white.svg'
+import shapeSvg from '../assets/images/donors/shape.svg'
+import shapeWhiteSvg from '../assets/images/donors/shape-white.svg'
 
 // Donors
 import layerzeroSvg from '../assets/images/donors/layerzero.svg'
@@ -69,7 +71,8 @@ const partners = [
   { name: 'EigenLayer', logo: eigenlayerSvg, logoWhite: eigenlayerWhiteSvg, url: 'https://eigenlayer.xyz' },
   { name: 'PWN Dao', logo: pwnSvg, logoWhite: pwnWhiteSvg, url: 'https://pwn.xyz/' },
   { name: 'Puffer', logo: pufferSvg, logoWhite: pufferWhiteSvg, url: 'https://puffer.fi' },
-  { name: 'Shutter DAO', logo: shutterSvg, logoWhite: shutterWhiteSvg, url: 'https://shutter.network/' }
+  { name: 'Shutter DAO', logo: shutterSvg, logoWhite: shutterWhiteSvg, url: 'https://shutter.network/' },
+  { name: 'Shape', logo: shapeSvg, logoWhite: shapeWhiteSvg, url: 'https://shape.network' }
 
 ]
 
