@@ -27,7 +27,7 @@ export const donateContent = {
     link: "Protocol Guild Pledge announcement on Mirror",
     quote: {
       text: "\"Ethereum thrives because of its incredible contributors — the developers, researchers, and coordinators working tirelessly behind the scenes.\"",
-      author: "Eigenlayer, 1% Pledge Partner",
+      author: "Eigenlayer, 1% Pledge Donor",
     }
   },
   ecosystem: {
@@ -43,7 +43,7 @@ export const donateContent = {
   quotes: [
     {
       text: "\"The 1% allocation is our way of giving back to the core Ethereum maintainer community and acknowledging their exceptional work over the years.\"",
-      author: "Taiko, 1% Pledge Partner"
+      author: "Taiko, 1% Pledge Donor"
     },
     {
       text: "\"Thank you, Ethereum contributors, for nearly a decade of relentless building & ongoing stewardship of this common infrastructure.\"",
@@ -51,15 +51,15 @@ export const donateContent = {
     },
     {
       text: "\"It is in the interest of our community to help ensure the stability of the Ethereum L1 R&D contributor set.\"",
-      author: "INTMAX, 1% Pledge Partner"
+      author: "INTMAX, 1% Pledge Taker"
     },
     {
       text: "\"We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.\"",
-      author: "Lambda Class, 1% Pledge Partner"
+      author: "Lambda Class, 1% Pledge Taker"
     },
     {
       text: "\"Our 1% allocation isn’t charity. It funds core developers - the people Shutter and the broader ecosystem depend on to build and maintain Ethereum.\"",
-      author: "Shutter DAO 0x36, 1% Pledge Partner"
+      author: "Shutter DAO 0x36, 1% Pledge Donor"
     }
   ],
   donate: {
