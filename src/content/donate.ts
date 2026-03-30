@@ -60,6 +60,10 @@ export const donateContent = {
     {
       text: "\"Our 1% allocation isn’t charity. It funds core developers - the people Shutter and the broader ecosystem depend on to build and maintain Ethereum.\"",
       author: "Shutter DAO 0x36, 1% Pledge Donor"
+    },
+    {
+      text: "\"Shape is the network for onchain objects, built on top of Ethereum to scale the new NFT economy. We took the 1% pledge as for Shape supporting Ethereum isn't optional - it's foundational.\"",
+      author: "Shape, 1% Pledge Donor"
     }
   ],
   donate: {
