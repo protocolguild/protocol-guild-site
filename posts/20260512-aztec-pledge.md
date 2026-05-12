@@ -19,7 +19,7 @@ The Aztec Foundation is a nonprofit organization that supports the growth and de
 
 The Aztec Network is the first fully decentralized, privacy-preserving Layer 2 zkRollup on Ethereum. It enables programmable privacy for smart contracts, allowing developers to build confidential applications without compromising decentralization or composability with Ethereum. Noir gives blockchain and web developers a powerful, general-purpose language for building privacy-preserving applications.
 
-Learn more: [aztec.foundation](https://aztec.foundation/)
+Learn more: [aztec.foundation](https://aztec.foundation/) - [Twitter](https://x.com/aztecFND)
 
 ## About Protocol Guild
 
