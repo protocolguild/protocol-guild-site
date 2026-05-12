@@ -19,10 +19,10 @@ The Aztec Foundation is a nonprofit organization that supports the growth and de
 
 The Aztec Network is the first fully decentralized, privacy-preserving Layer 2 zkRollup on Ethereum. It enables programmable privacy for smart contracts, allowing developers to build confidential applications without compromising decentralization or composability with Ethereum. Noir gives blockchain and web developers a powerful, general-purpose language for building privacy-preserving applications.
 
-Learn more: [aztec.foundation](https://aztec.foundation/) - [Twitter](https://x.com/aztecFND)
+Learn more: [Website](https://aztec.foundation/) - [X](https://x.com/aztecFND)
 
 ## About Protocol Guild
 
 Protocol Guild is a peer-managed collective of Ethereum protocol contributors and the leading independent organization dedicated to sustainable funding for core development. Since 2022, Protocol Guild has distributed more than $38MM directly to the individuals stewarding Ethereum protocol upgrades and maintenance.
 
-Learn more: [Website](https://www.protocolguild.org/) - [Docs](https://protocol-guild.readthedocs.io/en/latest/index.html) - [Dune](https://dune.com/protocolguild/protocol-guild)
+Learn more: [Website](https://www.protocolguild.org/) - [Docs](https://protocol-guild.readthedocs.io/en/latest/index.html) - [Dune](https://dune.com/protocolguild/protocol-guild) - [X](https://x.com/ProtocolGuild)
