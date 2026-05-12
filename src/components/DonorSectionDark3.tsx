@@ -16,6 +16,8 @@ import shutterSvg from '../assets/images/donors/shutter.svg'
 import shutterWhiteSvg from '../assets/images/donors/shutter-white.svg'
 import shapeSvg from '../assets/images/donors/shape.svg'
 import shapeWhiteSvg from '../assets/images/donors/shape-white.svg'
+import aztecSvg from '../assets/images/donors/aztec.svg'
+import aztecWhiteSvg from '../assets/images/donors/aztec-white.svg'
 
 // Donors
 import layerzeroSvg from '../assets/images/donors/layerzero.svg'
@@ -76,6 +78,7 @@ const donors = [
   { name: 'Optimism', logo: optimismSvg, logoWhite: optimismWhiteSvg, url: 'https://optimism.io' },
   { name: 'Lido', logo: lidoSvg, logoWhite: lidoWhiteSvg, url: 'https://lido.fi' },
   { name: 'Uniswap', logo: uniswapSvg, logoWhite: uniswapWhiteSvg, url: 'https://uniswap.org' },
+  { name: 'Aztec Foundation', logo: aztecSvg, logoWhite: aztecWhiteSvg, url: 'https://aztec.foundation' },
   { name: 'ENS', logo: ensSvg, logoWhite: ensWhiteSvg, url: 'https://ens.domains' },
   { name: 'Starknet', logo: starknetSvg, logoWhite: starknetWhiteSvg, url: 'https://www.starknet.io/' },
   { name: 'ZKSync', logo: zksyncSvg, logoWhite: zksyncWhiteSvg, url: 'https://zksync.io' },
