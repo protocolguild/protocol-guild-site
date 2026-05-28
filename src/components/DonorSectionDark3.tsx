@@ -64,6 +64,7 @@ import vanEckSvg from '../assets/images/donors/vaneck.svg'
 import vanEckWhiteSvg from '../assets/images/donors/vaneck-white.svg'
 import aaveSvg from '../assets/images/donors/aave.svg'
 import aaveWhiteSvg from '../assets/images/donors/aave-white.svg'
+import megapotSvg from '../assets/images/donors/megapot.svg'
 
 const partners = [
 ]
@@ -97,7 +98,8 @@ const donors = [
   { name: 'Shutter DAO', logo: shutterSvg, logoWhite: shutterWhiteSvg, url: 'https://shutter.network/' },
   { name: 'Drips', logo: dripsSvg, logoWhite: dripsWhiteSvg, url: 'https://drips.network' },
   { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' },
-  { name: 'Shape', logo: shapeSvg, logoWhite: shapeWhiteSvg, url: 'https://shape.network' }
+  { name: 'Shape', logo: shapeSvg, logoWhite: shapeWhiteSvg, url: 'https://shape.network' },
+  { name: 'Megapot', logo: megapotSvg, logoWhite: megapotSvg, url: 'https://megapot.io/fund/pg' },
 
 ]
 
@@ -123,8 +125,7 @@ return (
               href={donor.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-5 md:h-7 flex-grow" // Allow the anchor to grow
-              style={{ minWidth: '100px' }} // Set a minimum width for the logos
+              className="flex items-center justify-center h-5 md:h-7"
             >
               <img 
                 src={donor.logo} 

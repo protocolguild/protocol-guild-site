@@ -12,6 +12,8 @@ import { donateContent } from '../content/donate'
 import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
 import authorImage from '../assets/images/EigenLayer.png'
+import InKindAppreciation from '../components/InKindAppreciation'
+import InAppContributions from '../components/InAppContributions'
 
 const Donate: FC = () => {
   const [currentQuote, setCurrentQuote] = useState(0)
@@ -342,6 +344,29 @@ const Donate: FC = () => {
                 type="Donors"
                 className="max-w-[100%] lg:max-w-[90%] mx-auto"
               />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={12}>
+              <InAppContributions />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={6} className="flex flex-col gap-6">
+              <InKindAppreciation.Logos />
+            </Grid.Item>
+            <Grid.Item span={6} className="flex flex-col gap-4">
+              <InKindAppreciation.Header />
             </Grid.Item>
           </Grid>
         </Section.Row>
