@@ -19,7 +19,7 @@ const opportunities: Opportunity[] = [
     description:
       'Enter the Megapot onchain lottery and a portion of every ticket goes directly to Protocol Guild. Win big while supporting Ethereum\'s core developers.',
     cta: 'Enter the contest',
-    href: 'https://megapot.xyz',
+    href: 'https://megapot.io/fund/pg',
     tag: 'Onchain lottery',
   },
 ]
