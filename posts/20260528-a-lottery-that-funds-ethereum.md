@@ -1,7 +1,7 @@
 ---
 title: 'Megapot x Protocol Guild: A Lottery That Funds Ethereum'
 excerpt: "Protocol Guild has partnered with Megapot to turn lottery ticket purchases into recurring onchain funding for Ethereum's core protocol maintainers"
-coverImage: '/megapotcover.png'
+coverImage: '/Megapotcover.png'
 date: '2026-05-28'
 ---
 
