@@ -1,7 +1,7 @@
 ---
 title: 'Securing the Stewards: Keycard Shell for Every Protocol Guild Member'
 excerpt: 'Institute of Free Technology is sponsoring a Keycard Shell bundle; one Shell device plus two Keycards; for every Protocol Guild member'
-coverImage: '/keycard.png'
+coverImage: '/keycard1.png'
 date: '2026-06-12'
 ---
 
