@@ -29,7 +29,7 @@ const InAppContributions: FC = () => (
   <div className="flex flex-col gap-6">
     <div className="flex flex-col gap-2">
       <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">
-        Use Ethereum apps, fund core development
+        Use Ethereum apps, fund core development.
       </h2>
     </div>
 
