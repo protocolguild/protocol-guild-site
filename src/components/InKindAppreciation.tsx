@@ -22,7 +22,7 @@ const DevconLogo: FC = () => (
 type Item = { id: string; name: string; url: string; Logo?: FC }
 
 const perks: Item[] = [
-  { id: 'ethcc',     name: 'EthCC',        url: 'https://ethcc.io',      Logo: EthCCLogo  },
+  { id: 'ethcc',     name: 'EthCC',        url: 'https://www.protocolguild.org/blog/20260311-EthCC-2026-Welcomes-Protocol-Guild-Members', Logo: EthCCLogo  },
   { id: 'devcon',    name: 'Devcon',        url: 'https://devcon.org',    Logo: DevconLogo },
   { id: 'ethprague', name: 'ETH Prague',    url: 'https://ethprague.com'  },
   { id: 'dappcon',   name: 'DappCon',       url: 'https://dappcon.io'     },
