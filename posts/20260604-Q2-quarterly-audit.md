@@ -11,7 +11,7 @@ The member registry now includes a number of new contributor accounts as well as
 
 Protocol Guild's membership is now 196, with a net increase of 9 (+4.8%) members from 187 of last quarter. This quarter, the membership update was once again processed onchain via Protocol Guild's Agora-based DAO contracts. Readers will find a comprehensive list of the changeset below.
 
-New Members (11 total)
+New Members (12 total)
 ----------------------
 
 | Working Group | New Member | Summary |
@@ -29,7 +29,7 @@ New Members (11 total)
 | Nethermind | Oleksii [#484](https://github.com/protocolguild/documentation/commit/dea6308ac7fbaeac908327114cb58cd220bb7ba1) | Joined Nethermind's Core team in May 2024, contributing log index infrastructure for eth_getLogs, EIP-7212 (secp256r1 precompile), state override for eth_call, and the eth/69 protocol. Returned in March 2026 at 50% capacity, now triaging external security reports. |
 | STEEL | kclowes [#489](https://github.com/protocolguild/documentation/pull/489) | Full-time contributor to ethereum/execution-specs and execution-spec-tests since June 2025, including EIP-7951 (P256VERIFY) tests and a related security fix. Previously a py-evm maintainer who implemented EIP-7702, EIP-3529, and EIP-2565. |
 
-New Alumni Members (8 Total)
+New Alumni Members (3 Total)
 ----------------------------
 
 Protocol Guild members who move on to other work are considered 'Alumni' at the conclusion of their membership. We are grateful for their stewarding contributions to the world computer over the years and wish them well.
