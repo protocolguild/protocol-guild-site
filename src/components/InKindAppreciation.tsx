@@ -1,5 +1,7 @@
 import { FC } from 'react'
 import keycardImg from '../assets/images/donors/keycardblack.png'
+import ethccImg from '../assets/images/donors/ethcc.svg'
+import devconImg from '../assets/images/donors/devcon.svg'
 
 /* ─── Logos ──────────────────────────────────────────────────────────────── */
 
@@ -7,13 +9,21 @@ const KeycardLogo: FC = () => (
   <img src={keycardImg} alt="Keycard" className="h-10 md:h-14 w-auto max-w-[140px]" />
 )
 
+const EthCCLogo: FC = () => (
+  <img src={ethccImg} alt="EthCC" className="h-10 md:h-14 w-auto max-w-[140px]" />
+)
+
+const DevconLogo: FC = () => (
+  <img src={devconImg} alt="Devcon" className="h-10 md:h-14 w-auto max-w-[140px]" />
+)
+
 /* ─── Data ────────────────────────────────────────────────────────────────── */
 
 type Item = { id: string; name: string; url: string; Logo?: FC }
 
 const perks: Item[] = [
-  { id: 'ethcc',     name: 'EthCC',        url: 'https://ethcc.io'       },
-  { id: 'devcon',    name: 'Devcon',        url: 'https://devcon.org'     },
+  { id: 'ethcc',     name: 'EthCC',        url: 'https://ethcc.io',      Logo: EthCCLogo  },
+  { id: 'devcon',    name: 'Devcon',        url: 'https://devcon.org',    Logo: DevconLogo },
   { id: 'ethprague', name: 'ETH Prague',    url: 'https://ethprague.com'  },
   { id: 'dappcon',   name: 'DappCon',       url: 'https://dappcon.io'     },
   { id: 'ethglobal', name: 'ETHGlobal',     url: 'https://ethglobal.com'  },
