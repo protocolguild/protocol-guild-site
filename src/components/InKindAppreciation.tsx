@@ -6,15 +6,15 @@ import devconImg from '../assets/images/donors/devcon.svg'
 /* ─── Logos ──────────────────────────────────────────────────────────────── */
 
 const KeycardLogo: FC = () => (
-  <img src={keycardImg} alt="Keycard" className="h-5 md:h-7 w-auto max-w-[100px]" />
+  <img src={keycardImg} alt="Keycard" className="h-10 md:h-14 w-auto max-w-[140px]" />
 )
 
 const EthCCLogo: FC = () => (
-  <img src={ethccImg} alt="EthCC" className="h-5 md:h-7 w-auto max-w-[100px]" />
+  <img src={ethccImg} alt="EthCC" className="h-10 md:h-14 w-auto max-w-[140px]" />
 )
 
 const DevconLogo: FC = () => (
-  <img src={devconImg} alt="Devcon" className="h-5 md:h-7 w-auto max-w-[100px]" />
+  <img src={devconImg} alt="Devcon" className="h-10 md:h-14 w-auto max-w-[140px]" />
 )
 
 /* ─── Data ────────────────────────────────────────────────────────────────── */
@@ -50,7 +50,7 @@ const LogoRow: FC<{ title: string; items: Item[] }> = ({ title, items }) => (
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center h-5 md:h-7 hover:opacity-70 transition-opacity"
+          className="flex items-center justify-center h-10 md:h-14 hover:opacity-70 transition-opacity"
         >
           {Logo
             ? <Logo />
