@@ -6,15 +6,15 @@ import devconImg from '../assets/images/donors/devcon.svg'
 /* ─── Logos ──────────────────────────────────────────────────────────────── */
 
 const KeycardLogo: FC = () => (
-  <img src={keycardImg} alt="Keycard" className="h-full w-auto max-w-[100px]" />
+  <img src={keycardImg} alt="Keycard" className="h-5 md:h-7 w-auto max-w-[100px]" />
 )
 
 const EthCCLogo: FC = () => (
-  <img src={ethccImg} alt="EthCC" className="h-full w-auto max-w-[100px]" />
+  <img src={ethccImg} alt="EthCC" className="h-5 md:h-7 w-auto max-w-[100px]" />
 )
 
 const DevconLogo: FC = () => (
-  <img src={devconImg} alt="Devcon" className="h-full w-auto max-w-[100px]" />
+  <img src={devconImg} alt="Devcon" className="h-5 md:h-7 w-auto max-w-[100px]" />
 )
 
 /* ─── Data ────────────────────────────────────────────────────────────────── */
