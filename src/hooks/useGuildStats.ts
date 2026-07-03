@@ -20,7 +20,8 @@ const CACHE_DURATION = 1000 * 60 * 60 // 1 hour
 const API_KEY = () => (import.meta.env.VITE_DUNE_API_KEY as string) || ''
 
 async function fetchQuery(queryId: string): Promise<any[] | null> {
-  const cacheKey = `dune-stat-${queryId}`
+  // v2 suffix busts any stale pre-fix cache entries for member-count query
+  const cacheKey = `dune-stat-${queryId}-v2`
   try {
     const cached = localStorage.getItem(cacheKey)
     if (cached) {
@@ -87,10 +88,13 @@ export function useGuildStats(): GuildStats {
       const dist = distRows?.[0]?.['total_vested_hist']
       if (typeof dist === 'number') setTotalDistributed(formatMillions(dist))
 
-      // 2665887 is a time-series — last row = latest member count
-      const lastRow = memberRows?.[memberRows.length - 1]
-      const count = lastRow?.['total_count']
-      if (count != null) setMemberCount(String(count))
+      // 2665887 is a time-series — take the max total_count across all rows
+      // (avoids relying on Dune row sort order which may be newest-first)
+      const count = memberRows?.reduce((max: number, row: any) => {
+        const v = Number(row?.['total_count'])
+        return isNaN(v) ? max : Math.max(max, v)
+      }, 0)
+      if (count > 0) setMemberCount(String(count))
 
       setLoading(false)
     })()
