@@ -84,7 +84,7 @@ const DonationWidget: FC = () => {
         <div className="rounded-lg bg-[#f5f8fa] px-4 py-3 flex flex-col gap-1">
           <p className="text-xs text-[var(--gray-mid)]">
             {donationInfo.type === 'vesting'
-              ? '4-year immutable vesting contract'
+              ? '1-year immutable vesting contract'
               : 'Multisig — funds bridged periodically to vesting contract'}
           </p>
           <p className="text-xs font-mono text-[var(--gray-dark)] break-all">

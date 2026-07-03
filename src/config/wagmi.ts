@@ -11,22 +11,22 @@ export const wagmiConfig = getDefaultConfig({
   ssr: false,
 })
 
-// Donation addresses per chain — vesting contracts where available, multisig otherwise
+// Donation addresses per chain — 1-year vesting contracts where available, multisig otherwise
 export const DONATION_ADDRESSES: Record<number, { address: string; type: 'vesting' | 'multisig' }> = {
   [mainnet.id]: {
-    address: '0x25941dC771bB64514Fc8abBce970307Fb9d477e9',
+    address: '0x4EA88fa76848a8BBAB72613d4171df1eBcf68399',
     type: 'vesting',
   },
   [base.id]: {
-    address: '0xd16713A5D4Eb7E3aAc9D2228eB72f6f7328FADBD',
+    address: '0xffaaCCFe120f3fC47f42102cF4F28e837cd49A20',
     type: 'vesting',
   },
   [arbitrum.id]: {
-    address: '0x7F8DCFd764bA8e9B3BA577dC641D5c664B74c47b',
+    address: '0x8ee2AcfEbd311c1cF8d74448E207B4960EaCf599',
     type: 'vesting',
   },
   [optimism.id]: {
-    address: '0x58ae0925077527a87D3B785aDecA018F9977Ec34',
+    address: '0x7a489D5Fedd52f561b73EC8B0a164c0BD36036A2',
     type: 'vesting',
   },
   [polygon.id]: {
