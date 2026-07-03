@@ -14,6 +14,7 @@ import DuneStat from '../components/DuneStat'
 import authorImage from '../assets/images/EigenLayer.png'
 import InAppContributions from '../components/InAppContributions'
 import InKindAppreciation from '../components/InKindAppreciation'
+import PledgeNFTPreview from '../components/PledgeNFTPreview'
 
 const Donate: FC = () => {
   const [currentQuote, setCurrentQuote] = useState(0)
@@ -142,6 +143,7 @@ const Donate: FC = () => {
                 }}
               />
               <DonorSectionDark2 theme="dark" type="Partners" featured={true} />
+              <PledgeNFTPreview />
             </Grid.Item>
           </Grid>
         </Section.Row>
