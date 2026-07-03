@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 
 // ── On-chain SVG template (verbatim from Deploy.s.sol) ────────────────────────
 // HEADER ends mid-text-element; name1 is concatenated directly after it.
@@ -52,42 +52,85 @@ const BADGE_URLS = BADGES.map(b =>
 )
 
 // ── Component ─────────────────────────────────────────────────────────────────
-const PledgeNFTPreview: FC = () => (
-  <div className="flex flex-col gap-3 pt-6 border-t border-[var(--gray-light)] mt-2">
-    <div className="flex flex-row justify-between items-baseline">
-      <p className="text-[15px] font-medium text-[var(--gray-dark)]">ON-CHAIN CREDENTIALS</p>
-      <a
-        href="https://github.com/protocolguild/pg-nft"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[13px] text-[var(--gray-mid)] hover:opacity-70 underline"
-      >
-        View on GitHub
-      </a>
-    </div>
-    <p className="text-sm text-[var(--gray-mid)] leading-[1.5]">
-      Each 1% pledge partner receives a permanent on-chain NFT credential, stored entirely on Ethereum.
-    </p>
-    <div className="flex flex-wrap gap-3 mt-1">
-      {BADGES.map((badge, i) => (
-        <a
-          key={badge.id}
-          href={badge.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:opacity-80 transition-opacity"
-        >
-          <img
-            src={BADGE_URLS[i]}
-            alt={`${badge.name1}${badge.name2 ? ' ' + badge.name2 : ''} Pledge Partner NFT`}
-            width={120}
-            height={144}
-            style={{ display: 'block' }}
-          />
-        </a>
-      ))}
-    </div>
-  </div>
+const Chevron: FC<{ dir: 'left' | 'right' }> = ({ dir }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+    fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    {dir === 'left'
+      ? <path d="M15 18l-6-6 6-6" />
+      : <path d="M9 18l6-6-6-6" />}
+  </svg>
 )
+
+const PledgeNFTPreview: FC = () => {
+  const [start, setStart] = useState(0)
+  const total = BADGES.length
+  const prev = () => setStart(s => (s - 1 + total) % total)
+  const next = () => setStart(s => (s + 1) % total)
+  const visible = [0, 1, 2].map(i => {
+    const idx = (start + i) % total
+    return { badge: BADGES[idx], dataUrl: BADGE_URLS[idx] }
+  })
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
+
+      {/* Left — text */}
+      <div className="md:col-span-4 flex flex-col gap-4">
+        <div className="flex flex-row justify-between items-baseline">
+          <p className="text-[15px] font-medium text-[var(--gray-dark)]">ONCHAIN CREDENTIALS</p>
+          <a
+            href="https://github.com/protocolguild/pg-nft"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] text-[var(--gray-mid)] hover:opacity-70 underline"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <p className="text-sm text-[var(--gray-mid)] leading-[1.5]">
+          Each 1% pledge partner receives a permanent onchain NFT credential, stored entirely on Ethereum.
+        </p>
+      </div>
+
+      {/* Right — carousel */}
+      <div className="md:col-span-8 flex items-center gap-3">
+        <button
+          onClick={prev}
+          aria-label="Previous badge"
+          className="flex-shrink-0 p-2 rounded-full border border-[var(--gray-light)] hover:bg-[var(--gray-lightest)] transition-colors focus:outline-none"
+        >
+          <Chevron dir="left" />
+        </button>
+
+        <div className="flex flex-1 gap-4 justify-between">
+          {visible.map(({ badge, dataUrl }) => (
+            <a
+              key={`${badge.id}-${start}`}
+              href={badge.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src={dataUrl}
+                alt={`${badge.name1}${badge.name2 ? ' ' + badge.name2 : ''} Pledge Partner NFT`}
+                className="w-full h-auto block"
+              />
+            </a>
+          ))}
+        </div>
+
+        <button
+          onClick={next}
+          aria-label="Next badge"
+          className="flex-shrink-0 p-2 rounded-full border border-[var(--gray-light)] hover:bg-[var(--gray-lightest)] transition-colors focus:outline-none"
+        >
+          <Chevron dir="right" />
+        </button>
+      </div>
+
+    </div>
+  )
+}
 
 export default PledgeNFTPreview

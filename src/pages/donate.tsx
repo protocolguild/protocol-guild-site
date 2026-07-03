@@ -5,7 +5,6 @@ import DonorSectionDark2 from '../components/DonorSectionDark2'
 import DonorSectionDark3 from '../components/DonorSectionDark3'
 import DonorSectionDark4 from '../components/DonorSectionDark4'
 import Grid from '../components/Grid'
-import medallionSvg from '../assets/images/medallion.svg'
 import HeroHeader from '../components/HeroHeader'
 import DuneTable from '../components/DuneTable'
 import { donateContent } from '../content/donate'
@@ -132,17 +131,16 @@ const Donate: FC = () => {
               </div>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col items-center">
-              <img
-                src={medallionSvg}
-                alt="Protocol Guild medallion"
-                className="mt-0 w-48 transform-gpu mb-8"
-                style={{
-                  WebkitBackfaceVisibility: 'hidden',
-                  WebkitTransform: 'translateZ(0)',
-                  imageRendering: '-webkit-optimize-contrast',
-                }}
-              />
               <DonorSectionDark2 theme="dark" type="Partners" featured={true} />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={12}>
               <PledgeNFTPreview />
             </Grid.Item>
           </Grid>
