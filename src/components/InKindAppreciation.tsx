@@ -77,9 +77,9 @@ const Header: FC = () => (
     </h2>
     <a
       href="mailto:contact@protocolguild.org?subject=In-Kind%20Donation%20Inquiry"
-      className="text-sm text-[var(--gray-dark)] hover:opacity-70 underline w-fit"
+      className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline text-sm font-medium"
     >
-      Ready to donate a gift? Contact us!
+      Contact us here
     </a>
   </div>
 )
