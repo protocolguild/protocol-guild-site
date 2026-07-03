@@ -72,37 +72,36 @@ const PledgeNFTPreview: FC = () => {
   })
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
+    <div className="flex flex-col gap-6 w-full">
 
-      {/* Left — text */}
-      <div className="md:col-span-4 flex flex-col gap-4">
-        <div className="flex flex-row justify-between items-baseline">
-          <p className="text-[15px] font-medium text-[var(--gray-dark)]">ONCHAIN CREDENTIALS</p>
-          <a
-            href="https://github.com/protocolguild/pg-nft"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[13px] text-[var(--gray-mid)] hover:opacity-70 underline"
-          >
-            View on GitHub
-          </a>
-        </div>
-        <p className="text-sm text-[var(--gray-mid)] leading-[1.5]">
-          Each 1% pledge partner receives a permanent onchain NFT credential, stored entirely on Ethereum.
-        </p>
+      {/* Top row — label + GitHub link */}
+      <div className="flex flex-row justify-between items-baseline">
+        <p className="text-[15px] font-medium text-[var(--gray-dark)]">ONCHAIN CREDENTIALS</p>
+        <a
+          href="https://github.com/protocolguild/pg-nft"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[13px] text-[var(--gray-mid)] hover:opacity-70 underline"
+        >
+          View on GitHub
+        </a>
       </div>
 
-      {/* Right — carousel */}
-      <div className="md:col-span-8 flex items-center gap-3">
+      <p className="text-sm text-[var(--gray-mid)] leading-[1.5]">
+        Each 1% pledge partner receives a permanent onchain NFT credential, stored entirely on Ethereum.
+      </p>
+
+      {/* Full-width carousel */}
+      <div className="flex items-center gap-4">
         <button
           onClick={prev}
           aria-label="Previous badge"
-          className="flex-shrink-0 p-2 rounded-full border border-[var(--gray-light)] hover:bg-[var(--gray-lightest)] transition-colors focus:outline-none"
+          className="flex-shrink-0 p-2 rounded-full !bg-transparent border border-[var(--gray-light)] text-[var(--gray-mid)] hover:border-[var(--gray-mid)] hover:text-[var(--gray-dark)] transition-colors focus:outline-none"
         >
           <Chevron dir="left" />
         </button>
 
-        <div className="flex flex-1 gap-4 justify-between">
+        <div className="flex flex-1 gap-6 justify-between">
           {visible.map(({ badge, dataUrl }) => (
             <a
               key={`${badge.id}-${start}`}
@@ -123,7 +122,7 @@ const PledgeNFTPreview: FC = () => {
         <button
           onClick={next}
           aria-label="Next badge"
-          className="flex-shrink-0 p-2 rounded-full border border-[var(--gray-light)] hover:bg-[var(--gray-lightest)] transition-colors focus:outline-none"
+          className="flex-shrink-0 p-2 rounded-full !bg-transparent border border-[var(--gray-light)] text-[var(--gray-mid)] hover:border-[var(--gray-mid)] hover:text-[var(--gray-dark)] transition-colors focus:outline-none"
         >
           <Chevron dir="right" />
         </button>
