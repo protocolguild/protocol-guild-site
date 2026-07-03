@@ -52,9 +52,11 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Site is light-mode only — always use white background to prevent dark
+     flash during React Router page transitions on OS dark-mode systems */
+  color-scheme: light;
+  color: var(--gray-dark);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -72,8 +74,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -91,7 +91,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f9f9f9;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -101,19 +101,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--gray-dark);
-    background-color: #ffffff;
-  }
-  a:hover {
-    opacity: 0.7;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 /* Custom Scrollbar Styles */
