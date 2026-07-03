@@ -11,8 +11,10 @@ import chainsImage from '../assets/images/chains.png'
 import DuneStat from '../components/DuneStat'
 import DuneChart from '../components/DuneChart'
 import MemberFaces from '../components/MemberFaces2'
+import { useGuildStats } from '../hooks/useGuildStats'
 
 const About: FC = () => {
+  const { memberCount } = useGuildStats()
   return (
     <main>
       <HeroHeader imageSrc={chainsImage} theme="light">
@@ -167,7 +169,7 @@ const About: FC = () => {
               <div className="grid grid-cols-1 gap-6">
                 <FeatureCard
                   title="Protocol Guild Members"
-                  description="196 researchers and developers are members of Protocol Guild"
+                  description={`${memberCount} researchers and developers are members of Protocol Guild`}
                   color="var(--gray-dark)"
                 />
                 <MemberFaces />

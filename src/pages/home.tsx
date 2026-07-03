@@ -9,8 +9,10 @@ import DuneChart from '../components/DuneChart'
 import MemberFaces from '../components/MemberFaces'
 import Repos from '../components/Repos'
 import DonorSectionDark2 from '../components/DonorSectionDark2'
+import { useGuildStats } from '../hooks/useGuildStats'
 
 const Home: FC = () => {
+  const { totalDistributed, memberCount, repoCount } = useGuildStats()
   return (
     <main>
       <HeroHeader
@@ -34,7 +36,7 @@ const Home: FC = () => {
           <Grid className="py-16">
             <Grid.Item span={6} className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold leading-[1.1] text-[var(--gray-dark)]">
-                {homeContent.section1.title}
+                Since 2022, we have distributed {totalDistributed} directly to Ethereum core contributors.
               </h2>
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
                 <em>{homeContent.section1.quote.text}</em>
@@ -109,7 +111,7 @@ const Home: FC = () => {
                 {homeContent.section2.subtitle3}
               </h2>
               <h2 className="!text-lg font-bold !leading-[24px] !text-[var(--gray-dark)]">
-                {homeContent.section2.subtitle4}
+                {memberCount} contributors, {repoCount} core repositories, 1 Ethereum protocol.
               </h2>
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-6">

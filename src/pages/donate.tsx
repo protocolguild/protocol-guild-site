@@ -15,9 +15,11 @@ import InAppContributions from '../components/InAppContributions'
 import InKindAppreciation from '../components/InKindAppreciation'
 import PledgeNFTPreview from '../components/PledgeNFTPreview'
 import DonationWidget from '../components/DonationWidget'
+import { useGuildStats } from '../hooks/useGuildStats'
 
 const Donate: FC = () => {
   const [currentQuote, setCurrentQuote] = useState(0)
+  const { memberCount, repoCount } = useGuildStats()
 
   const nextQuote = () => {
     setCurrentQuote((prev) => (prev + 1) % donateContent.quotes.length)
@@ -61,17 +63,23 @@ const Donate: FC = () => {
               span={12}
               className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6"
             >
-              {donateContent.value.features.map((feature, index) => (
-                <div className="flex justify-center" key={index}>
-                  <div className="w-full">
-                    <FeatureCard
-                      title={feature.title}
-                      description={feature.description}
-                      color="var(--gray-dark)"
-                    />
+              {donateContent.value.features.map((feature, index) => {
+                // Patch the "Align your project" card with live member + repo counts
+                const description = index === 1
+                  ? `Protocol Guild is the easiest and highest-signal way to support ${memberCount} core contributors across ${repoCount} core Ethereum repositories, from research to client implementations.`
+                  : feature.description
+                return (
+                  <div className="flex justify-center" key={index}>
+                    <div className="w-full">
+                      <FeatureCard
+                        title={feature.title}
+                        description={description}
+                        color="var(--gray-dark)"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </Grid.Item>
           </Grid>
         </Section.Row>
