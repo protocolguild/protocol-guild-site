@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
+import rehypeSlug from 'rehype-slug'
 import { getAllDocs, getDocBySlug } from '../lib/docs'
 import DocSidebar from '../components/DocSidebar'
 import StandaloneNavbar from '../components/StandaloneNavbar'
@@ -36,7 +37,7 @@ const DocPage: FC = () => {
           <article className="prose prose-neutral prose-lg max-w-none break-words prose-a:break-words prose-code:break-words prose-pre:overflow-x-auto prose-h1:mb-4 prose-h1:mt-0 prose-h2:mt-8 prose-h2:mb-4">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
+              rehypePlugins={[rehypeRaw, rehypeSlug]}
               components={{
                 table: ({ node, ...props }) => (
                   <div className="overflow-x-auto">
