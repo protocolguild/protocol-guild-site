@@ -138,16 +138,6 @@ const Donate: FC = () => {
         </Section.Row>
       </Section>
 
-      <Section background="white" divider="var(--brand-primary)" line={true}>
-        <Section.Row align="start">
-          <Grid columns={12} className="py-16">
-            <Grid.Item span={12}>
-              <InAppContributions />
-            </Grid.Item>
-          </Grid>
-        </Section.Row>
-      </Section>
-
       <Section background="white" divider="var(--gray-light)">
         <Section.Row align="start">
           <Grid columns={12} className="py-16">
@@ -348,6 +338,16 @@ const Donate: FC = () => {
                 type="Donors"
                 className="max-w-[100%] lg:max-w-[90%] mx-auto"
               />
+            </Grid.Item>
+          </Grid>
+        </Section.Row>
+      </Section>
+
+      <Section background="white" divider="var(--brand-primary)" line={true}>
+        <Section.Row align="start">
+          <Grid columns={12} className="py-16">
+            <Grid.Item span={12}>
+              <InAppContributions />
             </Grid.Item>
           </Grid>
         </Section.Row>
