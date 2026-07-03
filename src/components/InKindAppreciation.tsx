@@ -36,6 +36,8 @@ const audits: Item[] = [
   { id: 'zellic',     name: 'Zellic',       url: 'https://zellic.io'        },
   { id: 'redguild',   name: 'Red Guild',    url: 'https://theredguild.org'  },
   { id: 'agora',      name: 'Agora',        url: 'https://agora.xyz'        },
+  { id: 'daohaus',   name: 'DAOhaus',      url: 'https://daohaus.club'     },
+  { id: 'splits',    name: 'Splits',       url: 'https://splits.org'       },
 ]
 
 /* ─── Sub-components ─────────────────────────────────────────────────────── */
