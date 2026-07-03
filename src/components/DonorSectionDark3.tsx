@@ -99,7 +99,7 @@ const donors = [
   { name: 'Drips', logo: dripsSvg, logoWhite: dripsWhiteSvg, url: 'https://drips.network' },
   { name: 'VanEck', logo: vanEckSvg, logoWhite: vanEckWhiteSvg, url: 'https://www.vaneck.com/us/en/insights/digital-assets/' },
   { name: 'Shape', logo: shapeSvg, logoWhite: shapeWhiteSvg, url: 'https://shape.network' },
-  { name: 'Megapot', logo: megapotSvg, logoWhite: megapotSvg, url: 'https://megapot.io/fund/pg' },
+  { name: 'Megapot', logo: megapotSvg, logoWhite: megapotSvg, url: 'https://megapot.io' },
 
 ]
 
