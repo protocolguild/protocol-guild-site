@@ -76,9 +76,9 @@ const Header: FC = () => (
       Anything that helps reward the individuals building Ethereum's core protocol is welcome.
     </h2>
     <div className="flex flex-col gap-3">
-      <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
+      <p className="text-sm text-[var(--gray-dark)] underline">
         Ready to donate a gift?
-      </h2>
+      </p>
       <a
         href="mailto:contact@protocolguild.org?subject=In-Kind%20Donation%20Inquiry"
         className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline text-sm font-medium"
