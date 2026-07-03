@@ -14,6 +14,7 @@ import authorImage from '../assets/images/EigenLayer.png'
 import InAppContributions from '../components/InAppContributions'
 import InKindAppreciation from '../components/InKindAppreciation'
 import PledgeNFTPreview from '../components/PledgeNFTPreview'
+import DonationWidget from '../components/DonationWidget'
 
 const Donate: FC = () => {
   const [currentQuote, setCurrentQuote] = useState(0)
@@ -319,14 +320,7 @@ const Donate: FC = () => {
               <h2 className="!text-lg !font-normal !leading-[24px] !text-[var(--gray-dark)]">
                 {donateContent.donate.description2}
               </h2>
-              <a
-                href={donateContent.donate.buttonLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block"
-              >
-                {donateContent.donate.buttonText}
-              </a>
+              <DonationWidget />
             </Grid.Item>
             <Grid.Item span={6} className="flex flex-col gap-3">
               <div className="flex justify-between">
