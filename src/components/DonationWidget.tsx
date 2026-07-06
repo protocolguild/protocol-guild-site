@@ -19,7 +19,7 @@ const DonationWidget: FC = () => {
   const { isConnected } = useAccount()
   const chainId = useChainId()
   const { switchChain } = useSwitchChain()
-  const { sendTransaction, isPending, isSuccess, isError, reset } = useSendTransaction()
+  const { sendTransaction, isPending, isSuccess, isError, error, reset } = useSendTransaction()
 
   const [selectedChainId, setSelectedChainId] = useState<number>(mainnet.id)
   const [amount, setAmount] = useState('')
@@ -48,6 +48,7 @@ const DonationWidget: FC = () => {
     sendTransaction({
       to: donationInfo.address as `0x${string}`,
       value: parseEther(amount),
+      chainId: selectedChainId,
     })
   }
 
@@ -160,9 +161,14 @@ const DonationWidget: FC = () => {
         </p>
       )}
       {isError && (
-        <p className="text-sm text-red-500 text-center">
-          Transaction failed or was rejected. Please try again.
-        </p>
+        <div className="text-sm text-red-500 text-center flex flex-col gap-1">
+          <p>Transaction failed or was rejected.</p>
+          {error && (
+            <p className="text-xs font-mono break-all text-red-400">
+              {(error as any)?.shortMessage || (error as any)?.message || String(error)}
+            </p>
+          )}
+        </div>
       )}
 
       <p className="text-xs text-[var(--gray-mid)] text-center">
