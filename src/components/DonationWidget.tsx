@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { useAccount, useChainId, useSendTransaction, useSwitchChain } from 'wagmi'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { parseEther } from 'viem'
@@ -26,6 +26,13 @@ const DonationWidget: FC = () => {
   const [customAmount, setCustomAmount] = useState(false)
 
   const donationInfo = DONATION_ADDRESSES[selectedChainId]
+
+  // Log errors to console so they're visible in DevTools even before staging rebuilds
+  useEffect(() => {
+    if (isError && error) {
+      console.error('[DonationWidget] sendTransaction error:', error)
+    }
+  }, [isError, error])
 
   const handleChainSelect = (id: number) => {
     setSelectedChainId(id)
