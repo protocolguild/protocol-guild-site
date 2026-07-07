@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from 'react'
-import { useAccount, useChainId, useSendTransaction, useSwitchChain } from 'wagmi'
+import { useAccount, useChainId, useDisconnect, useSendTransaction, useSwitchChain } from 'wagmi'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { parseEther } from 'viem'
 import { mainnet, arbitrum, base, optimism, polygon } from 'wagmi/chains'
@@ -16,9 +16,10 @@ const CHAINS = [
 const PRESET_AMOUNTS = ['0.01', '0.1', '0.5', '1']
 
 const DonationWidget: FC = () => {
-  const { isConnected } = useAccount()
+  const { isConnected, address } = useAccount()
   const chainId = useChainId()
   const { switchChain } = useSwitchChain()
+  const { disconnect } = useDisconnect()
   const { sendTransaction, isPending, isSuccess, isError, error, reset } = useSendTransaction()
 
   const [selectedChainId, setSelectedChainId] = useState<number>(mainnet.id)
@@ -151,17 +152,30 @@ const DonationWidget: FC = () => {
       {!isConnected ? (
         <ConnectButton label="Connect Wallet to Donate" />
       ) : (
-        <button
-          onClick={handleDonate}
-          disabled={!amount || isPending}
-          className="w-full !bg-[var(--brand-primary)] !border-none !text-[var(--gray-dark)] font-semibold px-6 py-3 rounded-lg hover:!opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
-        >
-          {isPending
-            ? 'Confirm in wallet…'
-            : needsChainSwitch
-            ? `Switch to ${CHAINS.find(c => c.chain.id === selectedChainId)?.label}`
-            : `Donate${amount ? ` ${amount} ETH` : ''}`}
-        </button>
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={handleDonate}
+            disabled={!amount || isPending}
+            className="w-full !bg-[var(--brand-primary)] !border-none !text-[var(--gray-dark)] font-semibold px-6 py-3 rounded-lg hover:!opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            {isPending
+              ? 'Confirm in wallet…'
+              : needsChainSwitch
+              ? `Switch to ${CHAINS.find(c => c.chain.id === selectedChainId)?.label}`
+              : `Donate${amount ? ` ${amount} ETH` : ''}`}
+          </button>
+          <div className="flex items-center justify-between px-1">
+            <p className="text-xs text-[var(--gray-mid)] font-mono truncate max-w-[70%]">
+              {address ? `${address.slice(0, 6)}…${address.slice(-4)}` : ''}
+            </p>
+            <button
+              onClick={() => disconnect()}
+              className="text-xs !bg-transparent !border-none !text-[var(--gray-mid)] hover:!text-[var(--gray-dark)] underline p-0 transition-colors"
+            >
+              Disconnect
+            </button>
+          </div>
+        </div>
       )}
 
       {/* Status */}
