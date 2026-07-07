@@ -55,7 +55,10 @@ const DonationWidget: FC = () => {
     sendTransaction({
       to: donationInfo.address as `0x${string}`,
       value: parseEther(amount),
-      chainId: selectedChainId,
+      // Set explicit gas limit to bypass wagmi's public-RPC pre-flight estimation,
+      // which can return inflated values and falsely fail the balance check.
+      // 0xSplits vesting contracts use ~80-130k gas; 250k gives comfortable headroom.
+      gas: BigInt(250_000),
     })
   }
 
