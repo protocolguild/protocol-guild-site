@@ -74,7 +74,7 @@ First, why a percentage at all? Denominating the Protocol Guild Pledge in "perce
 
 Now, why 1%? Why not 10%? 0.1%? Something else? Well, for one thing, it's less than [1.5%](https://twitter.com/dannyryan/status/1454065104819916803)!  More seriously, though, here are some metrics to provide context for the amount:
 
--   Protocol Guild currently has 163 members. Members' share of total donations is proportional to the (square root of) the amount of time they have been contributing to Ethereum. Members' shares [currently vary between 1.16% and 0.27%](https://app.splits.org/accounts/0x84af3D5824F0390b9510440B6ABB5CC02BB68ea1/).
+-   Protocol Guild currently has 163 members. Members' share of total donations is proportional to the (square root of) the amount of time they have been contributing to Ethereum. Members' shares [currently vary between 1.16% and 0.27%](https://explorer.splits.org/accounts/0x84af3D5824F0390b9510440B6ABB5CC02BB68ea1/).
 
 -   Ethereum currently secures roughly [200b$ of non-ETH assets on L1](https://ultrasound.money/#tvs). Removing LSTs & stablecoins/RWAs, leaves slightly less than 100b$. Including [L2-native assets](https://l2beat.com/scaling/tvl) to this brings the total back to roughly 100b$ of native tokens whose security depends on L1.
 
