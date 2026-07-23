@@ -4,7 +4,6 @@ import Section from '../components/Section'
 import Grid from '../components/Grid'
 import trentImg from '../assets/images/trent.jpg'
 import cheekyImg from '../assets/images/cheeky.jpg'
-import peterImg from '../assets/images/peter.jpg'
 import HeroHeader from '../components/HeroHeader'
 import { aboutContent } from '../content/about'
 import chainsImage from '../assets/images/chains.png'
@@ -124,41 +123,6 @@ const About: FC = () => {
                     <p className="text-xs">
                       Internal operations, legal, fundraising
                     </p>
-                  </div>
-                </div>
-                <div className="flex flex-col items-start">
-                  <img
-                    src={peterImg}
-                    alt="Peter Vecchiarelli"
-                    className="w-full aspect-square object-cover"
-                  />
-                  <div className="mt-2 flex flex-col items-start w-full gap-1">
-                    <p className="text-sm font-bold">Peter Vecchiarelli</p>
-                    <a
-                      href="https://x.com/AlphaLemonade"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[var(--gray-dark)] text-sm font-normal"
-                    >
-                      @AlphaLemonade
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="inline-block ml-1"
-                      >
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                    <p className="text-xs">Fundraising, communications</p>
                   </div>
                 </div>
               </div>
