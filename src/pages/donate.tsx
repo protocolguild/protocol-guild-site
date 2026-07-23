@@ -209,7 +209,7 @@ const Donate: FC = () => {
                 {donateContent.planning.description}
               </h2>
               <a
-                href="https://calendly.com/vecchiarelli-peter/30min"
+                href="https://calendar.proton.me/bookings#SlJ5lcd5OiqJJmZ_9XNwLwwdeBR2BMsl_xly35gQMoo="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="!bg-[var(--brand-primary)] !border-none text-[var(--gray-dark)] hover:text-[var(--gray-dark)] !hover:text-[var(--gray-dark)] px-8 py-3 rounded-lg hover:!opacity-80 transition-colors w-fit inline-block no-underline"
