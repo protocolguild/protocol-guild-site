@@ -27,12 +27,6 @@ const Footer: React.FC = () => {
                   <a href="https://x.com/ProtocolGuild" target="_blank" rel="noopener noreferrer">
                     <img src={TwitterLogo} alt="Twitter" className="h-6 w-auto" />
                   </a>
-                  <a href="https://warpcast.com/protocolguild" target="_blank" rel="noopener noreferrer">
-                    <img src={WarpcastLogo} alt="Warpcast" className="h-6 w-auto" />
-                  </a>
-                  <a href="https://discord.gg/54JUcFSJ7u" target="_blank" rel="noopener noreferrer">
-                    <img src={DiscordLogo} alt="Discord" className="h-6 w-auto" />
-                  </a>
                   <a href="https://github.com/protocolguild/protocol-guild-site" target="_blank" rel="noopener noreferrer">
                     <img src={GithubLogo} alt="Github" className="h-6 w-auto" />
                   </a>
