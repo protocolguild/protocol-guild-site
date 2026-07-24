@@ -8,6 +8,7 @@ import TwitterLogo from '../assets/images/Twitter.png'
 import WarpcastLogo from '../assets/images/Warpcast.png'
 import DiscordLogo from '../assets/images/Discord.png'
 import GithubLogo from '../assets/images/Github.png'
+import HoldersVoteLogo from '../assets/images/holders-vote.svg'
 
 const Footer: React.FC = () => {
   return (
@@ -29,6 +30,9 @@ const Footer: React.FC = () => {
                   </a>
                   <a href="https://github.com/protocolguild/protocol-guild-site" target="_blank" rel="noopener noreferrer">
                     <img src={GithubLogo} alt="Github" className="h-6 w-auto" />
+                  </a>
+                  <a href="https://holders.vote/h/protocolguild.curated.hns" target="_blank" rel="noopener noreferrer">
+                    <img src={HoldersVoteLogo} alt="holders.vote" className="h-6 w-auto" />
                   </a>
                 </nav>
               </div>
