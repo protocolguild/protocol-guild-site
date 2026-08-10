@@ -5,7 +5,7 @@ coverImage: '/ACD-FUND.png'
 date: '2026-08-10'
 ---
 
-A new fund dedicated to core development coordination and development. Our first opinionated allocation will be to fund ACDE coordination in support of Nixo's work, in partnership with EthCoordinate (fka Ethstaker).
+A new fund dedicated to core development coordination and development. Our first opinionated allocation will be to fund ACDE coordination in support of Nixo's work, in partnership with [EthCoordinate](https://ethcoordinate.org/) (fka Ethstaker).
 
 **Context**
 
@@ -33,6 +33,6 @@ If you would like to donate directly to this fund and Nixo's work, please [donat
 
 PGF and EthCoordinate funding this work fills a critical gap, and allows planning for Glamsterdam and Hegota to continue.
 
-If you are interested in directly funding Nixo or other initiatives within the ACD Fund, please reach out [email].
+If you are interested in directly funding Nixo or other initiatives within the ACD Fund, please reach out at hello@protocolguild.org.
 
 Learn more about EthCoordinate [here](https://ethcoordinate.org/).
