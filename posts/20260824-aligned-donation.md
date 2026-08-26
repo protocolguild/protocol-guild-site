@@ -1,8 +1,8 @@
 ---
-title: Aligned Fulfills Its 1.5% Commitment to Protocol Guild
-excerpt: Aligned completes its Protocol Guild pledge by donating 1.5% of the $ALIGN token supply to Ethereum's core contributors
-coverImage: /20260821-aligned-donation/aligned_donation.png
-date: 2026-08-24
+title: "Aligned Fulfills Its 1.5% Commitment to Protocol Guild"
+excerpt: "Aligned completes its Protocol Guild pledge by donating 1.5% of the $ALIGN token supply to Ethereum's core contributors"
+coverImage: '/20260821-aligned-donation/aligned_donation.png'
+date: '2026-08-24'
 ---
 
 Aligned has fulfilled its Protocol Guild Pledge, completing its donation of 1.5% of the $ALIGN token supply to Ethereum's core contributors.
