@@ -55,7 +55,7 @@ export const donateContent = {
     },
     {
       text: "\"We wouldn’t be here without Ethereum and its core developers. Ethereum is the world computer and one of the most important innovations of our time.\"",
-      author: "Lambda Class, 1% Pledge Taker"
+      author: "Aligned Layer, 1% Pledge Donor"
     },
     {
       text: "\"Our 1% allocation isn’t charity. It funds core developers - the people Shutter and the broader ecosystem depend on to build and maintain Ethereum.\"",
